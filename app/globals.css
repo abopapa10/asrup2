@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white pb-20 font-sans text-[0.9375rem] font-normal leading-relaxed text-slate-body antialiased md:pb-0;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in {
+      animation: none;
+      opacity: 1;
+    }
+  }
+
+  ::selection {
+    background-color: rgba(201, 247, 255, 0.5);
+    @apply text-slate-charcoal;
+  }
+}
+
+@layer components {
+  .fade-in {
+    animation: fade-in-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .credential-reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .credential-list-visible .credential-reveal:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+  .credential-list-visible .credential-reveal:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+  }
+
+  .credential-list-visible .credential-reveal:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .credential-reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .heading-display {
+    font-family: var(--font-sora), system-ui, sans-serif;
+    @apply font-semibold tracking-[-0.03em] text-slate-charcoal;
+  }
+
+  .heading-section {
+    font-family: var(--font-sora), system-ui, sans-serif;
+    @apply text-[1.65rem] font-semibold leading-[1.15] tracking-[-0.03em] text-slate-charcoal sm:text-3xl lg:text-[2.65rem];
+  }
+
+  .eyebrow {
+    @apply text-[0.625rem] font-semibold uppercase tracking-[0.26em] text-slate-body/90 sm:text-[0.6875rem];
+  }
+
+  .eyebrow-cta::after {
+    content: "";
+    @apply mt-3 block h-0.5 w-10 bg-neon-turquoise;
+  }
+
+  .cta-accent-line {
+    @apply h-0.5 w-16 bg-neon-turquoise;
+  }
+
+  .body-lead {
+    @apply text-[0.9375rem] font-normal leading-[1.8] text-slate-body sm:text-base md:text-[1.0625rem] md:leading-[1.85];
+  }
+
+  .section-mesh {
+    @apply bg-mesh-sky;
+  }
+
+  .structural-rule {
+    @apply h-px w-full bg-ice-blue;
+  }
+
+  .accent-rule-vertical {
+    @apply absolute bottom-0 left-0 top-0 w-px bg-gradient-to-b from-soft-sky via-neon-turquoise/40 to-white;
+  }
+
+  .editorial-card {
+    @apply relative flex h-full flex-col border border-ice-blue border-t-2 border-t-transparent bg-white p-6 transition-all duration-500 ease-gallery sm:p-8 lg:p-10;
+    box-shadow:
+      0 4px 24px -4px rgba(15, 23, 42, 0.06),
+      0 1px 0 rgba(191, 235, 242, 0.5);
+  }
+
+  .editorial-card:hover {
+    @apply -translate-y-[4px] border-t-neon-turquoise;
+    box-shadow:
+      0 20px 48px -12px rgba(15, 23, 42, 0.1),
+      0 4px 0 rgba(66, 255, 214, 0.35);
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-neon-turquoise px-5 py-3.5 text-sm font-semibold tracking-wide text-slate-charcoal sm:px-6 sm:py-4;
+    @apply transition-all duration-300 ease-gallery hover:brightness-[1.02];
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-charcoal;
+    box-shadow:
+      0 0 0 1px rgba(66, 255, 214, 0.3),
+      0 8px 32px -4px rgba(66, 255, 214, 0.45);
+  }
+
+  .btn-whatsapp:hover {
+    box-shadow:
+      0 0 0 1px rgba(66, 255, 214, 0.5),
+      0 12px 40px -2px rgba(66, 255, 214, 0.55);
+  }
+
+  .btn-phone {
+    @apply inline-flex w-full items-center justify-center gap-2.5 rounded-xl border border-ice-blue px-5 py-3.5 text-sm font-semibold tracking-wide text-slate-charcoal backdrop-blur-sm sm:px-6 sm:py-4;
+    @apply transition-all duration-300 ease-gallery hover:border-neon-turquoise/50;
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-charcoal;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .btn-phone:hover {
+    background-color: rgba(201, 247, 255, 0.2);
+  }
+
+  .cta-banner::before {
+    content: "";
+    @apply pointer-events-none absolute right-0 top-0 h-full w-1 bg-neon-turquoise;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-fade-mask {
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 95%,
+        transparent
+      );
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 95%,
+        transparent
+      );
+    }
+  }
+
+  .reviews-track {
+    @apply flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 pt-1 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-6 md:gap-6 [&::-webkit-scrollbar]:hidden;
+  }
+
+  .review-card {
+    @apply flex w-[min(100%,calc(100vw-2.5rem))] shrink-0 snap-center flex-col rounded-xl border border-[#DADCE0] bg-white p-5 shadow-[0_1px_3px_rgba(60,64,67,0.12)] sm:w-[min(88vw,360px)] sm:p-6 md:min-w-[320px] md:max-w-[360px];
+  }
+
+  .blockquote-accent {
+    font-family: var(--font-sora), system-ui, sans-serif;
+    @apply relative border-l-[3px] border-l-neon-turquoise py-5 pl-6 pr-3 text-lg font-medium leading-[1.55] tracking-[-0.02em] text-slate-charcoal sm:py-6 sm:pl-8 sm:pr-4 sm:text-2xl;
+    background-color: rgba(201, 247, 255, 0.22);
+  }
+
+  .faq-item {
+    @apply border border-ice-blue bg-white transition-all duration-500 ease-gallery;
+  }
+
+  .faq-item[data-open="true"] {
+    border-color: rgba(66, 255, 214, 0.45);
+    background: radial-gradient(
+      ellipse 120% 90% at 0% 70%,
+      rgba(201, 247, 255, 0.28) 0%,
+      #ffffff 24%
+    );
+    box-shadow: 0 8px 32px -12px rgba(66, 255, 214, 0.25);
+  }
+
+  .faq-answer {
+    @apply border-l-2 border-l-neon-turquoise/70 pl-5 font-sans text-[0.9375rem] font-normal leading-[1.85] text-slate-body sm:pl-6;
+  }
+
+  .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .accordion-panel-open {
+    grid-template-rows: 1fr;
+  }
+
+  .accordion-panel-inner {
+    overflow: hidden;
+  }
+
+  .article-image {
+    @apply aspect-video w-full object-cover grayscale transition-all duration-700 ease-gallery group-hover:grayscale-0;
+  }
+
+  .link-editorial {
+    @apply relative inline-flex items-center gap-1 text-sm font-medium text-slate-charcoal transition-colors hover:text-slate-body;
+  }
+
+  .link-editorial::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-px w-0 bg-neon-turquoise transition-all duration-300 ease-out;
+  }
+
+  .link-editorial:hover::after {
+    @apply w-full;
+  }
+}
