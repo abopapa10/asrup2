@@ -12,6 +12,7 @@ const config: Config = {
         ivory: "#FFFFFF",
         "soft-sky": "#C9F7FF",
         "warm-cream": "#FFFBE5",
+        "highlight-cream": "#FFF4DB",
         "ice-blue": "#BFEBF2",
         "neon-turquoise": "#42FFD6",
         slate: {

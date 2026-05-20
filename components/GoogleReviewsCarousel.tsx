@@ -69,12 +69,23 @@ export function GoogleReviewsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [thumbRatio, setThumbRatio] = useState(1);
 
   const updateScrollState = useCallback(() => {
     const el = trackRef.current;
     if (!el) return;
     setCanScrollLeft(el.scrollLeft > 8);
     setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 8);
+
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (maxScroll <= 0) {
+      setScrollProgress(0);
+      setThumbRatio(1);
+      return;
+    }
+    setScrollProgress(el.scrollLeft / maxScroll);
+    setThumbRatio(Math.min(1, el.clientWidth / el.scrollWidth));
   }, []);
 
   useEffect(() => {
@@ -117,10 +128,6 @@ export function GoogleReviewsCarousel() {
           </p>
         </div>
 
-        <p className="mt-6 text-xs font-medium text-slate-body/70 md:hidden">
-          Kaydırarak tüm yorumları görüntüleyin →
-        </p>
-
         <div className="relative mt-8 sm:mt-14">
           <button
             type="button"
@@ -154,9 +161,24 @@ export function GoogleReviewsCarousel() {
               ))}
             </div>
           </div>
+
+          <div
+            className="reviews-scroll-indicator mt-5 md:hidden"
+            aria-hidden
+          >
+            <div className="reviews-scroll-track">
+              <div
+                className="reviews-scroll-thumb"
+                style={{
+                  width: `${thumbRatio * 100}%`,
+                  marginLeft: `${scrollProgress * (100 - thumbRatio * 100)}%`,
+                }}
+              />
+            </div>
+          </div>
         </div>
 
-        <div id="randevu-orta" className="mt-12 sm:mt-16">
+        <div id="randevu-orta" className="mt-16 sm:mt-20 md:mt-16">
           <CtaBlock variant="banner" />
         </div>
       </div>

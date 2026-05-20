@@ -74,6 +74,39 @@
     }
   }
 
+  .heading-display,
+  .heading-section {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .heading-display::after,
+  .heading-section::after {
+    content: "";
+    display: block;
+    width: 70%;
+    max-width: 100%;
+    margin-top: 0.5rem;
+    height: 0.4rem;
+    background-color: #fff4db;
+  }
+
+  @media (min-width: 640px) {
+    .heading-display::after,
+    .heading-section::after {
+      margin-top: 0.625rem;
+      height: 0.45rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .heading-display::after,
+    .heading-section::after {
+      margin-top: 0.75rem;
+      height: 0.5rem;
+    }
+  }
+
   .heading-display {
     font-family: var(--font-sora), system-ui, sans-serif;
     @apply font-semibold tracking-[-0.03em] text-slate-charcoal;
@@ -179,6 +212,14 @@
 
   .reviews-track {
     @apply flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 pt-1 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-6 md:gap-6 [&::-webkit-scrollbar]:hidden;
+  }
+
+  .reviews-scroll-track {
+    @apply h-1 w-full overflow-hidden rounded-full bg-ice-blue/70;
+  }
+
+  .reviews-scroll-thumb {
+    @apply block h-full min-w-[2.75rem] rounded-full bg-slate-charcoal/30 transition-[margin,width] duration-150 ease-out;
   }
 
   .review-card {
