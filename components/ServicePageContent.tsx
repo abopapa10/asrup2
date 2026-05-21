@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CtaBlock } from "@/components/CtaBlock";
 import { FadeIn } from "@/components/FadeIn";
+import { JsonLdScript } from "@/components/JsonLdScript";
+import { buildServiceJsonLd } from "@/lib/page-structured-data";
 import type { Service } from "@/lib/services";
 
 type ServicePageContentProps = {
@@ -10,6 +12,7 @@ type ServicePageContentProps = {
 export function ServicePageContent({ service }: ServicePageContentProps) {
   return (
     <article className="border-t border-ice-blue/40 bg-mesh-sky py-16 sm:py-24 lg:py-32">
+      <JsonLdScript data={buildServiceJsonLd(service)} />
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
         <FadeIn>
           <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-body">

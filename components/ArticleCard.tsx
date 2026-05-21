@@ -13,9 +13,10 @@ export function ArticleCard({ article }: ArticleCardProps) {
         <div className="overflow-hidden border border-ice-blue border-t-2 border-t-transparent bg-white transition-colors group-hover:border-t-neon-turquoise">
           <Image
             src={article.image}
-            alt={article.title}
+            alt={`${article.title} — ${article.category}`}
             width={640}
             height={360}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             loading="lazy"
             className="article-image"
           />

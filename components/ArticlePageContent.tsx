@@ -67,9 +67,10 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
           <div className="mt-8 overflow-hidden border border-ice-blue">
             <Image
               src={article.image}
-              alt={article.title}
+              alt={`${article.title} — ${article.category} makale kapak görseli`}
               width={960}
               height={540}
+              sizes="(max-width: 768px) 100vw, 768px"
               priority
               className="aspect-video w-full object-cover"
             />

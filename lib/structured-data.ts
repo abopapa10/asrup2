@@ -1,16 +1,46 @@
 import { articles } from "@/lib/articles";
+import { absoluteUrl } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteConfig.url}/#organization`,
+  name: siteConfig.seo.siteName,
+  url: siteConfig.url,
+  logo: absoluteUrl(siteConfig.seo.logoPath),
+  image: absoluteUrl(siteConfig.images.portraitClinical),
+  email: siteConfig.email,
+  telephone: siteConfig.phone,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: siteConfig.address.locality,
+    addressRegion: siteConfig.address.region,
+    addressCountry: siteConfig.address.country,
+  },
+};
+
+export const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteConfig.url}/#website`,
+  name: siteConfig.seo.siteName,
+  url: siteConfig.url,
+  description: siteConfig.seo.defaultDescription,
+  inLanguage: "tr-TR",
+  publisher: { "@id": `${siteConfig.url}/#organization` },
+};
 
 export const medicalBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
-  "@id": "https://bursapsikologsancar.com/#medicalbusiness",
+  "@id": `${siteConfig.url}/#medicalbusiness`,
   name: "Bursa Psikolog Ahmet Alparslan Sancar — Klinik Psikoloji",
   url: siteConfig.url,
-  image: `${siteConfig.url}${siteConfig.images.portraitClinical}`,
-  description:
-    "Bursa Nilüfer'de yetişkin bireysel terapi, çift terapisi ve online terapi sunan premium psikoloji kliniği.",
+  image: absoluteUrl(siteConfig.images.portraitClinical),
+  description: siteConfig.seo.defaultDescription,
   telephone: siteConfig.phone,
+  email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
     addressLocality: siteConfig.address.locality,
@@ -19,21 +49,22 @@ export const medicalBusinessSchema = {
   },
   areaServed: { "@type": "City", name: "Bursa" },
   medicalSpecialty: "Psychiatric",
-  employee: { "@id": "https://bursapsikologsancar.com/#psychologist" },
+  employee: { "@id": `${siteConfig.url}/#psychologist` },
+  parentOrganization: { "@id": `${siteConfig.url}/#organization` },
 };
 
 export const psychologistSchema = {
   "@context": "https://schema.org",
   "@type": "Psychologist",
-  "@id": "https://bursapsikologsancar.com/#psychologist",
+  "@id": `${siteConfig.url}/#psychologist`,
   name: siteConfig.name,
-  alternateName: "Ahmet Alparslan Sancar",
+  alternateName: siteConfig.legalName,
   url: siteConfig.url,
-  image: `${siteConfig.url}${siteConfig.images.portraitClinical}`,
+  image: absoluteUrl(siteConfig.images.portraitClinical),
   description:
     "Bursa psikolog — yetişkin bireysel terapi, çift terapisi ve online terapi. Klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
   jobTitle: "Uzman Klinik Psikolog",
-  worksFor: { "@id": "https://bursapsikologsancar.com/#medicalbusiness" },
+  worksFor: { "@id": `${siteConfig.url}/#medicalbusiness` },
   knowsAbout: [
     "Bursa Psikolog",
     "Bireysel Terapi",
@@ -52,7 +83,7 @@ export const psychologistSchema = {
 export const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://bursapsikologsancar.com/#faq",
+  "@id": `${siteConfig.url}/#faq`,
   mainEntity: [
     {
       "@type": "Question",
@@ -92,7 +123,7 @@ export const faqSchema = {
 export const blogSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://bursapsikologsancar.com/#articles",
+  "@id": `${siteConfig.url}/#articles`,
   name: "Uzman Makaleleri & Blog",
   itemListElement: articles.map((article, index) => ({
     "@type": "ListItem",
@@ -101,8 +132,9 @@ export const blogSchema = {
       "@type": "Article",
       headline: article.title,
       description: article.excerpt,
-      url: `${siteConfig.url}/makale/${article.slug}`,
-      author: { "@id": "https://bursapsikologsancar.com/#psychologist" },
+      url: absoluteUrl(`/makale/${article.slug}`),
+      datePublished: article.dateISO,
+      author: { "@id": `${siteConfig.url}/#psychologist` },
     },
   })),
 };
@@ -110,6 +142,8 @@ export const blogSchema = {
 export const graphSchema = {
   "@context": "https://schema.org",
   "@graph": [
+    organizationSchema,
+    websiteSchema,
     medicalBusinessSchema,
     psychologistSchema,
     faqSchema,

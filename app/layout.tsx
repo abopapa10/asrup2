@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
 import { graphSchema } from "@/lib/structured-data";
+import { createPageMetadata, rootMetadataExtras } from "@/lib/seo";
+import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
 const sora = Sora({
@@ -22,36 +24,48 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#FFFFFF",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FFFFFF" },
+    { media: "(prefers-color-scheme: dark)", color: "#0B1220" },
+  ],
   width: "device-width",
   initialScale: 1,
+  colorScheme: "light",
 };
 
+const homeMetadata = createPageMetadata({
+  title: siteConfig.seo.defaultTitle,
+  description: siteConfig.seo.defaultDescription,
+  path: "/",
+  absoluteTitle: true,
+  ogImageAlt: siteConfig.seo.defaultOgImageAlt,
+});
+
 export const metadata: Metadata = {
-  title:
-    "Bursa Psikolog | Uzman Klinik Psikolog Ahmet Alparslan Sancar — Nilüfer",
-  description:
-    "Bursa Nilüfer'de bireysel terapi, çift terapisi ve online terapi. Uzman Klinik Psikolog Ahmet Alparslan Sancar — klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
+  ...rootMetadataExtras(),
+  ...homeMetadata,
+  title: {
+    default: siteConfig.seo.defaultTitle,
+    template: siteConfig.seo.titleTemplate,
+  },
   keywords: [
     "Bursa psikolog",
-    "Bursa Psikolog",
     "Nilüfer psikolog",
-    "Bireysel Terapi",
-    "Çift Terapisi",
-    "Online Terapi",
-    "Bursa psikolog tavsiye",
+    "Bursa terapi",
+    "Bireysel terapi",
+    "Çift terapisi",
+    "Online terapi",
+    "Bursa psikolojik destek",
   ],
-  openGraph: {
-    title: "Bursa Nilüfer'de Yetişkin ve Çift Terapisi Desteği",
-    description:
-      "Uzman yaklaşımı ve bilimsel ekollerle ruh sağlığınızda yeni bir dönem.",
-    url: "https://bursapsikologsancar.com",
-    siteName: "Bursa Psikolog Ahmet Alparslan Sancar",
-    locale: "tr_TR",
-    type: "website",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
-  robots: { index: true, follow: true },
-  alternates: { canonical: "https://bursapsikologsancar.com" },
+  other: {
+    "geo.region": "TR-16",
+    "geo.placename": "Bursa",
+  },
 };
 
 export default function RootLayout({

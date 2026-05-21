@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import { ArticleCard } from "@/components/ArticleCard";
 import { FadeIn } from "@/components/FadeIn";
+import { JsonLdScript } from "@/components/JsonLdScript";
 import { PageShell } from "@/components/PageShell";
 import { articles } from "@/lib/articles";
+import { buildBlogListingJsonLd } from "@/lib/page-structured-data";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Uzman Makaleleri & Blog | Bursa Psikolog",
+export const metadata: Metadata = createPageMetadata({
+  title: "Uzman Makaleleri & Blog",
   description:
-    "Bursa psikolog blog: bireysel terapi, çift terapisi, online terapi ve ruh sağlığı rehberi makaleleri.",
-  alternates: { canonical: "https://bursapsikologsancar.com/blog" },
-};
+    "Bursa psikolog blog: bireysel terapi, çift terapisi, online terapi, tükenmişlik, özdeğer ve ruh sağlığı üzerine uzman makaleler.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   const sorted = [...articles].sort(
@@ -18,6 +21,7 @@ export default function BlogPage() {
 
   return (
     <PageShell>
+      <JsonLdScript data={buildBlogListingJsonLd()} />
       <section
         aria-labelledby="blog-heading"
         className="border-t border-ice-blue/60 bg-mesh-blue py-16 sm:py-24 lg:py-32"
