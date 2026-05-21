@@ -39,6 +39,14 @@ export function AuthoritySection() {
             iyileştiriliciğine inanıyorum.&rdquo;
           </blockquote>
 
+          <div className="mx-auto mt-8 w-full max-w-[18rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
+            <PortraitFrame
+              src={siteConfig.images.portraitFull}
+              alt="Psikolog A. Alparslan Sancar — tam profil portre"
+              variant="full"
+            />
+          </div>
+
           <p className="body-lead mt-8 sm:mt-10">
             İstanbul&apos;daki yoğun klinik pratikten Bursa Nilüfer&apos;e taşınan
             deneyim; aynı ölçüde danışan gizliliği, etik ilkeler ve bilimsel
@@ -67,7 +75,11 @@ export function AuthoritySection() {
           </ul>
         </FadeIn>
 
-        <FadeIn delay={0.08} className="lg:sticky lg:top-28" as="article">
+        <FadeIn
+          delay={0.08}
+          className="hidden lg:sticky lg:top-28 lg:block"
+          as="article"
+        >
           <PortraitFrame
             src={siteConfig.images.portraitFull}
             alt="Psikolog A. Alparslan Sancar — tam profil portre"

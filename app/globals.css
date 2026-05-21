@@ -295,7 +295,7 @@
   }
 
   .article-image {
-    @apply aspect-video w-full object-cover grayscale transition-all duration-700 ease-gallery group-hover:grayscale-0;
+    @apply aspect-video w-full object-cover;
   }
 
   .link-editorial {
