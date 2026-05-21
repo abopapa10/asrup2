@@ -5,72 +5,81 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { CtaBlock } from "@/components/CtaBlock";
 import { GoogleLogo } from "@/components/GoogleLogo";
 import { StarRating } from "@/components/StarRating";
+import {
+  googleReviews,
+  REVIEW_CLAMP_CHARS,
+  type GoogleReview,
+} from "@/lib/google-reviews";
 
-const reviews = [
-  {
-    name: "E. K.",
-    date: "2 ay önce",
-    text: "Klinik ortamı son derece sakin ve profesyonel. İlk seans öncesi bilgilendirme süreci şeffaf ve güven vericiydi. Bursa'da psikolog arayanlara gönül rahatlığıyla önerebilirim.",
-  },
-  {
-    name: "M. A.",
-    date: "3 ay önce",
-    text: "Çift terapisi sürecinde iletişim becerilerimiz belirgin şekilde güçlendi. Uzman yaklaşımı bilimsel ve saygılı; danışan gizliliği her aşamada hissediliyor.",
-  },
-  {
-    name: "S. Y.",
-    date: "4 ay önce",
-    text: "EMDR seansları travma sonrası yaşadığım zorlanmaları yönetmemde çok etkili oldu. Seans süresi ve süreç net anlatıldı; etik ilkelere bağlı bir klinik deneyim.",
-  },
-  {
-    name: "D. T.",
-    date: "5 ay önce",
-    text: "Bireysel terapi desteği kaygı ve stres yönetiminde kalıcı fark yarattı. Randevu ve asistan yönlendirmesi hızlı; Bursa psikolog tavsiye arayanlar için güçlü bir referans.",
-  },
-] as const;
+const AUTO_SCROLL_SPEED = 0.35;
+const USER_PAUSE_MS = 8000;
 
-function GoogleReviewCard({
-  name,
-  date,
-  text,
-}: {
-  name: string;
-  date: string;
-  text: string;
-}) {
+function getInitial(name: string) {
+  const trimmed = name.trim();
+  return trimmed.charAt(0).toLocaleUpperCase("tr-TR");
+}
+
+function GoogleReviewCard({ name, date, text }: GoogleReview) {
+  const [expanded, setExpanded] = useState(false);
+  const canExpand = text.length > REVIEW_CLAMP_CHARS;
+
   return (
     <article className="review-card">
       <div className="flex items-start justify-between gap-3">
-        <div className="flex items-center gap-3">
+        <div className="flex min-w-0 items-center gap-3">
           <div
             className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#1A73E8] text-sm font-semibold text-white sm:h-11 sm:w-11"
             aria-hidden
           >
-            {name.charAt(0)}
+            {getInitial(name)}
           </div>
-          <div>
-            <p className="text-sm font-semibold text-[#202124]">{name}</p>
+          <div className="min-w-0">
+            <p className="truncate text-sm font-semibold text-[#202124]">{name}</p>
             <p className="text-xs text-[#5F6368]">{date}</p>
           </div>
         </div>
         <GoogleLogo className="h-5 w-5 shrink-0" />
       </div>
+
       <div className="mt-3 sm:mt-4">
         <StarRating />
       </div>
-      <p className="mt-4 flex-1 text-sm leading-[1.7] text-[#3C4043] sm:mt-5">
-        {text}
-      </p>
+
+      <div className="review-card-body mt-4 min-h-0 flex-1 sm:mt-5">
+        <p
+          className={`review-card-text text-[0.9375rem] leading-[1.72] text-[#3C4043] ${
+            expanded || !canExpand ? "" : "review-card-text-clamped"
+          }`}
+        >
+          {text}
+        </p>
+        {canExpand ? (
+          <button
+            type="button"
+            onClick={() => setExpanded((prev) => !prev)}
+            className="review-card-toggle mt-3 text-sm font-semibold text-[#1A73E8] transition-colors hover:text-[#1558B0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A73E8]"
+            aria-expanded={expanded}
+          >
+            {expanded ? "Daha az göster" : "Devamını oku"}
+          </button>
+        ) : null}
+      </div>
     </article>
   );
 }
 
 export function GoogleReviewsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const pauseUntilRef = useRef(0);
+  const autoScrollingRef = useRef(false);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [thumbRatio, setThumbRatio] = useState(1);
+
+  const pauseAutoScroll = useCallback(() => {
+    pauseUntilRef.current = Date.now() + USER_PAUSE_MS;
+  }, []);
 
   const updateScrollState = useCallback(() => {
     const el = trackRef.current;
@@ -94,9 +103,40 @@ export function GoogleReviewsCarousel() {
     return () => window.removeEventListener("resize", updateScrollState);
   }, [updateScrollState]);
 
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (prefersReduced) return;
+
+    let frame = 0;
+
+    const tick = () => {
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      if (maxScroll > 0 && Date.now() > pauseUntilRef.current) {
+        autoScrollingRef.current = true;
+        if (el.scrollLeft >= maxScroll - 1) {
+          el.scrollTo({ left: 0, behavior: "auto" });
+        } else {
+          el.scrollLeft += AUTO_SCROLL_SPEED;
+        }
+        updateScrollState();
+        autoScrollingRef.current = false;
+      }
+      frame = window.requestAnimationFrame(tick);
+    };
+
+    frame = window.requestAnimationFrame(tick);
+    return () => window.cancelAnimationFrame(frame);
+  }, [updateScrollState]);
+
   const scroll = (direction: "left" | "right") => {
     const el = trackRef.current;
     if (!el) return;
+    pauseAutoScroll();
     const card = el.querySelector<HTMLElement>(".review-card");
     const amount = card ? card.offsetWidth + 16 : 320;
     el.scrollBy({
@@ -104,6 +144,13 @@ export function GoogleReviewsCarousel() {
       behavior: "smooth",
     });
     window.setTimeout(updateScrollState, 450);
+  };
+
+  const handleUserScroll = () => {
+    if (!autoScrollingRef.current) {
+      pauseAutoScroll();
+    }
+    updateScrollState();
   };
 
   return (
@@ -151,13 +198,16 @@ export function GoogleReviewsCarousel() {
           <div className="md:carousel-fade-mask">
             <div
               ref={trackRef}
-              onScroll={updateScrollState}
+              onScroll={handleUserScroll}
+              onPointerDown={pauseAutoScroll}
+              onTouchStart={pauseAutoScroll}
+              onWheel={pauseAutoScroll}
               className="reviews-track -mx-5 px-5 sm:-mx-6 sm:px-6 md:mx-0 md:px-0"
               role="region"
-              aria-label="Google yorumları"
+              aria-label="Google yorumları — kaydırarak gezinin"
             >
-              {reviews.map((review) => (
-                <GoogleReviewCard key={review.name} {...review} />
+              {googleReviews.map((review) => (
+                <GoogleReviewCard key={review.id} {...review} />
               ))}
             </div>
           </div>
