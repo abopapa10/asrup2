@@ -11,8 +11,9 @@ import {
   type GoogleReview,
 } from "@/lib/google-reviews";
 
-const AUTO_SCROLL_SPEED = 0.35;
+const AUTO_SCROLL_SPEED = 0.55;
 const USER_PAUSE_MS = 8000;
+const AUTO_SCROLL_FLAG_MS = 120;
 
 function getInitial(name: string) {
   const trimmed = name.trim();
@@ -71,7 +72,7 @@ function GoogleReviewCard({ name, date, text }: GoogleReview) {
 export function GoogleReviewsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
   const pauseUntilRef = useRef(0);
-  const autoScrollingRef = useRef(false);
+  const autoScrollingUntilRef = useRef(0);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -79,6 +80,14 @@ export function GoogleReviewsCarousel() {
 
   const pauseAutoScroll = useCallback(() => {
     pauseUntilRef.current = Date.now() + USER_PAUSE_MS;
+  }, []);
+
+  const markAutoScrolling = useCallback(() => {
+    autoScrollingUntilRef.current = Date.now() + AUTO_SCROLL_FLAG_MS;
+  }, []);
+
+  const isAutoScrolling = useCallback(() => {
+    return Date.now() < autoScrollingUntilRef.current;
   }, []);
 
   const updateScrollState = useCallback(() => {
@@ -107,31 +116,45 @@ export function GoogleReviewsCarousel() {
     const el = trackRef.current;
     if (!el) return;
 
-    const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-    if (prefersReduced) return;
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (motionQuery.matches) return;
 
     let frame = 0;
+    let lastUiUpdate = 0;
 
-    const tick = () => {
+    const tick = (now: number) => {
       const maxScroll = el.scrollWidth - el.clientWidth;
-      if (maxScroll > 0 && Date.now() > pauseUntilRef.current) {
-        autoScrollingRef.current = true;
-        if (el.scrollLeft >= maxScroll - 1) {
-          el.scrollTo({ left: 0, behavior: "auto" });
+
+      if (maxScroll > 4 && Date.now() > pauseUntilRef.current) {
+        markAutoScrolling();
+
+        if (el.scrollLeft >= maxScroll - 2) {
+          el.scrollLeft = 0;
         } else {
           el.scrollLeft += AUTO_SCROLL_SPEED;
         }
-        updateScrollState();
-        autoScrollingRef.current = false;
+
+        if (now - lastUiUpdate > 120) {
+          updateScrollState();
+          lastUiUpdate = now;
+        }
       }
+
       frame = window.requestAnimationFrame(tick);
     };
 
+    const resizeObserver = new ResizeObserver(() => {
+      updateScrollState();
+    });
+    resizeObserver.observe(el);
+
     frame = window.requestAnimationFrame(tick);
-    return () => window.cancelAnimationFrame(frame);
-  }, [updateScrollState]);
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      resizeObserver.disconnect();
+    };
+  }, [updateScrollState, markAutoScrolling]);
 
   const scroll = (direction: "left" | "right") => {
     const el = trackRef.current;
@@ -147,10 +170,14 @@ export function GoogleReviewsCarousel() {
   };
 
   const handleUserScroll = () => {
-    if (!autoScrollingRef.current) {
+    if (!isAutoScrolling()) {
       pauseAutoScroll();
     }
     updateScrollState();
+  };
+
+  const handleUserInteract = () => {
+    pauseAutoScroll();
   };
 
   return (
@@ -199,9 +226,9 @@ export function GoogleReviewsCarousel() {
             <div
               ref={trackRef}
               onScroll={handleUserScroll}
-              onPointerDown={pauseAutoScroll}
-              onTouchStart={pauseAutoScroll}
-              onWheel={pauseAutoScroll}
+              onTouchStart={handleUserInteract}
+              onWheel={handleUserInteract}
+              onMouseDown={handleUserInteract}
               className="reviews-track -mx-5 px-5 sm:-mx-6 sm:px-6 md:mx-0 md:px-0"
               role="region"
               aria-label="Google yorumları — kaydırarak gezinin"
