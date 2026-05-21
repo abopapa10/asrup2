@@ -1,4 +1,14 @@
 import {
+  gucluGorunmekBlocks,
+  gucluGorunmekMetaDescription,
+  gucluGorunmekMetaTitle,
+} from "@/lib/article-content/bursa-guclu-gorunmek";
+import {
+  psikologSecerkenBlocks,
+  psikologSecerkenMetaDescription,
+  psikologSecerkenMetaTitle,
+} from "@/lib/article-content/bursa-psikolog-secerken";
+import {
   yalnizlikArticleBlocks,
   yalnizlikArticleMetaDescription,
   yalnizlikArticleMetaTitle,
@@ -13,7 +23,7 @@ import {
   depremArticleMetaDescription,
   depremArticleMetaTitle,
 } from "@/lib/article-content/bursa-deprem-anksiyetesi";
-import { paragraphs, type Article } from "@/lib/article-types";
+import type { Article } from "@/lib/article-types";
 
 export type { Article, ArticleBlock } from "@/lib/article-types";
 
@@ -32,19 +42,17 @@ export const articles: readonly Article[] = [
     content: depremArticleBlocks,
   },
   {
-    slug: "bursa-evlilik-danismanligi",
-    image: "/images/articles/makale-evlilik.webp",
-    date: "12 Mart 2026",
-    dateISO: "2026-03-12",
-    category: "Çift Terapisi",
-    title: "Bursa'da Evlilik Danışmanlığı Süreci Nasıl İşler?",
+    slug: "bursa-guclu-gorunmek",
+    image: "/images/guclu olmak.webp",
+    date: "28 Mart 2026",
+    dateISO: "2026-03-28",
+    category: "Özdeğer & Duygusal Yorgunluk",
+    title: "Sürekli Güçlü Görünmek Zorunda Hissetmek",
+    metaTitle: gucluGorunmekMetaTitle,
+    metaDescription: gucluGorunmekMetaDescription,
     excerpt:
-      "Evlilik danışmanlığı ve çift terapisi: ilk görüşme, seans yapısı ve Bursa'da sürece dair beklentiler.",
-    content: paragraphs(
-      "Evlilik danışmanlığı; çiftin ortak hedeflerini, iletişim kalıplarını ve çatışma çözüm becerilerini güçlendirmeyi amaçlar. Süreç, her iki tarafın gönüllü katılımı ve gizlilik ilkeleri üzerine kurulur.",
-      "İlk seanslarda ilişki öyküsü, tetikleyici konular ve güvenli sınır alanları değerlendirilir. Ardından çiftin ihtiyacına göre seans sıklığı ve çalışma planı oluşturulur.",
-      "Bursa Nilüfer'deki kliniğimizde yüz yüze çift terapisi; online seçeneklerle birlikte hibrit olarak da planlanabilir."
-    ),
+      "Güçlü görünme baskısı, koşullu kabul ve performans odaklı öz-değer: Rogers, şema terapi ve BDT ile klinik bir değerlendirme.",
+    content: gucluGorunmekBlocks,
   },
   {
     slug: "bursa-beyaz-yaka-tukenmislik",
@@ -60,19 +68,17 @@ export const articles: readonly Article[] = [
     content: tukenmislikArticleBlocks,
   },
   {
-    slug: "bursa-psikolog-seans-ucreti",
-    image: "/images/articles/makale-ucret.png",
-    date: "28 Şubat 2026",
-    dateISO: "2026-02-28",
-    category: "Randevu & Süreç",
-    title: "Bursa Psikolog Seans Ücretleri ve Süreç Rehberi",
+    slug: "bursa-psikolog-secerken",
+    image: "/images/Bursa Psikolog.webp",
+    date: "27 Mart 2026",
+    dateISO: "2026-03-27",
+    category: "Bursa Psikolog Rehberi",
+    title: "Bursa'da Psikolog Seçerken Nelere Dikkat Edilmeli?",
+    metaTitle: psikologSecerkenMetaTitle,
+    metaDescription: psikologSecerkenMetaDescription,
     excerpt:
-      "Bursa'da psikolog seans ücretleri, seans süresi ve randevu sürecine dair şeffaf bilgilendirme.",
-    content: paragraphs(
-      "Psikoterapi seans ücretleri; uzmanlık alanı, seans süresi ve terapi formatına (yüz yüze / online) göre mesleki standartlar çerçevesinde belirlenir.",
-      "Standart seans süresi genellikle 50 dakikadır. İlk görüşmede klinik değerlendirme yapılır; süreç ve sıklık birlikte planlanır.",
-      "Güncel ücret ve randevu bilgisi için WhatsApp veya telefon ile asistanımıza ulaşabilirsiniz."
-    ),
+      "Bursa'da psikolog seçimi: uzmanlık, terapi ekolleri, ilk seans beklentisi ve yüz yüze ya da online terapi karşılaştırması.",
+    content: psikologSecerkenBlocks,
   },
   {
     slug: "bursa-sosyal-yalnizlik",
