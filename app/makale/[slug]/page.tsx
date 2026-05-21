@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${article.title} | Bursa Psikolog Blog`,
-    description: article.excerpt,
+    title: article.metaTitle ?? `${article.title} | Bursa Psikolog Blog`,
+    description: article.metaDescription ?? article.excerpt,
     alternates: {
       canonical: `${siteConfig.url}/makale/${article.slug}`,
     },

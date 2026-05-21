@@ -2,11 +2,35 @@ import Image from "next/image";
 import Link from "next/link";
 import { CtaBlock } from "@/components/CtaBlock";
 import { FadeIn } from "@/components/FadeIn";
-import type { Article } from "@/lib/articles";
+import type { Article, ArticleBlock } from "@/lib/articles";
 
 type ArticlePageContentProps = {
   article: Article;
 };
+
+function ArticleBlockView({ block }: { block: ArticleBlock }) {
+  if (block.type === "h2") {
+    return (
+      <h2 className="heading-section mt-12 text-2xl first:mt-0 sm:mt-14 sm:text-[1.75rem]">
+        {block.text}
+      </h2>
+    );
+  }
+
+  if (block.type === "h3") {
+    return (
+      <h3 className="mt-8 font-display text-lg font-semibold tracking-[-0.02em] text-slate-charcoal sm:mt-10 sm:text-xl">
+        {block.text}
+      </h3>
+    );
+  }
+
+  return (
+    <p className="text-sm leading-[1.9] text-slate-body sm:text-base sm:leading-[1.92]">
+      {block.text}
+    </p>
+  );
+}
 
 export function ArticlePageContent({ article }: ArticlePageContentProps) {
   return (
@@ -53,13 +77,8 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
         </FadeIn>
 
         <div className="prose-custom mt-10 space-y-6 sm:mt-12">
-          {article.content.map((paragraph) => (
-            <p
-              key={paragraph.slice(0, 40)}
-              className="text-sm leading-[1.9] text-slate-body sm:text-base"
-            >
-              {paragraph}
-            </p>
+          {article.content.map((block, index) => (
+            <ArticleBlockView key={`${article.slug}-${index}`} block={block} />
           ))}
         </div>
 
