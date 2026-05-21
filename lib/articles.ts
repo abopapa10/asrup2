@@ -1,4 +1,9 @@
 import {
+  yalnizlikArticleBlocks,
+  yalnizlikArticleMetaDescription,
+  yalnizlikArticleMetaTitle,
+} from "@/lib/article-content/bursa-sosyal-yalnizlik";
+import {
   tukenmislikArticleBlocks,
   tukenmislikArticleMetaDescription,
   tukenmislikArticleMetaTitle,
@@ -70,19 +75,17 @@ export const articles: readonly Article[] = [
     ),
   },
   {
-    slug: "cift-iletisimi-ipuclari",
-    image: "/images/articles/makale-cift.webp",
-    date: "10 Şubat 2026",
-    dateISO: "2026-02-10",
-    category: "İletişim & Çift",
-    title: "Çift İletişiminde Sık Yapılan Hatalar ve Çözüm Yolları",
+    slug: "bursa-sosyal-yalnizlik",
+    image: "/images/yalnizlik.webp",
+    date: "26 Mart 2026",
+    dateISO: "2026-03-26",
+    category: "İlişkiler & Yalnızlık",
+    title: "Bursa'da Sosyal Yalnızlık ve Psikolojik Etkileri",
+    metaTitle: yalnizlikArticleMetaTitle,
+    metaDescription: yalnizlikArticleMetaDescription,
     excerpt:
-      "Çift iletişiminde eleştiri-savunma döngüsü, stonewalling ve ilişkiyi güçlendiren terapi yaklaşımları.",
-    content: paragraphs(
-      "Çift iletişiminde en sık karşılaşılan zorluklar; eleştiri, savunma, aşağılama ve duygusal çekilme (stonewalling) döngüsüdür. Bu kalıplar uzun vadede güveni zedeler.",
-      "Terapi sürecinde aktif dinleme, duygu adlandırma ve zaman aşımı (time-out) gibi yapılandırılmış araçlar öğretilir.",
-      "Profesyonel destek, çiftin kendi başına çıkamadığı kör noktaları güvenli bir ortamda çalışmayı mümkün kılar."
-    ),
+      "Sosyal yalnızlık, bağlanma kuramı ve büyükşehir yaşamı: Bursa'da yalnız hissetmek, sosyal anksiyete ve terapi süreçleri üzerine klinik bir rehber.",
+    content: yalnizlikArticleBlocks,
   },
 ] as const;
 
