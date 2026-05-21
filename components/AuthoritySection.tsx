@@ -34,6 +34,11 @@ export function AuthoritySection() {
             Psikolog A. Alparslan Sancar
           </h2>
 
+          <blockquote className="blockquote-accent mt-8 hidden sm:mt-10 lg:block">
+            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
+            iyileştiriliciğine inanıyorum.&rdquo;
+          </blockquote>
+
           <div className="mx-auto mt-8 w-full max-w-[18rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
             <PortraitFrame
               src={siteConfig.images.portraitFull}
@@ -75,20 +80,12 @@ export function AuthoritySection() {
           </ul>
         </FadeIn>
 
-        <FadeIn
-          delay={0.08}
-          className="hidden lg:sticky lg:top-28 lg:block"
-          as="article"
-        >
+        <FadeIn delay={0.08} className="hidden lg:sticky lg:top-28 lg:block" as="article">
           <PortraitFrame
             src={siteConfig.images.portraitFull}
             alt="Psikolog A. Alparslan Sancar — tam profil portre"
             variant="full"
           />
-          <blockquote className="blockquote-accent mt-8 sm:mt-10">
-            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
-            iyileştiriliciğine inanıyorum.&rdquo;
-          </blockquote>
         </FadeIn>
       </div>
     </section>
