@@ -18,12 +18,12 @@ export const articles: readonly Article[] = [
     image: "/images/deprem.webp",
     date: "24 Mart 2026",
     dateISO: "2026-03-24",
-    category: "Bireysel Terapi",
+    category: "Anksiyete & Travma",
     title: "Bursa'da Deprem Anksiyetesi ve Psikolojik Etkileri",
     metaTitle: depremArticleMetaTitle,
     metaDescription: depremArticleMetaDescription,
     excerpt:
-      "Deprem kaygısı, hipervijilans ve travma psikolojisi: Bursa'da anksiyete, EMDR ve yüz yüze ya da online terapi süreçleri hakkında klinik bir rehber.",
+      "Deprem kaygısı, hipervijilans ve afet sonrası stres: Bursa'da travma psikolojisi, EMDR ve terapi süreçleri üzerine klinik bir rehber.",
     content: depremArticleBlocks,
   },
   {
@@ -34,7 +34,7 @@ export const articles: readonly Article[] = [
     category: "Çift Terapisi",
     title: "Bursa'da Evlilik Danışmanlığı Süreci Nasıl İşler?",
     excerpt:
-      "Nilüfer'de çift terapisi ve evlilik danışmanlığı adımları, seans yapısı ve ilk görüşme beklentileri.",
+      "Evlilik danışmanlığı ve çift terapisi: ilk görüşme, seans yapısı ve Bursa'da sürece dair beklentiler.",
     content: paragraphs(
       "Evlilik danışmanlığı; çiftin ortak hedeflerini, iletişim kalıplarını ve çatışma çözüm becerilerini güçlendirmeyi amaçlar. Süreç, her iki tarafın gönüllü katılımı ve gizlilik ilkeleri üzerine kurulur.",
       "İlk seanslarda ilişki öyküsü, tetikleyici konular ve güvenli sınır alanları değerlendirilir. Ardından çiftin ihtiyacına göre seans sıklığı ve çalışma planı oluşturulur.",
@@ -46,12 +46,12 @@ export const articles: readonly Article[] = [
     image: "/images/stres.webp",
     date: "25 Mart 2026",
     dateISO: "2026-03-25",
-    category: "Bireysel Terapi",
+    category: "Tükenmişlik & Stres",
     title: "Bursa'da Beyaz Yakalılarda Tükenmişlik Sendromu",
     metaTitle: tukenmislikArticleMetaTitle,
     metaDescription: tukenmislikArticleMetaDescription,
     excerpt:
-      "Maslach modeli, kronik iş stresi ve performans baskısı: Bursa'da beyaz yakalı çalışanlar için tükenmişlik, anksiyete ve psikolojik destek rehberi.",
+      "Beyaz yakalı tükenmişlik, Maslach modeli ve kronik iş stresi: Bursa'da performans baskısı ve psikolojik destek süreçleri.",
     content: tukenmislikArticleBlocks,
   },
   {
@@ -59,10 +59,10 @@ export const articles: readonly Article[] = [
     image: "/images/articles/makale-ucret.png",
     date: "28 Şubat 2026",
     dateISO: "2026-02-28",
-    category: "Bursa Psikolog",
+    category: "Randevu & Süreç",
     title: "Bursa Psikolog Seans Ücretleri ve Süreç Rehberi",
     excerpt:
-      "Seans süresi, terapi türü ve profesyonel standartlar çerçevesinde şeffaf bilgilendirme.",
+      "Bursa'da psikolog seans ücretleri, seans süresi ve randevu sürecine dair şeffaf bilgilendirme.",
     content: paragraphs(
       "Psikoterapi seans ücretleri; uzmanlık alanı, seans süresi ve terapi formatına (yüz yüze / online) göre mesleki standartlar çerçevesinde belirlenir.",
       "Standart seans süresi genellikle 50 dakikadır. İlk görüşmede klinik değerlendirme yapılır; süreç ve sıklık birlikte planlanır.",
@@ -74,10 +74,10 @@ export const articles: readonly Article[] = [
     image: "/images/articles/makale-cift.webp",
     date: "10 Şubat 2026",
     dateISO: "2026-02-10",
-    category: "Çift Terapisi",
+    category: "İletişim & Çift",
     title: "Çift İletişiminde Sık Yapılan Hatalar ve Çözüm Yolları",
     excerpt:
-      "Savunmaya geçme, stonewalling ve eleştiri döngülerini kırmak için pratik çerçeveler.",
+      "Çift iletişiminde eleştiri-savunma döngüsü, stonewalling ve ilişkiyi güçlendiren terapi yaklaşımları.",
     content: paragraphs(
       "Çift iletişiminde en sık karşılaşılan zorluklar; eleştiri, savunma, aşağılama ve duygusal çekilme (stonewalling) döngüsüdür. Bu kalıplar uzun vadede güveni zedeler.",
       "Terapi sürecinde aktif dinleme, duygu adlandırma ve zaman aşımı (time-out) gibi yapılandırılmış araçlar öğretilir.",

@@ -16,7 +16,7 @@ const philosophy = [
   {
     label: "03",
     title: "Bilimsel Ekoller",
-    body: "Bireysel terapi, çift terapisi ve online terapide kanıta dayalı, güncel protokoller.",
+    body: "Birey Odaklı Psikoterapi Tekniği temelde olmakla birlikte, Psikodinamik ve Bilişsel Davranışçı tekniklerle desteklenmektedir.",
   },
 ] as const;
 
@@ -31,12 +31,12 @@ export function AuthoritySection() {
         <FadeIn as="article">
           <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Klinik Felsefe</p>
           <h2 id="authority-heading" className="heading-section">
-            Uzman Klinik Psikolog Ahmet Alparslan Sancar
+            Psikolog A. Alparslan Sancar
           </h2>
 
           <blockquote className="blockquote-accent mt-8 sm:mt-10">
-            &ldquo;Psikoterapi, semptomları susturmak değil; yaşam kalitesini
-            yeniden inşa etmek için verilen titiz bir klinik sözleşmedir.&rdquo;
+            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
+            iyileştiriliciğine inanıyorum.&rdquo;
           </blockquote>
 
           <p className="body-lead mt-8 sm:mt-10">
@@ -70,7 +70,7 @@ export function AuthoritySection() {
         <FadeIn delay={0.08} className="lg:sticky lg:top-28" as="article">
           <PortraitFrame
             src={siteConfig.images.portraitFull}
-            alt="Uzman Klinik Psikolog Ahmet Alparslan Sancar — Bursa Nilüfer tam profil portre"
+            alt="Psikolog A. Alparslan Sancar — tam profil portre"
             variant="full"
           />
         </FadeIn>

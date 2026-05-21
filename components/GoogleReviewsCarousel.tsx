@@ -192,7 +192,7 @@ export function GoogleReviewsCarousel() {
             <GoogleLogo className="h-5 w-5" />
             <span className="text-xs font-medium text-[#5F6368]">Google</span>
           </div>
-          <p className="eyebrow eyebrow-cta mb-4">Sosyal Kanıt</p>
+          <p className="eyebrow eyebrow-cta mb-4">Yorumlar</p>
           <h2 id="reviews-heading" className="heading-section">
             Danışan Deneyimleri
           </h2>

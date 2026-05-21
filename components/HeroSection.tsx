@@ -26,7 +26,7 @@ export function HeroSection() {
             id="hero-heading"
             className="heading-display text-[2rem] leading-[1.08] sm:text-[2.65rem] lg:text-[3.25rem] xl:text-[3.5rem]"
           >
-            Bursa Nilüfer&apos;de Yetişkin ve Çift Terapisi Desteği
+            Bursa Psikolog Bireysel ve Çift Terapisi Desteği
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg font-medium leading-snug tracking-[-0.02em] text-slate-body sm:mt-6 sm:text-xl lg:text-[1.5rem] lg:leading-[1.45]">

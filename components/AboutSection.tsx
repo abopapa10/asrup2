@@ -16,14 +16,14 @@ export function AboutSection() {
             <FadeIn>
               <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Hakkımda</p>
               <h2 id="about-heading" className="heading-section">
-                Uzman Klinik Psikolog Ahmet Alparslan Sancar
+                Psk. A. Alparslan Sancar
               </h2>
             </FadeIn>
 
             <div className="mx-auto my-8 w-full max-w-[20rem] sm:max-w-[22rem] lg:hidden">
               <PortraitFrame
                 src={siteConfig.images.portraitClinical}
-                alt="Uzman Klinik Psikolog Ahmet Alparslan Sancar — Bursa Nilüfer klinik portre fotoğrafı"
+                alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
                 variant="clinical"
                 align="left"
               />
@@ -33,18 +33,21 @@ export function AboutSection() {
 
             <FadeIn delay={0.2} className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Psikoloji eğitimimi Hacettepe Üniversitesi&apos;nde tamamladım;
-                ardından klinik psikoloji alanında yüz yüze ve online
-                danışan çalışmalarımı sürdürdüm. Bursa Nilüfer&apos;de
-                açacağımız yeni kliniğimizde bireysel terapi, çift terapisi ve
-                online seanslarla hizmet vereceğiz.
+                Ben Psikolog A. Alparslan Sancar; Bursa BTSO Sosyal Bilimler
+                Lisesi&apos;nde eğitimimi tamamladıktan sonra Hacettepe
+                Üniversitesi Psikoloji Bölümünü kazandım. Burada BDT (Bilişsel
+                Davranışçı) ağırlıklı bir eğitim aldım. Sonraki yıllarda
+                Psikodinamik kuram açısından kendimi geliştirdim.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Terapi sürecinde danışan gizliliği, etik ilkeler ve kanıta
-                dayalı yöntemler önceliğimdir. Her danışan için klinik
-                değerlendirme sonrası kişiye özel bir çalışma planı
-                oluşturulur; hedef şeffaf iletişim ve sürdürülebilir yaşam
-                kalitesi iyileşmesidir.
+                Mezuniyetimden sonra eğitimlerimle birlikte Bursa
+                Nilüfer&apos;deki kliniğimde psikoterapi hizmeti vermeye
+                başladım. Bu süreçte uzmanlığımı yetişkinler üzerine
+                yoğunlaştırdım; Birey Odaklı Psikoterapi Tekniğinde
+                profesyonelleştim ve şu anda da bu ekolü temsil etmekteyim.
+                İstanbul Beşiktaş&apos;taki ofisimde psikoterapi hizmeti
+                vermekteyim; yakında Bursa&apos;da da hizmet vermeye
+                başlayacağım.
               </p>
             </FadeIn>
           </div>
@@ -55,7 +58,7 @@ export function AboutSection() {
           >
             <PortraitFrame
               src={siteConfig.images.portraitClinical}
-              alt="Uzman Klinik Psikolog Ahmet Alparslan Sancar — Bursa Nilüfer klinik portre fotoğrafı"
+              alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
               priority
               variant="clinical"
               align="right"

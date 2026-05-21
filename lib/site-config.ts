@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "Uzman Klinik Psikolog Ahmet Alparslan Sancar",
-  phone: "+905XXXXXXXXX",
-  phoneDisplay: "0 (5XX) XXX XX XX",
-  whatsapp: "https://wa.me/905XXXXXXXXX",
+  name: "Psikolog A. Alparslan Sancar",
+  phone: "+905518490236",
+  phoneDisplay: "0551 849 02 36",
+  whatsapp: "https://wa.me/905518490236",
   email: "iletisim@bursapsikologsancar.com",
   url: "https://bursapsikologsancar.com",
   address: {
