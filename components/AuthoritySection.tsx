@@ -34,11 +34,6 @@ export function AuthoritySection() {
             Psikolog A. Alparslan Sancar
           </h2>
 
-          <blockquote className="blockquote-accent mt-8 sm:mt-10">
-            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
-            iyileştiriliciğine inanıyorum.&rdquo;
-          </blockquote>
-
           <div className="mx-auto mt-8 w-full max-w-[18rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
             <PortraitFrame
               src={siteConfig.images.portraitFull}
@@ -46,6 +41,11 @@ export function AuthoritySection() {
               variant="full"
             />
           </div>
+
+          <blockquote className="blockquote-accent mt-8 sm:mt-10 lg:hidden">
+            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
+            iyileştiriliciğine inanıyorum.&rdquo;
+          </blockquote>
 
           <p className="body-lead mt-8 sm:mt-10">
             İstanbul&apos;daki yoğun klinik pratikten Bursa Nilüfer&apos;e taşınan
@@ -85,6 +85,10 @@ export function AuthoritySection() {
             alt="Psikolog A. Alparslan Sancar — tam profil portre"
             variant="full"
           />
+          <blockquote className="blockquote-accent mt-8 sm:mt-10">
+            &ldquo;Bilimsel yeterlilik ve samimiyete dayalı iletişimin
+            iyileştiriliciğine inanıyorum.&rdquo;
+          </blockquote>
         </FadeIn>
       </div>
     </section>
