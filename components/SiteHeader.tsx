@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { PsiEmblem } from "@/components/PsiEmblem";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 const navLinks = [
@@ -22,9 +23,10 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-editorial items-center justify-between gap-4 px-5 py-4 sm:gap-6 sm:px-6 sm:py-5 lg:px-12">
         <Link
           href="/"
-          className="max-w-[14rem] font-display text-sm font-semibold leading-snug tracking-[-0.02em] text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-charcoal sm:max-w-xs sm:text-base lg:text-lg"
+          className="flex max-w-[calc(100%-3rem)] items-center gap-2.5 font-display text-sm font-semibold leading-snug tracking-[-0.02em] text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-slate-charcoal sm:max-w-xs sm:gap-3 sm:text-base lg:max-w-md lg:text-lg"
         >
-          Uzman Klinik Psikolog Ahmet Alparslan Sancar
+          <PsiEmblem className="h-8 w-8 shrink-0 sm:h-9 sm:w-9" />
+          <span>Uzman Klinik Psikolog Ahmet Alparslan Sancar</span>
         </Link>
 
         <nav aria-label="Ana menü" className="hidden items-center gap-8 lg:flex">
