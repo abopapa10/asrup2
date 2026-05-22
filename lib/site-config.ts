@@ -25,9 +25,10 @@ export const siteConfig = {
       "Bursa Psikolog | Uzman Klinik Psikolog Ahmet Alparslan Sancar — Nilüfer",
     defaultDescription:
       "Bursa Nilüfer'de bireysel terapi, çift terapisi ve online terapi. Uzman Klinik Psikolog Ahmet Alparslan Sancar — klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
-    defaultOgImage: "/images/bursa.webp",
+    /** Ana sayfada ilk görünen klinik portre — OG ve zengin sonuçlar */
+    defaultOgImage: "/images/portre.png",
     defaultOgImageAlt:
-      "Bursa Nilüfer psikolog — bireysel terapi, çift terapisi ve online terapi",
+      "Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı",
     titleTemplate: "%s | Psikolog A. Alparslan Sancar",
     logoPath: "/favicon.svg",
   },

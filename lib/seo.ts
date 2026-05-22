@@ -20,7 +20,7 @@ export function absoluteUrl(path: string): string {
     return path;
   }
   const normalized = path.startsWith("/") ? path : `/${path}`;
-  return `${siteConfig.url}${normalized}`;
+  return new URL(normalized, siteConfig.url).href;
 }
 
 export function createPageMetadata(input: PageSeoInput): Metadata {

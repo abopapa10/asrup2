@@ -1,6 +1,13 @@
 import { articles } from "@/lib/articles";
+import { schemaImageObject } from "@/lib/schema-images";
 import { absoluteUrl } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+
+const homePortrait = schemaImageObject(siteConfig.images.portraitClinical, {
+  caption: "Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı",
+  width: 960,
+  height: 1200,
+});
 
 export const organizationSchema = {
   "@context": "https://schema.org",
@@ -8,8 +15,10 @@ export const organizationSchema = {
   "@id": `${siteConfig.url}/#organization`,
   name: siteConfig.seo.siteName,
   url: siteConfig.url,
-  logo: absoluteUrl(siteConfig.seo.logoPath),
-  image: absoluteUrl(siteConfig.images.portraitClinical),
+  logo: schemaImageObject(siteConfig.seo.logoPath, {
+    caption: "Site amblemi",
+  }),
+  image: homePortrait,
   email: siteConfig.email,
   telephone: siteConfig.phone,
   address: {
@@ -31,13 +40,27 @@ export const websiteSchema = {
   publisher: { "@id": `${siteConfig.url}/#organization` },
 };
 
+export const homeWebPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${siteConfig.url}/#webpage`,
+  url: siteConfig.url,
+  name: siteConfig.seo.defaultTitle,
+  description: siteConfig.seo.defaultDescription,
+  inLanguage: "tr-TR",
+  isPartOf: { "@id": `${siteConfig.url}/#website` },
+  about: { "@id": `${siteConfig.url}/#psychologist` },
+  primaryImageOfPage: homePortrait,
+  image: homePortrait,
+};
+
 export const medicalBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "@id": `${siteConfig.url}/#medicalbusiness`,
   name: "Bursa Psikolog Ahmet Alparslan Sancar — Klinik Psikoloji",
   url: siteConfig.url,
-  image: absoluteUrl(siteConfig.images.portraitClinical),
+  image: homePortrait,
   description: siteConfig.seo.defaultDescription,
   telephone: siteConfig.phone,
   email: siteConfig.email,
@@ -60,7 +83,7 @@ export const psychologistSchema = {
   name: siteConfig.name,
   alternateName: siteConfig.legalName,
   url: siteConfig.url,
-  image: absoluteUrl(siteConfig.images.portraitClinical),
+  image: homePortrait,
   description:
     "Bursa psikolog — yetişkin bireysel terapi, çift terapisi ve online terapi. Klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
   jobTitle: "Uzman Klinik Psikolog",
@@ -134,6 +157,11 @@ export const blogSchema = {
       description: article.excerpt,
       url: absoluteUrl(`/makale/${article.slug}`),
       datePublished: article.dateISO,
+      image: schemaImageObject(article.image, {
+        caption: `${article.title} — kapak görseli`,
+        width: 1200,
+        height: 675,
+      }),
       author: { "@id": `${siteConfig.url}/#psychologist` },
     },
   })),
@@ -144,6 +172,7 @@ export const graphSchema = {
   "@graph": [
     organizationSchema,
     websiteSchema,
+    homeWebPageSchema,
     medicalBusinessSchema,
     psychologistSchema,
     faqSchema,

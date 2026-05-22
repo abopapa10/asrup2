@@ -38,6 +38,7 @@ const homeMetadata = createPageMetadata({
   description: siteConfig.seo.defaultDescription,
   path: "/",
   absoluteTitle: true,
+  ogImage: siteConfig.images.portraitClinical,
   ogImageAlt: siteConfig.seo.defaultOgImageAlt,
 });
 

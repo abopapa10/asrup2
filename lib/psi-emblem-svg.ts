@@ -8,4 +8,4 @@ export const PSI_EMBLEM_PATHS = [
 ] as const;
 
 export const PSI_BRAND_COLOR = "#42FFD6";
-export const PSI_ICON_BG = "#0B1220";
+export const PSI_ICON_BG = "#FFFFFF";
