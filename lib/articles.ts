@@ -1,4 +1,10 @@
 import {
+  trafikStresiBlocks,
+  trafikStresiFaq,
+  trafikStresiMetaDescription,
+  trafikStresiMetaTitle,
+} from "@/lib/article-content/bursa-trafik-stresi";
+import {
   gucluGorunmekBlocks,
   gucluGorunmekMetaDescription,
   gucluGorunmekMetaTitle,
@@ -28,6 +34,20 @@ import type { Article } from "@/lib/article-types";
 export type { Article, ArticleBlock } from "@/lib/article-types";
 
 export const articles: readonly Article[] = [
+  {
+    slug: "bursa-trafik-stresi",
+    image: "/images/bursa trafik.webp",
+    date: "2 Nisan 2026",
+    dateISO: "2026-04-02",
+    category: "Stres & Anksiyete",
+    title: "Bursa'da Yoğun Trafik Sorunu ve Psikolojik Etkileri",
+    metaTitle: trafikStresiMetaTitle,
+    metaDescription: trafikStresiMetaDescription,
+    excerpt:
+      "Bursa trafik stresi, anksiyete ve tükenmişlik: FSM, Mudanya Yolu ve işe gidiş yorgunluğunun psikolojik etkileri ve stres yönetimi.",
+    faq: trafikStresiFaq,
+    content: trafikStresiBlocks,
+  },
   {
     slug: "bursa-deprem-anksiyetesi",
     image: "/images/deprem.webp",

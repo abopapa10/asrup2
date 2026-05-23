@@ -35,7 +35,7 @@ export function buildArticleJsonLd(article: Article) {
     height: 675,
   });
 
-  return [
+  const schemas: Record<string, unknown>[] = [
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -84,6 +84,24 @@ export function buildArticleJsonLd(article: Article) {
       ],
     },
   ];
+
+  if (article.faq?.length) {
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      mainEntity: article.faq.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    });
+  }
+
+  return schemas;
 }
 
 export function buildServiceJsonLd(service: Service) {

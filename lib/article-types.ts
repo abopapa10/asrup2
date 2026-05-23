@@ -3,6 +3,11 @@ export type ArticleBlock =
   | { type: "h2"; text: string }
   | { type: "h3"; text: string };
 
+export type ArticleFaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type Article = {
   slug: string;
   image: string;
@@ -13,6 +18,7 @@ export type Article = {
   excerpt: string;
   metaTitle?: string;
   metaDescription?: string;
+  faq?: readonly ArticleFaqItem[];
   content: readonly ArticleBlock[];
 };
 
