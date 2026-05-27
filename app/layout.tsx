@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
-import { graphSchema } from "@/lib/structured-data";
+import { siteEntitiesGraph } from "@/lib/structured-data";
 import { createPageMetadata, rootMetadataExtras } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
@@ -40,6 +40,18 @@ const homeMetadata = createPageMetadata({
   absoluteTitle: true,
   ogImage: siteConfig.images.portraitClinical,
   ogImageAlt: siteConfig.seo.defaultOgImageAlt,
+  keywords: [
+    "Bursa psikolog",
+    "Nilüfer psikolog",
+    "Bursa terapi",
+    "Bireysel terapi",
+    "Çift terapisi",
+    "Online terapi",
+    "Anksiyete terapisi Bursa",
+    "Panik atak terapisi Bursa",
+    "Depresyon terapisi Bursa",
+    "Klinik psikolog Bursa",
+  ],
 });
 
 export const metadata: Metadata = {
@@ -49,23 +61,21 @@ export const metadata: Metadata = {
     default: siteConfig.seo.defaultTitle,
     template: siteConfig.seo.titleTemplate,
   },
-  keywords: [
-    "Bursa psikolog",
-    "Nilüfer psikolog",
-    "Bursa terapi",
-    "Bireysel terapi",
-    "Çift terapisi",
-    "Online terapi",
-    "Bursa psikolojik destek",
-  ],
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
+  referrer: "origin-when-cross-origin",
   other: {
     "geo.region": "TR-16",
     "geo.placename": "Bursa",
+    ...(siteConfig.geo
+      ? {
+          "geo.position": `${siteConfig.geo.latitude};${siteConfig.geo.longitude}`,
+          ICBM: `${siteConfig.geo.latitude}, ${siteConfig.geo.longitude}`,
+        }
+      : {}),
   },
 };
 
@@ -85,7 +95,9 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(graphSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(siteEntitiesGraph),
+          }}
         />
       </head>
       <body

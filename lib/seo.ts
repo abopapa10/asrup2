@@ -13,6 +13,12 @@ export type PageSeoInput = {
   publishedTime?: string;
   modifiedTime?: string;
   noIndex?: boolean;
+  /** Sayfa-spesifik anahtar kelimeler (semantik SEO sinyali) */
+  keywords?: readonly string[];
+  /** Article kategori bilgisi (BlogPosting metadata için) */
+  articleSection?: string;
+  /** Yazar adı (article tipinde) */
+  author?: string;
 };
 
 export function absoluteUrl(path: string): string {
@@ -35,6 +41,9 @@ export function createPageMetadata(input: PageSeoInput): Metadata {
     publishedTime,
     modifiedTime,
     noIndex = false,
+    keywords,
+    articleSection,
+    author,
   } = input;
 
   const url = absoluteUrl(path);
@@ -62,7 +71,8 @@ export function createPageMetadata(input: PageSeoInput): Metadata {
           images: ogImages,
           publishedTime,
           modifiedTime: modifiedTime ?? publishedTime,
-          authors: [siteConfig.name],
+          authors: [author ?? siteConfig.name],
+          ...(articleSection ? { section: articleSection } : {}),
         }
       : {
           title,
@@ -74,16 +84,23 @@ export function createPageMetadata(input: PageSeoInput): Metadata {
           images: ogImages,
         };
 
+  const twitterSite = siteConfig.seo.twitterSite?.trim();
+  const twitterCreator = siteConfig.seo.twitterCreator?.trim();
+
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    authors: [{ name: siteConfig.name, url: siteConfig.url }],
-    creator: siteConfig.name,
+    ...(keywords && keywords.length > 0
+      ? { keywords: [...keywords] }
+      : {}),
+    authors: [{ name: author ?? siteConfig.name, url: siteConfig.url }],
+    creator: author ?? siteConfig.name,
     publisher: siteConfig.seo.siteName,
     alternates: {
       canonical: url,
       languages: {
         "tr-TR": url,
+        "x-default": url,
       },
     },
     robots: noIndex
@@ -110,6 +127,8 @@ export function createPageMetadata(input: PageSeoInput): Metadata {
           alt: imageAlt,
         },
       ],
+      ...(twitterSite ? { site: twitterSite } : {}),
+      ...(twitterCreator ? { creator: twitterCreator } : {}),
     },
     category: "health",
   };

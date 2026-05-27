@@ -29,9 +29,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     path: `/makale/${article.slug}`,
     absoluteTitle: Boolean(article.metaTitle),
     ogImage: article.image,
-    ogImageAlt: `${article.title} — ${article.category}`,
+    ogImageAlt: article.image ? `${article.title} — ${article.category}` : undefined,
     ogType: "article",
     publishedTime: `${article.dateISO}T09:00:00+03:00`,
+    articleSection: article.category,
+    author: "Psikolog A. Alparslan Sancar",
   });
 }
 

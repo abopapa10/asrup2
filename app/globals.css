@@ -266,7 +266,8 @@
     @apply border border-ice-blue bg-white transition-all duration-500 ease-gallery;
   }
 
-  .faq-item[data-open="true"] {
+  .faq-item[data-open="true"],
+  details.faq-item[open] {
     border-color: rgba(66, 255, 214, 0.45);
     background: radial-gradient(
       ellipse 120% 90% at 0% 70%,

@@ -3,7 +3,15 @@ export type GoogleReview = {
   name: string;
   date: string;
   text: string;
+  /**
+   * Yıldız puanı. Tanımlı değilse `5` kabul edilir; `StarRating`
+   * bileşeni ve schema bu varsayımla tutarlı çalışır.
+   */
+  rating?: number;
 };
+
+/** Schema.org ve görsel star rating için varsayılan puan. */
+export const DEFAULT_REVIEW_RATING = 5;
 
 export const googleReviews: GoogleReview[] = [
   {

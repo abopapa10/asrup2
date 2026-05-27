@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
+import { seoLandingPages } from "@/lib/seo-pages";
 import { siteConfig } from "@/lib/site-config";
 import { services } from "@/lib/services";
 
@@ -28,6 +29,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
+  const seoLandingRoutes: MetadataRoute.Sitemap = seoLandingPages.map(
+    (page) => ({
+      url: `${base}${page.meta.canonicalPath}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: page.group === "hizmetler" ? 0.85 : 0.7,
+    })
+  );
+
   const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
     url: `${base}/makale/${article.slug}`,
     lastModified: new Date(article.dateISO),
@@ -35,5 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticRoutes, ...articleRoutes];
+  return [...staticRoutes, ...seoLandingRoutes, ...articleRoutes];
 }

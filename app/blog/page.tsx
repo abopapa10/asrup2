@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArticleCard } from "@/components/ArticleCard";
+import { BlogList } from "@/components/BlogList";
 import { FadeIn } from "@/components/FadeIn";
 import { JsonLdScript } from "@/components/JsonLdScript";
 import { PageShell } from "@/components/PageShell";
@@ -10,8 +10,19 @@ import { createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Uzman Makaleleri & Blog",
   description:
-    "Bursa psikolog blog: bireysel terapi, çift terapisi, online terapi, tükenmişlik, özdeğer ve ruh sağlığı üzerine uzman makaleler.",
+    "Bursa psikolog blog: kaygı, panik atak, depresyon, ilişkiler, çift terapisi, EMDR ve terapi süreçleri üzerine klinik uzman içerikler.",
   path: "/blog",
+  keywords: [
+    "Bursa psikolog blog",
+    "psikoloji makaleleri",
+    "kaygı bozukluğu",
+    "panik atak",
+    "depresyon",
+    "çift terapisi",
+    "EMDR",
+    "online terapi",
+    "ilk terapi seansı",
+  ],
 });
 
 export default function BlogPage() {
@@ -33,18 +44,12 @@ export default function BlogPage() {
               Uzman Makaleleri &amp; Blog
             </h1>
             <p className="body-lead mt-4 max-w-2xl sm:mt-6">
-              Bursa psikolog aramalarında semantik derinlik sağlayan tüm uzman
-              makalelerimiz.
+              Kaygı, panik atak, depresyon, ilişkiler ve terapi süreçleri
+              üzerine klinik uzmanlığımızı yansıtan içerikler.
             </p>
           </FadeIn>
 
-          <div className="mt-12 grid gap-6 sm:mt-16 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
-            {sorted.map((article, index) => (
-              <FadeIn key={article.slug} delay={index * 0.04}>
-                <ArticleCard article={article} />
-              </FadeIn>
-            ))}
-          </div>
+          <BlogList articles={sorted} />
         </div>
       </section>
     </PageShell>

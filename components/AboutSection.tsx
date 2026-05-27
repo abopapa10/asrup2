@@ -33,21 +33,74 @@ export function AboutSection() {
 
             <FadeIn delay={0.2} className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Ben Psikolog A. Alparslan Sancar; Bursa BTSO Sosyal Bilimler
-                Lisesi&apos;nde eğitimimi tamamladıktan sonra Hacettepe
-                Üniversitesi Psikoloji Bölümünü kazandım. Burada BDT (Bilişsel
-                Davranışçı) ağırlıklı bir eğitim aldım. Sonraki yıllarda
-                Psikodinamik kuram açısından kendimi geliştirdim.
+                Psikolog A. Alparslan Sancar olarak, yetişkin bireyler ve
+                çiftlerle psikoterapi süreçleri yürütüyorum. Klinik çalışmamda
+                temel amacım; danışanın yalnızca semptomunu değil, o semptomu
+                üreten yaşam örüntülerini de birlikte anlamlandırmak.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Mezuniyetimden sonra eğitimlerimle birlikte Bursa
-                Nilüfer&apos;deki kliniğimde psikoterapi hizmeti vermeye
-                başladım. Bu süreçte uzmanlığımı yetişkinler üzerine
-                yoğunlaştırdım; Birey Odaklı Psikoterapi Tekniğinde
-                profesyonelleştim ve şu anda da bu ekolü temsil etmekteyim.
-                İstanbul Beşiktaş&apos;taki ofisimde psikoterapi hizmeti
-                vermekteyim; yakında Bursa&apos;da da hizmet vermeye
-                başlayacağım.
+                Eğitim temelim Hacettepe Üniversitesi Psikoloji Bölümü&apos;ne
+                dayanır; süreç içinde Bilişsel Davranışçı, Psikodinamik ve
+                Birey Odaklı yaklaşımları klinik ihtiyaç doğrultusunda entegre
+                edecek şekilde geliştirdim. Bursa Nilüfer kliniğimde yüz yüze,
+                gerektiğinde online formatta sürdürülebilir terapi planları
+                oluşturuyorum.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.25} className="mt-10 space-y-5 sm:mt-12 sm:space-y-6">
+              <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-xl">
+                Çalışma Prensiplerim
+              </h3>
+              <ul className="space-y-3 text-sm leading-[1.9] text-slate-body sm:text-base">
+                <li>
+                  <span className="font-semibold text-slate-charcoal">
+                    Klinik açıklık:
+                  </span>{" "}
+                  Seans hedefleri ve süreç adımları danışanla açık biçimde
+                  konuşulur.
+                </li>
+                <li>
+                  <span className="font-semibold text-slate-charcoal">
+                    Etik sınırlar:
+                  </span>{" "}
+                  Danışan gizliliği ve mesleki etik ilkeler süreçte değişmez
+                  temeldir.
+                </li>
+                <li>
+                  <span className="font-semibold text-slate-charcoal">
+                    Kişiye özel tempo:
+                  </span>{" "}
+                  Tek bir yöntem herkese uygulanmaz; süreç danışanın hazır
+                  oluşuna göre planlanır.
+                </li>
+              </ul>
+            </FadeIn>
+
+            <FadeIn delay={0.3} className="mt-10 space-y-5 sm:mt-12 sm:space-y-6">
+              <h3 className="font-display text-lg font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-xl">
+                Terapi Süreci Nasıl İlerler?
+              </h3>
+              <ol className="space-y-3 text-sm leading-[1.9] text-slate-body sm:text-base">
+                <li>
+                  <span className="font-semibold text-slate-charcoal">1.</span>{" "}
+                  İlk görüşmede klinik değerlendirme yapılır; başvuru nedeni ve
+                  günlük yaşam etkisi netleştirilir.
+                </li>
+                <li>
+                  <span className="font-semibold text-slate-charcoal">2.</span>{" "}
+                  Seans hedefleri, sıklık ve çalışma çerçevesi birlikte
+                  belirlenir.
+                </li>
+                <li>
+                  <span className="font-semibold text-slate-charcoal">3.</span>{" "}
+                  Düzenli aralıklarla ilerleme gözden geçirilir ve plan
+                  gerektiğinde birlikte güncellenir.
+                </li>
+              </ol>
+              <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
+                Amaç; hızlı sonuç vaadi değil, danışanın yaşamında sürdürülebilir
+                ve ölçülebilir bir iyileşme hattı oluşturmaktır.
               </p>
             </FadeIn>
           </div>
