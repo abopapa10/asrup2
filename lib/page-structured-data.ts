@@ -316,3 +316,49 @@ export function buildBlogListingJsonLd() {
     },
   ];
 }
+
+// ─────────────────────────────────────────────────────────────────
+// Hub pages (/hizmetler, /lokasyon)
+// ─────────────────────────────────────────────────────────────────
+
+export function buildHubPageJsonLd(input: {
+  path: "/hizmetler" | "/lokasyon";
+  title: string;
+  description: string;
+}) {
+  const pageUrl = absoluteUrl(input.path);
+  const hubName = input.path === "/hizmetler" ? "Hizmetler" : "Lokasyonlar";
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#collection`,
+      name: input.title,
+      description: input.description,
+      url: pageUrl,
+      inLanguage: "tr-TR",
+      isPartOf: WEBSITE_REF,
+      about: PSYCHOLOGIST_REF,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: hubName,
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
+}

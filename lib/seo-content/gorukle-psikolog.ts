@@ -3,7 +3,7 @@
 export const goruklePsikolog: SeoLandingPage = {
   slug: "gorukle-psikolog",
   group: "lokasyon",
-  parent: { label: "Lokasyonlar" },
+  parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
     title: "Görükle Psikolog | Öğrenci ve Yetişkinler İçin Psikoterapi",

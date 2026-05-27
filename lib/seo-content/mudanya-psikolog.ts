@@ -3,7 +3,7 @@
 export const mudanyaPsikolog: SeoLandingPage = {
   slug: "mudanya-psikolog",
   group: "lokasyon",
-  parent: { label: "Lokasyonlar" },
+  parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
     title: "Mudanya Psikolog | Bursa'da Yüz Yüze ve Online Psikoterapi",

@@ -3,7 +3,7 @@
 export const balatPsikolog: SeoLandingPage = {
   slug: "balat-psikolog",
   group: "lokasyon",
-  parent: { label: "Lokasyonlar" },
+  parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
     title: "Balat Psikolog | Bursa Balat ve Çevresi İçin Psikoterapi",

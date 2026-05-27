@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const niluferPsikolog: SeoLandingPage = {
   slug: "nilufer-psikolog",
   group: "lokasyon",
-  parent: { label: "Lokasyonlar" },
+  parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
     title: "Nilüfer Psikolog | Bursa Nilüfer'de Psikoterapi",
@@ -154,19 +154,19 @@ export const niluferPsikolog: SeoLandingPage = {
 
   related: [
     {
-      label: "Bireysel Terapi",
-      href: "/bireysel-terapi",
-      description: "Yetişkin bireysel terapi sürecinin genel çerçevesi.",
-    },
-    {
-      label: "Çift Terapisi",
-      href: "/cift-terapisi",
-      description: "İlişki ve evlilik dinamiklerinde klinik destek.",
-    },
-    {
-      label: "Anksiyete Terapisi",
+      label: "Anksiyete Terapisi Bursa",
       href: "/hizmetler/anksiyete-terapisi-bursa",
       description: "Kaygı tabloları için yapılandırılmış klinik yaklaşım.",
+    },
+    {
+      label: "OKB Terapisi Bursa",
+      href: "/hizmetler/okb-terapisi-bursa",
+      description: "Takıntı ve kontrol döngülerinde özel çalışma alanı.",
+    },
+    {
+      label: "Panik Atak Terapisi Bursa",
+      href: "/hizmetler/panik-atak-terapisi-bursa",
+      description: "Panik döngüsü ve kaçınma davranışları için klinik destek.",
     },
   ],
 };

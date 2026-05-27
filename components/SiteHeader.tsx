@@ -7,7 +7,8 @@ import { PsiEmblem } from "@/components/PsiEmblem";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
 const navLinks = [
-  { href: "/#hizmetler", label: "Hizmetler" },
+  { href: "/hizmetler", label: "Hizmetler" },
+  { href: "/lokasyon", label: "Lokasyonlar" },
   { href: "/#yorumlar", label: "Yorumlar" },
   { href: "/blog", label: "Makaleler" },
   { href: "/#hakkimda", label: "Hakkımda" },

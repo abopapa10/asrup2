@@ -1,6 +1,7 @@
 import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import { AuthoritySection } from "@/components/AuthoritySection";
+import { ExpertiseAreasSection } from "@/components/ExpertiseAreasSection";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { GoogleReviewsCarousel } from "@/components/GoogleReviewsCarousel";
@@ -23,6 +24,7 @@ export default function HomePage() {
         <AboutSection />
         <ServicesGrid />
         <GoogleReviewsCarousel />
+        <ExpertiseAreasSection />
         <AuthoritySection />
         <ArticlesSection />
         <FaqAccordion />

@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const panikAtakTerapisiBursa: SeoLandingPage = {
   slug: "panik-atak-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Panik Atak Terapisi Bursa | Uzman Klinik Psikolog",
@@ -168,15 +168,14 @@ export const panikAtakTerapisiBursa: SeoLandingPage = {
       description: "Süreklilik gösteren kaygı tabloları için klinik çerçeve.",
     },
     {
-      label: "Bireysel Terapi",
-      href: "/bireysel-terapi",
-      description: "Yetişkin bireysel terapi sürecinin yapısı.",
+      label: "OKB Terapisi",
+      href: "/hizmetler/okb-terapisi-bursa",
+      description: "Zihinsel tekrar ve kontrol örüntülerinde ilişkili çalışma alanı.",
     },
     {
-      label: "Online Terapi",
-      href: "/online-terapi",
-      description:
-        "Şehir dışı veya seansa ulaşmakta zorlanma için online seans.",
+      label: "Osmangazi Psikolog",
+      href: "/lokasyon/osmangazi-psikolog",
+      description: "Osmangazi'den başvuran danışanlar için erişim ve süreç bilgisi.",
     },
   ],
 };

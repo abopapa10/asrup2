@@ -86,7 +86,14 @@ export function SeoLandingTemplate({ page }: SeoLandingTemplateProps) {
           />
 
           {page.related.length > 0 ? (
-            <RelatedPages items={page.related} />
+            <RelatedPages
+              heading={
+                page.group === "hizmetler"
+                  ? "İlgili Çalışma Alanları"
+                  : "İlgili Hizmet ve Sayfalar"
+              }
+              items={page.related}
+            />
           ) : null}
         </div>
       </div>

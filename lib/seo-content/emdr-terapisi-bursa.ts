@@ -3,7 +3,7 @@
 export const emdrTerapisiBursa: SeoLandingPage = {
   slug: "emdr-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "EMDR Terapisi Bursa | Travmatik Anılar İçin Klinik Destek",

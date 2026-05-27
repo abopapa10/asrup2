@@ -3,7 +3,7 @@
 export const travmaTerapisiBursa: SeoLandingPage = {
   slug: "travma-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Travma Terapisi Bursa | Travma Sonrası Psikolojik Destek",
@@ -154,9 +154,9 @@ export const travmaTerapisiBursa: SeoLandingPage = {
       description: "Travma sonrası eşlik eden panik belirtileri için destek.",
     },
     {
-      label: "Bursa'da Deprem Anksiyetesi",
-      href: "/makale/bursa-deprem-anksiyetesi",
-      description: "Travma sonrası kaygı deneyimini yerel bağlamda ele alan rehber.",
+      label: "Görükle Psikolog",
+      href: "/lokasyon/gorukle-psikolog",
+      description: "Görükle'den başvuran danışanlar için yüz yüze/online erişim yapısı.",
     },
   ],
 };

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CtaBlock } from "@/components/CtaBlock";
+import { coreLocationLinks, coreServiceLinks } from "@/lib/authority-links";
 import { siteConfig } from "@/lib/site-config";
 
 const serviceLinks = [
@@ -7,6 +8,18 @@ const serviceLinks = [
   { href: "/cift-terapisi", label: "Çift Terapisi" },
   { href: "/online-terapi", label: "Online Terapi" },
 ] as const;
+
+const footerAuthorityServices = coreServiceLinks.filter((item) =>
+  [
+    "okb-terapisi-bursa",
+    "anksiyete-terapisi-bursa",
+    "panik-atak-terapisi-bursa",
+    "emdr-terapisi-bursa",
+    "depresyon-terapisi-bursa",
+  ].includes(item.slug)
+);
+
+const footerAuthorityLocations = coreLocationLinks;
 
 export function SiteFooter() {
   return (
@@ -19,7 +32,7 @@ export function SiteFooter() {
           <CtaBlock variant="banner" />
         </div>
 
-        <div className="grid gap-10 md:grid-cols-3 lg:gap-16">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           <div>
             <p className="font-display text-base font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-lg">
               Bursa Psikolog Ahmet Alparslan Sancar
@@ -57,22 +70,55 @@ export function SiteFooter() {
             </div>
           </nav>
 
-          <address className="not-italic">
-            <p className="eyebrow mb-3 sm:mb-4">Konum</p>
-            <p className="text-sm font-medium text-slate-charcoal">
-              Nilüfer, Bursa, Türkiye
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-slate-body sm:mt-3">
-              Çok Yakında Yüz Yüze ve Online Seçeneklerle
-            </p>
-            <a
-              href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-              className="mt-4 inline-block text-sm font-medium text-slate-body hover:text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
-            >
-              {siteConfig.phoneDisplay}
-            </a>
-          </address>
+          <nav aria-label="Terapi alanları" className="space-y-3">
+            <p className="eyebrow mb-1 sm:mb-2">Terapi Alanları</p>
+            <ul className="space-y-2.5">
+              {footerAuthorityServices.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-medium text-slate-charcoal transition-colors hover:text-slate-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Hizmet bölgeleri" className="space-y-3">
+            <p className="eyebrow mb-1 sm:mb-2">Hizmet Bölgeleri</p>
+            <ul className="space-y-2.5">
+              {footerAuthorityLocations.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-medium text-slate-charcoal transition-colors hover:text-slate-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
         </div>
+
+        <address className="mt-10 not-italic border-t border-ice-blue/50 pt-8 sm:mt-12">
+          <p className="eyebrow mb-3 sm:mb-4">Konum</p>
+          <p className="text-sm font-medium text-slate-charcoal">
+            Nilüfer, Bursa, Türkiye
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-body sm:mt-3">
+            Yüz yüze ve online psikoterapi seçenekleriyle.
+          </p>
+          <a
+            href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+            className="mt-4 inline-block text-sm font-medium text-slate-body hover:text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+          >
+            {siteConfig.phoneDisplay}
+          </a>
+        </address>
 
         <div className="mt-12 border-t border-ice-blue/60 pt-8 sm:mt-14 sm:pt-10">
           <p className="text-center text-xs font-medium text-slate-body">

@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const osmangaziPsikolog: SeoLandingPage = {
   slug: "osmangazi-psikolog",
   group: "lokasyon",
-  parent: { label: "Lokasyonlar" },
+  parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
     title: "Osmangazi Psikolog | Bursa Osmangazi'den Psikoterapi",
@@ -159,14 +159,14 @@ export const osmangaziPsikolog: SeoLandingPage = {
       description: "Nilüfer kliniği ve hizmet kapsamı.",
     },
     {
-      label: "Bireysel Terapi",
-      href: "/bireysel-terapi",
-      description: "Yetişkin bireysel terapi sürecinin yapısı.",
+      label: "Anksiyete Terapisi Bursa",
+      href: "/hizmetler/anksiyete-terapisi-bursa",
+      description: "Süreklilik gösteren kaygı tabloları için yapılandırılmış destek.",
     },
     {
-      label: "Online Terapi",
-      href: "/online-terapi",
-      description: "Şehir içi ulaşım kısıtı olan danışanlar için seçenek.",
+      label: "OKB Terapisi Bursa",
+      href: "/hizmetler/okb-terapisi-bursa",
+      description: "Takıntı ve tekrar davranış örüntülerinde klinik çalışma alanı.",
     },
   ],
 };

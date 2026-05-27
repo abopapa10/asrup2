@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const depresyonTerapisiBursa: SeoLandingPage = {
   slug: "depresyon-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Depresyon Terapisi Bursa | Uzman Klinik Psikolog",
@@ -167,14 +167,14 @@ export const depresyonTerapisiBursa: SeoLandingPage = {
       description: "Eşlik eden kaygı tablolarında klinik destek.",
     },
     {
-      label: "Bireysel Terapi",
-      href: "/bireysel-terapi",
-      description: "Yetişkin bireysel terapi sürecinin yapısı.",
+      label: "Travma Terapisi",
+      href: "/hizmetler/travma-terapisi-bursa",
+      description: "Travmatik yaşam olaylarının eşlik ettiği duygudurum zorlanmaları için.",
     },
     {
-      label: "Online Terapi",
-      href: "/online-terapi",
-      description: "Yoğun yaşam temposunda esnek seans seçeneği.",
+      label: "Mudanya Psikolog",
+      href: "/lokasyon/mudanya-psikolog",
+      description: "Mudanya'dan başvuran danışanlar için yüz yüze/online planlama.",
     },
   ],
 };

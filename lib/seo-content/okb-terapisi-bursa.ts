@@ -3,7 +3,7 @@
 export const okbTerapisiBursa: SeoLandingPage = {
   slug: "okb-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "OKB Terapisi Bursa | Obsesif Kompulsif Bozukluk Desteği",

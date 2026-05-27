@@ -3,7 +3,7 @@
 export const ciftTerapisiBursaSeo: SeoLandingPage = {
   slug: "cift-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Çift Terapisi Bursa | İlişki ve Evlilik Terapisi",

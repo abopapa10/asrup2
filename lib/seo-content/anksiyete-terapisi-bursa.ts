@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const anksiyeteTerapisiBursa: SeoLandingPage = {
   slug: "anksiyete-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Anksiyete Terapisi Bursa | Uzman Klinik Psikolog",
@@ -174,9 +174,14 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
       description: "Eşlik eden duygudurum tablolarında destek seçenekleri.",
     },
     {
-      label: "Bireysel Terapi",
-      href: "/bireysel-terapi",
-      description: "Yetişkin bireysel terapi sürecinin genel çerçevesi.",
+      label: "OKB Terapisi",
+      href: "/hizmetler/okb-terapisi-bursa",
+      description: "Takıntı ve zihinsel kontrol döngülerinde bağlantılı çalışma alanı.",
+    },
+    {
+      label: "Nilüfer Psikolog",
+      href: "/lokasyon/nilufer-psikolog",
+      description: "Yüz yüze seans lokasyonu ve başvuru süreci.",
     },
   ],
 };

@@ -3,7 +3,7 @@
 export const onlineTerapiBursaSeo: SeoLandingPage = {
   slug: "online-terapi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/#hizmetler" },
+  parent: { label: "Hizmetler", href: "/hizmetler" },
 
   meta: {
     title: "Online Terapi Bursa | Güvenli ve Etik Psikoterapi",
