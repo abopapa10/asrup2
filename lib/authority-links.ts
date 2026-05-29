@@ -65,6 +65,34 @@ export const coreServiceLinks: readonly AuthorityLinkItem[] = [
   },
 ] as const;
 
+/** Terapi yaklaşımı / uzmanlık ekolü sayfaları */
+export const therapyApproachLinks: readonly AuthorityLinkItem[] = [
+  {
+    slug: "birey-odakli-psikoterapi-bursa",
+    href: "/hizmetler/birey-odakli-psikoterapi-bursa",
+    label: "Birey Odaklı Psikoterapi",
+    description:
+      "Rogers çizgisinde insancıl ekol; terapötik ilişki ve öz-yönelim odaklı klinik çerçeve.",
+    cta: "Birey odaklı yaklaşımı incele",
+  },
+  {
+    slug: "bilissel-davranisci-terapi-bursa",
+    href: "/hizmetler/bilissel-davranisci-terapi-bursa",
+    label: "BDT (Bilişsel Davranışçı Terapi)",
+    description:
+      "Beck ve Ellis geleneği; düşünce-duygu-davranış modeli ve kanıta dayalı müdahaleler.",
+    cta: "BDT sayfasını incele",
+  },
+  {
+    slug: "regresyon-terapisi-bursa",
+    href: "/hizmetler/regresyon-terapisi-bursa",
+    label: "Regresyon Terapisi",
+    description:
+      "Geçmiş deneyimlerin duygu odaklı keşfi; hazırlık, entegrasyon ve etik sınırlar içinde.",
+    cta: "Regresyon terapisini incele",
+  },
+] as const;
+
 export const coreLocationLinks: readonly AuthorityLinkItem[] = [
   {
     slug: "nilufer-psikolog",

@@ -10,6 +10,8 @@
  */
 
 import { anksiyeteTerapisiBursa } from "@/lib/seo-content/anksiyete-terapisi-bursa";
+import { bireyOdakliPsikoterapiBursa } from "@/lib/seo-content/birey-odakli-psikoterapi-bursa";
+import { bilisselDavranisciTerapiBursa } from "@/lib/seo-content/bilissel-davranisci-terapi-bursa";
 import { balatPsikolog } from "@/lib/seo-content/balat-psikolog";
 import { ciftTerapisiBursaSeo } from "@/lib/seo-content/cift-terapisi-bursa-seo";
 import { depresyonTerapisiBursa } from "@/lib/seo-content/depresyon-terapisi-bursa";
@@ -21,6 +23,7 @@ import { okbTerapisiBursa } from "@/lib/seo-content/okb-terapisi-bursa";
 import { onlineTerapiBursaSeo } from "@/lib/seo-content/online-terapi-bursa-seo";
 import { osmangaziPsikolog } from "@/lib/seo-content/osmangazi-psikolog";
 import { panikAtakTerapisiBursa } from "@/lib/seo-content/panik-atak-terapisi-bursa";
+import { regresyonTerapisiBursa } from "@/lib/seo-content/regresyon-terapisi-bursa";
 import { travmaTerapisiBursa } from "@/lib/seo-content/travma-terapisi-bursa";
 
 export type SeoCrumbLink = {
@@ -66,10 +69,18 @@ export type SeoTrustSection = {
   pillars: readonly { label: string; title: string; body: string }[];
 };
 
+/** Akademik kaynakça — uzun form uzmanlık sayfaları için. */
+export type SeoReferencesSection = {
+  kind: "references";
+  heading?: string;
+  items: readonly string[];
+};
+
 export type SeoSection =
   | SeoNarrativeSection
   | SeoSymptomsSection
-  | SeoTrustSection;
+  | SeoTrustSection
+  | SeoReferencesSection;
 
 export type SeoLandingPage = {
   slug: string;
@@ -121,6 +132,9 @@ const pages: readonly SeoLandingPage[] = [
   ciftTerapisiBursaSeo,
   onlineTerapiBursaSeo,
   travmaTerapisiBursa,
+  bireyOdakliPsikoterapiBursa,
+  bilisselDavranisciTerapiBursa,
+  regresyonTerapisiBursa,
   niluferPsikolog,
   osmangaziPsikolog,
   mudanyaPsikolog,

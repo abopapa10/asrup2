@@ -214,6 +214,60 @@
     @apply flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 pt-1 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-6 md:gap-6 [&::-webkit-scrollbar]:hidden;
   }
 
+  .expertise-track {
+    @apply flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-2 pt-1 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-5 [&::-webkit-scrollbar]:hidden;
+  }
+
+  .expertise-card {
+    @apply editorial-card w-[min(82vw,17.5rem)] shrink-0 snap-start p-5 transition-shadow duration-500 ease-gallery hover:shadow-editorial-hover sm:w-[18.5rem] sm:p-6;
+  }
+
+  .therapy-process-card {
+    @apply rounded-xl border border-ice-blue bg-white p-6 shadow-editorial sm:p-7;
+  }
+
+  .therapy-process-card-accent {
+    @apply pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-soft-sky/40 blur-3xl;
+  }
+
+  .therapy-process-icon-wrap {
+    @apply flex h-14 w-14 items-center justify-center rounded-2xl border border-ice-blue bg-gradient-to-br from-soft-sky/50 to-white text-slate-charcoal;
+  }
+
+  .therapy-process-step {
+    @apply text-[0.6875rem] font-semibold uppercase tracking-[0.16em] text-slate-body/70;
+  }
+
+  .therapy-process-pill {
+    @apply flex items-center gap-3 rounded-lg border border-ice-blue/80 bg-mesh-sky px-4 py-3 text-sm leading-snug text-slate-body;
+  }
+
+  .therapy-process-split {
+    @apply rounded-lg border p-5;
+  }
+
+  .therapy-process-split-fast {
+    border-color: rgba(66, 255, 214, 0.35);
+    background: radial-gradient(
+      ellipse 90% 80% at 0% 0%,
+      rgba(201, 247, 255, 0.35) 0%,
+      #ffffff 55%
+    );
+  }
+
+  .therapy-process-split-careful {
+    border-color: rgba(191, 235, 242, 0.9);
+    background: radial-gradient(
+      ellipse 90% 80% at 100% 100%,
+      rgba(255, 251, 229, 0.5) 0%,
+      #ffffff 55%
+    );
+  }
+
+  .therapy-process-tag {
+    @apply rounded-full border border-ice-blue bg-white px-3 py-1 text-xs font-medium text-slate-charcoal;
+  }
+
   .reviews-scroll-track {
     @apply h-1 w-full overflow-hidden rounded-full bg-ice-blue/70;
   }

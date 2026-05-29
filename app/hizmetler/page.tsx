@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AuthorityLinkGrid } from "@/components/AuthorityLinkGrid";
 import { JsonLdScript } from "@/components/JsonLdScript";
 import { PageShell } from "@/components/PageShell";
-import { coreServiceLinks } from "@/lib/authority-links";
+import { coreServiceLinks, therapyApproachLinks } from "@/lib/authority-links";
 import { buildHubPageJsonLd } from "@/lib/page-structured-data";
 import { createPageMetadata } from "@/lib/seo";
 
@@ -20,6 +20,9 @@ export const metadata: Metadata = createPageMetadata({
     "depresyon terapisi Bursa",
     "çift terapisi Bursa",
     "online terapi Bursa",
+    "birey odaklı psikoterapi Bursa",
+    "BDT Bursa",
+    "regresyon terapisi Bursa",
   ],
 });
 
@@ -44,6 +47,16 @@ export default function HizmetlerHubPage() {
             compact
             badgeLabel="Hizmet"
           />
+          <div className="mt-20 border-t border-ice-blue/50 pt-16 sm:mt-24 sm:pt-20">
+            <AuthorityLinkGrid
+              eyebrow="Terapi Yaklaşımları"
+              title="Uzmanlık Ekolleri ve Yöntemler"
+              lead="Birey odaklı psikoterapi, BDT ve regresyon terapisi hakkında akademik düzeyde, okunabilir uzmanlık sayfaları."
+              items={therapyApproachLinks}
+              compact
+              badgeLabel="Uzmanlık"
+            />
+          </div>
         </div>
       </article>
     </PageShell>

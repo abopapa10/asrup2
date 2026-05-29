@@ -6,6 +6,7 @@ import { SeoCTA } from "@/components/seo/SeoCTA";
 import { SeoFaq } from "@/components/seo/SeoFaq";
 import { SeoHero } from "@/components/seo/SeoHero";
 import { SeoSymptomList } from "@/components/seo/SeoSymptomList";
+import { SeoReferences } from "@/components/seo/SeoReferences";
 import { SeoTrustPillars } from "@/components/seo/SeoTrustPillars";
 import { buildSeoLandingJsonLd } from "@/lib/page-structured-data";
 import type { SeoLandingPage, SeoSection } from "@/lib/seo-pages";
@@ -40,6 +41,14 @@ function renderSection(section: SeoSection, index: number) {
           heading={section.heading}
           intro={section.intro}
           pillars={section.pillars}
+        />
+      );
+    case "references":
+      return (
+        <SeoReferences
+          key={`section-${index}`}
+          heading={section.heading}
+          items={section.items}
         />
       );
   }

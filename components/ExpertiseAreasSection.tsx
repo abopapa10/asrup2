@@ -1,21 +1,20 @@
 import Link from "next/link";
-import { AuthorityLinkGrid } from "@/components/AuthorityLinkGrid";
+import { AuthorityLinkCarousel } from "@/components/AuthorityLinkCarousel";
 import { FadeIn } from "@/components/FadeIn";
-import { coreServiceLinks } from "@/lib/authority-links";
+import { coreServiceLinks, therapyApproachLinks } from "@/lib/authority-links";
 
 export function ExpertiseAreasSection() {
   return (
-    <section className="border-t border-ice-blue/50 bg-white py-20 sm:py-32 lg:py-36">
+    <section className="border-t border-ice-blue/50 bg-white py-14 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
-        <AuthorityLinkGrid
+        <AuthorityLinkCarousel
           eyebrow="Çalışma Alanları"
           title="Uzmanlık Alanları"
-          lead="Anksiyete, panik atak, OKB, travma ve ilişki dinamiklerinde klinik çalışma alanlarımızı tek bakışta inceleyebilirsiniz."
-          items={coreServiceLinks}
-          compact
+          lead="Kartları yatay kaydırarak tüm uzmanlık alanlarını inceleyebilirsiniz."
+          items={[...coreServiceLinks, ...therapyApproachLinks]}
           badgeLabel="Uzmanlık"
         />
-        <FadeIn className="mt-10 flex justify-center sm:mt-12">
+        <FadeIn className="mt-8 flex justify-center sm:mt-10">
           <Link href="/hizmetler" className="link-editorial text-base font-semibold">
             Tüm hizmetler hub sayfasına git
           </Link>

@@ -53,9 +53,10 @@ export function AuthoritySection() {
           </blockquote>
 
           <p className="body-lead mt-8 sm:mt-10">
-            İstanbul&apos;daki yoğun klinik pratikten Bursa Nilüfer&apos;e taşınan
-            deneyim; aynı ölçüde danışan gizliliği, etik ilkeler ve bilimsel
-            disiplinle sürdürülür.
+            Bursa&apos;da başlayan klinik deneyim, İstanbul Beşiktaş&apos;taki
+            güncel pratikle sürdürülür; yakında Bursa&apos;da da aynı ölçüde
+            danışan gizliliği, etik ilkeler ve bilimsel disiplinle hizmet
+            verilecektir.
           </p>
 
           <ul className="mt-10 space-y-8 sm:mt-12 sm:space-y-10">

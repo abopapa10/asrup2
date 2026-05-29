@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { CtaBlock } from "@/components/CtaBlock";
-import { coreLocationLinks, coreServiceLinks } from "@/lib/authority-links";
+import {
+  coreLocationLinks,
+  coreServiceLinks,
+  therapyApproachLinks,
+} from "@/lib/authority-links";
 import { siteConfig } from "@/lib/site-config";
 
 const serviceLinks = [
@@ -74,6 +78,19 @@ export function SiteFooter() {
             <p className="eyebrow mb-1 sm:mb-2">Terapi Alanları</p>
             <ul className="space-y-2.5">
               {footerAuthorityServices.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-medium text-slate-charcoal transition-colors hover:text-slate-body focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="eyebrow mb-2 mt-6 sm:mt-8">Terapi Yaklaşımları</p>
+            <ul className="space-y-2.5">
+              {therapyApproachLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
