@@ -2,46 +2,45 @@ import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
 import { psychologicalTests, PSYCHOLOGICAL_TESTS_HUB } from "@/lib/psychological-tests";
 import { seoLandingPages } from "@/lib/seo-pages";
-import { siteConfig } from "@/lib/site-config";
+import { absoluteUrl } from "@/lib/seo";
 import { services } from "@/lib/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = siteConfig.url;
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
-      url: base,
+      url: absoluteUrl("/"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${base}/blog`,
+      url: absoluteUrl("/blog"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.85,
     },
     {
-      url: `${base}/hizmetler`,
+      url: absoluteUrl("/hizmetler"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${base}/lokasyon`,
+      url: absoluteUrl("/lokasyon"),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${base}${PSYCHOLOGICAL_TESTS_HUB.path}`,
+      url: absoluteUrl(PSYCHOLOGICAL_TESTS_HUB.path),
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.88,
     },
     ...services.map((service) => ({
-      url: `${base}/${service.slug}`,
+      url: absoluteUrl(`/${service.slug}`),
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.9,
@@ -50,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const seoLandingRoutes: MetadataRoute.Sitemap = seoLandingPages.map(
     (page) => ({
-      url: `${base}${page.meta.canonicalPath}`,
+      url: absoluteUrl(page.meta.canonicalPath),
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: page.group === "hizmetler" ? 0.85 : 0.7,
@@ -58,14 +57,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const testRoutes: MetadataRoute.Sitemap = psychologicalTests.map((test) => ({
-    url: `${base}${test.href}`,
+    url: absoluteUrl(test.href),
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: test.status === "live" ? 0.82 : 0.7,
   }));
 
   const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
-    url: `${base}/makale/${article.slug}`,
+    url: absoluteUrl(`/makale/${article.slug}`),
     lastModified: new Date(article.dateISO),
     changeFrequency: "monthly" as const,
     priority: 0.75,

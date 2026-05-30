@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/lib/site-config";
+import { absoluteUrl } from "@/lib/seo";
+import { CANONICAL_SITE_ORIGIN } from "@/lib/site-config";
 
 /**
  * robots.txt
@@ -14,7 +15,7 @@ import { siteConfig } from "@/lib/site-config";
  * istenirse ilgili user-agent'lar `disallow: "/"` ile kapatılabilir.
  */
 export default function robots(): MetadataRoute.Robots {
-  const sitemap = `${siteConfig.url}/sitemap.xml`;
+  const sitemap = absoluteUrl("/sitemap.xml");
 
   return {
     rules: [
@@ -29,7 +30,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    host: siteConfig.url,
+    host: CANONICAL_SITE_ORIGIN,
     sitemap,
   };
 }

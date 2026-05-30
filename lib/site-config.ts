@@ -6,6 +6,12 @@
  * Yapısal değişiklikler tüm SEO çıktılarını etkiler; ölçülü düzenlenmelidir.
  */
 
+/**
+ * Tek kaynak canonical origin — Google Search Console non-www mülkü.
+ * Tüm canonical, sitemap, JSON-LD ve OG URL'leri buradan türetilir.
+ */
+export const CANONICAL_SITE_ORIGIN = "https://bursapsikologsancar.com" as const;
+
 export const siteConfig = {
   name: "Psikolog A. Alparslan Sancar",
   legalName: "Ahmet Alparslan Sancar",
@@ -13,7 +19,7 @@ export const siteConfig = {
   phoneDisplay: "0551 849 02 36",
   whatsapp: "https://wa.me/905518490236",
   email: "iletisim@bursapsikologsancar.com",
-  url: "https://bursapsikologsancar.com",
+  url: CANONICAL_SITE_ORIGIN,
 
   /**
    * Klinik konum bilgisi (NAP).

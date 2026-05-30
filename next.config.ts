@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { CANONICAL_SITE_ORIGIN } from "./lib/site-config";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -11,6 +12,16 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     optimizePackageImports: ["lucide-react"],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.bursapsikologsancar.com" }],
+        destination: `${CANONICAL_SITE_ORIGIN}/:path*`,
+        permanent: true,
+      },
+    ];
   },
 };
 

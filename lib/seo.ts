@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/lib/site-config";
+import { CANONICAL_SITE_ORIGIN, siteConfig } from "@/lib/site-config";
 
 export type PageSeoInput = {
   title: string;
@@ -21,12 +21,35 @@ export type PageSeoInput = {
   author?: string;
 };
 
+const CANONICAL_HOST = new URL(CANONICAL_SITE_ORIGIN).hostname;
+
+/** www veya http varyantlarını Search Console non-www HTTPS canonical'a çevirir */
+export function normalizeCanonicalUrl(href: string): string {
+  try {
+    const url = new URL(href);
+    if (url.hostname.startsWith("www.")) {
+      url.hostname = url.hostname.slice(4);
+    }
+    if (
+      url.hostname === CANONICAL_HOST ||
+      url.hostname.endsWith(`.${CANONICAL_HOST}`)
+    ) {
+      url.protocol = "https:";
+    }
+    return url.href;
+  } catch {
+    return href;
+  }
+}
+
 export function absoluteUrl(path: string): string {
   if (path.startsWith("http://") || path.startsWith("https://")) {
-    return path;
+    return normalizeCanonicalUrl(path);
   }
   const normalized = path.startsWith("/") ? path : `/${path}`;
-  return new URL(normalized, siteConfig.url).href;
+  return normalizeCanonicalUrl(
+    new URL(normalized, CANONICAL_SITE_ORIGIN).href
+  );
 }
 
 export function createPageMetadata(input: PageSeoInput): Metadata {
@@ -142,7 +165,7 @@ export function rootMetadataExtras(): Pick<
     process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 
   return {
-    metadataBase: new URL(siteConfig.url),
+    metadataBase: new URL(CANONICAL_SITE_ORIGIN),
     applicationName: siteConfig.seo.shortName,
     icons: {
       icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
