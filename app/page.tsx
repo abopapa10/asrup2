@@ -8,6 +8,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { GoogleReviewsCarousel } from "@/components/GoogleReviewsCarousel";
 import { AboutSection } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
+import { PersonalityTestLazy } from "@/components/PersonalityTestLazy";
 import { JsonLdScript } from "@/components/JsonLdScript";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -25,6 +26,11 @@ export default function HomePage() {
         <AboutSection />
         <GoogleReviewsCarousel />
         <ServicesGrid />
+        <PersonalityTestLazy />
+        <div
+          className="h-10 bg-white sm:h-14 lg:h-20"
+          aria-hidden
+        />
         <TherapyProcessSection />
         <ExpertiseAreasSection />
         <AuthoritySection />

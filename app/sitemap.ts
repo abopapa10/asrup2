@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
+import { psychologicalTests, PSYCHOLOGICAL_TESTS_HUB } from "@/lib/psychological-tests";
 import { seoLandingPages } from "@/lib/seo-pages";
 import { siteConfig } from "@/lib/site-config";
 import { services } from "@/lib/services";
@@ -33,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    {
+      url: `${base}${PSYCHOLOGICAL_TESTS_HUB.path}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.88,
+    },
     ...services.map((service) => ({
       url: `${base}/${service.slug}`,
       lastModified: now,
@@ -50,6 +57,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
+  const testRoutes: MetadataRoute.Sitemap = psychologicalTests.map((test) => ({
+    url: `${base}${test.href}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: test.status === "live" ? 0.82 : 0.7,
+  }));
+
   const articleRoutes: MetadataRoute.Sitemap = articles.map((article) => ({
     url: `${base}/makale/${article.slug}`,
     lastModified: new Date(article.dateISO),
@@ -57,5 +71,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticRoutes, ...seoLandingRoutes, ...articleRoutes];
+  return [...staticRoutes, ...seoLandingRoutes, ...testRoutes, ...articleRoutes];
 }

@@ -9,6 +9,7 @@
  */
 
 import type { Article } from "@/lib/article-types";
+import type { PsychologicalTestEntry } from "@/lib/psychological-tests";
 import type { SeoLandingPage } from "@/lib/seo-pages";
 import type { Service } from "@/lib/services";
 import { schemaImageObject } from "@/lib/schema-images";
@@ -322,12 +323,17 @@ export function buildBlogListingJsonLd() {
 // ─────────────────────────────────────────────────────────────────
 
 export function buildHubPageJsonLd(input: {
-  path: "/hizmetler" | "/lokasyon";
+  path: "/hizmetler" | "/lokasyon" | "/testler";
   title: string;
   description: string;
 }) {
   const pageUrl = absoluteUrl(input.path);
-  const hubName = input.path === "/hizmetler" ? "Hizmetler" : "Lokasyonlar";
+  const hubName =
+    input.path === "/hizmetler"
+      ? "Hizmetler"
+      : input.path === "/lokasyon"
+        ? "Lokasyonlar"
+        : "Psikolojik Testler";
 
   return [
     {
@@ -356,6 +362,53 @@ export function buildHubPageJsonLd(input: {
           "@type": "ListItem",
           position: 2,
           name: hubName,
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Psikolojik test sayfaları (/testler/[slug])
+// ─────────────────────────────────────────────────────────────────
+
+export function buildTestPageJsonLd(test: PsychologicalTestEntry) {
+  const pageUrl = absoluteUrl(test.href);
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      name: test.metaTitle,
+      description: test.metaDescription,
+      url: pageUrl,
+      inLanguage: "tr-TR",
+      isPartOf: WEBSITE_REF,
+      about: PSYCHOLOGIST_REF,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Psikolojik Testler",
+          item: absoluteUrl("/testler"),
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: test.title,
           item: pageUrl,
         },
       ],
