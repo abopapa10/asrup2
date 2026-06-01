@@ -49,12 +49,12 @@ export function AboutSection() {
       <div className="mx-auto max-w-editorial px-5 py-16 sm:px-6 sm:py-24 lg:px-12 lg:py-28">
         <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
           <div>
-            <FadeIn>
+            <div>
               <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Hakkımda</p>
               <h2 id="about-heading" className="heading-section">
                 Psikolog Ahmet Alparslan Sancar
               </h2>
-            </FadeIn>
+            </div>
 
             <div className="mx-auto mt-8 w-full max-w-[20rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
               <PortraitFrame
@@ -62,6 +62,7 @@ export function AboutSection() {
                 alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
                 variant="clinical"
                 align="left"
+                priority
               />
             </div>
 

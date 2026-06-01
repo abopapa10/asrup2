@@ -1,5 +1,4 @@
 import { CtaBlock } from "@/components/CtaBlock";
-import { FadeIn } from "@/components/FadeIn";
 
 type SeoHeroProps = {
   eyebrow: string;
@@ -10,6 +9,7 @@ type SeoHeroProps = {
   showCta?: boolean;
 };
 
+/** SEO landing hero — sunucu render, LCP için animasyon yok */
 export function SeoHero({
   eyebrow,
   title,
@@ -18,7 +18,7 @@ export function SeoHero({
   showCta = false,
 }: SeoHeroProps) {
   return (
-    <FadeIn as="article">
+    <article>
       <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">{eyebrow}</p>
       <h1 className="heading-section max-w-3xl">{title}</h1>
       <p className="body-lead mt-6 max-w-2xl">{lead}</p>
@@ -33,6 +33,6 @@ export function SeoHero({
           <CtaBlock variant="inline" />
         </div>
       ) : null}
-    </FadeIn>
+    </article>
   );
 }

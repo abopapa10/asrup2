@@ -5,6 +5,11 @@ type FadeInProps = {
   className?: string;
   delay?: number;
   as?: "div" | "section" | "article";
+  /**
+   * Above-the-fold / LCP alanları için animasyonu kapatır.
+   * Varsayılan false — alt bölümlerde kademeli giriş korunur.
+   */
+  instant?: boolean;
 };
 
 export function FadeIn({
@@ -12,12 +17,19 @@ export function FadeIn({
   className = "",
   delay = 0,
   as = "div",
+  instant = false,
 }: FadeInProps) {
+  const classes = instant
+    ? className.trim()
+    : `fade-in ${className}`.trim();
+
   return createElement(
     as,
     {
-      className: `fade-in ${className}`.trim(),
-      style: { animationDelay: `${delay}s` } as CSSProperties,
+      className: classes || undefined,
+      style: instant
+        ? undefined
+        : ({ animationDelay: `${delay}s` } as CSSProperties),
     },
     children
   );

@@ -1,8 +1,11 @@
 import { Phone } from "lucide-react";
-import { FadeIn } from "@/components/FadeIn";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { siteConfig } from "@/lib/site-config";
 
+/**
+ * Sunucu bileşeni — hero metni ve CTA ilk HTML yanıtında görünür (LCP için).
+ * Giriş animasyonu kullanılmaz; opacity:0 gecikmesi Lighthouse NO_LCP üretir.
+ */
 export function HeroSection() {
   return (
     <section
@@ -19,7 +22,7 @@ export function HeroSection() {
       />
 
       <div className="mx-auto max-w-editorial px-5 py-16 sm:px-6 sm:py-24 lg:px-12 lg:py-32 xl:py-36">
-        <FadeIn as="article" className="max-w-3xl">
+        <article className="max-w-3xl">
           <p className="eyebrow eyebrow-cta mb-5 sm:mb-7">Bursa · Nilüfer · Psikolog</p>
 
           <h1
@@ -39,12 +42,9 @@ export function HeroSection() {
             ardından, çok yakında Bursa Nilüfer&apos;deki modern ofisimizde
             danışanlarımızı kabul etmeye başlayacağız.
           </p>
-        </FadeIn>
+        </article>
 
-        <FadeIn
-          delay={0.1}
-          className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4"
-        >
+        <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
           <a
             href={siteConfig.whatsapp}
             target="_blank"
@@ -61,7 +61,7 @@ export function HeroSection() {
             <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
             Telefon
           </a>
-        </FadeIn>
+        </div>
       </div>
     </section>
   );

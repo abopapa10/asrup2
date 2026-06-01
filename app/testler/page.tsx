@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { FadeIn } from "@/components/FadeIn";
 import { JsonLdScript } from "@/components/JsonLdScript";
 import { PageShell } from "@/components/PageShell";
 import { TestHubCard } from "@/components/tests/TestHubCard";
@@ -40,15 +39,13 @@ export default function TestlerHubPage() {
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestHubHero />
 
-          <FadeIn className="mt-12 sm:mt-16 lg:mt-20">
-            <ul className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:gap-8">
+          <ul className="mt-12 grid gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:mt-20 lg:grid-cols-3 lg:gap-8">
               {psychologicalTests.map((test) => (
                 <li key={test.slug} className="flex">
                   <TestHubCard test={test} />
                 </li>
               ))}
-            </ul>
-          </FadeIn>
+          </ul>
 
           <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-slate-body/85 sm:mt-16">
             Test sonuçları yalnızca cihazınızda üretilir; sunucuya gönderilmez.

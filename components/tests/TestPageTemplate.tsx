@@ -14,7 +14,7 @@ export function TestPageTemplate({ test }: TestPageTemplateProps) {
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
         <TestPageBreadcrumb testTitle={test.title} />
 
-        <FadeIn className="mx-auto max-w-xl text-center">
+        <FadeIn instant className="mx-auto max-w-xl text-center">
           <p className="eyebrow eyebrow-cta mb-4 inline-block sm:mb-5">
             Psikolojik test
           </p>

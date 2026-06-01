@@ -11,6 +11,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { PersonalityTestLazy } from "@/components/PersonalityTestLazy";
 import { JsonLdScript } from "@/components/JsonLdScript";
 import { ServicesGrid } from "@/components/ServicesGrid";
+import { FooterSeoAccordion } from "@/components/FooterSeoAccordion";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { buildHomeGraph } from "@/lib/structured-data";
@@ -37,6 +38,7 @@ export default function HomePage() {
         <ArticlesSection />
         <FaqAccordion />
       </main>
+      <FooterSeoAccordion />
       <SiteFooter />
       <FloatingWhatsApp />
     </>

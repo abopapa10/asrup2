@@ -137,7 +137,7 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
   return (
     <article className="border-t border-ice-blue/40 bg-mesh-blue py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:max-w-3xl lg:px-12">
-        <FadeIn>
+        <FadeIn instant>
           <nav
             aria-label="Breadcrumb"
             className="mb-6 text-sm text-slate-body sm:mb-8"
@@ -171,7 +171,7 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
         </FadeIn>
 
         {article.image ? (
-          <FadeIn>
+          <FadeIn instant>
             <div className="mt-10 overflow-hidden border border-ice-blue sm:mt-12">
               <Image
                 src={article.image}

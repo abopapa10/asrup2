@@ -1,4 +1,5 @@
 import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { FooterSeoAccordion } from "@/components/FooterSeoAccordion";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -13,6 +14,7 @@ export function PageShell({ children }: PageShellProps) {
       <AnnouncementBar />
       <SiteHeader />
       <main>{children}</main>
+      <FooterSeoAccordion />
       <SiteFooter />
       <FloatingWhatsApp />
     </>

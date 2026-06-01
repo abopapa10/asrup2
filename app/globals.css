@@ -25,8 +25,9 @@
 }
 
 @layer components {
+  /* forwards only — "both" ilk karede opacity:0 yapar ve mobilde NO_LCP tetikler */
   .fade-in {
-    animation: fade-in-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: fade-in-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 
   .credential-reveal {
@@ -347,6 +348,50 @@
 
   .accordion-panel-inner {
     overflow: hidden;
+  }
+
+  .footer-seo-item {
+    @apply border border-ice-blue bg-white transition-[border-color,box-shadow,background] duration-500 ease-gallery;
+  }
+
+  .footer-seo-item[open] {
+    border-color: rgba(66, 255, 214, 0.4);
+    background: radial-gradient(
+      ellipse 120% 90% at 0% 70%,
+      rgba(201, 247, 255, 0.22) 0%,
+      #ffffff 28%
+    );
+    box-shadow: 0 8px 28px -14px rgba(66, 255, 214, 0.22);
+  }
+
+  .footer-seo-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition:
+      grid-template-rows 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .footer-seo-item[open] .footer-seo-panel {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .footer-seo-panel-inner {
+    overflow: hidden;
+    border-top: 1px solid rgba(191, 235, 242, 0.85);
+    padding-top: 0.25rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .footer-seo-panel {
+      transition: none;
+    }
+
+    .footer-seo-item[open] .footer-seo-panel {
+      opacity: 1;
+    }
   }
 
   .article-image {

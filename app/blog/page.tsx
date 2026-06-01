@@ -38,7 +38,7 @@ export default function BlogPage() {
         className="border-t border-ice-blue/60 bg-mesh-blue py-16 sm:py-24 lg:py-32"
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
-          <FadeIn>
+          <FadeIn instant>
             <p className="eyebrow eyebrow-cta mb-4">Blog</p>
             <h1 id="blog-heading" className="heading-section max-w-3xl">
               Uzman Makaleleri &amp; Blog

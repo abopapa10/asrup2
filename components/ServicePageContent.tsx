@@ -14,7 +14,7 @@ export function ServicePageContent({ service }: ServicePageContentProps) {
     <article className="border-t border-ice-blue/40 bg-mesh-sky py-16 sm:py-24 lg:py-32">
       <JsonLdScript data={buildServiceJsonLd(service)} />
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
-        <FadeIn>
+        <FadeIn instant>
           <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-body">
             <Link href="/" className="link-editorial">
               Ana Sayfa
