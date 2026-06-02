@@ -1,3 +1,4 @@
+import { ArticleTable } from "@/components/ArticleTable";
 import { ArticleTOC } from "@/components/ArticleTOC";
 import { FadeIn } from "@/components/FadeIn";
 import { renderInlineMarkup } from "@/components/InlineMarkup";
@@ -51,6 +52,16 @@ function TestArticleBlock({ block }: { block: ArticleBlock }) {
           {renderInlineMarkup(block.text)}
         </p>
       </aside>
+    );
+  }
+
+  if (block.type === "table") {
+    return (
+      <ArticleTable
+        caption={block.caption}
+        headers={block.headers}
+        rows={block.rows}
+      />
     );
   }
 

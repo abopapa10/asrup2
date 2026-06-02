@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArticleFaqList } from "@/components/ArticleFaqList";
 import { ArticleRelatedArticles } from "@/components/ArticleRelatedArticles";
 import { ArticleRelatedServices } from "@/components/ArticleRelatedServices";
+import { ArticleTable } from "@/components/ArticleTable";
 import { ArticleTOC } from "@/components/ArticleTOC";
 import { CtaBlock } from "@/components/CtaBlock";
 import { FadeIn } from "@/components/FadeIn";
@@ -66,6 +67,16 @@ function ArticleBlockView({ block }: { block: ArticleBlock }) {
           {renderInlineMarkup(block.text)}
         </p>
       </aside>
+    );
+  }
+
+  if (block.type === "table") {
+    return (
+      <ArticleTable
+        caption={block.caption}
+        headers={block.headers}
+        rows={block.rows}
+      />
     );
   }
 

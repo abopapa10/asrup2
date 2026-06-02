@@ -16,6 +16,31 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/sinav-kaygisi-nedir",
+        destination: "/makale/sinav-kaygisi-nedir",
+        permanent: true,
+      },
+      {
+        source: "/toksik-ilişki-nedir",
+        destination: "/makale/toksik-iliski-nedir",
+        permanent: true,
+      },
+      {
+        source: "/toksik-iliski-nedir",
+        destination: "/makale/toksik-iliski-nedir",
+        permanent: true,
+      },
+      {
+        source: "/manipule-nedir-psikolojik-manipulasyon",
+        destination: "/makale/manipule-nedir-psikolojik-manipulasyon",
+        permanent: true,
+      },
+      {
+        source: "/manipule-nedir",
+        destination: "/makale/manipule-nedir-psikolojik-manipulasyon",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.bursapsikologsancar.com" }],
         destination: `${CANONICAL_SITE_ORIGIN}/:path*`,

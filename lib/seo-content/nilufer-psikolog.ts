@@ -6,24 +6,26 @@ export const niluferPsikolog: SeoLandingPage = {
   parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
-    title: "Nilüfer Psikolog | Bursa Nilüfer'de Psikoterapi",
+    title: "Nilüfer Psikolog | Bursa Uzman Klinik Psikolog",
     description:
-      "Bursa Nilüfer'de bireysel terapi, çift terapisi ve online terapi seansları. Erişilebilir konum, sakin klinik ortam ve etik çerçeve içinde yürütülen psikoterapi süreci.",
+      "Bursa Nilüfer psikolog: bireysel terapi, çift terapisi, EMDR ve anksiyete desteği. Nilüfer psikolog randevu için WhatsApp ile aynı gün yanıt — uzman klinik psikolog.",
     canonicalPath: "/lokasyon/nilufer-psikolog",
+    ogImageAlt: "Nilüfer psikolog Bursa klinik terapi — uzman klinik psikolog",
     keywords: [
-      "Nilüfer psikolog",
-      "Bursa Nilüfer psikolog",
-      "Nilüfer psikoterapi",
-      "Bursa psikolog",
-      "bireysel terapi Nilüfer",
-      "çift terapisi Bursa",
-      "klinik psikolog Nilüfer",
+      "nilüfer psikolog",
+      "nilüfer psikolog tavsiye",
+      "bursa nilüfer psikolog",
+      "nilüfer klinik psikolog",
+      "nilüfer psikolog ücretleri",
+      "nilüfer psikolog randevu",
+      "emdr terapisi bursa nilüfer",
+      "çift terapisi nilüfer",
     ],
   },
 
   hero: {
-    eyebrow: "Lokasyon · Bursa",
-    h1: "Nilüfer'de Psikolog & Psikoterapi",
+    eyebrow: "Bursa · Nilüfer · Klinik Psikolog",
+    h1: "Nilüfer Psikolog | Bursa Nilüfer'de Uzman Klinik Psikolog",
     lead: "Bursa Nilüfer'de yetişkin bireyler ve çiftler için psikoterapi seansları. Erişilebilir bir konum, sakin bir klinik ortam ve mesleki etik çerçeveye bağlı bir süreç.",
     intro:
       "Yüz yüze seanslar Nilüfer kliniğimizde; online seçenek ise aynı klinik standart ve gizlilik çerçevesinde yürütülmektedir.",

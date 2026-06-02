@@ -86,6 +86,27 @@ import {
   bursaPsikologFiyatlariMetaDescription,
   bursaPsikologFiyatlariMetaTitle,
 } from "@/lib/article-content/bursa-psikolog-fiyatlari";
+import {
+  sinavKaygisiNedirBlocks,
+  sinavKaygisiNedirExcerpt,
+  sinavKaygisiNedirFaq,
+  sinavKaygisiNedirMetaDescription,
+  sinavKaygisiNedirMetaTitle,
+} from "@/lib/article-content/sinav-kaygisi-nedir";
+import {
+  manipuleNedirBlocks,
+  manipuleNedirExcerpt,
+  manipuleNedirFaq,
+  manipuleNedirMetaDescription,
+  manipuleNedirMetaTitle,
+} from "@/lib/article-content/manipule-nedir-psikolojik-manipulasyon";
+import {
+  toksikIliskiNedirBlocks,
+  toksikIliskiNedirExcerpt,
+  toksikIliskiNedirFaq,
+  toksikIliskiNedirMetaDescription,
+  toksikIliskiNedirMetaTitle,
+} from "@/lib/article-content/toksik-iliski-nedir";
 
 import type { Article } from "@/lib/article-types";
 import type { ArticleCategory } from "@/lib/article-categories";
@@ -103,6 +124,93 @@ export const articles: readonly Article[] = [
   // ────────────────────────────────────────────────────────────────
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
+  {
+    slug: "manipule-nedir-psikolojik-manipulasyon",
+    date: "29 Mayıs 2026",
+    dateISO: "2026-05-29",
+    category: "İlişkiler",
+    title:
+      "Manipüle Nedir? Psikolojik Manipülasyon Teknikleri ve Kendinizi Koruma Yolları",
+    image: "/images/manipule-nedir-bursapsikologsancar.webp",
+    metaTitle: manipuleNedirMetaTitle,
+    metaDescription: manipuleNedirMetaDescription,
+    excerpt: manipuleNedirExcerpt,
+    faq: manipuleNedirFaq,
+    content: manipuleNedirBlocks,
+    relatedServices: [
+      {
+        label: "Çift Terapisi",
+        href: "/cift-terapisi",
+        description: "Manipülasyon ve iletişim döngülerinde yapılandırılmış destek.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description: "Sınır becerileri ve öz-değer odaklı bireysel süreç.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "toksik-iliski-nedir",
+      "iliskilerde-guven-problemleri",
+    ],
+  },
+  {
+    slug: "toksik-iliski-nedir",
+    date: "29 Mayıs 2026",
+    dateISO: "2026-05-29",
+    category: "İlişkiler",
+    title:
+      "Toksik İlişki Nedir? Belirtileri, Psikolojik Etkileri ve Kurtulma Yolları",
+    image: "/images/toksik-ne-demek-bursapsikologsancar.webp",
+    metaTitle: toksikIliskiNedirMetaTitle,
+    metaDescription: toksikIliskiNedirMetaDescription,
+    excerpt: toksikIliskiNedirExcerpt,
+    faq: toksikIliskiNedirFaq,
+    content: toksikIliskiNedirBlocks,
+    relatedServices: [
+      {
+        label: "Çift Terapisi",
+        href: "/cift-terapisi",
+        description: "İletişim, güven ve sınırlar üzerine yapılandırılmış çift süreci.",
+      },
+      {
+        label: "EMDR Terapisi",
+        href: "/hizmetler/emdr-terapisi-bursa",
+        description: "İlişkisel travma ve tekrarlayan tetikleyicilerde EMDR desteği.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "iliskilerde-guven-problemleri",
+      "kaygi-bozuklugu-belirtileri",
+    ],
+  },
+  {
+    slug: "sinav-kaygisi-nedir",
+    date: "29 Mayıs 2026",
+    dateISO: "2026-05-29",
+    category: "Kaygı",
+    title:
+      "Sınav Kaygısı Nedir? Belirtileri, Nedenleri ve Başa Çıkma Yolları (Kapsamlı Rehber)",
+    image: "/images/sinav-kaygisi-bursapsikologsancar.webp",
+    metaTitle: sinavKaygisiNedirMetaTitle,
+    metaDescription: sinavKaygisiNedirMetaDescription,
+    excerpt: sinavKaygisiNedirExcerpt,
+    faq: sinavKaygisiNedirFaq,
+    content: sinavKaygisiNedirBlocks,
+    relatedServices: [
+      {
+        label: "Anksiyete Terapisi (Bursa)",
+        href: "/hizmetler/anksiyete-terapisi-bursa",
+        description: "Sınav ve performans kaygısında yapılandırılmış BDT desteği.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description: "Öğrenci ve yetişkinler için bireysel psikoterapi süreci.",
+      },
+    ],
+    relatedArticleSlugs: ["kaygi-bozuklugu-belirtileri", "panik-atak-belirtileri"],
+  },
   {
     slug: "bursa-psikolog-fiyatlari",
     date: "27 Mayıs 2026",

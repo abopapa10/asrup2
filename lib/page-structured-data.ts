@@ -10,6 +10,11 @@
 
 import type { Article } from "@/lib/article-types";
 import type { PsychologicalTestEntry } from "@/lib/psychological-tests";
+import {
+  niluferAuthorityMeta,
+  niluferAuthorityHero,
+  niluferFaqs,
+} from "@/lib/lokasyon/nilufer-psikolog-authority";
 import type { SeoLandingPage } from "@/lib/seo-pages";
 import type { Service } from "@/lib/services";
 import { schemaImageObject } from "@/lib/schema-images";
@@ -274,6 +279,88 @@ export function buildSeoLandingJsonLd(page: SeoLandingPage) {
   }
 
   return schemas;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Nilüfer authority landing (/lokasyon/nilufer-psikolog)
+// ─────────────────────────────────────────────────────────────────
+
+export function buildNiluferAuthorityJsonLd() {
+  const pageUrl = absoluteUrl(niluferAuthorityMeta.canonicalPath);
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: niluferAuthorityMeta.title,
+      description: niluferAuthorityMeta.description,
+      inLanguage: "tr-TR",
+      isPartOf: WEBSITE_REF,
+      about: [PSYCHOLOGIST_REF, MEDICAL_BUSINESS_REF],
+      mainEntity: [
+        { "@id": `${pageUrl}#place` },
+        { "@id": MEDICAL_BUSINESS_REF["@id"] },
+        PSYCHOLOGIST_REF,
+      ],
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Lokasyonlar",
+          item: absoluteUrl("/lokasyon"),
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: niluferAuthorityHero.h1,
+          item: pageUrl,
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "@id": `${pageUrl}#place`,
+      name: "Nilüfer Psikolog — Bursa Klinik",
+      description: niluferAuthorityMeta.description,
+      url: pageUrl,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Nilüfer",
+        addressRegion: "Bursa",
+        addressCountry: "TR",
+      },
+      containsPlace: MEDICAL_BUSINESS_REF,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      isPartOf: { "@id": `${pageUrl}#webpage` },
+      mainEntity: niluferFaqs.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    },
+  ];
 }
 
 // ─────────────────────────────────────────────────────────────────

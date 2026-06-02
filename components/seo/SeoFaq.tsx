@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { FadeIn } from "@/components/FadeIn";
+import { renderInlineMarkup } from "@/components/InlineMarkup";
 
 export type SeoFaqProps = {
   heading?: string;
@@ -50,7 +51,7 @@ export function SeoFaq({ heading = "Sıkça Sorulan Sorular", items }: SeoFaqPro
 
             <div className="px-5 pb-5 pt-0 sm:px-7 sm:pb-7">
               <div className="faq-answer max-w-prose">
-                <p>{item.answer}</p>
+                <p>{renderInlineMarkup(item.answer)}</p>
               </div>
             </div>
           </details>

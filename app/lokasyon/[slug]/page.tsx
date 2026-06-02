@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { NiluferPsikologPage } from "@/components/lokasyon/NiluferPsikologPage";
 import { PageShell } from "@/components/PageShell";
 import { SeoLandingTemplate } from "@/components/seo/SeoLandingTemplate";
 import { createPageMetadata } from "@/lib/seo";
@@ -44,6 +45,14 @@ export default async function LokasyonSlugPage({
 
   if (!page) {
     notFound();
+  }
+
+  if (slug === "nilufer-psikolog") {
+    return (
+      <PageShell>
+        <NiluferPsikologPage />
+      </PageShell>
+    );
   }
 
   return (

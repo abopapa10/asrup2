@@ -6,12 +6,20 @@ import type { ArticleCategory } from "@/lib/article-categories";
  * `p` paragrafları içinde `[Etiket](/yol)` markdown-tarzı tokenları
  * `link-editorial` stiliyle render edilir (bkz. `components/inline-markup.tsx`).
  */
+export type ArticleTableBlock = {
+  type: "table";
+  caption?: string;
+  headers: readonly string[];
+  rows: readonly (readonly string[])[];
+};
+
 export type ArticleBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
   | { type: "h3"; text: string }
   | { type: "ul"; items: readonly string[] }
-  | { type: "callout"; text: string };
+  | { type: "callout"; text: string }
+  | ArticleTableBlock;
 
 export type ArticleFaqItem = {
   question: string;

@@ -7,6 +7,7 @@ import { BesFaktorBigFivePage } from "@/components/tests/big-five/BesFaktorBigFi
 import { IliskilerdeSinirVeBaglanmaPage } from "@/components/tests/boundary-attachment/IliskilerdeSinirVeBaglanmaPage";
 import { DuygusalZekaEqPage } from "@/components/tests/eq/DuygusalZekaEqPage";
 import { MbtiKisilikAnaliziPage } from "@/components/tests/mbti/MbtiKisilikAnaliziPage";
+import { SinavKaygisiTestiPage } from "@/components/tests/exam-anxiety/SinavKaygisiTestiPage";
 import { StresVeTukenmislikAnaliziPage } from "@/components/tests/stress-burnout/StresVeTukenmislikAnaliziPage";
 import { TestPageTemplate } from "@/components/tests/TestPageTemplate";
 import { buildTestPageJsonLd } from "@/lib/page-structured-data";
@@ -105,6 +106,15 @@ export default async function TestSlugPage({
       <PageShell>
         <JsonLdScript data={buildTestPageJsonLd(test)} />
         <YetiskinDehbDikkatEksiligiPage />
+      </PageShell>
+    );
+  }
+
+  if (slug === "sinav-kaygisi-testi") {
+    return (
+      <PageShell>
+        <JsonLdScript data={buildTestPageJsonLd(test)} />
+        <SinavKaygisiTestiPage />
       </PageShell>
     );
   }

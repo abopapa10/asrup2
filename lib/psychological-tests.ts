@@ -9,7 +9,8 @@ export type PsychologicalTestSlug =
   | "iliskilerde-sinir-ve-baglanma"
   | "duygusal-zeka-eq"
   | "stres-ve-tukenmislik-analizi"
-  | "yetiskin-dehb-dikkat-eksiligi";
+  | "yetiskin-dehb-dikkat-eksiligi"
+  | "sinav-kaygisi-testi";
 
 export type PsychologicalTestStatus = "live" | "coming-soon";
 
@@ -123,6 +124,21 @@ export const psychologicalTests: readonly PsychologicalTestEntry[] = [
     questionCount: 12,
     durationLabel: "3–4 dk",
     tags: ["DEHB", "ADHD", "ASRS", "Dikkat"],
+    status: "live",
+  },
+  {
+    slug: "sinav-kaygisi-testi",
+    href: "/testler/sinav-kaygisi-testi",
+    title: "Sınav Kaygısı Testi",
+    cardLead:
+      "Spielberger / Liebert–Morris esinli 18 maddelik sınav kaygısı öz-değerlendirmesi.",
+    metaTitle:
+      "Online Sınav Kaygısı Testi | Ücretsiz Öz Değerlendirme ve Rehber",
+    metaDescription:
+      "18 maddelik sınav kaygısı testi: 5'li Likert, anında sonuç. Düşük, orta ve yüksek kaygı bantları. Kapsamlı sınav kaygısı makalesi ile entegre.",
+    questionCount: 18,
+    durationLabel: "4–5 dk",
+    tags: ["Sınav kaygısı", "Kaygı", "Öğrenci"],
     status: "live",
   },
 ] as const;
