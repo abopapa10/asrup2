@@ -128,8 +128,20 @@ export const ghostingNeDemekBlocks: readonly ArticleBlock[] = [
     text: "İdrak edilmesi gereken iyileştirici gerçek: **Sana cevap vermemesinin kendisi, zaten çok net bir mesajdır.** İnsanlardan her zaman bizim kadar açık ve olgun iletişim bekleyemeyiz; karşı tarafın \"iletişim kurmama isteğini\" sessizliğinden okumayı öğrenmeliyiz.",
   },
   {
-    type: "callout",
-    text: "Klinik örnek: Yoğun duygularını açıkça yazdığı kişi mesajı görüp dönmedi — tam ghosting. Danışan \"İstemeseydi söylerdi\" diyordu. Yanıt: \"Hiçbir şey yazmamış olması, 'seni istemiyorum' demesinin en net, en yalın versiyonudur.\"",
+    type: "h3",
+    text: "Danışan Örneği",
+  },
+  {
+    type: "p",
+    text: "Bir keresinde bir danışanım, uzun süredir yoğun duygular beslediği kişiye içini döktüğü, hislerini açıkça ifade ettiği bir mesaj atmıştı. Karşıdaki kişi bu mesajı gördü ancak hiçbir şekilde dönmedi; yani onu tam anlamıyla ghostladı.",
+  },
+  {
+    type: "p",
+    text: "Danışanım bu durumu bana anlatırken büyük bir dirençle, \"Eğer beni istemeseydi, bana 'seni istemiyorum' derdi\" diyordu.",
+  },
+  {
+    type: "p",
+    text: "Ona aynen şu cümleyi kurmuştum: \"Sana hiçbir şey yazmamış olması, zaten 'seni istemiyorum' demesinin en net, en yalın versiyonudur.\"",
   },
 
   {
