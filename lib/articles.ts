@@ -94,6 +94,13 @@ import {
   sinavKaygisiNedirMetaTitle,
 } from "@/lib/article-content/sinav-kaygisi-nedir";
 import {
+  narsistErkekBelirtileriBlocks,
+  narsistErkekBelirtileriExcerpt,
+  narsistErkekBelirtileriFaq,
+  narsistErkekBelirtileriMetaDescription,
+  narsistErkekBelirtileriMetaTitle,
+} from "@/lib/article-content/narsist-erkek-belirtileri";
+import {
   manipuleNedirBlocks,
   manipuleNedirExcerpt,
   manipuleNedirFaq,
@@ -125,6 +132,38 @@ export const articles: readonly Article[] = [
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
   {
+    slug: "narsist-erkek-belirtileri",
+    date: "30 Mayıs 2026",
+    dateISO: "2026-05-30",
+    category: "İlişkiler",
+    title:
+      "Narsist Erkek Belirtileri: Aynadaki İllüzyon ve Bir İlişkinin Görünmez Yükü",
+    image: "/images/narsist-erkek-belirtileri-bursapsikologsancar.webp",
+    metaTitle: narsistErkekBelirtileriMetaTitle,
+    metaDescription: narsistErkekBelirtileriMetaDescription,
+    excerpt: narsistErkekBelirtileriExcerpt,
+    faq: narsistErkekBelirtileriFaq,
+    content: narsistErkekBelirtileriBlocks,
+    relatedServices: [
+      {
+        label: "Çift Terapisi",
+        href: "/cift-terapisi",
+        description:
+          "Narsistik dinamiklerde iletişim ve onarım için yapılandırılmış süreç.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description: "Sınır, öz-değer ve ilişki örüntüleri üzerine bireysel destek.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "toksik-iliski-nedir",
+      "manipule-nedir-psikolojik-manipulasyon",
+      "iliskilerde-guven-problemleri",
+    ],
+  },
+  {
     slug: "manipule-nedir-psikolojik-manipulasyon",
     date: "29 Mayıs 2026",
     dateISO: "2026-05-29",
@@ -151,6 +190,7 @@ export const articles: readonly Article[] = [
     ],
     relatedArticleSlugs: [
       "toksik-iliski-nedir",
+      "narsist-erkek-belirtileri",
       "iliskilerde-guven-problemleri",
     ],
   },
@@ -180,6 +220,7 @@ export const articles: readonly Article[] = [
       },
     ],
     relatedArticleSlugs: [
+      "narsist-erkek-belirtileri",
       "iliskilerde-guven-problemleri",
       "kaygi-bozuklugu-belirtileri",
     ],

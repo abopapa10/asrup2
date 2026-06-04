@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/narsist-erkek-belirtileri",
+        destination: "/makale/narsist-erkek-belirtileri",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.bursapsikologsancar.com" }],
         destination: `${CANONICAL_SITE_ORIGIN}/:path*`,
