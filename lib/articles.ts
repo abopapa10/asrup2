@@ -94,6 +94,13 @@ import {
   sinavKaygisiNedirMetaTitle,
 } from "@/lib/article-content/sinav-kaygisi-nedir";
 import {
+  ghostingNeDemekBlocks,
+  ghostingNeDemekExcerpt,
+  ghostingNeDemekFaq,
+  ghostingNeDemekMetaDescription,
+  ghostingNeDemekMetaTitle,
+} from "@/lib/article-content/ghosting-ne-demek";
+import {
   narsistErkekBelirtileriBlocks,
   narsistErkekBelirtileriExcerpt,
   narsistErkekBelirtileriFaq,
@@ -132,6 +139,37 @@ export const articles: readonly Article[] = [
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
   {
+    slug: "ghosting-ne-demek",
+    date: "4 Haziran 2026",
+    dateISO: "2026-06-04",
+    category: "İlişkiler",
+    title:
+      "Ghosting Ne Demek? Sessizliğin Sesi, Psikolojisi ve Kendinizi Korumak",
+    image: "/images/ghosting-ne-demek-bursapsikologsancar.webp",
+    metaTitle: ghostingNeDemekMetaTitle,
+    metaDescription: ghostingNeDemekMetaDescription,
+    excerpt: ghostingNeDemekExcerpt,
+    faq: ghostingNeDemekFaq,
+    content: ghostingNeDemekBlocks,
+    relatedServices: [
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description: "Ghosting sonrası öz-değer ve sınır çalışması.",
+      },
+      {
+        label: "Çift Terapisi",
+        href: "/cift-terapisi",
+        description: "İletişim kopukluklarında yapılandırılmış destek.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "manipule-nedir-psikolojik-manipulasyon",
+      "toksik-iliski-nedir",
+      "iliskilerde-guven-problemleri",
+    ],
+  },
+  {
     slug: "narsist-erkek-belirtileri",
     date: "30 Mayıs 2026",
     dateISO: "2026-05-30",
@@ -158,6 +196,7 @@ export const articles: readonly Article[] = [
       },
     ],
     relatedArticleSlugs: [
+      "ghosting-ne-demek",
       "toksik-iliski-nedir",
       "manipule-nedir-psikolojik-manipulasyon",
       "iliskilerde-guven-problemleri",

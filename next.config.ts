@@ -46,6 +46,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/ghosting-ne-demek",
+        destination: "/makale/ghosting-ne-demek",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.bursapsikologsancar.com" }],
         destination: `${CANONICAL_SITE_ORIGIN}/:path*`,
