@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
+import { CRITICAL_CSS } from "@/lib/critical-css";
 import { siteEntitiesGraph } from "@/lib/structured-data";
 import { createPageMetadata, rootMetadataExtras } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
@@ -14,12 +15,13 @@ const sora = Sora({
   adjustFontFallback: true,
 });
 
+/** Gövde metni — yalnızca Sora preload; Jakarta non-blocking yüklenir */
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
   variable: "--font-jakarta",
   display: "swap",
   weight: ["400", "500", "600"],
-  preload: true,
+  preload: false,
   adjustFontFallback: true,
 });
 
@@ -87,6 +89,10 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${sora.variable} ${jakarta.variable}`}>
       <head>
+        <style
+          id="critical-css"
+          dangerouslySetInnerHTML={{ __html: CRITICAL_CSS }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

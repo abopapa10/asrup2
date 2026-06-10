@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { EqTestApp } from "@/components/tests/eq/EqTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function DuygusalZekaEqPage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="Duygusal Zeka (EQ)" />
-          <FadeIn>
-            <EqTestApp />
-          </FadeIn>
+          <EqTestApp />
         </div>
       </section>
 

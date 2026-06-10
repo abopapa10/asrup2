@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { StressBurnoutTestApp } from "@/components/tests/stress-burnout/StressBurnoutTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function StresVeTukenmislikAnaliziPage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="Stres ve Tükenmişlik" />
-          <FadeIn>
-            <StressBurnoutTestApp />
-          </FadeIn>
+          <StressBurnoutTestApp />
         </div>
       </section>
 

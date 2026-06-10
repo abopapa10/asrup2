@@ -45,6 +45,7 @@ export function PortraitFrame({
             alt={alt}
             fill
             priority={priority}
+            fetchPriority={priority ? "high" : undefined}
             sizes={
               variant === "full"
                 ? "(max-width: 1024px) 90vw, 42vw"

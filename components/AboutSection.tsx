@@ -62,7 +62,6 @@ export function AboutSection() {
                 alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
                 variant="clinical"
                 align="left"
-                priority
               />
             </div>
 
@@ -115,7 +114,6 @@ export function AboutSection() {
             <PortraitFrame
               src={siteConfig.images.portraitClinical}
               alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
-              priority
               variant="clinical"
               align="right"
             />

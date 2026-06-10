@@ -148,53 +148,52 @@ export function ArticlePageContent({ article }: ArticlePageContentProps) {
   return (
     <article className="border-t border-ice-blue/40 bg-mesh-blue py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:max-w-3xl lg:px-12">
-        <FadeIn instant>
-          <nav
-            aria-label="Breadcrumb"
-            className="mb-6 text-sm text-slate-body sm:mb-8"
-          >
-            <Link href="/" className="link-editorial">
-              Ana Sayfa
-            </Link>
-            <span className="mx-2 text-ice-blue" aria-hidden>
-              /
-            </span>
-            <Link href="/blog" className="link-editorial">
-              Blog
-            </Link>
-            <span className="mx-2 text-ice-blue" aria-hidden>
-              /
-            </span>
-            <span className="text-slate-charcoal">{article.category}</span>
-          </nav>
+        <nav
+          aria-label="Breadcrumb"
+          className="mb-6 text-sm text-slate-body sm:mb-8"
+        >
+          <Link href="/" className="link-editorial">
+            Ana Sayfa
+          </Link>
+          <span className="mx-2 text-ice-blue" aria-hidden>
+            /
+          </span>
+          <Link href="/blog" className="link-editorial">
+            Blog
+          </Link>
+          <span className="mx-2 text-ice-blue" aria-hidden>
+            /
+          </span>
+          <span className="text-slate-charcoal">{article.category}</span>
+        </nav>
 
-          <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-slate-body/90 sm:text-xs">
-            {article.category}
-          </p>
-          <h1 className="heading-section mt-4">{article.title}</h1>
-          <p className="body-lead mt-6 max-w-2xl">{article.excerpt}</p>
+        <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.22em] text-slate-body/90 sm:text-xs">
+          {article.category}
+        </p>
+        <h1 id="hero-heading" className="heading-section mt-4">
+          {article.title}
+        </h1>
+        <p className="body-lead mt-6 max-w-2xl">{article.excerpt}</p>
 
-          <ArticleByline
-            readingMinutes={readingMinutes}
-            date={article.date}
-            dateISO={article.dateISO}
-          />
-        </FadeIn>
+        <ArticleByline
+          readingMinutes={readingMinutes}
+          date={article.date}
+          dateISO={article.dateISO}
+        />
 
         {article.image ? (
-          <FadeIn instant>
-            <div className="mt-10 overflow-hidden border border-ice-blue sm:mt-12">
-              <Image
-                src={article.image}
-                alt={`${article.title} — ${article.category} makale kapak görseli`}
-                width={960}
-                height={540}
-                sizes="(max-width: 768px) 100vw, 768px"
-                priority
-                className="aspect-video w-full object-cover"
-              />
-            </div>
-          </FadeIn>
+          <div className="mt-10 overflow-hidden border border-ice-blue sm:mt-12">
+            <Image
+              src={article.image}
+              alt={`${article.title} — ${article.category} makale kapak görseli`}
+              width={960}
+              height={540}
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+              fetchPriority="high"
+              className="aspect-video w-full object-cover"
+            />
+          </div>
         ) : null}
 
         <FadeIn>

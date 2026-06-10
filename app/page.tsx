@@ -3,9 +3,9 @@ import { ArticlesSection } from "@/components/ArticlesSection";
 import { AuthoritySection } from "@/components/AuthoritySection";
 import { ExpertiseAreasSection } from "@/components/ExpertiseAreasSection";
 import { TherapyProcessSection } from "@/components/TherapyProcessSection";
-import { FaqAccordion } from "@/components/FaqAccordion";
-import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { GoogleReviewsCarousel } from "@/components/GoogleReviewsCarousel";
+import { DeferredFloatingWhatsApp } from "@/components/DeferredFloatingWhatsApp";
+import { FaqAccordionLazy } from "@/components/FaqAccordionLazy";
+import { GoogleReviewsCarouselLazy } from "@/components/GoogleReviewsCarouselLazy";
 import { AboutSection } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
 import { PersonalityTestLazy } from "@/components/PersonalityTestLazy";
@@ -25,7 +25,7 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection />
-        <GoogleReviewsCarousel />
+        <GoogleReviewsCarouselLazy />
         <ServicesGrid />
         <PersonalityTestLazy />
         <div
@@ -36,11 +36,11 @@ export default function HomePage() {
         <ExpertiseAreasSection />
         <AuthoritySection />
         <ArticlesSection />
-        <FaqAccordion />
+        <FaqAccordionLazy />
       </main>
       <FooterSeoAccordion />
       <SiteFooter />
-      <FloatingWhatsApp />
+      <DeferredFloatingWhatsApp />
     </>
   );
 }

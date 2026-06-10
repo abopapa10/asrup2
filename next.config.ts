@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
   experimental: {
+    optimizeCss: true,
     optimizePackageImports: ["lucide-react"],
   },
   async redirects() {

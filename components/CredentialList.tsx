@@ -1,7 +1,4 @@
-"use client";
-
 import { Check } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
 
 const credentials = [
   "Hacettepe Üniversitesi Psikoloji Bölümü",
@@ -9,36 +6,12 @@ const credentials = [
   "Yalnızca bilimsel olarak temellenmiş yöntemler",
 ] as const;
 
+/** Sunucu render — opacity:0 animasyonu LCP ölçümünü geciktirmez */
 export function CredentialList() {
-  const listRef = useRef<HTMLUListElement>(null);
-  const [revealed, setRevealed] = useState(false);
-
-  useEffect(() => {
-    const node = listRef.current;
-    if (!node) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setRevealed(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25, rootMargin: "0px 0px -8% 0px" }
-    );
-
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <ul
-      ref={listRef}
-      className={`credential-list mt-8 space-y-4 sm:mt-10 sm:space-y-5 ${revealed ? "credential-list-visible" : ""}`}
-      role="list"
-    >
+    <ul className="mt-8 space-y-4 sm:mt-10 sm:space-y-5" role="list">
       {credentials.map((item) => (
-        <li key={item} className="credential-reveal flex items-start gap-3 sm:gap-4">
+        <li key={item} className="flex items-start gap-3 sm:gap-4">
           <span
             className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-neon-turquoise/20 sm:h-7 sm:w-7"
             aria-hidden

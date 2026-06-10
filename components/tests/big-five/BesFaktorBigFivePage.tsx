@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { BigFiveTestApp } from "@/components/tests/big-five/BigFiveTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function BesFaktorBigFivePage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="Beş Faktör (Big Five)" />
-          <FadeIn>
-            <BigFiveTestApp />
-          </FadeIn>
+          <BigFiveTestApp />
         </div>
       </section>
 

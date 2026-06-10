@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { BoundaryAttachmentTestApp } from "@/components/tests/boundary-attachment/BoundaryAttachmentTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function IliskilerdeSinirVeBaglanmaPage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="Sınır ve Bağlanma Stilleri" />
-          <FadeIn>
-            <BoundaryAttachmentTestApp />
-          </FadeIn>
+          <BoundaryAttachmentTestApp />
         </div>
       </section>
 

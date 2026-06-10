@@ -5,7 +5,10 @@ export function TestHubHero() {
         Psikolojik Testler Merkezi
       </p>
       <header>
-        <h1 className="font-display text-[2rem] font-semibold leading-[1.08] tracking-[-0.03em] text-slate-charcoal sm:text-[2.75rem] lg:text-[3.25rem]">
+        <h1
+          id="hero-heading"
+          className="font-display text-[2rem] font-semibold leading-[1.08] tracking-[-0.03em] text-slate-charcoal sm:text-[2.75rem] lg:text-[3.25rem]"
+        >
           Kişilik Analizi Testleri
         </h1>
         <p className="mt-4 font-display text-base font-medium leading-snug tracking-[-0.02em] text-slate-body/90 sm:mt-5 sm:text-lg lg:text-xl">

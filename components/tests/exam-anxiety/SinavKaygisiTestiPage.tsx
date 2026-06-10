@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { ExamAnxietyTestApp } from "@/components/tests/exam-anxiety/ExamAnxietyTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function SinavKaygisiTestiPage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="Sınav Kaygısı Testi" />
-          <FadeIn>
-            <ExamAnxietyTestApp />
-          </FadeIn>
+          <ExamAnxietyTestApp />
         </div>
       </section>
 

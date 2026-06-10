@@ -1,4 +1,3 @@
-import { FadeIn } from "@/components/FadeIn";
 import { MbtiTestApp } from "@/components/tests/mbti/MbtiTestApp";
 import { TestArticleContent } from "@/components/tests/TestArticleContent";
 import { TestPageBreadcrumb } from "@/components/tests/TestPageBreadcrumb";
@@ -14,9 +13,7 @@ export function MbtiKisilikAnaliziPage() {
       >
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <TestPageBreadcrumb testTitle="MBTI Kişilik Analizi" />
-          <FadeIn>
-            <MbtiTestApp />
-          </FadeIn>
+          <MbtiTestApp />
         </div>
       </section>
 
