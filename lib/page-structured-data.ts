@@ -10,6 +10,7 @@
 
 import type { Article } from "@/lib/article-types";
 import type { PsychologicalTestEntry } from "@/lib/psychological-tests";
+import type { QuestionAnswerItem } from "@/lib/question-answer-types";
 import {
   niluferAuthorityMeta,
   niluferAuthorityHero,
@@ -496,6 +497,114 @@ export function buildTestPageJsonLd(test: PsychologicalTestEntry) {
           "@type": "ListItem",
           position: 3,
           name: test.title,
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
+}
+
+// ─────────────────────────────────────────────────────────────────
+// Question & Answer pages (/soru-cevap, /soru-cevap/[slug])
+// ─────────────────────────────────────────────────────────────────
+
+export function buildQuestionAnswerHubJsonLd() {
+  const pageUrl = absoluteUrl("/soru-cevap");
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#collection`,
+      name: "Soru - Cevap",
+      description:
+        "Panik atak ve kaygi odaginda sik sorulan sorulara kisa ve klinik yanitlar.",
+      url: pageUrl,
+      inLanguage: "tr-TR",
+      isPartOf: WEBSITE_REF,
+      about: PSYCHOLOGIST_REF,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Soru - Cevap",
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
+}
+
+export function buildQuestionAnswerJsonLd(item: QuestionAnswerItem) {
+  const pageUrl = absoluteUrl(`/soru-cevap/${item.slug}`);
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${pageUrl}#article`,
+      headline: item.question,
+      description: item.excerpt,
+      datePublished: item.dateISO,
+      dateModified: item.dateISO,
+      inLanguage: "tr-TR",
+      author: PSYCHOLOGIST_REF,
+      publisher: ORG_REF,
+      isPartOf: WEBSITE_REF,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": pageUrl,
+        url: pageUrl,
+        name: item.question,
+      },
+      articleSection: "Soru - Cevap",
+      url: pageUrl,
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      mainEntity: item.faq.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Soru - Cevap",
+          item: absoluteUrl("/soru-cevap"),
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: item.question,
           item: pageUrl,
         },
       ],

@@ -10,6 +10,7 @@ import { AboutSection } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
 import { PersonalityTestLazy } from "@/components/PersonalityTestLazy";
 import { JsonLdScript } from "@/components/JsonLdScript";
+import { QuestionAnswerSection } from "@/components/QuestionAnswerSection";
 import { ServicesGrid } from "@/components/ServicesGrid";
 import { FooterSeoAccordion } from "@/components/FooterSeoAccordion";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -36,6 +37,7 @@ export default function HomePage() {
         <ExpertiseAreasSection />
         <AuthoritySection />
         <ArticlesSection />
+        <QuestionAnswerSection />
         <FaqAccordionLazy />
       </main>
       <FooterSeoAccordion />

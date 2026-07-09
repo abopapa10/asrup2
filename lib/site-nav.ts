@@ -4,6 +4,7 @@ export const siteNavLinks = [
   { href: "/lokasyon", label: "Lokasyonlar" },
   { href: "/#yorumlar", label: "Yorumlar" },
   { href: "/testler", label: "Testler" },
+  { href: "/soru-cevap", label: "Soru-Cevap" },
   { href: "/blog", label: "Makaleler" },
   { href: "/#hakkimda", label: "Hakkımda" },
   { href: "/#iletisim", label: "İletişim" },
