@@ -52,6 +52,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/othello-sendromu-nedir",
+        destination: "/makale/othello-sendromu-nedir",
+        permanent: true,
+      },
+      {
+        source: "/aldatilma-korkusu-hastaligi",
+        destination: "/makale/othello-sendromu-nedir",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.bursapsikologsancar.com" }],
         destination: `${CANONICAL_SITE_ORIGIN}/:path*`,

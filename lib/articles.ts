@@ -121,6 +121,13 @@ import {
   toksikIliskiNedirMetaDescription,
   toksikIliskiNedirMetaTitle,
 } from "@/lib/article-content/toksik-iliski-nedir";
+import {
+  othelloSendromuBlocks,
+  othelloSendromuExcerpt,
+  othelloSendromuFaq,
+  othelloSendromuMetaDescription,
+  othelloSendromuMetaTitle,
+} from "@/lib/article-content/othello-sendromu-nedir";
 
 import type { Article } from "@/lib/article-types";
 import type { ArticleCategory } from "@/lib/article-categories";
@@ -138,6 +145,46 @@ export const articles: readonly Article[] = [
   // ────────────────────────────────────────────────────────────────
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
+  {
+    slug: "othello-sendromu-nedir",
+    date: "10 Temmuz 2026",
+    dateISO: "2026-07-10",
+    category: "İlişkiler",
+    title:
+      "Aldatılma Korkusu Hastalığı: Othello Sendromu Nedir? Belirtiler, Nedenler ve Tedavi",
+    image: "/images/othello-sendromu-nedir-bursapsikologsancar.webp",
+    metaTitle: othelloSendromuMetaTitle,
+    metaDescription: othelloSendromuMetaDescription,
+    excerpt: othelloSendromuExcerpt,
+    faq: othelloSendromuFaq,
+    content: othelloSendromuBlocks,
+    relatedServices: [
+      {
+        label: "Çift Terapisi",
+        href: "/cift-terapisi",
+        description:
+          "Güven, kıskançlık ve iletişim döngülerinde yapılandırılmış çift süreci.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description:
+          "Bağlanma, kaygı ve kontrol örüntüleri üzerine bireysel psikoterapi.",
+      },
+      {
+        label: "Anksiyete Terapisi (Bursa)",
+        href: "/hizmetler/anksiyete-terapisi-bursa",
+        description: "Yoğun şüphe, ruminasyon ve kaygı zemininde klinik destek.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "iliskilerde-guven-problemleri",
+      "toksik-iliski-nedir",
+      "narsist-erkek-belirtileri",
+      "manipule-nedir-psikolojik-manipulasyon",
+      "kaygi-bozuklugu-belirtileri",
+    ],
+  },
   {
     slug: "ghosting-ne-demek",
     date: "4 Haziran 2026",

@@ -3,6 +3,126 @@ import type { QuestionAnswerItem } from "@/lib/question-answer-types";
 
 export const questionAnswers: readonly QuestionAnswerItem[] = [
   {
+    slug: "aldatilma-korkusu-nasil-yenilir",
+    question: "Aldatılma Korkusu Nasıl Yenilir?",
+    directAnswer:
+      "Aldatılma korkusu, partneri kısıtlayarak veya kontrol ederek yenilmez; çünkü korku kişinin kendi iç dünyasında üretilir. Kısa vadeli kısıtlamalar geçici bir güvenlik hissi verse de uzun vadede korkuyu büyütür ve ilişki güvenini zedeler. Kalıcı çözüm, içsel süreçleri anlamak, bağlanma yaralarını çalışmak ve ilişki çok zarar görmeden profesyonel destek almaktır.",
+    excerpt:
+      "Aldatılma korkusu nasıl yenilir? Partneri kısıtlamak işe yaramaz; çözüm bireyin içsel süreçlerine odaklanmak ve erken profesyonel destektir.",
+    date: "10 Temmuz 2026",
+    dateISO: "2026-07-10",
+    metaTitle: "Aldatılma Korkusu Nasıl Yenilir? Kısıtlama Değil İçsel Çalışma",
+    metaDescription:
+      "Aldatılma korkusu nasıl yenilir, nasıl geçer? Partneri kısıtlamak korkuyu büyütür. İçsel süreçler, bağlanma ve profesyonel destekle klinik çözüm çerçevesi.",
+    keywords: [
+      "aldatılma korkusu nasıl yenilir",
+      "aldatılma korkusu nasıl geçer",
+      "kıskançlık nasıl yenilir",
+      "othello sendromu",
+      "ilişkide güven terapisi",
+    ],
+    content: [
+      {
+        type: "h2",
+        text: "Neden Partneri Kısıtlamak İşe Yaramaz?",
+      },
+      {
+        type: "p",
+        text: "Aldatılma korkusu, dışarıdaki bir 'tehlikeyi' ortadan kaldırarak değil; zihnin tehdit üretme biçimini değiştirerek yönetilir. Partnerin hareket alanını daraltmak, kısa süreli bir kontrol hissi verse de korkunun kaynağına dokunmaz. Bu nedenle kısıtlama stratejisi, davranışsal olarak paradoksaldır: Güvenliği artırmayı vaat ederken belirsizlik ve şüpheyi besler.",
+      },
+      {
+        type: "p",
+        text: "Klinik çerçevede bu tablo, [Othello sendromu / aldatılma korkusu hastalığı](/makale/othello-sendromu-nedir) spektrumundaki morbid kıskançlık örüntüleriyle de kesişebilir. Yoğunluk arttıkça soruşturma ve kontrol davranışları ilişkiyi soruşturma odasına çevirir; [ilişkilerde güven problemleri](/makale/iliskilerde-guven-problemleri) derinleşir.",
+      },
+      {
+        type: "h2",
+        text: "Klinik Gözlem: Kısıtlama Döngüsünün Güven Üzerindeki Etkisi",
+      },
+      {
+        type: "p",
+        text: "Aldatılma korkusu kişinin kendi içinde üretilen bir psikolojik durum olduğu için, bunu partneri kısıtlayarak ve böylece daha güvenli hissetmeye çalışarak aşmak mümkün değildir. Üstelik bu kısıtlamalar zamanla korkunun daha da büyümesine yol açar.",
+      },
+      {
+        type: "p",
+        text: "Örneğin bir danışanım, partnerinin karşı cinsin bulunduğu iş toplantılarına katılmasını istemiyordu. Partner, danışanını mutlu etmek için bu talebi kabul etmişti; ancak bu taahhüdü sürdürmek pratikte imkânsızdı. Partner aldatmıyor olsa da sözünü tutamaması, ilişkideki güveni zedeliyordu. Yani kısıtlama → geçici rahatlama → sürdürülemez söz → güven kırılması döngüsü, korkuyu azaltmak bir yana, güven zeminini de aşındırıyordu.",
+      },
+      {
+        type: "h3",
+        text: "Davranışsal Kısıtlamaların Paradoksal Etkisi",
+      },
+      {
+        type: "p",
+        text: "Kısıtlama, kısa vadede kaygıyı düşüren bir güvenlik davranışı gibi işler. Uzun vadede ise zihin şunu öğrenir: 'Tehdit ancak kontrolle yönetilir.' Kontrol bozulduğunda (ki gerçek hayatta bozulur) kaygı daha şiddetli geri döner. Böylece korku büyür; partner ise 'sürekli yetersiz kalan bir güvence kaynağı' konumuna sıkışır. Bu dinamik, [toksik ilişki](/makale/toksik-iliski-nedir) örüntülerindeki zorlayıcı kontrole de kayabilir.",
+      },
+      {
+        type: "h2",
+        text: "Aldatılma Korkusunun Kökenleri",
+      },
+      {
+        type: "h3",
+        text: "Geçmiş Travmalar ve İhanet Yaşantıları",
+      },
+      {
+        type: "p",
+        text: "Önceki ilişkide aldatılma, aile içinde güvenin bozulması veya erken yaşantılardaki terk/ihmal deneyimleri, yeni ilişkide hipervijilansı (aşırı tetikte olmayı) tetikleyebilir. Zihin, geçmişteki yarayı bugünkü partnere taşır; belirsizlikleri otomatik olarak tehdit lehine yorumlar.",
+      },
+      {
+        type: "h3",
+        text: "Bağlanma Stilleri ve Onay Arayışı",
+      },
+      {
+        type: "p",
+        text: "Kaygılı bağlanma örüntülerinde yakınlık ve terk edilme korkusu birlikte yükselir. Kişi partneri 'yakında tutmak' için kontrol stratejilerine yönelebilir. Bu noktada [İlişkilerde Sınır ve Bağlanma Testi](/testler/iliskilerde-sinir-ve-baglanma), örüntüyü nesnelleştirmeye yardımcı olabilir; amaç etiketlemek değil, farkındalık üretmektir.",
+      },
+      {
+        type: "h2",
+        text: "Aldatılma Korkusu Nasıl Geçer? Çözüm Yolları",
+      },
+      {
+        type: "p",
+        text: "**Aldatılma korkusu nasıl geçer** sorusunun klinik yanıtı nettir: Bireyin kendine odaklanması; hangi içsel süreçlerin bu korkuyu ürettiğini analiz etmesi gerekir. Partneri 'düzeltmek' veya kısıtlamak yerine, tehdit yorumlarını, güvenlik davranışlarını ve bağlanma yarasını çalışmak kalıcı değişimin yoludur.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Kısıtlama ve soruşturma davranışlarını fark etmek, kademeli olarak azaltmak.",
+          "Belirsizliği felaketleştiren düşünceleri yakalamak ve alternatif açıklamalara alan açmak.",
+          "Öz-değer ve terk korkusunu partnerin davranışına endekslemeyi bırakmak.",
+          "İlişki çok zarar görmeden [bireysel terapi](/bireysel-terapi) veya uygunsa [çift terapisi](/cift-terapisi) planlamak.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Profesyonel Destek Ne Zaman Önceliklidir?",
+      },
+      {
+        type: "p",
+        text: "Korku günlük yaşamı, uykuyu veya ilişkiyi bozuyorsa; kontrol talepleri artıyorsa; partner mahremiyetini kaybediyorsa erken müdahale en mantıklı adımdır. Yoğun kaygı zemininde [anksiyete terapisi](/hizmetler/anksiyete-terapisi-bursa); travma yükü belirginse [EMDR](/hizmetler/emdr-terapisi-bursa) değerlendirilebilir. [Ana sayfa](/) ve [iletişim](/#iletisim) üzerinden değerlendirme planlanabilir.",
+      },
+      {
+        type: "callout",
+        text: "Özet: Aldatılma korkusu partneri kilitleyerek değil, içsel alarm sistemini anlayarak yenilir. Kısıtlama döngüsünü kırmak için [Othello sendromu rehberi](/makale/othello-sendromu-nedir) ve profesyonel destek birlikte düşünülmelidir.",
+      },
+    ],
+    faq: [
+      {
+        question: "Aldatılma korkusu partneri kısıtlayarak geçer mi?",
+        answer:
+          "Hayır. Kısıtlama kısa süreli rahatlama verse de korkuyu büyütür ve sürdürülemez taahhütler güveni zedeler. Çözüm bireyin içsel süreçlerine odaklanmaktır.",
+      },
+      {
+        question: "Aldatılma korkusu nasıl geçer?",
+        answer:
+          "Öz-farkındalık, bağlanma ve tehdit yorumlarını çalışmak, güvenlik davranışlarını azaltmak ve ilişki çok zarar görmeden profesyonel destek almak kalıcı iyileşmeyi destekler.",
+      },
+      {
+        question: "Ne zaman terapiye başvurmalıyım?",
+        answer:
+          "Kıskançlık ve kontrol talepleri ilişkiyi bozuyorsa, sürekli soruşturma varsa veya kaygı işlevselliği düşürüyorsa erken dönemde bireysel veya çift terapisi önerilir.",
+      },
+    ],
+  },
+  {
     slug: "panik-atak-oldurur-mu",
     question: "Panik Atak Öldürür mü?",
     directAnswer:
