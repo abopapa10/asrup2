@@ -31,7 +31,7 @@ export function AuthoritySection() {
         <FadeIn as="article">
           <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Klinik Felsefe</p>
           <h2 id="authority-heading" className="heading-section">
-            Psikolog A. Alparslan Sancar
+            Bursa Psikolog A. Alparslan Sancar
           </h2>
 
           <blockquote className="blockquote-accent mt-8 hidden sm:mt-10 lg:block">
@@ -42,7 +42,7 @@ export function AuthoritySection() {
           <div className="mx-auto mt-8 w-full max-w-[18rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
             <PortraitFrame
               src={siteConfig.images.portraitFull}
-              alt="Psikolog A. Alparslan Sancar — tam profil portre"
+              alt="Bursa Psikolog A. Alparslan Sancar — tam profil portre"
               variant="full"
             />
           </div>
@@ -54,9 +54,9 @@ export function AuthoritySection() {
 
           <p className="body-lead mt-8 sm:mt-10">
             Bursa&apos;da başlayan klinik deneyim, İstanbul Beşiktaş&apos;taki
-            güncel pratikle sürdürülür; yakında Bursa&apos;da da aynı ölçüde
-            danışan gizliliği, etik ilkeler ve bilimsel disiplinle hizmet
-            verilecektir.
+            pratikle derinleşti. Bugün Bursa Nilüfer kliniğimizde aynı ölçüde
+            danışan gizliliği, etik ilkeler ve bilimsel disiplinle yüz yüze
+            hizmet verilmektedir.
           </p>
 
           <ul className="mt-10 space-y-8 sm:mt-12 sm:space-y-10">
@@ -84,7 +84,7 @@ export function AuthoritySection() {
         <FadeIn delay={0.08} className="hidden lg:sticky lg:top-28 lg:block" as="article">
           <PortraitFrame
             src={siteConfig.images.portraitFull}
-            alt="Psikolog A. Alparslan Sancar — tam profil portre"
+            alt="Bursa Psikolog A. Alparslan Sancar — tam profil portre"
             variant="full"
           />
         </FadeIn>

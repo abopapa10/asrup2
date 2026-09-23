@@ -39,7 +39,7 @@ export function TherapyProcessSection() {
     <section
       id="terapi-sureci"
       aria-labelledby="therapy-process-heading"
-      className="mt-10 border-t border-ice-blue/50 bg-white pt-24 pb-16 sm:mt-14 sm:pt-32 sm:pb-24 lg:mt-16 lg:pt-40 lg:pb-28"
+      className="border-t border-ice-blue/50 bg-white py-20 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
         <FadeIn className="max-w-3xl">

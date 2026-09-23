@@ -6,6 +6,7 @@ import { PageShell } from "@/components/PageShell";
 import { articles, getArticleBySlug } from "@/lib/articles";
 import { buildArticleJsonLd } from "@/lib/page-structured-data";
 import { createPageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site-config";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ogType: "article",
     publishedTime: `${article.dateISO}T09:00:00+03:00`,
     articleSection: article.category,
-    author: "Psikolog A. Alparslan Sancar",
+    author: siteConfig.name,
   });
 }
 

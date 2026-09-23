@@ -39,8 +39,8 @@ export function HeroSection() {
 
           <p className="body-lead mt-5 max-w-xl sm:mt-6">
             İstanbul&apos;daki uzun yıllara dayanan klinik çalışmalarımızın
-            ardından, çok yakında Bursa Nilüfer&apos;deki modern ofisimizde
-            danışanlarımızı kabul etmeye başlayacağız.
+            ardından, Bursa Nilüfer Özlüce&apos;deki kliniğimizde yüz yüze ve
+            online seanslarla danışanlarımızı kabul ediyoruz.
           </p>
         </article>
 

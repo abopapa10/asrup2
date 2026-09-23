@@ -9,6 +9,7 @@ import {
 } from "@/lib/question-answers";
 import { buildQuestionAnswerJsonLd } from "@/lib/page-structured-data";
 import { createPageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/site-config";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ogType: "article",
     publishedTime: `${item.dateISO}T09:00:00+03:00`,
     articleSection: "Soru - Cevap",
-    author: "Psikolog A. Alparslan Sancar",
+    author: siteConfig.name,
     keywords: item.keywords,
   });
 }

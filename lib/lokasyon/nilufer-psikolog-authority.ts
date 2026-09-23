@@ -43,7 +43,7 @@ export const niluferClinicalApproach = {
   heading: "Nilüfer'de Psikolog Arayanlar İçin Klinik Yaklaşım",
   paragraphs: [
     "Nilüfer psikolog araması yapan danışanların çoğu yalnızca \"yakınımda psikolog\" bulmak değil; güvenilir, uzman ve süreci net anlatan bir klinik eşleşmesi arar. Bursa Nilüfer, yoğun yerleşim, üniversite çevresi, iş merkezleri ve günlük trafik baskısıyla birlikte kaygı, tükenmişlik ve ilişki gerilimlerinin görünür olduğu bir bölgedir. Bu nedenle Nilüfer'de psikolog tercihi; yalnızca mesafe değil, klinik derinlik ve etik çerçeve açısından değerlendirilmelidir.",
-    "Uzman Klinik Psikolog Ahmet Alparslan Sancar, Hacettepe Üniversitesi Psikoloji Bölümü mezunu olup birey odaklı psikoterapi alanında uzmanlaşmıştır. İstanbul'daki yoğun klinik deneyimin ardından Bursa Nilüfer'deki klinikte yüz yüze ve online psikoterapi hizmeti planlanmaktadır. Süreç; tanı koyma iddiası taşımaz; yapılandırılmış klinik görüşme, geçerli ölçekler ve danışanın işlevselliğine odaklanan hedeflerle ilerler.",
+    "Uzman Klinik Psikolog Ahmet Alparslan Sancar, Hacettepe Üniversitesi Psikoloji Bölümü mezunu olup birey odaklı psikoterapi alanında uzmanlaşmıştır. İstanbul'daki yoğun klinik deneyimin ardından Bursa Nilüfer Özlüce'deki klinikte yüz yüze ve online psikoterapi hizmeti sunulmaktadır. Süreç; tanı koyma iddiası taşımaz; yapılandırılmış klinik görüşme, geçerli ölçekler ve danışanın işlevselliğine odaklanan hedeflerle ilerler.",
     "Nilüfer klinik psikolog hizmetleri, yetişkin danışanlar için kaygı bozuklukları, panik atak, depresif tablolar, OKB belirtileri, travma sonrası stres, ilişki çatışmaları ve mesleki tükenmişlik başlıklarını kapsar. Hangi ekolün öne çıkacağı; semptom öyküsü, danışanın hedefleri ve terapötik ilişki dinamiklerine göre birlikte belirlenir. BDT; düşünce-duygu-davranış döngülerini somutlaştırır; EMDR travma belleği ve tetikleyici uyaranlarla çalışır; birey odaklı yaklaşım ise danışanın öznel deneyimini merkeze alır.",
     "Nilüfer en iyi psikolog arayışında sık görülen hata, sosyal medya önerileriyle karar vermektir. Profesyonel bir nilüfer psikolog tavsiye süreci; eğitim geçmişi, uzmanlık alanları, etik ilkeler ve ilk görüşmede kurulan güven ilişkisini birlikte değerlendirmeyi içermelidir. Klinik ortam; danışan mahremiyetini koruyan, sakin ve öngörülebilir bir atmosfer sunacak şekilde tasarlanır — bu, özellikle panik veya sosyal kaygı yaşayan danışanlar için seans öncesi yükü düşürür.",
     "Bursa psikolog Nilüfer odaklı çalışma, yalnızca ilçe sınırıyla sınırlı değildir: Osmangazi, Yıldırım, Mudanya ve çevre ilçelerden danışanlar da yüz yüze veya online olarak başvurabilir. Online terapi; aynı gizlilik ve klinik standartla yürütülür; şehir dışı danışanlar için erişilebilir bir alternatiftir. Nilüfer terapi sürecinde danışan aktif katılımcıdır; ev ödevleri, öz-farkındalık egzersizleri ve seanslar arası gözlem notları gerektiğinde planlanır.",
@@ -155,13 +155,13 @@ export const niluferEeatSection = {
 export const niluferMapSection = {
   heading: "Nilüfer Klinik Konumu ve Ulaşım",
   paragraphs: [
-    "Klinik adresi Bursa Nilüfer ilçesinde planlanmaktadır; kesin sokak ve kapı bilgisi randevu onayında paylaşılır. Toplu taşıma hatları ve otopark seçenekleri hakkında yönlendirme, ilk randevu öncesinde iletilir. \"Yakınımda psikolog\" araması yapan danışanlar için harita üzerinden rota planlaması kolaylaştırılır.",
+    "Klinik, Bursa Nilüfer Özlüce'de Time Özlüce binasında yer alır: Ahmet Taner Kışlalı Bulvarı No:27, Ertuğrul, 16120 Nilüfer/Bursa. Toplu taşıma hatları ve otopark seçenekleri hakkında yönlendirme, ilk randevu öncesinde iletilir.",
     "Şehir dışından gelen danışanlar için Bursa otogar ve havalimanı bağlantıları hakkında kısa bilgi verilebilir. Online seans tercih edenler için fiziksel ulaşım zorunlu değildir.",
-    "\"Yakınımda psikolog\" araması yapan kullanıcılar için Nilüfer merkez konumu; FSM, Üçevler ve metro hatlarına göre ulaşım süresi açısından avantajlıdır. Harita embed alanı güncellendiğinde rota planlama tek tıkla mümkün olacaktır; şimdilik randevu onayında adres ve yön tarifi paylaşılır.",
+    "\"Yakınımda psikolog\" araması yapan kullanıcılar için Özlüce konumu; Ahmet Taner Kışlalı Bulvarı, FSM ve Nilüfer merkez hatlarına göre ulaşım süresi açısından avantajlıdır. Haritadan rota planlaması yapılabilir; randevu saatinde klinik girişini WhatsApp üzerinden teyit edebilirsiniz.",
   ],
-  mapEmbedLabel: "Nilüfer, Bursa — klinik konum haritası",
+  mapEmbedLabel: "Nilüfer Özlüce — klinik konum haritası",
   mapPlaceholderNote:
-    "Harita yerleşimi: Google Maps embed veya doğrulanmış koordinatlar eklendiğinde bu alan güncellenecektir. Randevu öncesi güncel adres için WhatsApp ile iletişime geçin.",
+    "Ahmet Taner Kışlalı Bulvarı No:27, Time Özlüce, Ertuğrul, 16120 Nilüfer/Bursa",
 } as const;
 
 export const niluferFaqs = [
@@ -223,7 +223,7 @@ export const niluferFaqs = [
   {
     question: "Yakınımda psikolog arıyorum; Nilüfer uygun mu?",
     answer:
-      "Nilüfer ve çevresinde yaşayan danışanlar için klinik konumu ulaşım açısından avantajlıdır. Google Haritalar üzerinden rota planlayabilir; randevu öncesi kesin adres ve otopark bilgisini WhatsApp ile alabilirsiniz. Mahremiyet odaklı bekleme alanı düzeni uygulanır.",
+      "Nilüfer ve çevresinde yaşayan danışanlar için klinik, Özlüce Time Özlüce binasında yer alır. Google Haritalar üzerinden rota planlayabilir; bina girişi ve otopark için randevu öncesi WhatsApp ile kısa yönlendirme alabilirsiniz. Mahremiyet odaklı bekleme alanı düzeni uygulanır.",
   },
 ] as const;
 

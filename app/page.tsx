@@ -1,6 +1,6 @@
-import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { ArticlesSection } from "@/components/ArticlesSection";
 import { AuthoritySection } from "@/components/AuthoritySection";
+import { ContactLocationSection } from "@/components/ContactLocationSection";
 import { ExpertiseAreasSection } from "@/components/ExpertiseAreasSection";
 import { TherapyProcessSection } from "@/components/TherapyProcessSection";
 import { DeferredFloatingWhatsApp } from "@/components/DeferredFloatingWhatsApp";
@@ -21,7 +21,6 @@ export default function HomePage() {
   return (
     <>
       <JsonLdScript data={buildHomeGraph()} />
-      <AnnouncementBar />
       <SiteHeader />
       <main>
         <HeroSection />
@@ -33,6 +32,7 @@ export default function HomePage() {
           className="h-10 bg-white sm:h-14 lg:h-20"
           aria-hidden
         />
+        <ContactLocationSection />
         <TherapyProcessSection />
         <ExpertiseAreasSection />
         <AuthoritySection />

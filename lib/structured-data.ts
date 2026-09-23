@@ -32,22 +32,25 @@ const MEDICAL_BUSINESS_ID = `${siteConfig.url}/#medicalbusiness`;
 const PSYCHOLOGIST_ID = `${siteConfig.url}/#psychologist`;
 
 const homePortrait = schemaImageObject(siteConfig.images.portraitClinical, {
-  caption: "Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı",
+  caption: "Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı",
   width: 960,
   height: 1200,
 });
 
 const fullPortrait = schemaImageObject(siteConfig.images.portraitFull, {
-  caption: "Psikolog A. Alparslan Sancar — tam profil portre",
+  caption: "Bursa Psikolog A. Alparslan Sancar — tam profil portre",
   width: 960,
   height: 1200,
 });
 
 function buildPostalAddress() {
   const { address } = siteConfig;
+  const streetAddress = [address.street, address.neighborhood]
+    .filter((part) => part.trim().length > 0)
+    .join(", ");
   return {
     "@type": "PostalAddress" as const,
-    ...(address.street ? { streetAddress: address.street } : {}),
+    ...(streetAddress ? { streetAddress } : {}),
     addressLocality: address.locality,
     addressRegion: address.region,
     ...(address.postalCode ? { postalCode: address.postalCode } : {}),
@@ -94,7 +97,7 @@ export const organizationSchema = {
   legalName: siteConfig.legalName,
   url: siteConfig.url,
   logo: schemaImageObject(siteConfig.seo.logoPath, {
-    caption: "Psikolog A. Alparslan Sancar site amblemi",
+    caption: "Bursa Psikolog A. Alparslan Sancar site amblemi",
   }),
   image: homePortrait,
   email: siteConfig.email,
@@ -230,8 +233,11 @@ export const medicalBusinessSchema = {
    */
   "@type": ["MedicalBusiness", "LocalBusiness", "ProfessionalService"],
   "@id": MEDICAL_BUSINESS_ID,
-  name: "Bursa Psikolog Ahmet Alparslan Sancar — Klinik Psikoloji",
-  alternateName: siteConfig.seo.shortName,
+  name: "Bursa Psikolog A. Alparslan Sancar — Klinik Psikoloji",
+  alternateName: [
+    siteConfig.seo.shortName,
+    siteConfig.googleBusinessName,
+  ],
   url: siteConfig.url,
   image: homePortrait,
   logo: schemaImageObject(siteConfig.seo.logoPath, {

@@ -5,7 +5,7 @@ import {
   coreServiceLinks,
   therapyApproachLinks,
 } from "@/lib/authority-links";
-import { siteConfig } from "@/lib/site-config";
+import { formatAddressLines, siteConfig } from "@/lib/site-config";
 
 const serviceLinks = [
   { href: "/bireysel-terapi", label: "Bireysel Terapi" },
@@ -28,7 +28,6 @@ const footerAuthorityLocations = coreLocationLinks;
 export function SiteFooter() {
   return (
     <footer
-      id="iletisim"
       className="border-t-2 border-t-neon-turquoise/40 border-ice-blue bg-white py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
@@ -39,7 +38,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           <div>
             <p className="font-display text-base font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-lg">
-              Bursa Psikolog Ahmet Alparslan Sancar
+              Bursa Psikolog A. Alparslan Sancar
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-body sm:mt-4">
               Uzman Klinik Psikolog · Bireysel Terapi · Çift Terapisi · Online
@@ -123,15 +122,30 @@ export function SiteFooter() {
 
         <address className="mt-10 not-italic border-t border-ice-blue/50 pt-8 sm:mt-12">
           <p className="eyebrow mb-3 sm:mb-4">Konum</p>
-          <p className="text-sm font-medium text-slate-charcoal">
-            Nilüfer, Bursa, Türkiye
-          </p>
+          {formatAddressLines().map((line) => (
+            <p
+              key={line}
+              className="text-sm font-medium leading-relaxed text-slate-charcoal"
+            >
+              {line}
+            </p>
+          ))}
           <p className="mt-2 text-sm leading-relaxed text-slate-body sm:mt-3">
             Yüz yüze ve online psikoterapi seçenekleriyle.
           </p>
+          {siteConfig.googleMapsUrl ? (
+            <a
+              href={siteConfig.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-sm font-medium text-slate-body hover:text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+            >
+              Google Haritalar&apos;da yol tarifi
+            </a>
+          ) : null}
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
-            className="mt-4 inline-block text-sm font-medium text-slate-body hover:text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
+            className="mt-4 block text-sm font-medium text-slate-body hover:text-slate-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-charcoal"
           >
             {siteConfig.phoneDisplay}
           </a>

@@ -193,31 +193,46 @@ export function NiluferPsikologPage() {
             </div>
 
             <div
-              className="mt-8 flex min-h-[220px] flex-col items-center justify-center border border-dashed border-ice-blue bg-white/80 p-8 text-center sm:min-h-[280px] sm:p-10"
+              className="mt-8 overflow-hidden border border-ice-blue bg-white"
               role="region"
               aria-label={niluferMapSection.mapEmbedLabel}
             >
-              <MapPin
-                strokeWidth={1.25}
-                className="mb-4 h-10 w-10 text-neon-turquoise"
-                aria-hidden
-              />
-              <p className="font-display text-sm font-semibold text-slate-charcoal sm:text-base">
-                {niluferMapSection.mapEmbedLabel}
-              </p>
-              <p className="mt-3 max-w-md text-xs leading-relaxed text-slate-body sm:text-sm">
-                {niluferMapSection.mapPlaceholderNote}
-              </p>
-              {siteConfig.googleMapsUrl ? (
-                <a
-                  href={siteConfig.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-editorial mt-5 text-sm font-medium"
-                >
-                  Google Haritalar&apos;da aç
-                </a>
-              ) : null}
+              {siteConfig.googleMapsEmbedUrl ? (
+                <iframe
+                  title={niluferMapSection.mapEmbedLabel}
+                  src={siteConfig.googleMapsEmbedUrl}
+                  className="h-[220px] w-full border-0 sm:h-[280px]"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              ) : (
+                <div className="flex min-h-[220px] flex-col items-center justify-center p-8 text-center sm:min-h-[280px] sm:p-10">
+                  <MapPin
+                    strokeWidth={1.25}
+                    className="mb-4 h-10 w-10 text-neon-turquoise"
+                    aria-hidden
+                  />
+                  <p className="font-display text-sm font-semibold text-slate-charcoal sm:text-base">
+                    {niluferMapSection.mapEmbedLabel}
+                  </p>
+                </div>
+              )}
+              <div className="border-t border-ice-blue/60 px-5 py-4 sm:px-6">
+                <p className="text-sm font-medium text-slate-charcoal">
+                  {niluferMapSection.mapPlaceholderNote}
+                </p>
+                {siteConfig.googleMapsUrl ? (
+                  <a
+                    href={siteConfig.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-editorial mt-3 inline-block text-sm font-medium"
+                  >
+                    Google Haritalar&apos;da aç
+                  </a>
+                ) : null}
+              </div>
             </div>
           </section>
 

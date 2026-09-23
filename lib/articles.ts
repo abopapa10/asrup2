@@ -128,6 +128,13 @@ import {
   othelloSendromuMetaDescription,
   othelloSendromuMetaTitle,
 } from "@/lib/article-content/othello-sendromu-nedir";
+import {
+  kaygiIcinPsikologaBlocks,
+  kaygiIcinPsikologaExcerpt,
+  kaygiIcinPsikologaFaq,
+  kaygiIcinPsikologaMetaDescription,
+  kaygiIcinPsikologaMetaTitle,
+} from "@/lib/article-content/kaygi-icin-psikologa-ne-zaman-gidilmeli";
 
 import type { Article } from "@/lib/article-types";
 import type { ArticleCategory } from "@/lib/article-categories";
@@ -145,6 +152,48 @@ export const articles: readonly Article[] = [
   // ────────────────────────────────────────────────────────────────
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
+  {
+    slug: "kaygi-icin-psikologa-ne-zaman-gidilmeli",
+    date: "23 Eylül 2026",
+    dateISO: "2026-09-23",
+    category: "Kaygı",
+    title: "Kaygı İçin Psikoloğa Ne Zaman Gidilmeli?",
+    metaTitle: kaygiIcinPsikologaMetaTitle,
+    metaDescription: kaygiIcinPsikologaMetaDescription,
+    excerpt: kaygiIcinPsikologaExcerpt,
+    faq: kaygiIcinPsikologaFaq,
+    content: kaygiIcinPsikologaBlocks,
+    relatedServices: [
+      {
+        label: "Anksiyete Terapisi (Bursa)",
+        href: "/hizmetler/anksiyete-terapisi-bursa",
+        description:
+          "Yaygın kaygı, sosyal kaygı ve aşırı düşünmede yapılandırılmış klinik destek.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description: "Kaygı ve işlevsellik odaklı yüz yüze bireysel psikoterapi.",
+      },
+      {
+        label: "Online Terapi",
+        href: "/online-terapi",
+        description: "Aynı klinik standartla görüntülü seans seçeneği.",
+      },
+      {
+        label: "Panik Atak Terapisi (Bursa)",
+        href: "/hizmetler/panik-atak-terapisi-bursa",
+        description: "Tekrarlayan panik ve kaçınma örüntülerinde klinik süreç.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "kaygi-bozuklugu-belirtileri",
+      "asiri-dusunme-ile-bas-etme",
+      "panik-atak-belirtileri",
+      "ilk-terapi-seansi-nasil-gecer",
+      "sinav-kaygisi-nedir",
+    ],
+  },
   {
     slug: "othello-sendromu-nedir",
     date: "10 Temmuz 2026",
@@ -509,6 +558,11 @@ export const articles: readonly Article[] = [
         href: "/hizmetler/panik-atak-terapisi-bursa",
         description: "Tekrarlayan panik atak ve kaçınma örüntüleri için yapılandırılmış süreç.",
       },
+    ],
+    relatedArticleSlugs: [
+      "kaygi-icin-psikologa-ne-zaman-gidilmeli",
+      "asiri-dusunme-ile-bas-etme",
+      "panik-atak-belirtileri",
     ],
   },
   {

@@ -13,7 +13,7 @@
 export const CANONICAL_SITE_ORIGIN = "https://bursapsikologsancar.com" as const;
 
 export const siteConfig = {
-  name: "Psikolog A. Alparslan Sancar",
+  name: "Bursa Psikolog A. Alparslan Sancar",
   legalName: "Ahmet Alparslan Sancar",
   phone: "+905518490236",
   phoneDisplay: "0551 849 02 36",
@@ -23,24 +23,36 @@ export const siteConfig = {
 
   /**
    * Klinik konum bilgisi (NAP).
-   * Sokak adı eklendiğinde `street` alanı güncellenmelidir.
+   * Google Business Profile ile birebir aynı yazılmalıdır.
    */
   address: {
-    street: "" as string,
+    street: "Ahmet Taner Kışlalı Bulvarı No:27, Time Özlüce",
+    neighborhood: "Ertuğrul",
     locality: "Nilüfer",
     region: "Bursa",
-    postalCode: "" as string,
+    postalCode: "16120",
     country: "TR",
   },
 
   /**
    * Coğrafi koordinatlar — schema.org `GeoCoordinates` için.
-   * Doğrulanmış koordinatlar girilene kadar `null` bırakılır.
+   * Google Business / Maps Place ID doğrulandıktan sonra doldurulur.
    */
   geo: null as null | { latitude: number; longitude: number },
 
-  /** Google Haritalar konum bağlantısı (varsa). */
-  googleMapsUrl: "" as string,
+  /**
+   * Google Business Profile işletme adı — NAP tutarlılığı için.
+   * Profil paylaşım bağlantısı `social.googleBusinessProfile` alanına eklenir.
+   */
+  googleBusinessName: "Bursa Psikolog A. Alparslan Sancar | Psikolog Randevu",
+
+  /** Google Haritalar arama / yol tarifi bağlantısı. */
+  googleMapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=Ahmet+Taner+K%C4%B1%C5%9Flal%C4%B1+Bulvar%C4%B1+No%3A27%2C+Time+%C3%96zl%C3%BCce%2C+Ertu%C4%9Frul%2C+16120+Nil%C3%BCfer%2FBursa",
+
+  /** Google Haritalar iframe embed (Place ID gelince kalıcı embed ile değiştirilir). */
+  googleMapsEmbedUrl:
+    "https://maps.google.com/maps?hl=tr&output=embed&q=Ahmet+Taner+K%C4%B1%C5%9Flal%C4%B1+Bulvar%C4%B1+No%3A27%2C+Time+%C3%96zl%C3%BCce%2C+Ertu%C4%9Frul%2C+16120+Nil%C3%BCfer%2FBursa",
 
   /**
    * Çalışma saatleri.
@@ -140,24 +152,34 @@ export const siteConfig = {
   },
 
   seo: {
-    siteName: "Psikolog A. Alparslan Sancar — Bursa",
+    siteName: "Bursa Psikolog A. Alparslan Sancar",
     shortName: "Bursa Psikolog",
     locale: "tr_TR",
     defaultTitle:
-      "Bursa Psikolog | Uzman Klinik Psikolog Ahmet Alparslan Sancar — Nilüfer",
+      "Bursa Psikolog A. Alparslan Sancar | Nilüfer Klinik Psikolog",
     defaultDescription:
-      "Bursa Nilüfer'de bireysel terapi, çift terapisi ve online terapi. Uzman Klinik Psikolog Ahmet Alparslan Sancar — klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
+      "Bursa Nilüfer Özlüce'de bireysel terapi, çift terapisi ve online terapi. Bursa Psikolog A. Alparslan Sancar — klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
     /** Ana sayfada ilk görünen klinik portre — OG ve zengin sonuçlar */
     defaultOgImage: "/images/portre.webp",
     defaultOgImageAlt:
-      "Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı",
-    titleTemplate: "%s | Psikolog A. Alparslan Sancar",
+      "Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı",
+    titleTemplate: "%s | Bursa Psikolog A. Alparslan Sancar",
     logoPath: "/favicon.svg",
     /** Twitter handle (varsa) */
     twitterSite: "" as string,
     twitterCreator: "" as string,
   },
 } as const;
+
+/** Footer, şema ve görünür NAP için iki satırlık adres. */
+export function formatAddressLines(): readonly [string, string] {
+  const { street, neighborhood, postalCode, locality, region } =
+    siteConfig.address;
+  return [
+    street,
+    `${neighborhood}, ${postalCode} ${locality}/${region}`,
+  ];
+}
 
 /** Sosyal profillerin doldurulmuş olanlarını dizi olarak döner. */
 export function getSocialProfileUrls(): string[] {

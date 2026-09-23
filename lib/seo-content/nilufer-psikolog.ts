@@ -37,7 +37,7 @@ export const niluferPsikolog: SeoLandingPage = {
       kind: "narrative",
       heading: "Nilüfer konumu ve klinik atmosfer",
       paragraphs: [
-        "Klinik, Nilüfer ilçesinin merkezi noktalarından erişilebilir bir konumda planlanmaktadır. Toplu taşıma ve özel araçla rahatlıkla ulaşılabilir; danışan trafiği gözetilerek seanslar arası makul aralıklar bırakılır.",
+        "Klinik, Nilüfer Özlüce'de Time Özlüce binasında, Ahmet Taner Kışlalı Bulvarı No:27 adresinde yer alır. Toplu taşıma ve özel araçla rahatlıkla ulaşılabilir; danışan trafiği gözetilerek seanslar arası makul aralıklar bırakılır.",
         "Bekleme alanı; danışanların başka bir danışanla karşılaşmasının önüne geçecek şekilde tasarlanır. Bu detay, özellikle [panik atak](/hizmetler/panik-atak-terapisi-bursa) ya da sosyal kaygı yaşayan danışanlar için seans öncesi tetikleyici yükü düşürür.",
         "Klinik atmosferi sade, sıcak ve dramatik olmayan bir görsel dile sahiptir. Amaç; danışanın ilk dakikadan itibaren güvende hissetmesidir.",
       ],

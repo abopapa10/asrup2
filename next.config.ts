@@ -57,8 +57,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/aldatilma-korkusu-hastaligi",
-        destination: "/makale/othello-sendromu-nedir",
+        source: "/kaygi-icin-psikologa-ne-zaman-gidilmeli",
+        destination: "/makale/kaygi-icin-psikologa-ne-zaman-gidilmeli",
         permanent: true,
       },
       {

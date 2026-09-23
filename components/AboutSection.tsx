@@ -52,14 +52,14 @@ export function AboutSection() {
             <div>
               <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Hakkımda</p>
               <h2 id="about-heading" className="heading-section">
-                Psikolog Ahmet Alparslan Sancar
+                Bursa Psikolog Ahmet Alparslan Sancar
               </h2>
             </div>
 
             <div className="mx-auto mt-8 w-full max-w-[20rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
               <PortraitFrame
                 src={siteConfig.images.portraitClinical}
-                alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
+                alt="Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı"
                 variant="clinical"
                 align="left"
               />
@@ -79,10 +79,9 @@ export function AboutSection() {
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
                 Bursa Nilüfer&apos;de ilk kliniğimi açarak burada psikoterapi
                 hizmeti vermeye başladım. İlerleyen yıllarda İstanbul
-                Beşiktaş&apos;ta bir ofis açtım; şu anda da Beşiktaş&apos;ta
-                yüz yüze ve online seanslarla hizmet vermekteyim. Yakın
-                zamanda Bursa&apos;da da psikoterapi hizmeti sunmaya
-                başlayacağım.
+                Beşiktaş&apos;ta da bir ofis açtım. Şu anda Bursa Nilüfer,
+                Özlüce&apos;deki kliniğimizde yüz yüze seanslarla; online
+                olarak da aynı klinik standartla hizmet vermekteyim.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
                 Bir psikolog olarak en güçlü yanlarımın kuramsal birikimim,
@@ -113,7 +112,7 @@ export function AboutSection() {
           >
             <PortraitFrame
               src={siteConfig.images.portraitClinical}
-              alt="Psikolog A. Alparslan Sancar — Bursa klinik portre fotoğrafı"
+              alt="Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı"
               variant="clinical"
               align="right"
             />
