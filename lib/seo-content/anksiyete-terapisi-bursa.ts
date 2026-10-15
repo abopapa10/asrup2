@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const anksiyeteTerapisiBursa: SeoLandingPage = {
   slug: "anksiyete-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Anksiyete Terapisi Bursa | Uzman Klinik Psikolog",
@@ -23,11 +23,11 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Anksiyete Terapisi — Bursa",
     lead: "Sabahları zihninizde çoktan başlamış bir \u201cya olursa\u201d döngüsü, bedeninize yerleşmiş gerginlik ya da uykuya geçmenin uzayan dakikaları… Klinik anlamda yardım edilebilir tablolardır.",
     intro:
-      "Bursa Nilüfer'deki kliniğimizde yetişkin bireyler için anksiyete terapisi sürecinde; semptomdan önce, neyin bu örüntüyü beslediğini birlikte anlamayı önceliklendiririz.",
+      "Bu sayfa anksiyete kavramını, belirtileri ve literatürdeki çerçeveleri özetler. Tanıtım veya satış metni değildir.",
     showCta: true,
   },
 
@@ -157,7 +157,7 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Anksiyete terapisi için randevu ve süreç bilgilendirmesi; aynı gün içinde yanıtlanır.",
   },

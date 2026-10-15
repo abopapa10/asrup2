@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const panikAtakTerapisiBursa: SeoLandingPage = {
   slug: "panik-atak-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Panik Atak Terapisi Bursa | Uzman Klinik Psikolog",
@@ -23,11 +23,11 @@ export const panikAtakTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Panik Atak Terapisi — Bursa",
     lead: "Aniden başlayan kalp çarpıntısı, nefesin yetmediği hissi, ellerde uyuşma ve \u201ckontrolü kaybediyorum\u201d düşüncesi… Panik atak; doğru klinik yaklaşımla anlaşılabilir ve geri çekilebilir bir tablodur.",
     intro:
-      "Bursa Nilüfer kliniğimizde panik atak yaşayan yetişkin danışanlara yapılandırılmış bir terapi süreci sunulmaktadır.",
+      "Bu sayfa panik atak belirtilerini ve psikoloji literatüründeki çerçeveleri özetler. Genel bilgilendirmedir.",
     showCta: true,
   },
 
@@ -156,9 +156,9 @@ export const panikAtakTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
-      "Panik atak terapisi için randevu talepleri ve ilk görüşme bilgisi; aynı gün içinde yanıtlanır.",
+      "Panik atak terapisi için iletişim mesajları ve ilk görüşme bilgisi; aynı gün içinde yanıtlanır.",
   },
 
   related: [

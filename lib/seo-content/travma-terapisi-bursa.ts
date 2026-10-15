@@ -3,7 +3,7 @@
 export const travmaTerapisiBursa: SeoLandingPage = {
   slug: "travma-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Travma Terapisi Bursa | Travma Sonrası Psikolojik Destek",
@@ -21,7 +21,7 @@ export const travmaTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Travma Terapisi — Bursa",
     lead: "Travmatik yaşantılar yalnızca geçmişte kalmayabilir; beden ve zihin bugünde alarm vermeye devam edebilir. Travma terapisi bu alarmı güvenli biçimde düzenlemeyi hedefler.",
     intro:
@@ -137,7 +137,7 @@ export const travmaTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Travma sonrası belirtiler için güvenli ve aşamalı bir terapi planı talebi aynı gün içinde yanıtlanır.",
   },

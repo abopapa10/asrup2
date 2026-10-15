@@ -7,12 +7,12 @@ import { buildHubPageJsonLd } from "@/lib/page-structured-data";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Hizmetler | Bursa Psikolog Çalışma Alanları",
+  title: "Psikoloji Konuları | Bursa Psikolog A. Alparslan Sancar",
   description:
-    "Bursa'da anksiyete, panik atak, OKB, EMDR, depresyon, çift terapisi ve online terapi çalışma alanlarını tek merkezden inceleyin.",
+    "Kaygı, ilişkiler, travma ve terapi yaklaşımları üzerine bilgilendirici yazılar — Bursa Psikolog A. Alparslan Sancar.",
   path: "/hizmetler",
   keywords: [
-    "Bursa psikolog hizmetler",
+    "Bursa psikolog konular",
     "anksiyete terapisi Bursa",
     "panik atak terapisi Bursa",
     "OKB terapisi Bursa",
@@ -33,25 +33,25 @@ export default function HizmetlerHubPage() {
         <JsonLdScript
           data={buildHubPageJsonLd({
             path: "/hizmetler",
-            title: "Hizmetler",
+            title: "Psikoloji konuları",
             description:
-              "Bursa psikoterapi çalışma alanlarının toplandığı hizmetler hub sayfası.",
+              "Kaygı, ilişkiler ve terapi yaklaşımları üzerine bilgilendirici yazıların toplandığı sayfa.",
           })}
         />
         <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
           <AuthorityLinkGrid
-            eyebrow="Hizmetler Hub"
-            title="Bursa'da Çalıştığımız Terapi Alanları"
-            lead="Her hizmet sayfası kendi klinik bağlamı, süreç açıklığı ve ilgili çalışma alanlarıyla birlikte hazırlanmıştır. İhtiyacınıza en yakın başlıktan başlayabilirsiniz."
+            eyebrow="Konular"
+            title="Psikolojiye dair başlıklar"
+            lead="Her sayfa bir konuyu, kavramsal çerçeveyi ve okuma yollarını özetler. Tanıtım veya satış metni değildir."
             items={coreServiceLinks}
             compact
-            badgeLabel="Hizmet"
+            badgeLabel="Konu"
           />
           <div className="mt-20 border-t border-ice-blue/50 pt-16 sm:mt-24 sm:pt-20">
             <AuthorityLinkGrid
               eyebrow="Terapi Yaklaşımları"
               title="Uzmanlık Ekolleri ve Yöntemler"
-              lead="Birey odaklı psikoterapi, BDT ve regresyon terapisi hakkında akademik düzeyde, okunabilir uzmanlık sayfaları."
+              lead="Birey odaklı psikoterapi, BDT ve ilgili yaklaşımlar üzerine okunabilir uzmanlık notları."
               items={therapyApproachLinks}
               compact
               badgeLabel="Uzmanlık"

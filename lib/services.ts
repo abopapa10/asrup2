@@ -12,96 +12,96 @@ export type Service = {
 export const services: readonly Service[] = [
   {
     slug: "bireysel-terapi",
-    title: "Bireysel Terapi",
+    title: "Bireysel Süreçler",
     teaser:
-      "Yetişkinlerde kaygı, depresyon ve kronik stres yönetimi. Klinik değerlendirme ile kişiye özel seans planı.",
+      "Kaygı, depresyon ve kronik stres üzerine psikoloji yazıları ve kavramsal çerçeve.",
     metaDescription:
-      "Bursa Nilüfer'de yetişkin bireysel terapi: kaygı, depresyon ve stres yönetimi. Uzman klinik psikolog ile kişiye özel seans planı.",
+      "Bursa Psikolog A. Alparslan Sancar — bireysel süreçler, kaygı ve duygudurum üzerine bilgilendirici yazılar. Nilüfer Özlüce.",
     intro:
-      "Bireysel terapi; yetişkinlerde kaygı, depresyon, tükenmişlik ve yaşam geçişlerinde güvenli, yapılandırılmış bir klinik süreç sunar. İlk görüşmede kapsamlı değerlendirme yapılır; terapi hedefleri ve seans sıklığı birlikte belirlenir.",
+      "Bireysel psikoloji; kaygı, çökkünlük, tükenmişlik ve yaşam geçişlerini anlamaya çalışan bir alandır. Bu sayfa tanıtım veya satış metni değil; kavramları ve okuma yollarını özetler.",
     highlights: [
       {
-        title: "Klinik değerlendirme",
-        body: "Semptom öyküsü, işlevsellik ve terapi beklentileri ilk seanslarda netleştirilir.",
+        title: "Kavramsal harita",
+        body: "Belirtiler, bağlam ve işlevsellik birlikte okunur; etiket tek başına açıklama değildir.",
       },
       {
         title: "Kanıta dayalı ekoller",
-        body: "Bilişsel-davranışçı ve psikodinamik çerçeveler danışanın ihtiyacına göre uyarlanır.",
+        body: "Bilişsel-davranışçı ve insancıl çerçeveler, yazılarda kaynak olarak yer alır.",
       },
       {
-        title: "Gizlilik ve etik",
-        body: "Tüm süreç mesleki etik ilkeler ve danışan mahremiyeti çerçevesinde yürütülür.",
+        title: "Etik dil",
+        body: "Mahremiyet ve ölçülü anlatım, kamuya açık içeriklerin de sınırıdır.",
       },
     ],
     process: [
-      "İlk görüşme ve klinik değerlendirme (yaklaşık 50 dakika)",
-      "Terapi hedeflerinin ve çalışma planının oluşturulması",
-      "Düzenli seanslarla ilerleme takibi ve gerektiğinde plan güncellemesi",
+      "Konuyu tanımlamak ve literatürle ilişkilendirmek",
+      "Günlük yaşama yansıyan örüntüleri ayırt etmek",
+      "İleri okuma ve ilgili yazılara yönelmek",
     ],
     closing:
-      "Bursa psikolog arayışınızda bireysel terapi için WhatsApp veya telefon ile randevu talebi oluşturabilirsiniz.",
+      "Sorularınız için iletişim bölümünden WhatsApp veya telefon ile ulaşabilirsiniz.",
   },
   {
     slug: "cift-terapisi",
-    title: "Çift Terapisi",
+    title: "İlişkiler ve Çift Dinamikleri",
     teaser:
-      "İlişkisel iletişim, güven ve evlilik danışmanlığı. Bursa Nilüfer'de yüz yüze çift terapisi.",
+      "İletişim, güven ve çatışma döngüleri üzerine psikoloji notları.",
     metaDescription:
-      "Bursa'da çift terapisi ve evlilik danışmanlığı. İletişim, güven ve çatışma yönetimi için uzman klinik psikolog desteği.",
+      "İlişki dinamikleri, iletişim ve güven üzerine yazılar — Bursa Psikolog A. Alparslan Sancar.",
     intro:
-      "Çift terapisi; ilişkide iletişim kopuklukları, güven sorunları ve tekrarlayan çatışma döngülerinde çiftin birlikte çalışmasını destekler. Tek başına başvuru da mümkündür.",
+      "Çift dinamikleri; iletişim kopuklukları, güven ve tekrarlayan çatışma örüntülerini anlamaya yönelik bir psikoloji alanıdır. Sayfa, genel okuma içindir.",
     highlights: [
       {
-        title: "İletişim becerileri",
-        body: "Savunmacı kalıplar yerine duyulan ve anlaşılan bir diyalog kurulması hedeflenir.",
+        title: "İletişim kalıpları",
+        body: "Savunma, kaçınma ve duyulmama hissi sık görülen döngülerdir.",
       },
       {
-        title: "Evlilik danışmanlığı",
-        body: "Nişan, evlilik ve uzun süreli birlikteliklerde karar ve sınır konuları ele alınır.",
+        title: "Güven ve sınır",
+        body: "Yakınlık ile özerklik arasındaki gerilim, yazılarda ayrı başlıklarla ele alınır.",
       },
       {
-        title: "Yüz yüze seans",
-        body: "Bursa Nilüfer kliniğinde çiftler için sakin ve profesyonel ortam.",
+        title: "Kaynaklar",
+        body: "İlgili makaleler ve soru-cevap içerikleri bu konuyu genişletir.",
       },
     ],
     process: [
-      "Çiftin birlikte veya bireysel ön görüşmesi",
-      "İlişki dinamiklerinin değerlendirilmesi",
-      "Ortak hedefler ve seans yapısının belirlenmesi",
+      "Döngüyü tanımlamak",
+      "Her iki tarafın deneyimini ayırt etmek",
+      "İlgili yazılara geçmek",
     ],
     closing:
-      "Çift terapisi randevusu ve süreç bilgisi için asistanımıza WhatsApp veya telefon ile ulaşın.",
+      "İletişim için WhatsApp veya telefon yeterlidir.",
   },
   {
     slug: "online-terapi",
-    title: "Online Terapi",
+    title: "Çevrimiçi Görüşme Formatı",
     teaser:
-      "Güvenli görüntülü görüşme ile bireysel ve çift terapisi. Bursa ve Türkiye genelinde uzaktan seans.",
+      "Görüntülü görüşmenin psikoloji alanındaki yeri üzerine kısa bir çerçeve.",
     metaDescription:
-      "Bursa ve Türkiye genelinde online terapi seansları. Güvenli görüntülü görüşme ile bireysel ve çift terapisi desteği.",
+      "Çevrimiçi görüşme formatı ve gizlilik üzerine notlar — Bursa Psikolog A. Alparslan Sancar.",
     intro:
-      "Online terapi; yoğun iş temposu, farklı şehirde yaşama veya yüz yüze seansa ulaşamama durumlarında etik ve gizlilik ilkeleri korunarak yürütülür.",
+      "Çevrimiçi görüşme; mesafe, tempo ve erişim nedeniyle sık konuşulan bir formattır. Bu sayfa, formatın genel çerçevesini özetler.",
     highlights: [
       {
-        title: "Esnek erişim",
-        body: "Uygun zaman diliminde, güvenli platform üzerinden seans imkânı.",
+        title: "Erişim",
+        body: "Farklı şehirler ve yoğun tempo, görüntülü görüşmeyi pratik kılar.",
       },
       {
-        title: "Aynı klinik standart",
-        body: "Yüz yüze süreçle aynı değerlendirme, kayıt ve etik çerçeve uygulanır.",
+        title: "Gizlilik",
+        body: "Sakin, özel bir ortam ve güvenli bağlantı temel unsurlardır.",
       },
       {
-        title: "Bireysel ve çift",
-        body: "Hem bireysel terapi hem çift terapisi online formatında sunulabilir.",
+        title: "Sınırlar",
+        body: "Acil tıbbi durumlarda yüz yüze acil sağlık hizmetleri önceliklidir.",
       },
     ],
     process: [
-      "Randevu ve teknik hazırlık bilgilendirmesi",
-      "Görüntülü görüşme ile klinik seans (yaklaşık 50 dakika)",
-      "Takip seansları ve gerektiğinde hibrit (online + yüz yüze) plan",
+      "Teknik hazırlık ve sessiz ortam",
+      "Görüşmenin çerçevesini netleştirmek",
+      "Gerektiğinde yüz yüze ile karşılaştırmak",
     ],
     closing:
-      "Online terapi uygunluğu ve randevu için iletişim kanallarımızdan bilgi alabilirsiniz.",
+      "Format hakkında soru sormak için iletişime geçebilirsiniz.",
   },
 ] as const;
 

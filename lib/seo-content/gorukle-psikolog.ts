@@ -25,7 +25,7 @@ export const goruklePsikolog: SeoLandingPage = {
     h1: "Görükle'de Yaşayanlar İçin Psikolojik Destek",
     lead: "Görükle'de öğrenci hayatı, sınav baskısı, ilişki zorlukları ve gelecek belirsizliği ile birlikte yoğun duygusal yükler görülebilir. Terapi süreci bu yükü birlikte düzenlemeyi hedefler.",
     intro:
-      "Seanslar Nilüfer kliniğimizde yüz yüze veya online formatta yürütülebilir; süreç danışanın yaşam ritmine göre planlanır.",
+      "Görükle ve Nilüfer bağlamında psikoloji yazıları; kişisel iletişim WhatsApp veya telefon iledir.",
     showCta: true,
   },
 
@@ -130,14 +130,14 @@ export const goruklePsikolog: SeoLandingPage = {
         "Yasal koşullar içinde, danışan gizliliği korunur. Süreçle ilgili bilgiler açık onay olmadan paylaşılmaz.",
     },
     {
-      question: "Randevuya nasıl başvururum?",
+      question: "Nasıl iletişime geçilir?",
       answer:
-        "WhatsApp veya telefon üzerinden asistanımıza ulaşıp uygun saatleri öğrenebilirsiniz.",
+        "WhatsApp veya telefon yeterlidir.",
     },
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Görükle'de yaşayan danışanlar için uygun seans formatı (yüz yüze/online) ilk görüşmede birlikte planlanır.",
   },

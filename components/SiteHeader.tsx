@@ -34,10 +34,10 @@ export function SiteHeader() {
             </Link>
           ))}
           <Link
-            href="/#randevu"
+            href="/#iletisim"
             className="rounded-lg border border-ice-blue px-4 py-2.5 text-xs font-semibold tracking-wide text-slate-charcoal transition-colors hover:border-neon-turquoise/60 hover:bg-soft-sky/10"
           >
-            Randevu Al
+            Bize ulaşın
           </Link>
         </nav>
 

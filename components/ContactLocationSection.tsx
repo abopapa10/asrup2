@@ -1,6 +1,7 @@
 import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { FadeIn } from "@/components/FadeIn";
+import { contactCopy } from "@/lib/contact-copy";
 import { formatAddressLines, siteConfig } from "@/lib/site-config";
 
 const weekdayLabel =
@@ -24,8 +25,8 @@ export function ContactLocationSection() {
             Bursa Psikolog İletişim Konum
           </h2>
           <p className="body-lead mt-4 sm:mt-6">
-            Nilüfer Özlüce&apos;deki kliniğimizde yüz yüze seans; WhatsApp veya
-            telefon ile aynı gün yanıt.
+            Nilüfer Özlüce adres bilgisi, telefon ve WhatsApp üzerinden
+            kişisel iletişim.
           </p>
         </FadeIn>
 
@@ -83,7 +84,7 @@ export function ContactLocationSection() {
                 <span>
                   {weekdayLabel}
                   <span className="mt-1 block text-slate-body/80">
-                    Cumartesi–Pazar: randevu ile
+                    Cumartesi–Pazar: önceden haberleşerek
                   </span>
                 </span>
               </p>
@@ -97,11 +98,11 @@ export function ContactLocationSection() {
                 className="btn-whatsapp sm:min-w-[12rem] sm:flex-1"
               >
                 <WhatsAppIcon />
-                WhatsApp Randevu
+                {contactCopy.whatsappLabel}
               </a>
               <a href={phoneHref} className="btn-phone sm:min-w-[10rem] sm:flex-1">
                 <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
-                Ara
+                {contactCopy.callLabel}
               </a>
               {siteConfig.googleMapsUrl ? (
                 <a

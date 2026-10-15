@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const bireyOdakliPsikoterapiBursa: SeoLandingPage = {
   slug: "birey-odakli-psikoterapi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Birey Odaklı Psikoterapi Bursa | İnsancıl Terapi",
@@ -23,7 +23,7 @@ export const bireyOdakliPsikoterapiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Birey Odaklı Psikoterapi — Bursa",
     lead: "Birey odaklı psikoterapi, danışanı bir \u201cvaka\u201d olarak değil; kendi deneyiminin uzmanı olan bir kişi olarak ele alan, insancıl ve ilişki temelli bir yaklaşımdır.",
     intro:
@@ -246,7 +246,7 @@ export const bireyOdakliPsikoterapiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Birey odaklı psikoterapi için ilk görüşme talebi ve süreç bilgilendirmesi; aynı gün içinde yanıtlanır.",
   },

@@ -1,13 +1,13 @@
 import type { ArticleBlock, ArticleFaqItem } from "../article-types";
 
 export const kaygiIcinPsikologaMetaTitle =
-  "Kaygı İçin Psikoloğa Ne Zaman Gidilmeli? | Bursa Psikolog Randevu";
+  "Kaygı İçin Psikoloğa Ne Zaman Gidilmeli? | Bursa Psikolog";
 
 export const kaygiIcinPsikologaMetaDescription =
-  "Kaygı için psikoloğa ne zaman gidilmeli? Günlük endişe ile klinik kaygıyı ayırt edin. Bursa Psikolog A. Alparslan Sancar ile psikolog randevu — Nilüfer yüz yüze ve online.";
+  "Kaygı için psikoloğa ne zaman gidilmeli? Günlük endişe ile klinik kaygıyı ayırt edin. Bursa Psikolog A. Alparslan Sancar — Nilüfer, psikoloji yazıları ve kişisel iletişim.";
 
 export const kaygiIcinPsikologaExcerpt =
-  "Kaygı herkeste olur; ancak süreklilik, yoğunluk ve işlevselliğe etki ediyorsa psikoloğa başvurmak anlamlıdır. Ne zaman beklememek gerektiğini ve Bursa'da psikolog randevu sürecini netleştiriyoruz.";
+  "Kaygı herkeste olur; ancak süreklilik, yoğunluk ve işlevselliğe etki ediyorsa bir psikoloğa danışmak anlamlı olabilir. Bu yazı genel bir okuma notudur.";
 
 export const kaygiIcinPsikologaFaq: readonly ArticleFaqItem[] = [
   {
@@ -16,14 +16,14 @@ export const kaygiIcinPsikologaFaq: readonly ArticleFaqItem[] = [
       "Kaygı iki haftadan uzun sürüyor, uyku-iş-ilişki alanlarını belirliyor veya panik benzeri belirtiler eşlik ediyorsa psikoloğa başvurmak uygundur. 'Dayanabildiğim sürece bekleyeyim' yaklaşımı çoğu zaman tabloyu kalıcılaştırır.",
   },
   {
-    question: "Her kaygı için Bursa psikolog randevusu gerekir mi?",
+    question: "Her kaygı için bir psikoloğa yazmak gerekir mi?",
     answer:
-      "Hayır. Kısa süreli, durumsal kaygı (örneğin tek bir sınav veya geçici bir olay) çoğu zaman kendiliğinden azalır. Süreklilik, kaçınma ve günlük işlev kaybı varsa Bursa psikolog randevu almak değerlidir.",
+      "Hayır. Kısa süreli, durumsal kaygı çoğu zaman kendiliğinden azalır. Süreklilik, kaçınma ve günlük işlev kaybı varsa bir psikoloğa danışmak değerlidir.",
   },
   {
-    question: "Psikolog randevu nasıl alınır?",
+    question: "Nasıl iletişime geçilir?",
     answer:
-      "WhatsApp veya telefon ile kısa bir mesaj bırakmanız yeterlidir. Uygun saatler paylaşılır; yüz yüze Nilüfer kliniği veya online format seçilir. İlk görüşme yaklaşık 50 dakikadır.",
+      "WhatsApp veya telefon ile kısa bir mesaj bırakmanız yeterlidir. Adres bilgisi Nilüfer Özlüce'dedir.",
   },
   {
     question: "İlaç kullanmadan kaygı azalır mı?",
@@ -40,7 +40,7 @@ export const kaygiIcinPsikologaFaq: readonly ArticleFaqItem[] = [
 export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   {
     type: "p",
-    text: "\u201cBu kadar endişelenmem normal mi?\u201d, \u201cHerkes böyle değil mi?\u201d, \u201cPsikoloğa gitmek abartı olur mu?\u201d — Kaygı yükseldiğinde aklın ilk soruları çoğu zaman budur. Bu yazı, kaygı için psikoloğa ne zaman gidilmesi gerektiğini netleştirmek; Bursa psikolog arayanlar için psikolog randevu kararını daha az belirsiz hâle getirmek üzere yazıldı.",
+    text: "\u201cBu kadar endişelenmem normal mi?\u201d, \u201cHerkes böyle değil mi?\u201d, \u201cPsikoloğa gitmek abartı olur mu?\u201d — Kaygı yükseldiğinde aklın ilk soruları çoğu zaman budur. Bu yazı, kaygı için psikoloğa ne zaman gidilmesinin anlamlı olabileceğini genel bir dille netleştirmek üzere yazıldı.",
   },
   {
     type: "p",
@@ -66,7 +66,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Tek bir işaret tek başına yeterli olmayabilir. Aşağıdakilerden birkaçının bir arada ve süregelen biçimde görülmesi, psikolog randevu almayı anlamlı kılar:",
+    text: "Tek bir işaret tek başına yeterli olmayabilir. Aşağıdakilerden birkaçının bir arada ve süregelen biçimde görülmesi, bir psikoloğa danışmayı anlamlı kılabilir:",
   },
   {
     type: "ul",
@@ -96,7 +96,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Erken psikolog randevu; tablonun \u201cyeterince kötüleşmesini\u201d beklememek anlamına gelir. Özellikle Bursa Nilüfer, Özlüce ve çevresinde yüz yüze erişim kolayken, online seans da aynı klinik standartla planlanabilir.",
+    text: "Erken bilgi aramak; tablonun \u201cyeterince kötüleşmesini\u201d beklememek anlamına gelebilir. Bu yazı genel bir çerçevedir.",
   },
 
   {
@@ -118,7 +118,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
 
   {
     type: "h2",
-    text: "İlk görüşmede ne olur? Psikolog randevu süreci",
+    text: "İlk görüşme literatürde nasıl anlatılır?",
   },
   {
     type: "p",
@@ -126,7 +126,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Bursa Psikolog A. Alparslan Sancar kliniğinde psikolog randevu WhatsApp veya telefon ile alınır. Yüz yüze seanslar Nilüfer Özlüce\u2019de; online seanslar aynı gizlilik ve etik çerçevede yürütülür. [Anksiyete terapisi](/hizmetler/anksiyete-terapisi-bursa) sürecinde bilişsel-davranışçı ve birey odaklı yaklaşımlar ihtiyaçlara göre yapılandırılır.",
+    text: "Kişisel iletişim için WhatsApp veya telefon kullanılabilir. Adres bilgisi Nilüfer Özlüce\u2019dedir. [Anksiyete](/hizmetler/anksiyete-terapisi-bursa) yazısında bilişsel-davranışçı ve birey odaklı çerçeveler özetlenir.",
   },
 
   {
@@ -151,7 +151,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
 
   {
     type: "h2",
-    text: "Bursa'da psikolog randevu: yüz yüze ve online",
+    text: "Bursa Nilüfer: konum ve iletişim",
   },
   {
     type: "p",
@@ -159,7 +159,7 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Psikolog randevu taleplerinde aynı gün yanıt hedeflenir. Acil tehlike, kendine zarar verme düşüncesi veya tıbbi acil durumlarda 112 ve yerel acil sağlık hizmetleri önceliklidir; psikoterapi randevusu acil servis yerine geçmez.",
+    text: "Acil tehlike, kendine zarar verme düşüncesi veya tıbbi acil durumlarda 112 ve yerel acil sağlık hizmetleri önceliklidir. Sitedeki içerik bunun yerine geçmez.",
   },
 
   {
@@ -168,6 +168,6 @@ export const kaygiIcinPsikologaBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Kaygı için psikoloğa ne zaman gidilmeli? Süreklilik, yoğunluk ve günlük yaşama etki bir araya geldiğinde. Beklemek zorunlu değildir; erken klinik değerlendirme çoğu zaman daha kısa ve daha sürdürülebilir bir yol açar. Bursa psikolog arayışınızda psikolog randevu almak için WhatsApp veya telefon yeterli bir ilk adımdır.",
+    text: "Kaygı için psikoloğa ne zaman gidilmeli? Süreklilik, yoğunluk ve günlük yaşama etki bir araya geldiğinde bilgi aramak anlamlı olabilir. Bursa Psikolog A. Alparslan Sancar ile kişisel iletişim için WhatsApp veya telefon yeterlidir.",
   },
 ];

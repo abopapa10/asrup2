@@ -6,7 +6,7 @@
 export const niluferAuthorityMeta = {
   title: "Nilüfer Psikolog | Bursa Uzman Klinik Psikolog",
   description:
-    "Bursa Nilüfer psikolog: bireysel terapi, çift terapisi, EMDR ve anksiyete desteği. Nilüfer psikolog randevu için WhatsApp ile aynı gün yanıt — uzman klinik psikolog.",
+    "Nilüfer Özlüce'de Bursa Psikolog A. Alparslan Sancar — eğitim, psikoloji yazıları ve kişisel iletişim.",
   canonicalPath: "/lokasyon/nilufer-psikolog",
   keywords: [
     "nilüfer psikolog",
@@ -31,11 +31,11 @@ export const niluferAuthorityMeta = {
 export const niluferAuthorityHero = {
   eyebrow: "Bursa · Nilüfer · Klinik Psikolog",
   h1: "Nilüfer Psikolog | Bursa Nilüfer'de Uzman Klinik Psikolog",
-  h2: "Nilüfer'de psikolog arayanlar için bilimsel, güvenli ve yapılandırılmış psikoterapi",
+  h2: "Nilüfer Özlüce — eğitim, yazılar ve kişisel iletişim",
   sentences: [
-    "Bursa Nilüfer'de yetişkin bireyler ve çiftler için bireysel terapi, çift terapisi ve online seans seçenekleri sunulmaktadır; klinik değerlendirme her sürecin başlangıç noktasıdır.",
-    "Çalışma çerçevesi; bilişsel-davranışçı terapi (BDT), EMDR ve birey odaklı psikoterapi ekollerine dayanır; hedef, semptom yönetiminin ötesinde kalıcı işlevsel iyileşmedir.",
-    "Nilüfer psikolog randevu talepleri WhatsApp veya telefon ile aynı gün içinde yanıtlanır; ilk görüşme için müsait saatler paylaşılır.",
+    "Bursa Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi Psikoloji mezunudur; Nilüfer Özlüce adres bilgisi bu sitede yer alır.",
+    "Sayfa; kaygı, ilişkiler ve travma üzerine kamuya açık okuma notları ile kişisel iletişim kanallarını bir arada tutar.",
+    "WhatsApp veya telefon ile iletişime geçebilirsiniz.",
   ],
 } as const;
 
@@ -43,12 +43,12 @@ export const niluferClinicalApproach = {
   heading: "Nilüfer'de Psikolog Arayanlar İçin Klinik Yaklaşım",
   paragraphs: [
     "Nilüfer psikolog araması yapan danışanların çoğu yalnızca \"yakınımda psikolog\" bulmak değil; güvenilir, uzman ve süreci net anlatan bir klinik eşleşmesi arar. Bursa Nilüfer, yoğun yerleşim, üniversite çevresi, iş merkezleri ve günlük trafik baskısıyla birlikte kaygı, tükenmişlik ve ilişki gerilimlerinin görünür olduğu bir bölgedir. Bu nedenle Nilüfer'de psikolog tercihi; yalnızca mesafe değil, klinik derinlik ve etik çerçeve açısından değerlendirilmelidir.",
-    "Uzman Klinik Psikolog Ahmet Alparslan Sancar, Hacettepe Üniversitesi Psikoloji Bölümü mezunu olup birey odaklı psikoterapi alanında uzmanlaşmıştır. İstanbul'daki yoğun klinik deneyimin ardından Bursa Nilüfer Özlüce'deki klinikte yüz yüze ve online psikoterapi hizmeti sunulmaktadır. Süreç; tanı koyma iddiası taşımaz; yapılandırılmış klinik görüşme, geçerli ölçekler ve danışanın işlevselliğine odaklanan hedeflerle ilerler.",
+    "Uzman Klinik Psikolog Ahmet Alparslan Sancar, Hacettepe Üniversitesi Psikoloji Bölümü mezunu olup birey odaklı psikoterapi alanında uzmanlaşmıştır. Meslek yaşamı Bursa ve İstanbul arasında geçmiştir; bugün Nilüfer Özlüce adresinde bulunur. Bu site psikoloji yazıları ve kişisel iletişim içindir.",
     "Nilüfer klinik psikolog hizmetleri, yetişkin danışanlar için kaygı bozuklukları, panik atak, depresif tablolar, OKB belirtileri, travma sonrası stres, ilişki çatışmaları ve mesleki tükenmişlik başlıklarını kapsar. Hangi ekolün öne çıkacağı; semptom öyküsü, danışanın hedefleri ve terapötik ilişki dinamiklerine göre birlikte belirlenir. BDT; düşünce-duygu-davranış döngülerini somutlaştırır; EMDR travma belleği ve tetikleyici uyaranlarla çalışır; birey odaklı yaklaşım ise danışanın öznel deneyimini merkeze alır.",
     "Nilüfer en iyi psikolog arayışında sık görülen hata, sosyal medya önerileriyle karar vermektir. Profesyonel bir nilüfer psikolog tavsiye süreci; eğitim geçmişi, uzmanlık alanları, etik ilkeler ve ilk görüşmede kurulan güven ilişkisini birlikte değerlendirmeyi içermelidir. Klinik ortam; danışan mahremiyetini koruyan, sakin ve öngörülebilir bir atmosfer sunacak şekilde tasarlanır — bu, özellikle panik veya sosyal kaygı yaşayan danışanlar için seans öncesi yükü düşürür.",
     "Bursa psikolog Nilüfer odaklı çalışma, yalnızca ilçe sınırıyla sınırlı değildir: Osmangazi, Yıldırım, Mudanya ve çevre ilçelerden danışanlar da yüz yüze veya online olarak başvurabilir. Online terapi; aynı gizlilik ve klinik standartla yürütülür; şehir dışı danışanlar için erişilebilir bir alternatiftir. Nilüfer terapi sürecinde danışan aktif katılımcıdır; ev ödevleri, öz-farkındalık egzersizleri ve seanslar arası gözlem notları gerektiğinde planlanır.",
     "YMYL (Your Money Your Life) alanında Google'ın güven sinyalleri için sayfa; uzman kimliği, şeffaf süreç anlatımı ve gerçekçi beklenti yönetimi sunar. Psikoterapi mucize vaat etmez; ancak bilimsel yöntemlerle desteklenen, ölçülebilir hedeflere yönelik bir yol haritası sunar. Nilüfer'de psikolog seçerken \"ilk seans nasıl geçer?\", \"kaç seans sürer?\" ve \"ücretler nasıl belirlenir?\" sorularına net, klinik dille yanıt veren bir kaynak aranmalıdır — bu sayfa tam olarak bu niyeti karşılamak üzere yapılandırılmıştır.",
-    "Nilüferde psikolog önerisi arayanlar için son pratik öneri: terapistin çalışma alanının sizin başvuru nedeninizle örtüşüp örtüşmediğini ilk görüşmede sorun; gizlilik sınırlarını ve seans iptal koşullarını netleştirin; online ve yüz yüze formatların sizin için hangisinin sürdürülebilir olduğunu birlikte değerlendirin. Bursa Nilüfer psikolog randevu hattı, bu soruları yanıtlamak ve uygun takvimi paylaşmak için her gün açıktır.",
+    "Nilüfer'de psikolog önerisi arayanlar için pratik ölçütler eğitim geçmişi, etik dil ve yazıların ölçülü olup olmadığıdır. Kişisel iletişim için WhatsApp veya telefon yeterlidir.",
   ],
 } as const;
 
@@ -116,7 +116,7 @@ export const niluferServiceBlocks: readonly NiluferServiceBlock[] = [
 export const niluferPricingSection = {
   heading: "Nilüfer Psikolog Ücretleri",
   paragraphs: [
-    "Nilüfer psikolog ücretleri; seans türü (bireysel, çift, online), süre, uzmanlık alanı ve terapi ekolüne göre mesleki standartlar çerçevesinde belirlenir. Web sitesinde sabit bir fiyat listesi yayınlamak yerine, güncel ve şeffaf bilgi randevu talebi sırasında paylaşılır — bu yaklaşım, danışana yanlış beklenti oluşturmadan güvenilir iletişim sağlar.",
+    "Nilüfer psikolog ücretleri; seans türü (bireysel, çift, online), süre, uzmanlık alanı ve terapi ekolüne göre mesleki standartlar çerçevesinde belirlenir. Web sitesinde sabit bir fiyat listesi yayınlamak yerine, güncel ve şeffaf bilgi iletişim sırasında paylaşılır — bu yaklaşım, danışana yanlış beklenti oluşturmadan güvenilir iletişim sağlar.",
     "Genel olarak bireysel seans ücretleri, çift terapisi seanslarından farklı yapılandırılır; EMDR veya yoğun travma protokolleri ek seans hazırlığı gerektirebileceğinden planlama buna göre yapılır. Nilüfer klinik psikolog ücret aralığı; Bursa'daki özel psikoterapi piyasası ile uyumludur; sigorta veya kurumsal anlaşma durumları randevu öncesi netleştirilir.",
     "Ücret konusunda \"en ucuz nilüfer psikolog\" araması anlaşılırdır; ancak klinik kalite, gizlilik ve uzmanlık maliyetin bir parçasıdır. İlk görüşme sonrası seans sayısı ve toplam süre tahmini birlikte konuşulur; danışan bütçesine uygun sıklık alternatifleri değerlendirilebilir.",
     "Ödeme koşulları ve iptal politikası randevu onayında yazılı olarak iletilir. Fiyat niyeti taşıyan ziyaretçiler için [Bursa psikolog fiyatları](/makale/bursa-psikolog-fiyatlari) makalesi ek bağlam sunar; kesin ücret yine de doğrudan iletişimle teyit edilmelidir.",
@@ -176,9 +176,9 @@ export const niluferFaqs = [
       "Nilüfer en iyi psikolog aramasında mesafe, uzmanlık alanı uyumu, seans formatı (yüz yüze/online) ve ücret şeffaflığı kriterlerini listeleyin. Kaygı için BDT deneyimi, travma için EMDR sertifikasyonu, çift sorunları için çift terapisi eğitimi gibi spesifik eşleşmeler önemlidir. Bu sayfadaki hizmet blokları hangi alanda ne sunulduğunu özetler.",
   },
   {
-    question: "Nilüfer psikolog randevu nasıl alınır?",
+    question: "Nilüfer'den nasıl iletişime geçilir?",
     answer:
-      "Nilüfer psikolog randevu için WhatsApp veya telefon ile asistan hattına yazmanız yeterlidir. Uygun saatler paylaşılır; yüz yüze Nilüfer kliniği veya online format seçilir. İlk görüşme öncesi kısa bilgilendirme metni iletilir; özel hazırlık şart değildir.",
+      "WhatsApp veya telefon yeterlidir. Adres: Time Özlüce, Ahmet Taner Kışlalı Bulvarı No:27, Ertuğrul, Nilüfer.",
   },
   {
     question: "İlk seans Nilüfer'de nasıl geçer?",
@@ -188,7 +188,7 @@ export const niluferFaqs = [
   {
     question: "Nilüfer psikolog ücretleri ne kadar?",
     answer:
-      "Nilüfer psikolog ücretleri seans türüne göre değişir; güncel rakamlar randevu talebinde şeffaf biçimde paylaşılır. Web'de sabit fiyat yayınlamak yerine doğrudan iletişim tercih edilir; böylece yanlış beklenti oluşmaz. Sigorta veya kurumsal anlaşma durumu da aynı kanaldan sorulabilir.",
+      "Nilüfer psikolog ücretleri seans türüne göre değişir; güncel rakamlar iletişimnde şeffaf biçimde paylaşılır. Web'de sabit fiyat yayınlamak yerine doğrudan iletişim tercih edilir; böylece yanlış beklenti oluşmaz. Sigorta veya kurumsal anlaşma durumu da aynı kanaldan sorulabilir.",
   },
   {
     question: "EMDR terapisi Nilüfer'de kimlere uygulanır?",
@@ -216,9 +216,9 @@ export const niluferFaqs = [
       "Panik atak tedavisi Nilüfer'de; bilişsel müdahaleler, interoseptif çalışmalar ve kademeli maruziyetle yürütülür. Kaçınılan durumlar (asansör, kalabalık vb.) hedeflenir. Acil tıbbi durumlar için 112 veya acil servis önceliklidir; psikoterapi kronik panik döngüsü içindir.",
   },
   {
-    question: "Nilüfer dışından danışan kabul ediliyor mu?",
+    question: "Nilüfer dışından yazışılabilir mi?",
     answer:
-      "Evet. Bursa'nın diğer ilçelerinden ve şehir dışından danışanlar yüz yüze veya online olarak başvurabilir. Nilüfer kliniğine ulaşım kolaylığı olan danışanlar için yüz yüze seans uygundur; uzak danışanlar için online format önerilir.",
+      "Evet. İletişim kanalları konumdan bağımsızdır. Adres bilgisi Nilüfer Özlüce'dedir.",
   },
   {
     question: "Yakınımda psikolog arıyorum; Nilüfer uygun mu?",
@@ -244,9 +244,9 @@ export const niluferRelatedLinks = [
     description: "BDT çerçevesinde yapılandırılmış müdahaleler.",
   },
   {
-    label: "Bursa Psikolog Hizmetleri",
+    label: "Psikoloji konuları",
     href: "/hizmetler",
-    description: "Tüm terapi alanları ve uzmanlık sayfaları.",
+    description: "Kaygı, ilişkiler ve yaklaşımlar üzerine yazılar.",
   },
   {
     label: "Çift Terapisi",
@@ -259,8 +259,8 @@ export const niluferRelatedLinks = [
     description: "Uzman biyografi ve çalışma prensipleri.",
   },
   {
-    label: "İletişim ve Randevu",
+    label: "İletişim",
     href: "/#iletisim",
-    description: "Telefon, WhatsApp ve randevu talebi.",
+    description: "Telefon, WhatsApp ve adres.",
   },
 ] as const;

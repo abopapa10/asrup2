@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { contactCopy } from "@/lib/contact-copy";
 import { siteConfig } from "@/lib/site-config";
 
 type CtaBlockProps = {
@@ -15,10 +16,10 @@ export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) 
       >
         <div className="cta-accent-line mb-6" aria-hidden />
         <p className="font-display text-lg font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-xl">
-          Randevu ve bilgilendirme için hemen ulaşın
+          {contactCopy.bannerHeading}
         </p>
         <p className="mt-2 text-sm text-slate-body">
-          Bursa psikolog randevu talepleriniz aynı gün içinde yanıtlanır.
+          {contactCopy.bannerCaption}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <a
@@ -28,14 +29,14 @@ export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) 
             className="btn-whatsapp sm:flex-1"
           >
             <WhatsAppIcon />
-            WhatsApp Randevu
+            {contactCopy.whatsappLabel}
           </a>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
             className="btn-phone sm:flex-1"
           >
             <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
-            Telefon
+            {contactCopy.phoneLabel}
           </a>
         </div>
       </div>
@@ -51,14 +52,14 @@ export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) 
         className="btn-whatsapp sm:flex-1"
       >
         <WhatsAppIcon />
-        WhatsApp ile Randevu
+        {contactCopy.whatsappLabel}
       </a>
       <a
         href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
         className="btn-phone sm:flex-1"
       >
         <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
-        Ara
+        {contactCopy.callLabel}
       </a>
     </div>
   );

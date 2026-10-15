@@ -139,18 +139,6 @@ export function buildServiceJsonLd(service: Service) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": `${pageUrl}#service`,
-      name: service.title,
-      description: service.metaDescription,
-      url: pageUrl,
-      serviceType: service.title,
-      areaServed: { "@type": "City", name: "Bursa" },
-      provider: PSYCHOLOGIST_REF,
-      brand: MEDICAL_BUSINESS_REF,
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "@id": `${pageUrl}#breadcrumb`,
       itemListElement: [
@@ -215,9 +203,7 @@ export function buildSeoLandingJsonLd(page: SeoLandingPage) {
       isPartOf: WEBSITE_REF,
       about: PSYCHOLOGIST_REF,
       breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
-      ...(page.group === "hizmetler"
-        ? { mainEntity: { "@id": `${pageUrl}#service` } }
-        : { mainEntity: MEDICAL_BUSINESS_REF }),
+      mainEntity: PSYCHOLOGIST_REF,
     },
     {
       "@context": "https://schema.org",
@@ -227,20 +213,7 @@ export function buildSeoLandingJsonLd(page: SeoLandingPage) {
     },
   ];
 
-  if (page.group === "hizmetler") {
-    schemas.push({
-      "@context": "https://schema.org",
-      "@type": "MedicalTherapy",
-      "@id": `${pageUrl}#service`,
-      name: page.hero.h1,
-      description: page.meta.description,
-      url: pageUrl,
-      relevantSpecialty: "Psychiatric",
-      areaServed: { "@type": "City", name: "Bursa" },
-      provider: PSYCHOLOGIST_REF,
-      brand: MEDICAL_BUSINESS_REF,
-    });
-  } else {
+  if (page.group !== "hizmetler") {
     /**
      * Lokasyon sayfaları — `Place` schema, MedicalBusiness'a referans verir.
      * Asıl LocalBusiness varlığı layout'tan gelir.

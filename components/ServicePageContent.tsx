@@ -23,7 +23,7 @@ export function ServicePageContent({ service }: ServicePageContentProps) {
               /
             </span>
             <Link href="/#hizmetler" className="link-editorial">
-              Hizmetler
+              Konular
             </Link>
             <span className="mx-2 text-ice-blue" aria-hidden>
               /
@@ -31,7 +31,7 @@ export function ServicePageContent({ service }: ServicePageContentProps) {
             <span className="text-slate-charcoal">{service.title}</span>
           </nav>
 
-          <p className="eyebrow eyebrow-cta mb-4">Hizmet</p>
+          <p className="eyebrow eyebrow-cta mb-4">Konu</p>
           <h1 className="heading-section max-w-3xl">{service.title}</h1>
           <p className="body-lead mt-6 max-w-2xl">{service.intro}</p>
         </FadeIn>

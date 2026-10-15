@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const bilisselDavranisciTerapiBursa: SeoLandingPage = {
   slug: "bilissel-davranisci-terapi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Bilişsel Davranışçı Terapi (BDT) Bursa | Kanıta Dayalı Psikoterapi",
@@ -24,7 +24,7 @@ export const bilisselDavranisciTerapiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "BDT (Bilişsel Davranışçı Terapi) — Bursa",
     lead: "Düşünceler, duygular ve davranışlar arasındaki bağlantıyı birlikte haritalandırdığınız; ölçülebilir hedefler, seans içi çalışma ve iki seans arası uygulamalarla ilerleyen kanıta dayalı bir psikoterapi çerçevesidir.",
     intro:
@@ -248,7 +248,7 @@ export const bilisselDavranisciTerapiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Bilişsel davranışçı terapi (BDT) için randevu ve süreç bilgilendirmesi; aynı gün içinde yanıtlanır.",
   },

@@ -22,7 +22,7 @@ export function ArticleRelatedServices({ services }: ArticleRelatedServicesProps
       aria-labelledby="article-related-services-heading"
       className="mt-16 sm:mt-20"
     >
-      <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">İlgili Hizmetler</p>
+      <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">İlgili konular</p>
       <h2
         id="article-related-services-heading"
         className="heading-section text-left"

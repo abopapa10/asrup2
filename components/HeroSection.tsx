@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { contactCopy } from "@/lib/contact-copy";
 import { siteConfig } from "@/lib/site-config";
 
 /**
@@ -29,18 +30,18 @@ export function HeroSection() {
             id="hero-heading"
             className="heading-display text-[2rem] leading-[1.08] sm:text-[2.65rem] lg:text-[3.25rem] xl:text-[3.5rem]"
           >
-            Bursa Psikolog Bireysel ve Çift Terapisi Desteği
+            Bursa Psikolog A. Alparslan Sancar
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg font-medium leading-snug tracking-[-0.02em] text-slate-body sm:mt-6 sm:text-xl lg:text-[1.5rem] lg:leading-[1.45]">
-            Uzman yaklaşımı ve bilimsel ekollerle ruh sağlığınızda yeni bir
-            dönem.
+            Hacettepe Üniversitesi Psikoloji mezunu; bilimsel ekoller ve
+            insani iletişim üzerine yazılar, notlar ve kişisel iletişim.
           </p>
 
           <p className="body-lead mt-5 max-w-xl sm:mt-6">
-            İstanbul&apos;daki uzun yıllara dayanan klinik çalışmalarımızın
-            ardından, Bursa Nilüfer Özlüce&apos;deki kliniğimizde yüz yüze ve
-            online seanslarla danışanlarımızı kabul ediyoruz.
+            Bu site, psikoloji alanındaki eğitimim, yaklaşımım ve kamuya açık
+            bilgilendirme içeriklerim için bir başvuru noktasıdır. Bana
+            ulaşmak isterseniz iletişim kanallarını kullanabilirsiniz.
           </p>
         </article>
 
@@ -52,14 +53,14 @@ export function HeroSection() {
             className="btn-whatsapp sm:flex-1"
           >
             <WhatsAppIcon />
-            WhatsApp ile Randevu
+            {contactCopy.whatsappLabel}
           </a>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
             className="btn-phone sm:flex-1"
           >
             <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
-            Telefon
+            {contactCopy.phoneLabel}
           </a>
         </div>
       </div>

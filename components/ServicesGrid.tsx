@@ -20,11 +20,11 @@ export function ServicesGrid() {
         <FadeIn>
           <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Uzmanlık Alanları</p>
           <h2 id="services-heading" className="heading-section max-w-2xl">
-            Çalışma Alanlarımız ve Hizmetler
+            Psikolojiye dair konular
           </h2>
           <p className="body-lead mt-4 max-w-xl sm:mt-6">
-            Bursa psikolog hizmetlerimiz; bireysel terapi, çift terapisi ve online
-            terapi alanlarında, Nilüfer&apos;de yüz yüze ve uzaktan seçeneklerle.
+            Bireysel süreçler, ilişkiler ve çevrimiçi görüşme formatı üzerine
+            bilgilendirici yazılar.
           </p>
         </FadeIn>
 

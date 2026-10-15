@@ -47,12 +47,12 @@ export function SiteHeaderMobileMenu() {
             ))}
             <li className="pt-3">
               <Link
-                href="/#randevu"
+                href="/#iletisim"
                 className="btn-whatsapp"
                 onClick={() => setOpen(false)}
               >
                 <WhatsAppIcon />
-                Randevu Al
+                Bize ulaşın
               </Link>
             </li>
           </ul>

@@ -88,7 +88,7 @@ export const osmangaziPsikolog: SeoLandingPage = {
       kind: "narrative",
       heading: "Randevu ve süreç",
       paragraphs: [
-        "Randevu talepleri WhatsApp veya telefon ile asistanımıza ulaşılarak başlatılır. Müsaitlik durumuna göre saat aralıkları paylaşılır; ilk seans öncesinde kısa bir bilgilendirme metni iletilir.",
+        "Mesajlar WhatsApp veya telefon ile asistanımıza ulaşılarak başlatılır. Müsaitlik durumuna göre saat aralıkları paylaşılır; ilk seans öncesinde kısa bir bilgilendirme metni iletilir.",
         "İlk görüşmede ihtiyaç birlikte değerlendirilir ve uygun seans formatı (yüz yüze, online ya da hibrit) belirlenir.",
         "Kalıcı değişim için seansların düzenli sürdürülmesi önerilir; sıklık zaman içinde danışanın ihtiyacına göre yeniden planlanır.",
       ],
@@ -130,9 +130,9 @@ export const osmangaziPsikolog: SeoLandingPage = {
         "Anksiyete, depresyon, panik atak, ilişki içi zorluklar, tükenmişlik ve yaşam geçişleri gibi geniş bir yelpazede klinik destek sunulur. İhtiyaç ilk görüşmede birlikte değerlendirilir.",
     },
     {
-      question: "Aynı gün randevu mümkün mü?",
+      question: "Nasıl iletişime geçilir?",
       answer:
-        "Müsaitlik durumuna göre aynı gün randevu mümkündür. Asistanımıza WhatsApp ile ulaşmanız önerilir.",
+        "WhatsApp veya telefon yeterlidir. Adres bilgisi Nilüfer Özlüce'dedir.",
     },
     {
       question: "Online seans, yüz yüze seansla aynı kalitede mi?",
@@ -147,7 +147,7 @@ export const osmangaziPsikolog: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Osmangazi'den başvuran danışanlar için yüz yüze ve online seans randevuları; aynı gün içinde yanıtlanır.",
   },

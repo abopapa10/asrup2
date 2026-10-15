@@ -25,7 +25,7 @@ export const balatPsikolog: SeoLandingPage = {
     h1: "Balat ve Çevresinde Psikolojik Destek",
     lead: "Balat'ta yaşayan danışanlar için terapi sürecini, şehir temposu ve günlük programla uyumlu biçimde planlıyoruz. Amaç; sürdürülebilir ve güvenli bir psikolojik destek hattı oluşturmaktır.",
     intro:
-      "Yüz yüze seanslar Nilüfer kliniğimizde, gerektiğinde online formatla birlikte yürütülür.",
+      "Nilüfer Özlüce adres bilgisi sitede yer alır. Sayfa genel psikoloji okuması ve kişisel iletişim içindir.",
     showCta: true,
   },
 
@@ -132,12 +132,12 @@ export const balatPsikolog: SeoLandingPage = {
     {
       question: "Randevu dönüşü ne kadar sürer?",
       answer:
-        "Randevu talepleri çoğunlukla aynı gün içinde yanıtlanır.",
+        "Mesajlar çoğunlukla aynı gün içinde yanıtlanır.",
     },
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Balat ve çevresinde yaşayan danışanlar için uygun seans planı, ilk iletişimde net ve şeffaf biçimde paylaşılır.",
   },

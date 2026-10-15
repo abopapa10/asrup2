@@ -8,9 +8,9 @@ import {
 import { formatAddressLines, siteConfig } from "@/lib/site-config";
 
 const serviceLinks = [
-  { href: "/bireysel-terapi", label: "Bireysel Terapi" },
-  { href: "/cift-terapisi", label: "Çift Terapisi" },
-  { href: "/online-terapi", label: "Online Terapi" },
+  { href: "/bireysel-terapi", label: "Bireysel süreçler" },
+  { href: "/cift-terapisi", label: "İlişkiler" },
+  { href: "/online-terapi", label: "Çevrimiçi format" },
 ] as const;
 
 const footerAuthorityServices = coreServiceLinks.filter((item) =>
@@ -41,14 +41,14 @@ export function SiteFooter() {
               Bursa Psikolog A. Alparslan Sancar
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-body sm:mt-4">
-              Uzman Klinik Psikolog · Bireysel Terapi · Çift Terapisi · Online
-              Terapi
+              Hacettepe Üniversitesi Psikoloji · Nilüfer Özlüce · Yazılar ve
+              kişisel iletişim
             </p>
           </div>
 
           <nav aria-label="Site bağlantıları" className="space-y-8">
             <div>
-              <p className="eyebrow mb-3 sm:mb-4">Hizmetler</p>
+              <p className="eyebrow mb-3 sm:mb-4">Konular</p>
               <ul className="space-y-2 sm:space-y-3">
                 {serviceLinks.map((link) => (
                   <li key={link.href}>
@@ -131,7 +131,7 @@ export function SiteFooter() {
             </p>
           ))}
           <p className="mt-2 text-sm leading-relaxed text-slate-body sm:mt-3">
-            Yüz yüze ve online psikoterapi seçenekleriyle.
+            Psikoloji yazıları ve kişisel iletişim.
           </p>
           {siteConfig.googleMapsUrl ? (
             <a

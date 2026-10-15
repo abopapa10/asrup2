@@ -1,6 +1,6 @@
 /** Ana navigasyon — header server + mobil menü client ortak kaynak */
 export const siteNavLinks = [
-  { href: "/hizmetler", label: "Hizmetler" },
+  { href: "/hizmetler", label: "Konular" },
   { href: "/lokasyon", label: "Lokasyonlar" },
   { href: "/#yorumlar", label: "Yorumlar" },
   { href: "/testler", label: "Testler" },

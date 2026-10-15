@@ -24,13 +24,11 @@ export function FooterSeoAccordion() {
             id="footer-seo-accordion-heading"
             className="heading-section max-w-2xl text-left text-2xl sm:text-[1.75rem]"
           >
-            Bursa&apos;da psikolog arayanlar için klinik bilgi
+            Bursa Psikolog A. Alparslan Sancar hakkında
           </h2>
           <p className="mt-4 max-w-prose text-sm leading-[1.85] text-slate-body sm:text-base sm:leading-[1.9]">
-            <strong className="font-medium text-slate-charcoal">Bursa psikolog</strong>
-            , <strong className="font-medium text-slate-charcoal">psikolog randevu</strong>{" "}
-            ve <strong className="font-medium text-slate-charcoal">psikolog bursa</strong>{" "}
-            aramalarında süreç, yaklaşım ve uzmanlık hakkında özet bilgiler.
+            Eğitim, yaklaşım ve sitedeki psikoloji yazılarına dair kısa notlar.
+            Kişisel iletişim için WhatsApp veya telefon yeterlidir.
           </p>
 
           <div className="footer-seo-accordion mt-10 flex flex-col gap-3 sm:mt-12 sm:gap-4">
@@ -86,7 +84,7 @@ export function FooterSeoAccordion() {
             >
               anksiyete terapisi
             </Link>{" "}
-            sayfalarından hizmet detaylarına ulaşabilirsiniz.
+            sayfalarından ilgili yazılara ulaşabilirsiniz.
           </p>
         </div>
       </section>

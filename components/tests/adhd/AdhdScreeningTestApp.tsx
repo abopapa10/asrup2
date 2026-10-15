@@ -242,21 +242,20 @@ export function AdhdScreeningTestApp() {
                 </p>
                 <p className="mt-2 text-xs leading-relaxed text-slate-body">
                   Yetişkin DEHB tanısı öykü, işlevsellik ölçümü ve ayırıcı tanı
-                  gerektirir. Klinik psikolog ile psikoterapi ve gerekirse psikiyatrik
-                  konsültasyon planlanabilir.
+                  gerektirir. Bu test tanı koymaz.
                 </p>
                 <div className="mt-4 flex flex-col gap-2.5 sm:flex-row">
                   <Link
-                    href="/bireysel-terapi"
+                    href="/#iletisim"
                     className="btn-whatsapp inline-flex flex-1 items-center justify-center px-4 py-2.5 text-center text-sm"
                   >
-                    Bireysel terapi randevusu
+                    Bize ulaşın
                   </Link>
                   <Link
                     href="/hizmetler/bilissel-davranisci-terapi-bursa"
                     className="inline-flex flex-1 items-center justify-center rounded-lg border border-ice-blue bg-white px-4 py-2.5 text-center text-sm font-semibold text-slate-charcoal transition-colors hover:border-neon-turquoise/50 hover:bg-soft-sky/25"
                   >
-                    BDT hizmeti
+                    BDT yazısı
                   </Link>
                 </div>
               </div>

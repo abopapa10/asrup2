@@ -3,7 +3,7 @@
 export const emdrTerapisiBursa: SeoLandingPage = {
   slug: "emdr-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "EMDR Terapisi Bursa | Travmatik Anılar İçin Klinik Destek",
@@ -21,7 +21,7 @@ export const emdrTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "EMDR Terapisi — Bursa",
     lead: "Geçmişte yaşanmış zorlayıcı deneyimlerin bugünkü yaşamı etkilemeye devam ettiği durumlarda EMDR, yapılandırılmış ve kanıta dayalı bir terapi yaklaşımıdır.",
     intro:
@@ -137,7 +137,7 @@ export const emdrTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "EMDR uygunluğu ve süreç planlaması için ilk görüşme talebi aynı gün içinde yanıtlanır.",
   },

@@ -3,7 +3,7 @@
 export const onlineTerapiBursaSeo: SeoLandingPage = {
   slug: "online-terapi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Online Terapi Bursa | Güvenli ve Etik Psikoterapi",
@@ -21,7 +21,7 @@ export const onlineTerapiBursaSeo: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa",
+    eyebrow: "Konu · Bursa",
     h1: "Online Terapi — Bursa",
     lead: "Online terapi, zaman ve ulaşım bariyerlerini azaltırken klinik çerçeveyi koruyan bir destek modelidir. Doğru planlandığında yüz yüze terapiye yakın bir etki sağlar.",
     intro:
@@ -137,7 +137,7 @@ export const onlineTerapiBursaSeo: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Online terapi uygunluğu ve teknik süreç hakkında bilgilendirme için aynı gün dönüş sağlanır.",
   },

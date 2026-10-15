@@ -45,14 +45,10 @@ const homeMetadata = createPageMetadata({
   keywords: [
     "Bursa psikolog",
     "Nilüfer psikolog",
-    "Bursa terapi",
-    "Bireysel terapi",
-    "Çift terapisi",
-    "Online terapi",
-    "Anksiyete terapisi Bursa",
-    "Panik atak terapisi Bursa",
-    "Depresyon terapisi Bursa",
-    "Klinik psikolog Bursa",
+    "Bursa Psikolog A. Alparslan Sancar",
+    "Hacettepe psikoloji",
+    "psikoloji yazıları",
+    "klinik psikolog Bursa",
   ],
 });
 

@@ -132,7 +132,7 @@ export const psychologistSchema = {
   image: [homePortrait, fullPortrait],
   jobTitle: siteConfig.professional.jobTitle,
   description:
-    "Bursa Nilüfer'de yetişkin bireyler için bireysel terapi, çift terapisi ve online terapi. Klinik değerlendirme, danışan gizliliği ve etik ilkeler temelinde yürütülen yapılandırılmış psikoterapi süreci.",
+    "Bursa Nilüfer'de psikoloji alanında eğitim, yazı ve kişisel iletişim. Bursa Psikolog A. Alparslan Sancar — Hacettepe Üniversitesi Psikoloji Bölümü.",
   email: siteConfig.email,
   telephone: siteConfig.phone,
   address: buildPostalAddress(),
@@ -231,20 +231,20 @@ export const medicalBusinessSchema = {
    * LocalBusiness alanları (priceRange, openingHours, geo, hasMap)
    * burada da geçerlidir.
    */
-  "@type": ["MedicalBusiness", "LocalBusiness", "ProfessionalService"],
+  "@type": ["Person", "Psychologist"],
   "@id": MEDICAL_BUSINESS_ID,
-  name: "Bursa Psikolog A. Alparslan Sancar — Klinik Psikoloji",
+  name: siteConfig.name,
   alternateName: [
     siteConfig.seo.shortName,
-    siteConfig.googleBusinessName,
+    siteConfig.legalName,
   ],
   url: siteConfig.url,
   image: homePortrait,
   logo: schemaImageObject(siteConfig.seo.logoPath, {
-    caption: "Klinik amblem",
+    caption: "Site amblemi",
   }),
   description:
-    "Bursa Nilüfer'de bireysel terapi, çift terapisi ve online terapi sunan klinik psikoloji uygulaması.",
+    "Bursa Nilüfer Özlüce'de psikoloji yazıları ve kişisel iletişim: Bursa Psikolog A. Alparslan Sancar.",
   telephone: siteConfig.phone,
   email: siteConfig.email,
   address: buildPostalAddress(),
@@ -259,29 +259,14 @@ export const medicalBusinessSchema = {
     : {}),
   ...(siteConfig.googleMapsUrl ? { hasMap: siteConfig.googleMapsUrl } : {}),
   areaServed: buildAreaServed(),
-  /** Klinik uzmanlık */
-  medicalSpecialty: "Psychiatric",
-  /** Kabul edilen ödeme & dil & saat */
-  priceRange: siteConfig.business.priceRange,
-  currenciesAccepted: siteConfig.business.currenciesAccepted,
-  paymentAccepted: [...siteConfig.business.paymentAccepted].join(", "),
   openingHoursSpecification: buildOpeningHours(),
   availableLanguage: siteConfig.languages.map((l) => l.name),
   contactPoint: [buildContactPoint()],
-  /** Personel */
-  employee: { "@id": PSYCHOLOGIST_ID },
-  founder: { "@id": PSYCHOLOGIST_ID },
-  parentOrganization: { "@id": ORG_ID },
-  /** Sunulan klinik hizmetler — referans olarak SEO sayfalarıyla aynı */
-  makesOffer: siteConfig.professional.expertiseAreas.map((area) => ({
-    "@type": "Offer" as const,
-    itemOffered: {
-      "@type": "Service" as const,
-      name: area,
-      provider: { "@id": PSYCHOLOGIST_ID },
-      areaServed: { "@type": "City" as const, name: "Bursa" },
-    },
-  })),
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: siteConfig.professional.alumniOf.name,
+  },
+  jobTitle: siteConfig.professional.jobTitle,
   ...(aggregateRating ? { aggregateRating } : {}),
   ...(reviewSchemas.length > 0 ? { review: reviewSchemas } : {}),
   ...(getSocialProfileUrls().length > 0

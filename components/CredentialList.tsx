@@ -1,9 +1,10 @@
 import { Check } from "lucide-react";
 
 const credentials = [
+  "BTSO Bursa Sosyal Bilimler Lisesi",
   "Hacettepe Üniversitesi Psikoloji Bölümü",
-  "700'ün üzerinde danışan tecrübesi",
-  "Yalnızca bilimsel olarak temellenmiş yöntemler",
+  "Birey Odaklı Psikoterapi uzmanlık eğitimi",
+  "Bilişsel-davranışçı kuramsal zemin",
 ] as const;
 
 /** Sunucu render — opacity:0 animasyonu LCP ölçümünü geciktirmez */

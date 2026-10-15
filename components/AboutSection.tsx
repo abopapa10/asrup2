@@ -6,16 +6,16 @@ import { siteConfig } from "@/lib/site-config";
 
 const workPrinciples = [
   {
-    title: "Samimiyet ve dürüstlük",
-    body: "Terapi ilişkisini güvene dayalı, açık ve insani bir çerçevede kurarım.",
+    title: "Bilimsel çerçeve",
+    body: "Yazılarımda ve kamuoyuna açık anlatılarımda kanıta dayalı psikoloji dilini esas alırım.",
   },
   {
-    title: "Şeffaf süreç",
-    body: "Neyi neden yaptığımızı ve şu anki durumu birlikte netleştiririz.",
+    title: "Açık ve ölçülü anlatım",
+    body: "Konuları sadeleştirirken abartıdan ve kesin vaatlerden kaçınırım.",
   },
   {
     title: "Etik ve gizlilik",
-    body: "Danışan gizliliği ve mesleki etik ilkeler süreçte değişmez temeldir.",
+    body: "Mesleki etik ilkeler ve mahremiyet, psikoloji alanında duruşumun temelidir.",
   },
 ] as const;
 
@@ -23,7 +23,7 @@ function WorkPrinciplesCard() {
   return (
     <div className="editorial-card mt-8 p-6 sm:mt-10 sm:p-8">
       <h3 className="text-lg font-semibold tracking-tight text-deep-navy sm:text-xl">
-        Çalışma prensipleri
+        Yaklaşımım
       </h3>
       <ul className="mt-5 space-y-5 sm:mt-6 sm:space-y-6">
         {workPrinciples.map((item) => (
@@ -52,7 +52,7 @@ export function AboutSection() {
             <div>
               <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Hakkımda</p>
               <h2 id="about-heading" className="heading-section">
-                Bursa Psikolog Ahmet Alparslan Sancar
+                Eğitim ve mesleki duruş
               </h2>
             </div>
 
@@ -71,33 +71,29 @@ export function AboutSection() {
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
                 BTSO Bursa Sosyal Bilimler Lisesi&apos;nde lise eğitimimi
                 tamamladıktan sonra Hacettepe Üniversitesi Psikoloji
-                Bölümü&apos;nü kazandım. Üniversitedeki eğitimim ağırlıklı
-                olarak Bilişsel Davranışçı ekol çerçevesindeydi; mezuniyetimden
-                sonra İnsancıl ekol çerçevesindeki Birey Odaklı Psikoterapi
+                Bölümü&apos;nü kazandım. Üniversite dönemim ağırlıklı olarak
+                Bilişsel Davranışçı ekol çerçevesinde şekillendi; mezuniyetimin
+                ardından İnsancıl ekol içindeki Birey Odaklı Psikoterapi
                 tekniğinde uzmanlaştım.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Bursa Nilüfer&apos;de ilk kliniğimi açarak burada psikoterapi
-                hizmeti vermeye başladım. İlerleyen yıllarda İstanbul
-                Beşiktaş&apos;ta da bir ofis açtım. Şu anda Bursa Nilüfer,
-                Özlüce&apos;deki kliniğimizde yüz yüze seanslarla; online
-                olarak da aynı klinik standartla hizmet vermekteyim.
+                Meslek yaşamım Bursa ve İstanbul arasında geçti. Nilüfer ve
+                Beşiktaş deneyimlerim, hem akademik birikimi hem de insani
+                iletişimi bir arada tutan bir bakış geliştirmeme yardımcı oldu.
+                Bugün Bursa Nilüfer, Özlüce&apos;de bulunuyorum.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Bir psikolog olarak en güçlü yanlarımın kuramsal birikimim,
-                analitik bakışım ve problemlere yapılandırılmış müdahale
-                üretebilmem olduğunu düşünüyorum. Psikoterapi seanslarını
-                samimiyet ve dürüstlük ilkeleriyle yürütmeye özen gösteriyorum;
-                süreci şeffaf biçimde yöneterek neyi neden yaptığımızı ve şu
-                anki durumu birlikte netleştiriyoruz. Terapi süreciyle ilgili
-                bilgi almak istediğiniz konularda{" "}
+                Bir psikolog olarak güçlü yanlarımın kuramsal birikim, analitik
+                bakış ve konuları yapılandırılmış biçimde ele alma olduğunu
+                düşünüyorum. Bu sitede psikolojiye dair yazılar, testler ve
+                açık kaynaklar paylaşırım. Bana ulaşmak isterseniz{" "}
                 <Link
-                  href="/iletisim"
+                  href="/#iletisim"
                   className="font-medium text-cta underline decoration-cta/30 underline-offset-4 transition-colors hover:text-cta-hover hover:decoration-cta/60"
                 >
-                  iletişime geçebilirsiniz
-                </Link>
-                .
+                  iletişim
+                </Link>{" "}
+                bölümünü kullanabilirsiniz.
               </p>
             </FadeIn>
 

@@ -77,12 +77,11 @@ export function NiluferPsikologPage() {
               id="nilufer-services-heading"
               className="font-display text-xl font-semibold tracking-[-0.02em] text-slate-charcoal sm:text-2xl"
             >
-              Nilüfer Psikolog Hizmetleri
+              Nilüfer ve psikoloji konuları
             </h2>
             <p className="mt-5 text-sm leading-[1.85] text-slate-body sm:mt-6 sm:text-[0.9375rem]">
-              Bursa Nilüfer psikolog hizmetleri; bireysel, çift ve travma odaklı
-              protokollerle yapılandırılır. Aşağıdaki alanlar için ayrıntılı
-              sayfalara geçebilir veya randevu talebinde bulunabilirsiniz.
+              Aşağıdaki başlıklar kaygı, ilişkiler ve travma literatürü üzerine
+              bilgilendirici yazılara gider.
             </p>
 
             <div className="mt-10 space-y-14 sm:mt-12 sm:space-y-16">
@@ -243,10 +242,7 @@ export function NiluferPsikologPage() {
             items={niluferFaqs}
           />
 
-          <SeoCTA
-            eyebrow="Nilüfer psikolog randevu"
-            caption="Bursa Nilüfer'de bireysel terapi, çift terapisi ve EMDR için WhatsApp veya telefon ile aynı gün yanıt."
-          />
+          <SeoCTA />
 
           <RelatedPages
             heading="Nilüfer psikolog — ilgili sayfalar"

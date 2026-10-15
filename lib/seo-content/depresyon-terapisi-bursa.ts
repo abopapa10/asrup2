@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const depresyonTerapisiBursa: SeoLandingPage = {
   slug: "depresyon-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Depresyon Terapisi Bursa | Uzman Klinik Psikolog",
@@ -23,11 +23,11 @@ export const depresyonTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Depresyon Terapisi — Bursa",
     lead: "Sabah yatağa çakılmış hissetmek, eskiden keyif aldığınız şeylere mesafe duymak, içsel bir tükenme ve isteksizlik… Depresyon kendini çoğu zaman bu sessiz tabloyla gösterir.",
     intro:
-      "Bursa Nilüfer kliniğimizde yetişkin danışanlar için yapılandırılmış bir depresyon terapisi süreci sunulmaktadır.",
+      "Bu sayfa depresyon belirtilerini ve psikoloji yazınındaki çerçeveleri özetler. Genel bilgilendirmedir.",
     showCta: true,
   },
 
@@ -155,7 +155,7 @@ export const depresyonTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Depresyon terapisi için ilk görüşme talebi ve süreç bilgilendirmesi; aynı gün içinde yanıtlanır.",
   },

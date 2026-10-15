@@ -3,7 +3,7 @@ import type { SeoLandingPage } from "@/lib/seo-pages";
 export const regresyonTerapisiBursa: SeoLandingPage = {
   slug: "regresyon-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Regresyon Terapisi Bursa | Klinik Psikoterapi Çerçevesi",
@@ -23,7 +23,7 @@ export const regresyonTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Regresyon Terapisi — Bursa",
     lead: "Regresyon terapisi, popüler kültürde sıkça yanlış anlaşılan bir kavramdır. Klinik psikoterapide bu ifade; duygu odaklı, yapılandırılmış ve etik sınırlar içinde geçmiş yaşantıların anlamlandırılmasını hedefleyen bir çalışma biçimini ifade eder.",
     intro:
@@ -233,7 +233,7 @@ export const regresyonTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Regresyon terapisi uygunluğu ve güvenli süreç planlaması için ilk görüşme talebi aynı gün içinde yanıtlanır.",
   },

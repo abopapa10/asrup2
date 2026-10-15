@@ -33,7 +33,7 @@ export const kaygiBozukluguBelirtileriFaq: readonly ArticleFaqItem[] = [
   {
     question: "Bursa'da klinik destek nasıl alınabilir?",
     answer:
-      "Yüz yüze ya da online seans seçenekleriyle Bursa Nilüfer kliniğimizden randevu talep edebilirsiniz. WhatsApp veya telefon yoluyla aynı gün dönüş sağlanır.",
+      "WhatsApp veya telefon ile iletişime geçebilirsiniz. Adres bilgisi Bursa Nilüfer Özlüce'dedir.",
   },
 ];
 

@@ -5,18 +5,18 @@ import { siteConfig } from "@/lib/site-config";
 const philosophy = [
   {
     label: "01",
-    title: "Klinik Değerlendirme",
-    body: "Her süreç, danışanın ihtiyaçlarına özel yapılandırılmış klinik değerlendirme ile başlar.",
+    title: "Kuramsal birikim",
+    body: "Hacettepe Psikoloji eğitimi ve insancıl ekoldeki uzmanlık, yazıların omurgasını oluşturur.",
   },
   {
     label: "02",
-    title: "Etik İlkeler & Gizlilik",
-    body: "Danışan gizliliği ve mesleki etik; terapi ilişkisinin değişmez temelidir.",
+    title: "Etik ve gizlilik",
+    body: "Mesleki etik ilkeler ve mahremiyet, kamuya açık içerikte de sınırdır.",
   },
   {
     label: "03",
-    title: "Bilimsel Ekoller",
-    body: "Birey Odaklı Psikoterapi Tekniği temelde olmakla birlikte, Psikodinamik ve Bilişsel Davranışçı tekniklerle desteklenmektedir.",
+    title: "Bilimsel ekoller",
+    body: "Birey Odaklı çerçeve temelde olmak üzere Bilişsel-Davranışçı ve Psikodinamik dil, referans olarak yer alır.",
   },
 ] as const;
 
@@ -53,10 +53,10 @@ export function AuthoritySection() {
           </blockquote>
 
           <p className="body-lead mt-8 sm:mt-10">
-            Bursa&apos;da başlayan klinik deneyim, İstanbul Beşiktaş&apos;taki
-            pratikle derinleşti. Bugün Bursa Nilüfer kliniğimizde aynı ölçüde
-            danışan gizliliği, etik ilkeler ve bilimsel disiplinle yüz yüze
-            hizmet verilmektedir.
+            Bursa&apos;da başlayan meslek yaşamı, İstanbul Beşiktaş
+            deneyimiyle derinleşti. Bugün Bursa Nilüfer&apos;de bilimsel
+            disiplin, etik ilkeler ve ölçülü bir dil ile psikolojiye dair
+            içerik üretmeye devam ediyorum.
           </p>
 
           <ul className="mt-10 space-y-8 sm:mt-12 sm:space-y-10">

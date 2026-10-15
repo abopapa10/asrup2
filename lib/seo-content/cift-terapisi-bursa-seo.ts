@@ -3,7 +3,7 @@
 export const ciftTerapisiBursaSeo: SeoLandingPage = {
   slug: "cift-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "Çift Terapisi Bursa | İlişki ve Evlilik Terapisi",
@@ -21,7 +21,7 @@ export const ciftTerapisiBursaSeo: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "Çift Terapisi — Bursa",
     lead: "İlişkilerde sorunlar çoğu zaman tek bir tartışmadan değil, tekrar eden iletişim döngülerinden büyür. Çift terapisi bu döngüleri görünür kılar ve yeni bir ilişki dili kurmayı hedefler.",
     intro:
@@ -137,7 +137,7 @@ export const ciftTerapisiBursaSeo: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Çift terapisi için ilk görüşme ve süreç bilgilendirmesi aynı gün içinde paylaşılır.",
   },

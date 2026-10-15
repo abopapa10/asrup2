@@ -389,10 +389,10 @@ export const articles: readonly Article[] = [
   },
   {
     slug: "bursa-psikolog-fiyatlari",
-    date: "27 Mayıs 2026",
-    dateISO: "2026-05-27",
+    date: "15 Ekim 2026",
+    dateISO: "2026-10-15",
     category: "Terapi Süreci",
-    title: "Bursa Psikolog Fiyatları 2026: Seans Ücreti Nasıl Belirlenir?",
+    title: "Bursa Psikolog Fiyatları 2026: Seans Ücreti, Nilüfer ve Randevu Rehberi",
     metaTitle: bursaPsikologFiyatlariMetaTitle,
     metaDescription: bursaPsikologFiyatlariMetaDescription,
     excerpt: bursaPsikologFiyatlariExcerpt,
@@ -402,12 +402,12 @@ export const articles: readonly Article[] = [
       {
         label: "Bireysel Terapi",
         href: "/bireysel-terapi",
-        description: "Yetişkin bireysel psikoterapi sürecinin klinik çerçevesi.",
+        description: "Yetişkin bireysel görüşmeye dair genel bilgi notu.",
       },
       {
         label: "Online Terapi Bursa",
         href: "/hizmetler/online-terapi-bursa",
-        description: "Yüz yüze erişimi kısıtlı danışanlar için sürdürülebilir format.",
+        description: "Çevrimiçi ve yüz yüze format farkına dair okuma.",
       },
     ],
     relatedArticleSlugs: [

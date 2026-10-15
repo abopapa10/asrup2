@@ -36,23 +36,32 @@ export const siteConfig = {
 
   /**
    * Coğrafi koordinatlar — schema.org `GeoCoordinates` için.
-   * Google Business / Maps Place ID doğrulandıktan sonra doldurulur.
+   * Google Business Profile (Time Özlüce) pin’inden.
    */
-  geo: null as null | { latitude: number; longitude: number },
+  geo: {
+    latitude: 40.22514708474198,
+    longitude: 28.914509179363968,
+  },
+
+  /**
+   * Google Maps Place ID — GBP doğrulandıktan sonra sabitlenir.
+   * Harita linkleri ve ilerideki Places API çağrıları için tek kaynak.
+   */
+  placeId: "ChIJl7rIFgYVyhQRqzE9cQzf2SU",
 
   /**
    * Google Business Profile işletme adı — NAP tutarlılığı için.
    * Profil paylaşım bağlantısı `social.googleBusinessProfile` alanına eklenir.
    */
-  googleBusinessName: "Bursa Psikolog A. Alparslan Sancar | Psikolog Randevu",
+  googleBusinessName: "Bursa Psikolog A. Alparslan Sancar",
 
-  /** Google Haritalar arama / yol tarifi bağlantısı. */
+  /** Google Haritalar — Place ID ile kalıcı işletme sayfası / yol tarifi. */
   googleMapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Ahmet+Taner+K%C4%B1%C5%9Flal%C4%B1+Bulvar%C4%B1+No%3A27%2C+Time+%C3%96zl%C3%BCce%2C+Ertu%C4%9Frul%2C+16120+Nil%C3%BCfer%2FBursa",
+    "https://www.google.com/maps/search/?api=1&query=Bursa+Psikolog+A.+Alparslan+Sancar&query_place_id=ChIJl7rIFgYVyhQRqzE9cQzf2SU",
 
-  /** Google Haritalar iframe embed (Place ID gelince kalıcı embed ile değiştirilir). */
+  /** Google Haritalar iframe — doğrulanmış pin koordinatları. */
   googleMapsEmbedUrl:
-    "https://maps.google.com/maps?hl=tr&output=embed&q=Ahmet+Taner+K%C4%B1%C5%9Flal%C4%B1+Bulvar%C4%B1+No%3A27%2C+Time+%C3%96zl%C3%BCce%2C+Ertu%C4%9Frul%2C+16120+Nil%C3%BCfer%2FBursa",
+    "https://maps.google.com/maps?hl=tr&z=16&output=embed&q=40.22514708474198,28.914509179363968",
 
   /**
    * Çalışma saatleri.
@@ -113,14 +122,12 @@ export const siteConfig = {
     },
     /** Klinik uzmanlık alanları */
     expertiseAreas: [
-      "Bireysel Psikoterapi",
-      "Çift ve Evlilik Terapisi",
-      "Online Psikoterapi",
-      "Anksiyete Bozuklukları",
-      "Panik Bozukluğu",
-      "Depresyon",
-      "Tükenmişlik ve Mesleki Yorgunluk",
-      "Yaşam Geçişleri ve Yas",
+      "Kaygı ve duygudurum",
+      "İlişki dinamikleri",
+      "Stres ve tükenmişlik",
+      "Travma literatürü",
+      "Kişilik ve bağlanma",
+      "Yaşam geçişleri",
     ] as const,
     /** Kullanılan terapi yaklaşımları */
     approaches: [
@@ -130,7 +137,7 @@ export const siteConfig = {
     ] as const,
     /** Etik ve mesleki ilkeler */
     ethicsStatement:
-      "Tüm seanslar mesleki etik ilkeler ve danışan gizliliği çerçevesinde yürütülür.",
+      "Mesleki etik ilkeler ve gizlilik, psikoloji alanındaki duruşun temelidir.",
   },
 
   /**
@@ -141,7 +148,7 @@ export const siteConfig = {
     instagram: "" as string,
     linkedin: "" as string,
     youtube: "" as string,
-    googleBusinessProfile: "" as string,
+    googleBusinessProfile: "https://share.google/Y1uZqhXsneWEW9qHI",
   },
 
   images: {
@@ -156,9 +163,9 @@ export const siteConfig = {
     shortName: "Bursa Psikolog",
     locale: "tr_TR",
     defaultTitle:
-      "Bursa Psikolog A. Alparslan Sancar | Nilüfer Klinik Psikolog",
+      "Bursa Psikolog A. Alparslan Sancar | Nilüfer",
     defaultDescription:
-      "Bursa Nilüfer Özlüce'de bireysel terapi, çift terapisi ve online terapi. Bursa Psikolog A. Alparslan Sancar — klinik değerlendirme, danışan gizliliği ve etik ilkeler.",
+      "Bursa Psikolog A. Alparslan Sancar — Hacettepe Üniversitesi Psikoloji mezunu. Nilüfer Özlüce; psikoloji yazıları, yaklaşım ve kişisel iletişim.",
     /** Ana sayfada ilk görünen klinik portre — OG ve zengin sonuçlar */
     defaultOgImage: "/images/portre.webp",
     defaultOgImageAlt:

@@ -89,17 +89,14 @@ export function SeoLandingTemplate({ page }: SeoLandingTemplateProps) {
 
           {page.faqs.length > 0 ? <SeoFaq items={page.faqs} /> : null}
 
-          <SeoCTA
-            eyebrow={page.cta?.eyebrow}
-            caption={page.cta?.caption}
-          />
+          <SeoCTA />
 
           {page.related.length > 0 ? (
             <RelatedPages
               heading={
                 page.group === "hizmetler"
-                  ? "İlgili Çalışma Alanları"
-                  : "İlgili Hizmet ve Sayfalar"
+                  ? "İlgili konular"
+                  : "İlgili sayfalar"
               }
               items={page.related}
             />

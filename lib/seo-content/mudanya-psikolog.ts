@@ -25,7 +25,7 @@ export const mudanyaPsikolog: SeoLandingPage = {
     h1: "Mudanya'dan Psikolojik Destek Arayanlar İçin",
     lead: "Mudanya'da yaşayan danışanlar için psikoterapi süreci; ulaşım gerçekliği, seans düzeni ve danışanın günlük ritmi birlikte düşünülerek planlanır.",
     intro:
-      "Yüz yüze görüşmeler Nilüfer kliniğimizde; ulaşımın zorlayıcı olduğu dönemlerde online seans seçeneği aynı klinik standartla sürdürülebilir.",
+      "Mudanya bağlamında psikoloji yazıları; Nilüfer Özlüce adres bilgisi sitede yer alır.",
     showCta: true,
   },
 
@@ -130,14 +130,14 @@ export const mudanyaPsikolog: SeoLandingPage = {
         "Birçok klinik tabloda online format yüz yüze ile benzer etkinliğe sahiptir. Seçim kişisel ihtiyaçlara göre yapılır.",
     },
     {
-      question: "Randevuya nasıl başvurabilirim?",
+      question: "Nasıl iletişime geçilir?",
       answer:
-        "WhatsApp veya telefon üzerinden asistanımıza ulaşıp uygun saatleri görebilirsiniz.",
+        "WhatsApp veya telefon yeterlidir.",
     },
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "Mudanya'dan başvuran danışanlar için yüz yüze ve online randevu seçenekleri aynı gün içinde yanıtlanır.",
   },

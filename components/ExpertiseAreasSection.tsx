@@ -16,7 +16,7 @@ export function ExpertiseAreasSection() {
         />
         <FadeIn className="mt-8 flex justify-center sm:mt-10">
           <Link href="/hizmetler" className="link-editorial text-base font-semibold">
-            Tüm hizmetler hub sayfasına git
+            Tüm konulara git
           </Link>
         </FadeIn>
       </div>

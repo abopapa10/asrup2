@@ -8,7 +8,7 @@ export const niluferPsikolog: SeoLandingPage = {
   meta: {
     title: "Nilüfer Psikolog | Bursa Uzman Klinik Psikolog",
     description:
-      "Bursa Nilüfer psikolog: bireysel terapi, çift terapisi, EMDR ve anksiyete desteği. Nilüfer psikolog randevu için WhatsApp ile aynı gün yanıt — uzman klinik psikolog.",
+      "Nilüfer Özlüce'de Bursa Psikolog A. Alparslan Sancar — eğitim, psikoloji yazıları ve kişisel iletişim.",
     canonicalPath: "/lokasyon/nilufer-psikolog",
     ogImageAlt: "Nilüfer psikolog Bursa klinik terapi — uzman klinik psikolog",
     keywords: [
@@ -28,7 +28,7 @@ export const niluferPsikolog: SeoLandingPage = {
     h1: "Nilüfer Psikolog | Bursa Nilüfer'de Uzman Klinik Psikolog",
     lead: "Bursa Nilüfer'de yetişkin bireyler ve çiftler için psikoterapi seansları. Erişilebilir bir konum, sakin bir klinik ortam ve mesleki etik çerçeveye bağlı bir süreç.",
     intro:
-      "Yüz yüze seanslar Nilüfer kliniğimizde; online seçenek ise aynı klinik standart ve gizlilik çerçevesinde yürütülmektedir.",
+      "Nilüfer Özlüce adres bilgisi bu sitede yer alır. Sayfa; psikoloji yazıları ve kişisel iletişim içindir.",
     showCta: true,
   },
 
@@ -46,7 +46,7 @@ export const niluferPsikolog: SeoLandingPage = {
       kind: "narrative",
       heading: "Hangi durumlarda başvurulur?",
       paragraphs: [
-        "Nilüfer kliniğimizde yetişkin bireyler için geniş bir klinik tablo yelpazesinde destek sunulur. Kaygı, panik tepki, depresif tablolar, ilişkisel zorluklar, yaşam geçişleri ve mesleki tükenme bunlar arasındadır.",
+        "Sitedeki yazılar kaygı, panik tepki, duygudurum, ilişkisel zorluklar ve tükenmişlik gibi başlıkları genel bir dille ele alır.",
         "Hangi süreç için başvuracağınızdan emin değilseniz; ilk görüşme bunu birlikte değerlendirmenin zeminidir. Klinik değerlendirme sonrasında uygun çerçeve birlikte planlanır.",
       ],
     },
@@ -90,7 +90,7 @@ export const niluferPsikolog: SeoLandingPage = {
       kind: "narrative",
       heading: "Randevu süreci ve seans yapısı",
       paragraphs: [
-        "Randevu talepleri WhatsApp veya telefon ile asistanımıza ulaşılarak başlatılır. İlk görüşme için müsaitlik durumuna göre saat aralıkları paylaşılır.",
+        "Mesajlar WhatsApp veya telefon ile asistanımıza ulaşılarak başlatılır. İlk görüşme için müsaitlik durumuna göre saat aralıkları paylaşılır.",
         "İlk seans öncesinde kısa bir bilgilendirme metni iletilir; danışan, sürecin ana hatlarını seans öncesinden okuyabilir.",
         "Seanslar yaklaşık 50 dakika sürer ve genellikle haftalık planlanır. Şehir dışından ya da yoğun program nedeniyle yüz yüze seansa erişimi kısıtlı olan danışanlar için aynı klinik standartla yürütülen [online seans](/online-terapi) seçeneği uygundur.",
       ],
@@ -122,7 +122,7 @@ export const niluferPsikolog: SeoLandingPage = {
 
   faqs: [
     {
-      question: "Nilüfer dışından danışan kabul ediyor musunuz?",
+      question: "Nilüfer dışından iletişime geçilebilir mi?",
       answer:
         "Evet. Bursa'nın farklı ilçelerinden ve şehir dışından danışanlarımız bulunmaktadır. Uzak danışanlar için online seans seçeneği uygundur.",
     },
@@ -149,9 +149,9 @@ export const niluferPsikolog: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
-      "Nilüfer kliniğindeki yüz yüze seanslar ve online seans seçenekleri için randevu talebi; aynı gün içinde yanıtlanır.",
+      "Nilüfer kliniğindeki yüz yüze seanslar ve online seans seçenekleri için iletişim; aynı gün içinde yanıtlanır.",
   },
 
   related: [

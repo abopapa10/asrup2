@@ -1,5 +1,6 @@
 import { CtaBlock } from "@/components/CtaBlock";
 import { FadeIn } from "@/components/FadeIn";
+import { contactCopy } from "@/lib/contact-copy";
 
 type SeoCTAProps = {
   eyebrow?: string;
@@ -9,9 +10,9 @@ type SeoCTAProps = {
 };
 
 export function SeoCTA({
-  eyebrow = "Randevu",
+  eyebrow = contactCopy.seoEyebrow,
   heading,
-  caption = "Randevu ve süreç bilgilendirmesi için aynı gün dönüş yapılır.",
+  caption = contactCopy.seoCaption,
 }: SeoCTAProps) {
   return (
     <FadeIn as="section" className="max-w-3xl">

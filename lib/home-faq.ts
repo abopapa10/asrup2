@@ -16,23 +16,23 @@ export type HomeFaqItem = {
 
 export const homeFaq: readonly HomeFaqItem[] = [
   {
-    question: "Bursa psikolog seans ücretleri ne kadar?",
+    question: "Bu site ne için?",
     answer:
-      "Seans ücretleri; uzmanlık alanı, seans süresi ve terapi ekolüne göre mesleki standartlar çerçevesinde belirlenir. Güncel bilgi için WhatsApp veya telefon ile asistanımıza ulaşabilirsiniz.",
+      "Site, Bursa Psikolog A. Alparslan Sancar'ın eğitimi, yaklaşımı ve psikolojiye dair kamuya açık yazıları için bir başvuru noktasıdır. Kişisel iletişim bilgileri de burada yer alır.",
   },
   {
-    question: "Bir psikoterapi seansı ne kadar sürer ve süreç nasıl işler?",
+    question: "Size nasıl ulaşabilirim?",
     answer:
-      "Standart seans süresi genellikle 50 dakikadır. İlk görüşmede klinik değerlendirme yapılır; terapi hedefleri, sıklık ve süre birlikte planlanır.",
+      "WhatsApp veya telefon ile iletişime geçebilirsiniz. Adres bilgisi Nilüfer Özlüce'dedir.",
   },
   {
-    question: "Çift terapisine tek başıma başvurabilir miyim?",
+    question: "Yazılar tıbbi tavsiye midir?",
     answer:
-      "Evet. Partneriniz henüz hazır değilse, ilişki dinamiklerini anlamak için tek başınıza çift terapisine başvurabilirsiniz.",
+      "Hayır. Makaleler ve testler genel bilgilendirme niteliğindedir; bireysel tanı veya tedavi planı yerine geçmez.",
   },
   {
-    question: "Randevu süreci nasıl yürütülüyor?",
+    question: "Eğitim geçmişiniz nedir?",
     answer:
-      "WhatsApp veya telefon ile asistanımıza ulaşarak randevu talebi oluşturabilirsiniz. Bursa Nilüfer kliniği açılışına kadar online bilgilendirme devam eder.",
+      "Hacettepe Üniversitesi Psikoloji Bölümü mezunuyum. Üniversite eğitimi ağırlıklı olarak bilişsel-davranışçı çerçevedeydi; ardından birey odaklı psikoterapi alanında uzmanlaştım.",
   },
 ] as const;

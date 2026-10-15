@@ -43,7 +43,7 @@ export const manipuleNedirBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "callout",
-    text: "İlişkilerinizde manipülasyona maruz kalıp kalmadığınızı anlamak için [İlişkilerde Sınır ve Bağlanma Testi](/testler/iliskilerde-sinir-ve-baglanma) çözün; [çift terapisi](/cift-terapisi) veya [bireysel terapi](/bireysel-terapi) için [randevu talep edin](/#iletisim).",
+    text: "İlişkilerinizde manipülasyona maruz kalıp kalmadığınızı anlamak için [İlişkilerde Sınır ve Bağlanma Testi](/testler/iliskilerde-sinir-ve-baglanma) çözebilir; ilgili yazılar için [ilişkiler](/cift-terapisi) ve [bireysel süreçler](/bireysel-terapi) sayfalarına bakabilirsiniz. [İletişim](/#iletisim) için WhatsApp veya telefon yeterlidir.",
   },
 
   {

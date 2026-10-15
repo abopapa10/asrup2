@@ -3,7 +3,7 @@
 export const okbTerapisiBursa: SeoLandingPage = {
   slug: "okb-terapisi-bursa",
   group: "hizmetler",
-  parent: { label: "Hizmetler", href: "/hizmetler" },
+  parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
     title: "OKB Terapisi Bursa | Obsesif Kompulsif Bozukluk Desteği",
@@ -21,7 +21,7 @@ export const okbTerapisiBursa: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Hizmet · Bursa Nilüfer",
+    eyebrow: "Konu · Bursa Nilüfer",
     h1: "OKB Terapisi — Bursa",
     lead: "Tekrarlayan, istemsiz düşünceler ve bu düşünceleri azaltmak için yapılan kontrol/tekrar davranışları günlük yaşamı daraltabilir. OKB, klinik destekle çalışılabilen bir tablodur.",
     intro:
@@ -137,7 +137,7 @@ export const okbTerapisiBursa: SeoLandingPage = {
   ],
 
   cta: {
-    eyebrow: "Randevu",
+    eyebrow: "İletişim",
     caption:
       "OKB belirtileri için klinik değerlendirme ve terapi planı talebi aynı gün içinde yanıtlanır.",
   },

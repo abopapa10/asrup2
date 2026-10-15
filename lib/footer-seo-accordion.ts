@@ -12,27 +12,27 @@ export type FooterSeoAccordionItem = {
  */
 export const footerSeoAccordionItems: readonly FooterSeoAccordionItem[] = [
   {
-    heading: "Bursa Psikolog Hizmetlerinde Hangi Yaklaşımları Uyguluyoruz?",
+    heading: "Bursa Psikolog A. Alparslan Sancar Kimdir?",
     paragraphs: [
-      `${siteConfig.name}, Bursa psikolog arayan danışanlar için bireysel terapi, çift terapisi ve online psikoterapi hizmetlerini klinik değerlendirme ile birlikte sunar. Nilüfer merkezli yüz yüze görüşmelerin yanı sıra Türkiye genelinde güvenli görüntülü seans seçenekleri planlanabilir.`,
-      "Bursa psikolog hizmetleri kapsamında kaygı bozuklukları, panik atak, depresif belirtiler, tükenmişlik, ilişki çatışmaları ve yaşam geçişleri gibi alanlarda kanıta dayalı çerçeveler uygulanır. Bilişsel-davranışçı terapi (BDT), birey odaklı psikoterapi ve gerektiğinde EMDR gibi travma odaklı yaklaşımlar danışanın hedeflerine göre yapılandırılır.",
-      "İlk görüşmede semptom öyküsü, işlevsellik ve terapi beklentileri netleştirilir; seans sıklığı ve süre birlikte belirlenir. Tüm süreç mesleki etik, gizlilik ve danışan mahremiyeti ilkeleri çerçevesinde yürütülür.",
+      `${siteConfig.name}, Hacettepe Üniversitesi Psikoloji Bölümü mezunudur. Üniversite eğitimi bilişsel-davranışçı çerçevede şekillenmiş; ardından insancıl ekol içindeki birey odaklı psikoterapi alanında uzmanlaşmıştır.`,
+      "Meslek yaşamı Bursa ve İstanbul arasında geçmiştir. Bu sitede psikolojiye dair yazılar, testler ve yaklaşım notları paylaşılır; amaç kamuya açık, ölçülü bir bilgilendirmedir.",
+      "İletişim için WhatsApp veya telefon kullanılabilir. Nilüfer Özlüce adres bilgisi sitede yer alır.",
     ],
   },
   {
-    heading: "Bursa'da Psikolog Randevu Süreci Nasıl Planlanır?",
+    heading: "Sitedeki Yazılar Ne Amaçla Yayımlanır?",
     paragraphs: [
-      "Psikolog randevu talebi WhatsApp veya telefon üzerinden asistan hattına iletilir; uygun gün ve saat seçenekleri paylaşılır. İlk seans genellikle yaklaşık 50 dakika sürer ve klinik değerlendirme ile terapi planının oluşturulmasına ayrılır.",
-      "Bursa'da yüz yüze psikolog randevu için Nilüfer bölgesindeki klinik adresi doğrulanır; ulaşım ve park bilgisi randevu öncesinde iletilir. Online psikolog randevu tercih eden danışanlar için görüntülü görüşme bağlantısı ve teknik hazırlık adımları önceden paylaşılır.",
-      "Randevu iptali veya erteleme politikası seans öncesinde bilgilendirme ile netleştirilir. Acil psikiyatrik durumlarda psikoterapi randevusu yerine en yakın acil servis veya 112 hattına başvuru önceliklidir.",
+      "Makaleler kaygı, ilişkiler, tükenmişlik ve benzeri konularda genel psikoloji bilgisi sunar. İçerikler eğitim ve okuma içindir; bireysel tanı veya tedavi yerine geçmez.",
+      "Testler öz-bildirim ölçekleridir; klinik değerlendirme değildir. Sonuçlar bir etiket değil, düşünmeye davettir.",
+      "Acil tehlike, kendine zarar verme düşüncesi veya tıbbi acil durumlarda 112 ve yerel acil sağlık hizmetleri önceliklidir.",
     ],
   },
   {
-    heading: "Neden Doğru Bir Psikolog Bursa Arayışında Uzmanlık Önemlidir?",
+    heading: "Bursa Psikolog Arayışında Nelere Bakılır?",
     paragraphs: [
-      "Psikolog Bursa aramasında uzmanlık alanı, eğitim geçmişi ve kullanılan terapi ekolü terapi sonucunu doğrudan etkiler. Genel destek ile klinik psikoterapi farklıdır; yapılandırılmış değerlendirme olmadan verilen öneriler yüzeysel kalabilir.",
-      "Doğru eşleşme; kaygı, depresyon, OKB, travma veya çift sorunları gibi alanlarda deneyim, danışanla terapist arasındaki güven ilişkisi ve düzenli seans takibi ile şekillenir. Uzman klinik psikolog desteği, semptomları etiketlemek yerine işlevselliği ve yaşam kalitesini hedefler.",
-      "Bursa psikolog seçiminde referans, şeffaf ücretlendirme, gizlilik taahhüdü ve multidisipliner yönlendirme (gerekirse psikiyatri konsültasyonu) güven veren kriterlerdir. Terapi süreci iş birliği gerektirir; uzman rehberliği bu sürecin güvenli ve ölçülebilir ilerlemesini destekler.",
+      "Psikolog seçiminde eğitim geçmişi, etik duruş ve kullanılan dilin ölçülü olup olmadığı birlikte değerlendirilebilir. Genel tavsiye ile bilimsel çerçeve farklıdır.",
+      "Bu sitedeki yazılar, yaklaşımı ve kaynakları okuyarak bir izlenim edinmenize yardımcı olabilir. Kişisel iletişim için iletişim bölümü yeterlidir.",
+      "Referans, şeffaflık ve gizlilik taahhüdü güven veren ölçütlerdir; nihai karar her zaman okuyucuya aittir.",
     ],
   },
 ] as const;
