@@ -6,13 +6,11 @@ import { CANONICAL_SITE_ORIGIN } from "@/lib/site-config";
  * robots.txt
  *
  * - Tüm botlara genel erişim verir.
- * - API ve _next altyapı yollarını engeller.
- * - Sitemap'i bildirir.
- *
- * AI botları (GPTBot, ClaudeBot, PerplexityBot vb.) için ayrı bir
- * politika tanımlanmıştır. Mevcut politika, içeriğin AI yanıtlarında
- * doğru kaynak olarak görünebilmesi için izin verir; engellemek
- * istenirse ilgili user-agent'lar `disallow: "/"` ile kapatılabilir.
+ * - `/_next/` engellenmez: CSS/JS/image optimizer tarayıcı ve bot
+ *   render’ı için gerekli; Disallow Semrush’ta “blocked resources”
+ *   ve zayıf render sinyali üretir.
+ * - Yalnızca API ve private yollar kapatılır.
+ * - Sitemap bildirilir.
  */
 export default function robots(): MetadataRoute.Robots {
   const sitemap = absoluteUrl("/sitemap.xml");
@@ -22,12 +20,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/", "/private/"],
-      },
-      {
-        userAgent: ["Googlebot", "Bingbot"],
-        allow: "/",
-        disallow: ["/api/"],
+        disallow: ["/api/", "/private/"],
       },
     ],
     host: CANONICAL_SITE_ORIGIN,
