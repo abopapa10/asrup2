@@ -4,9 +4,9 @@
  */
 
 export const niluferAuthorityMeta = {
-  title: "Nilüfer Psikolog | Bursa Uzman Klinik Psikolog",
+  title: "Nilüfer Psikolog | Bursa Nilüfer Özlüce İletişim",
   description:
-    "Nilüfer Özlüce'de Bursa Psikolog A. Alparslan Sancar — eğitim, psikoloji yazıları ve kişisel iletişim.",
+    "Nilüfer psikolog arayanlar için Özlüce adres, eğitim ve yazılar. Bursa Psikolog A. Alparslan Sancar — WhatsApp ile bize ulaşın.",
   canonicalPath: "/lokasyon/nilufer-psikolog",
   keywords: [
     "nilüfer psikolog",
@@ -30,12 +30,12 @@ export const niluferAuthorityMeta = {
 
 export const niluferAuthorityHero = {
   eyebrow: "Bursa · Nilüfer · Klinik Psikolog",
-  h1: "Nilüfer Psikolog | Bursa Nilüfer'de Uzman Klinik Psikolog",
-  h2: "Nilüfer Özlüce — eğitim, yazılar ve kişisel iletişim",
+  h1: "Nilüfer Psikolog | Bursa Nilüfer Özlüce",
+  h2: "Nilüfer psikolog arayanlar için eğitim, yazılar ve kişisel iletişim",
   sentences: [
-    "Bursa Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi Psikoloji mezunudur; Nilüfer Özlüce adres bilgisi bu sitede yer alır.",
-    "Sayfa; kaygı, ilişkiler ve travma üzerine kamuya açık okuma notları ile kişisel iletişim kanallarını bir arada tutar.",
-    "WhatsApp veya telefon ile iletişime geçebilirsiniz.",
+    "Bursa Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi Psikoloji mezunudur; Nilüfer Özlüce (Time Özlüce) adres bilgisi bu sitede yer alır.",
+    "Nilüfer klinik psikolog aramasında bu sayfa; kaygı, ilişkiler ve travma üzerine kamuya açık okuma notları ile iletişim kanallarını bir arada tutar.",
+    "WhatsApp veya telefon ile bize ulaşabilirsiniz — satış vaadi yoktur; kişisel iletişim yeterlidir.",
   ],
 } as const;
 

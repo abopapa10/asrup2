@@ -27,7 +27,7 @@ export function SeoCTA({
           {caption}
         </p>
       ) : null}
-      <CtaBlock variant="banner" />
+      <CtaBlock variant="banner" whatsappSource="seo-landing-cta" />
     </FadeIn>
   );
 }

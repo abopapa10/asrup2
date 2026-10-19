@@ -1,5 +1,6 @@
 import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { FadeIn } from "@/components/FadeIn";
 import { contactCopy } from "@/lib/contact-copy";
 import { formatAddressLines, siteConfig } from "@/lib/site-config";
@@ -91,15 +92,13 @@ export function ContactLocationSection() {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href={siteConfig.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                source="contact-location"
                 className="btn-whatsapp sm:min-w-[12rem] sm:flex-1"
               >
                 <WhatsAppIcon />
                 {contactCopy.whatsappLabel}
-              </a>
+              </WhatsAppLink>
               <a href={phoneHref} className="btn-phone sm:min-w-[10rem] sm:flex-1">
                 <Phone strokeWidth={1.25} className="h-5 w-5 shrink-0" />
                 {contactCopy.callLabel}

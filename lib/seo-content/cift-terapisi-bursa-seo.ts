@@ -6,15 +6,15 @@ export const ciftTerapisiBursaSeo: SeoLandingPage = {
   parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
-    title: "Çift Terapisi Bursa | İlişki ve Evlilik Terapisi",
+    title: "Çift Terapisi Bursa | İlişki Psikoloğu Nilüfer",
     description:
-      "Bursa'da çift terapisi: iletişim sorunları, güven kırıkları, tekrarlayan çatışmalar ve duygusal uzaklaşma için yapılandırılmış klinik destek.",
+      "Bursa'da çift terapisi ve ilişki dinamikleri üzerine bilgilendirme. Bursa Psikolog A. Alparslan Sancar — WhatsApp ile kişisel iletişim.",
     canonicalPath: "/hizmetler/cift-terapisi-bursa",
     keywords: [
       "çift terapisi Bursa",
+      "ilişki psikoloğu bursa",
       "evlilik terapisi Bursa",
       "ilişki terapisi",
-      "güven sorunları",
       "Bursa psikolog",
       "Nilüfer çift terapisi",
     ],
@@ -22,10 +22,10 @@ export const ciftTerapisiBursaSeo: SeoLandingPage = {
 
   hero: {
     eyebrow: "Konu · Bursa Nilüfer",
-    h1: "Çift Terapisi — Bursa",
-    lead: "İlişkilerde sorunlar çoğu zaman tek bir tartışmadan değil, tekrar eden iletişim döngülerinden büyür. Çift terapisi bu döngüleri görünür kılar ve yeni bir ilişki dili kurmayı hedefler.",
+    h1: "Çift Terapisi Bursa | İlişki Dinamikleri",
+    lead: "İlişkilerde sorunlar çoğu zaman tek bir tartışmadan değil, tekrar eden iletişim döngülerinden büyür. Bu sayfa çift terapisi ve ilişki dili üzerine bilgilendirme sunar.",
     intro:
-      "Süreçte amaç bir tarafı haklı çıkarmak değil, iki tarafın da duyulabildiği güvenli bir çerçeve oluşturmaktır.",
+      "Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce. Amaç satış değil; iki tarafın da duyulabildiği çerçeveyi anlatmak. Sorular için WhatsApp veya telefon ile bize ulaşın.",
     showCta: true,
   },
 

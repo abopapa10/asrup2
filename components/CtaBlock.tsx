@@ -1,14 +1,24 @@
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { contactCopy } from "@/lib/contact-copy";
 import { siteConfig } from "@/lib/site-config";
 
 type CtaBlockProps = {
   variant?: "inline" | "banner";
   className?: string;
+  /** WhatsApp dönüşüm kaynağı */
+  whatsappSource?: string;
 };
 
-export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) {
+export function CtaBlock({
+  variant = "inline",
+  className = "",
+  whatsappSource,
+}: CtaBlockProps) {
+  const source =
+    whatsappSource ?? (variant === "banner" ? "cta-banner" : "cta-inline");
+
   if (variant === "banner") {
     return (
       <div
@@ -22,15 +32,10 @@ export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) 
           {contactCopy.bannerCaption}
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-          <a
-            href={siteConfig.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp sm:flex-1"
-          >
+          <WhatsAppLink source={source} className="btn-whatsapp sm:flex-1">
             <WhatsAppIcon />
             {contactCopy.whatsappLabel}
-          </a>
+          </WhatsAppLink>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
             className="btn-phone sm:flex-1"
@@ -45,15 +50,10 @@ export function CtaBlock({ variant = "inline", className = "" }: CtaBlockProps) 
 
   return (
     <div className={`flex flex-col gap-3 sm:flex-row ${className}`}>
-      <a
-        href={siteConfig.whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn-whatsapp sm:flex-1"
-      >
+      <WhatsAppLink source={source} className="btn-whatsapp sm:flex-1">
         <WhatsAppIcon />
         {contactCopy.whatsappLabel}
-      </a>
+      </WhatsAppLink>
       <a
         href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
         className="btn-phone sm:flex-1"

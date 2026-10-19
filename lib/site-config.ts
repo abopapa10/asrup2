@@ -165,7 +165,7 @@ export const siteConfig = {
     defaultTitle:
       "Bursa Psikolog A. Alparslan Sancar | Nilüfer",
     defaultDescription:
-      "Bursa Psikolog A. Alparslan Sancar — Hacettepe Üniversitesi Psikoloji mezunu. Nilüfer Özlüce; psikoloji yazıları, yaklaşım ve kişisel iletişim.",
+      "Bursa Psikolog A. Alparslan Sancar — Hacettepe Üniversitesi Psikoloji mezunu. Nilüfer Özlüce; psikoloji yazıları, yaklaşım ve WhatsApp ile kişisel iletişim.",
     /** Ana sayfada ilk görünen klinik portre — OG ve zengin sonuçlar */
     defaultOgImage: "/images/portre.webp",
     defaultOgImageAlt:

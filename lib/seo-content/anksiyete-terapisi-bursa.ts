@@ -6,15 +6,15 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
   parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
-    title: "Anksiyete Terapisi Bursa | Uzman Klinik Psikolog",
+    title: "Anksiyete Terapisi Bursa | Kaygı Psikoloğu Nilüfer",
     description:
-      "Bursa Nilüfer'de yetişkin anksiyete terapisi. Yaygın kaygı, sosyal kaygı, bedensel gerginlik ve uyku güçlüğünde klinik değerlendirme ve yapılandırılmış terapi süreci.",
+      "Bursa ve Nilüfer'de kaygı / anksiyete üzerine bilgilendirme. Bursa Psikolog A. Alparslan Sancar — yazılar ve WhatsApp ile kişisel iletişim.",
     canonicalPath: "/hizmetler/anksiyete-terapisi-bursa",
     keywords: [
       "anksiyete terapisi Bursa",
-      "kaygı bozukluğu terapisi",
-      "yaygın kaygı bozukluğu",
-      "sosyal kaygı",
+      "kaygı psikolog bursa",
+      "anksiyete psikolog bursa",
+      "panik atak psikolog bursa",
       "Bursa psikolog",
       "Nilüfer psikolog",
       "bilişsel davranışçı terapi",
@@ -24,10 +24,10 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
 
   hero: {
     eyebrow: "Konu · Bursa Nilüfer",
-    h1: "Anksiyete Terapisi — Bursa",
-    lead: "Sabahları zihninizde çoktan başlamış bir \u201cya olursa\u201d döngüsü, bedeninize yerleşmiş gerginlik ya da uykuya geçmenin uzayan dakikaları… Klinik anlamda yardım edilebilir tablolardır.",
+    h1: "Anksiyete Terapisi Bursa | Kaygı ve Panik Üzerine",
+    lead: "Sabahları zihninizde çoktan başlamış bir \u201cya olursa\u201d döngüsü, bedeninize yerleşmiş gerginlik ya da uykuya geçmenin uzayan dakikaları… Kaygı ve anksiyete üzerine bu sayfa bilgilendirme amaçlıdır.",
     intro:
-      "Bu sayfa anksiyete kavramını, belirtileri ve literatürdeki çerçeveleri özetler. Tanıtım veya satış metni değildir.",
+      "Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce. Tanı veya satış vaadi yoktur; sorularınız için WhatsApp veya telefon ile bize ulaşabilirsiniz.",
     showCta: true,
   },
 

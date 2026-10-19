@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { contactCopy } from "@/lib/contact-copy";
 import { siteConfig } from "@/lib/site-config";
 
@@ -34,8 +35,8 @@ export function HeroSection() {
           </h1>
 
           <p className="mt-5 max-w-2xl text-lg font-medium leading-snug tracking-[-0.02em] text-slate-body sm:mt-6 sm:text-xl lg:text-[1.5rem] lg:leading-[1.45]">
-            Hacettepe Üniversitesi Psikoloji mezunu; bilimsel ekoller ve
-            insani iletişim üzerine yazılar, notlar ve kişisel iletişim.
+            Bursa ve Nilüfer Özlüce — Hacettepe Üniversitesi Psikoloji mezunu;
+            bilimsel ekoller, yazılar ve WhatsApp ile kişisel iletişim.
           </p>
 
           <p className="body-lead mt-5 max-w-xl sm:mt-6">
@@ -46,15 +47,10 @@ export function HeroSection() {
         </article>
 
         <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
-          <a
-            href={siteConfig.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-whatsapp sm:flex-1"
-          >
+          <WhatsAppLink source="hero" className="btn-whatsapp sm:flex-1">
             <WhatsAppIcon />
             {contactCopy.whatsappLabel}
-          </a>
+          </WhatsAppLink>
           <a
             href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
             className="btn-phone sm:flex-1"

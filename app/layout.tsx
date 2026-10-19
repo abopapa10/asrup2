@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Sora } from "next/font/google";
+import { GoogleAdsTag } from "@/components/GoogleAdsTag";
 import { CRITICAL_CSS } from "@/lib/critical-css";
 import { siteEntitiesGraph } from "@/lib/structured-data";
 import { createPageMetadata, rootMetadataExtras } from "@/lib/seo";
@@ -100,6 +101,7 @@ export default function RootLayout({
         className={`${jakarta.className} min-h-screen bg-white font-sans text-slate-body antialiased`}
         style={{ backgroundColor: "#ffffff", color: "#1E293B" }}
       >
+        <GoogleAdsTag />
         {children}
       </body>
     </html>

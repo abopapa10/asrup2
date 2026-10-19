@@ -59,7 +59,7 @@ export function NiluferPsikologPage() {
             ))}
           </div>
           <div className="mt-8 max-w-xl sm:mt-10">
-            <CtaBlock variant="inline" />
+            <CtaBlock variant="inline" whatsappSource="nilufer-hero" />
           </div>
         </header>
 
