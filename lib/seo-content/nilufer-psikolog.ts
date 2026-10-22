@@ -6,16 +6,16 @@ export const niluferPsikolog: SeoLandingPage = {
   parent: { label: "Lokasyonlar", href: "/lokasyon" },
 
   meta: {
-    title: "Nilüfer Psikolog | Bursa Uzman Klinik Psikolog",
+    title: "Nilüfer Psikolog | Bursa Nilüfer Özlüce",
     description:
       "Nilüfer Özlüce'de Bursa Psikolog A. Alparslan Sancar — eğitim, psikoloji yazıları ve kişisel iletişim.",
     canonicalPath: "/lokasyon/nilufer-psikolog",
-    ogImageAlt: "Nilüfer psikolog Bursa klinik terapi — uzman klinik psikolog",
+    ogImageAlt: "Nilüfer psikolog Bursa — Özlüce ofis",
     keywords: [
       "nilüfer psikolog",
       "nilüfer psikolog tavsiye",
       "bursa nilüfer psikolog",
-      "nilüfer klinik psikolog",
+      "özlüce psikolog",
       "nilüfer psikolog ücretleri",
       "nilüfer psikolog randevu",
       "emdr terapisi bursa nilüfer",
@@ -24,8 +24,8 @@ export const niluferPsikolog: SeoLandingPage = {
   },
 
   hero: {
-    eyebrow: "Bursa · Nilüfer · Klinik Psikolog",
-    h1: "Nilüfer Psikolog | Bursa Nilüfer'de Uzman Klinik Psikolog",
+    eyebrow: "Bursa · Nilüfer · Psikolog",
+    h1: "Nilüfer Psikolog | Bursa Nilüfer Özlüce",
     lead: "Bursa Nilüfer'de yetişkin bireyler ve çiftler için psikoterapi seansları. Erişilebilir bir konum, sakin bir klinik ortam ve mesleki etik çerçeveye bağlı bir süreç.",
     intro:
       "Nilüfer Özlüce adres bilgisi bu sitede yer alır. Sayfa; psikoloji yazıları ve kişisel iletişim içindir.",

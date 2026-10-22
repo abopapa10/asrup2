@@ -259,7 +259,7 @@ export function ExamAnxietyTestApp() {
 
             {result.level === "high" ? (
               <aside className="rounded-lg border border-rose-200/80 bg-rose-50/50 px-4 py-3 text-xs leading-relaxed text-slate-charcoal">
-                Kaygı günlük işlevselliğinizi ciddi düşürüyorsa bir klinik psikolog
+                Kaygı günlük işlevselliğinizi ciddi düşürüyorsa bir psikolog
                 veya psikiyatristle görüşün. Acil risk durumunda 112 veya 182 (İntihar
                 Önleme Hattı).
               </aside>

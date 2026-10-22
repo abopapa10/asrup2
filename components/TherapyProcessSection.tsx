@@ -34,19 +34,35 @@ const transformationPoints = [
   "Düzenli devam ve birlikte belirlenen ritim sürecin omurgasıdır.",
 ] as const;
 
-export function TherapyProcessSection() {
+type TherapyProcessSectionProps = {
+  id?: string;
+  headingId?: string;
+  eyebrow?: string;
+  heading?: string;
+  headingAs?: "h2" | "h3";
+};
+
+export function TherapyProcessSection({
+  id = "terapi-sureci",
+  headingId = "therapy-process-heading",
+  eyebrow = "Psikoloji",
+  heading = "Psikolojide değişim nasıl anlaşılır?",
+  headingAs = "h2",
+}: TherapyProcessSectionProps = {}) {
+  const HeadingTag = headingAs;
+
   return (
     <section
-      id="terapi-sureci"
-      aria-labelledby="therapy-process-heading"
+      id={id}
+      aria-labelledby={headingId}
       className="border-t border-ice-blue/50 bg-white py-20 sm:py-28 lg:py-32"
     >
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
         <FadeIn className="max-w-3xl">
-          <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Psikoloji</p>
-          <h2 id="therapy-process-heading" className="heading-section">
-            Psikolojide değişim nasıl anlaşılır?
-          </h2>
+          <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">{eyebrow}</p>
+          <HeadingTag id={headingId} className="heading-section">
+            {heading}
+          </HeadingTag>
           <p className="body-lead mt-4 sm:mt-6">
             Psikoloji literatüründe değişim; tek bir formülle değil, bağlam,
             tempo ve kişiye özgü anlam çerçevesiyle ele alınır. Bu bölüm genel

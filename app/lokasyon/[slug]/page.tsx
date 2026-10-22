@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { NiluferPsikologPage } from "@/components/lokasyon/NiluferPsikologPage";
 import { PageShell } from "@/components/PageShell";
 import { SeoLandingTemplate } from "@/components/seo/SeoLandingTemplate";
+import { niluferAuthorityMeta } from "@/lib/lokasyon/nilufer-psikolog-authority";
 import { createPageMetadata } from "@/lib/seo";
 import { getSeoPage, getSeoPagesByGroup } from "@/lib/seo-pages";
 
@@ -24,14 +25,16 @@ export async function generateMetadata({
     return { title: "Sayfa bulunamadı" };
   }
 
+  const meta = slug === "nilufer-psikolog" ? niluferAuthorityMeta : page.meta;
+
   return createPageMetadata({
-    title: page.meta.title,
-    description: page.meta.description,
-    path: page.meta.canonicalPath,
+    title: meta.title,
+    description: meta.description,
+    path: meta.canonicalPath,
     absoluteTitle: true,
-    ogImage: page.meta.ogImage,
-    ogImageAlt: page.meta.ogImageAlt,
-    keywords: page.meta.keywords,
+    ogImage: "ogImage" in page.meta ? page.meta.ogImage : undefined,
+    ogImageAlt: meta.ogImageAlt ?? page.meta.ogImageAlt,
+    keywords: meta.keywords,
   });
 }
 

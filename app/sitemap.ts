@@ -34,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: absoluteUrl("/nilufer-bursa-psikolog-randevu"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl(PSYCHOLOGICAL_TESTS_HUB.path),
       lastModified: now,
       changeFrequency: "weekly",

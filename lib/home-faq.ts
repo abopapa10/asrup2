@@ -16,23 +16,38 @@ export type HomeFaqItem = {
 
 export const homeFaq: readonly HomeFaqItem[] = [
   {
-    question: "Bu site ne için?",
+    question: "Bursa psikolog kimdir?",
     answer:
-      "Site, Bursa Psikolog A. Alparslan Sancar'ın eğitimi, yaklaşımı ve psikolojiye dair kamuya açık yazıları için bir başvuru noktasıdır. Kişisel iletişim bilgileri de burada yer alır.",
+      "Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi Psikoloji mezunudur. Bursa Nilüfer Özlüce’de (Time Özlüce) yüz yüze çalışır; kaygı, ilişki ve bireysel süreçler üzerine yazar ve görüşür. WhatsApp veya telefon ile ulaşılır.",
   },
   {
-    question: "Size nasıl ulaşabilirim?",
+    question: "Bursa psikolog ile klinik psikolog aynı mı?",
     answer:
-      "WhatsApp veya telefon ile iletişime geçebilirsiniz. Adres bilgisi Nilüfer Özlüce'dedir.",
+      "Hayır. Klinik psikolog unvanı lisans sonrası klinik psikoloji yüksek lisansı ve ilgili yeterliliklerle tanımlanır. Bu sitedeki çalışma, Hacettepe Psikoloji mezunu bir psikolog olarak Nilüfer Özlüce’de yürür; kaygı, ilişki ve bireysel süreçler üzerine görüşülür.",
   },
   {
-    question: "Yazılar tıbbi tavsiye midir?",
+    question: "Yüz yüze ofis nerede?",
     answer:
-      "Hayır. Makaleler ve testler genel bilgilendirme niteliğindedir; bireysel tanı veya tedavi planı yerine geçmez.",
+      "Ofis Nilüfer Özlüce, Time Özlüce binasındadır: Ahmet Taner Kışlalı Bulvarı No:27, Ertuğrul. FSM, Beşevler ve İhsaniye’den kısa mesafededir. Harita ve adres iletişim bölümündedir.",
+  },
+  {
+    question: "Bursa psikolog randevu nasıl alınır?",
+    answer:
+      "WhatsApp veya telefon yeterlidir. Aynı gün içinde dönüş yapılır; yüz yüze veya online tercihi netleşir. Garantili kontenjan vaadi yoktur.",
+  },
+  {
+    question: "Psikolog Bursa yüz yüze mi, online mı?",
+    answer:
+      "İkisi de mümkün. Yoğun program veya Bursa dışından yazanlar için görüntülü görüşme, yüz yüze ile aynı gizlilik çerçevesinde planlanabilir.",
   },
   {
     question: "Eğitim geçmişiniz nedir?",
     answer:
       "Hacettepe Üniversitesi Psikoloji Bölümü mezunuyum. Üniversite eğitimi ağırlıklı olarak bilişsel-davranışçı çerçevedeydi; ardından birey odaklı psikoterapi alanında uzmanlaştım.",
+  },
+  {
+    question: "Yazılar tıbbi tavsiye midir?",
+    answer:
+      "Hayır. Makaleler ve testler genel bilgilendirme niteliğindedir; bireysel tanı veya tedavi planı yerine geçmez.",
   },
 ] as const;

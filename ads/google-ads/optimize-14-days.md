@@ -31,5 +31,5 @@ Kampanya yayına alındıktan sonra.
 ## Asla
 
 - İlk 14 günde Performance Max / Display açma
-- “En iyi psikolog / randevu al” diline dönme
+- “En iyi psikolog / randevu al / klinik psikolog” diline dönme
 - Doorway (Ads-only ince) sayfa ekleme

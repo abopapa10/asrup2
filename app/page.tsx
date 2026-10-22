@@ -5,7 +5,6 @@ import { ExpertiseAreasSection } from "@/components/ExpertiseAreasSection";
 import { TherapyProcessSection } from "@/components/TherapyProcessSection";
 import { DeferredFloatingWhatsApp } from "@/components/DeferredFloatingWhatsApp";
 import { FaqAccordionLazy } from "@/components/FaqAccordionLazy";
-import { GoogleReviewsCarouselLazy } from "@/components/GoogleReviewsCarouselLazy";
 import { AboutSection } from "@/components/AboutSection";
 import { HeroSection } from "@/components/HeroSection";
 import { PersonalityTestLazy } from "@/components/PersonalityTestLazy";
@@ -25,17 +24,12 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection />
-        <GoogleReviewsCarouselLazy />
         <ServicesGrid />
-        <PersonalityTestLazy />
-        <div
-          className="h-10 bg-white sm:h-14 lg:h-20"
-          aria-hidden
-        />
         <ContactLocationSection />
         <TherapyProcessSection />
         <ExpertiseAreasSection />
         <AuthoritySection />
+        <PersonalityTestLazy />
         <ArticlesSection />
         <QuestionAnswerSection />
         <FaqAccordionLazy />

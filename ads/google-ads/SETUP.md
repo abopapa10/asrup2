@@ -28,7 +28,13 @@ WhatsApp dönüşümü ayda ~15–20+ olay görünce **Dönüşümleri en üst d
 | Reklam grubu | Final URL |
 |--------------|-----------|
 | AG Nilufer Psikolog | `/lokasyon/nilufer-psikolog` |
+| AG Nilufer Semt (Test) — başlangıçta duraklatılmış | `/lokasyon/nilufer-psikolog` |
 | AG Bursa Psikolog | `/` |
+| AG Bursa Randevu Iletisim | `/nilufer-bursa-psikolog-randevu` |
+| AG Fiyat | `/makale/bursa-psikolog-fiyatlari` |
+| AG Online — başlangıçta duraklatılmış | `/online-terapi` |
+
+Anahtar kelime araştırması (`bursa-psikolog-anahtar-kelimeler.canvas.tsx`) `keywords.csv` ile hizalıdır: Tier A head terimler + randevu/fiyat/kaygı/çift; semt ve online grupları duraklatılmış test. **Klinik psikolog** kelimeleri pozitif listede yoktur — unvan iddiası yok; `negative-keywords.csv` içinde phrase negatif.
 
 ### BPS - B Kaygi
 | Reklam grubu | Final URL |
@@ -42,7 +48,7 @@ WhatsApp dönüşümü ayda ~15–20+ olay görünce **Dönüşümleri en üst d
 
 ## İçe aktarma sırası
 
-1. Ads’te 3 kampanyayı ve 4 reklam grubunu yukarıdaki isimlerle oluşturun (veya Editor’da oluşturun).
+1. Ads’te 3 kampanyayı ve 8 reklam grubunu yukarıdaki isimlerle oluşturun (veya Editor’da oluşturun). Semt ve Online gruplarını ilk 7 gün duraklatılmış tutun; A grupları veri üretince açın.
 2. `import/keywords.csv` → Keywords yükleyin (Campaign / Ad group adları birebir eşleşmeli).
 3. `import/negative-keywords.csv` → Negative keywords (Campaign seviyesi; Account satırlarını hesap negatiflerine de ekleyebilirsiniz).
 4. `rsa-copy.md` içindeki başlık/açıklamaları her reklam grubuna 1 RSA olarak yapıştırın.
@@ -71,8 +77,8 @@ Olay adı sitede: `whatsapp_click` (gtag `conversion` + `send_to`).
 
 ## Reklam dili (zorunlu)
 
-Kullan: Bize ulaşın, WhatsApp ile yazın, Nilüfer Özlüce, Hacettepe  
-Kullanma: Randevu al, danışan kabul, garantili tedavi, en iyi psikolog
+Kullan: Bize ulaşın, WhatsApp ile yazın, Nilüfer Özlüce, Hacettepe, Bursa Psikolog, Psikolog Bursa  
+Kullanma: Randevu al, danışan kabul, garantili tedavi, en iyi psikolog, klinik psikolog, uzman klinik psikolog
 
 ## İlk 14 gün
 

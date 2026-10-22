@@ -368,6 +368,6 @@ export const yalnizlikArticleBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Bursa'da psikolojik destek sürecini değerlendirmek isteyenler için hem yüz yüze hem de online terapi seçenekleri mevcuttur. Bursa klinik psikolog hizmetleri çerçevesinde gerçekleştirilen bireysel görüşmeler, yalnızlık hissini ve sosyal geri çekilmeyi birlikte ele alabilmek için güvenli ve destekleyici bir alan yaratmaktadır. Önemli olan, bu adımı atmaya hazır hissettiğinizde erişimin mümkün olduğunu bilmektir.",
+    text: "Bursa'da psikolojik destek sürecini değerlendirmek isteyenler için hem yüz yüze hem de online terapi seçenekleri mevcuttur. Bursa psikolog görüşmeleri, yalnızlık hissini ve sosyal geri çekilmeyi birlikte ele alabilmek için güvenli ve destekleyici bir alan yaratmaktadır. Önemli olan, bu adımı atmaya hazır hissettiğinizde erişimin mümkün olduğunu bilmektir.",
   },
 ];

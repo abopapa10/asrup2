@@ -6,7 +6,7 @@ export const depresyonTerapisiBursa: SeoLandingPage = {
   parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
-    title: "Depresyon Terapisi Bursa | Uzman Klinik Psikolog",
+    title: "Depresyon Terapisi Bursa | Psikolog Nilüfer",
     description:
       "Bursa Nilüfer'de yetişkin depresyon terapisi. İsteksizlik, tükenmişlik, duygusal geri çekilme ve uzun süreli duygudurum değişikliklerinde klinik destek.",
     canonicalPath: "/hizmetler/depresyon-terapisi-bursa",
@@ -17,7 +17,7 @@ export const depresyonTerapisiBursa: SeoLandingPage = {
       "tükenmişlik",
       "Bursa psikolog",
       "Nilüfer psikolog",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
       "psikoterapi",
     ],
   },

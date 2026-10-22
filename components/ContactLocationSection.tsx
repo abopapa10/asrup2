@@ -9,26 +9,42 @@ const weekdayLabel =
   "Pazartesi – Cuma " +
   `${siteConfig.openingHours[0].opens} – ${siteConfig.openingHours[0].closes}`;
 
-export function ContactLocationSection() {
+type ContactLocationSectionProps = {
+  id?: string;
+  headingId?: string;
+  eyebrow?: string;
+  heading?: string;
+  intro?: string;
+  whatsappSource?: string;
+  tone?: "mesh" | "white";
+};
+
+export function ContactLocationSection({
+  id = "iletisim",
+  headingId = "contact-location-heading",
+  eyebrow = "İletişim · Konum",
+  heading = "Bursa Psikolog İletişim Konum",
+  intro = "Psikolog Bursa arayanlar için ofis Nilüfer Özlüce’dedir. WhatsApp veya telefon ile yazın; harita aşağıda.",
+  whatsappSource = "contact-location",
+  tone = "mesh",
+}: ContactLocationSectionProps = {}) {
   const [streetLine, cityLine] = formatAddressLines();
   const phoneHref = `tel:${siteConfig.phone.replace(/\s/g, "")}`;
+  const toneClass = tone === "white" ? "bg-white" : "bg-mesh-sky";
 
   return (
     <section
-      id="iletisim"
-      aria-labelledby="contact-location-heading"
-      className="border-t border-ice-blue/50 bg-mesh-sky py-20 sm:py-28 lg:py-32"
+      id={id}
+      aria-labelledby={headingId}
+      className={`border-t border-ice-blue/50 py-20 sm:py-28 lg:py-32 ${toneClass}`}
     >
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:px-12">
         <FadeIn className="max-w-3xl">
-          <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">İletişim · Konum</p>
-          <h2 id="contact-location-heading" className="heading-section">
-            Bursa Psikolog İletişim Konum
+          <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">{eyebrow}</p>
+          <h2 id={headingId} className="heading-section">
+            {heading}
           </h2>
-          <p className="body-lead mt-4 sm:mt-6">
-            Nilüfer Özlüce adres bilgisi, telefon ve WhatsApp üzerinden
-            kişisel iletişim.
-          </p>
+          <p className="body-lead mt-4 sm:mt-6">{intro}</p>
         </FadeIn>
 
         <div className="mt-10 grid items-start gap-8 sm:mt-12 lg:grid-cols-12 lg:gap-12">
@@ -93,7 +109,7 @@ export function ContactLocationSection() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <WhatsAppLink
-                source="contact-location"
+                source={whatsappSource}
                 className="btn-whatsapp sm:min-w-[12rem] sm:flex-1"
               >
                 <WhatsAppIcon />

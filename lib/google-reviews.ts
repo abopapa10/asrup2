@@ -200,31 +200,20 @@ export const googleReviews: GoogleReview[] = [
     date: "1 ay önce",
     text: "Kocaman bir iyi ki dediğim değerli Alparslan hocam. Eşimin öfke kontrolü için ulaştık; evliliğimizi de kurtarmış olduk. Sadece iki seansla eşimin öfke kontrol problemini çözdü. Eşli görüşme sayesinde ben de yaptığım hataların farkına vardım. Evlilikte sorun yaşayanlar veya kişisel duygularıyla baş edemeyenler gönül rahatlığıyla gelebilir. Terapinin iyileştirici etkisini muhteşem dokunuşlarla kanıtlayan bir hocamız.",
   },
-  {
-    id: "e-k",
-    name: "E. K.",
-    date: "2 ay önce",
-    text: "Klinik ortamı son derece sakin ve profesyonel. İlk seans öncesi bilgilendirme süreci şeffaf ve güven vericiydi. Bursa'da psikolog arayanlara gönül rahatlığıyla öneririm.",
-  },
-  {
-    id: "m-a",
-    name: "M. A.",
-    date: "3 ay önce",
-    text: "Çift terapisi sürecinde iletişim becerilerimiz belirgin şekilde güçlendi. Uzman yaklaşımı bilimsel ve saygılı; danışan gizliliği her aşamada hissediliyor.",
-  },
-  {
-    id: "s-y",
-    name: "S. Y.",
-    date: "4 ay önce",
-    text: "EMDR seansları travma sonrası yaşadığım zorlanmaları yönetmemde çok etkili oldu. Seans süresi ve süreç net anlatıldı; etik ilkelere bağlı bir klinik deneyim.",
-  },
-  {
-    id: "d-t",
-    name: "D. T.",
-    date: "5 ay önce",
-    text: "Bireysel terapi desteği kaygı ve stres yönetiminde kalıcı fark yarattı. Randevu ve asistan yönlendirmesi hızlı; Bursa psikolog tavsiye arayanlar için güçlü bir referans.",
-  },
 ];
 
 /** Kartta kısaltma gösterilecek minimum karakter */
 export const REVIEW_CLAMP_CHARS = 200;
+
+/** Toplam yayınlanan Google yorumu sayısı (güven noktaları için). */
+export const GOOGLE_REVIEW_COUNT = googleReviews.length;
+
+export function getGoogleReview(id: string): GoogleReview | undefined {
+  return googleReviews.find((review) => review.id === id);
+}
+
+export function getGoogleReviews(ids: readonly string[]): GoogleReview[] {
+  return ids
+    .map((id) => getGoogleReview(id))
+    .filter((review): review is GoogleReview => Boolean(review));
+}

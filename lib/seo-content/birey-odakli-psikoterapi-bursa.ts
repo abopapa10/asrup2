@@ -17,7 +17,7 @@ export const bireyOdakliPsikoterapiBursa: SeoLandingPage = {
       "kişi merkezli terapi",
       "Bursa psikolog",
       "Nilüfer psikolog",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
       "psikoterapi",
     ],
   },
@@ -169,7 +169,7 @@ export const bireyOdakliPsikoterapiBursa: SeoLandingPage = {
       heading: "Bursa ve İstanbul'da klinik bağlam",
       paragraphs: [
         "Bursa Nilüfer'deki kliniğimizde birey odaklı psikoterapi, yetişkin danışanlar için yüz yüze ve online formatlarda yürütülür. Şehir içi ulaşım temposu, sanayi ve hizmet sektöründeki yoğun çalışma düzeni ile iş-yaşam dengesi baskısı, performans odaklı öz-değer zorlanmalarını besleyen yaygın bir bağlam oluşturur; terapi bu bağlamı göz ardı etmeden planlanır.",
-        "Uzman Klinik Psikolog Ahmet Alparslan Sancar, lisans eğitimini Hacettepe Üniversitesi Psikoloji Bölümü'nde tamamlamış; klinik psikoloji yüksek lisansında birey odaklı psikoterapi alanında uzmanlaşmıştır. Rogers çerçevesindeki eğitim ve süpervizyon deneyimi, seanslarda empati, şeffaflık ve koşulsuz kabulün sürdürülmesine dayanır.",
+        "Psikolog Ahmet Alparslan Sancar, lisans eğitimini Hacettepe Üniversitesi Psikoloji Bölümü'nde tamamlamış; birey odaklı psikoterapi alanında uzmanlaşmıştır. Rogers çerçevesindeki eğitim ve süpervizyon deneyimi, seanslarda empati, şeffaflık ve koşulsuz kabulün sürdürülmesine dayanır.",
         "İstanbul'dan Bursa'ya veya yalnızca online seanslara başvuran danışanlar için süreç, aynı etik ilkeler, gizlilik standartları ve klinik değerlendirme protokolleriyle yürütülür. Online format, özellikle yoğun iş temposu nedeniyle yüz yüze gelmekte zorlanan danışanlar için erişilebilir bir alternatif sunar.",
         "Seans saatleri, mesai öncesi erken ve mesai sonrası geç kontenjanlarla danışanın günlük rutinine uyum sağlayacak biçimde planlanır. Nilüfer'deki klinik konum, şehir içi ulaşımda danışanların seans öncesi aşırı stres yaşamaması için sakin saat aralıklarında tercih edilir.",
         "İlk görüşme talebi ve süreç bilgilendirmesi için [iletişim](/iletisim) sayfasından ulaşabilirsiniz; talepler aynı gün içinde yanıtlanır. Online seans seçeneği, Bursa dışı ve İstanbul'dan başvuran danışanlar için aynı Rogers çerçevesi ve gizlilik standartlarıyla sunulur.",

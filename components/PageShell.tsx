@@ -5,14 +5,18 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 type PageShellProps = {
   children: React.ReactNode;
+  showFooterSeo?: boolean;
 };
 
-export function PageShell({ children }: PageShellProps) {
+export function PageShell({
+  children,
+  showFooterSeo = true,
+}: PageShellProps) {
   return (
     <>
       <SiteHeader />
       <main>{children}</main>
-      <FooterSeoAccordion />
+      {showFooterSeo ? <FooterSeoAccordion /> : null}
       <SiteFooter />
       <DeferredFloatingWhatsApp />
     </>

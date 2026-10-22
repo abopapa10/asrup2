@@ -45,11 +45,11 @@ const homeMetadata = createPageMetadata({
   ogImageAlt: siteConfig.seo.defaultOgImageAlt,
   keywords: [
     "Bursa psikolog",
+    "psikolog bursa",
+    "bursa psikolog randevu",
     "Nilüfer psikolog",
     "Bursa Psikolog A. Alparslan Sancar",
     "Hacettepe psikoloji",
-    "psikoloji yazıları",
-    "klinik psikolog Bursa",
   ],
 });
 

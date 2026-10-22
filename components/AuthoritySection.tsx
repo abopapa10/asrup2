@@ -31,7 +31,7 @@ export function AuthoritySection() {
         <FadeIn as="article">
           <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Klinik Felsefe</p>
           <h2 id="authority-heading" className="heading-section">
-            Bursa Psikolog A. Alparslan Sancar
+            Psikolojik Bilimsel Yaklaşım
           </h2>
 
           <blockquote className="blockquote-accent mt-8 hidden sm:mt-10 lg:block">
@@ -53,10 +53,9 @@ export function AuthoritySection() {
           </blockquote>
 
           <p className="body-lead mt-8 sm:mt-10">
-            Bursa&apos;da başlayan meslek yaşamı, İstanbul Beşiktaş
-            deneyimiyle derinleşti. Bugün Bursa Nilüfer&apos;de bilimsel
-            disiplin, etik ilkeler ve ölçülü bir dil ile psikolojiye dair
-            içerik üretmeye devam ediyorum.
+            Meslek yaşamı Bursa&apos;da başladı. Bugün Nilüfer Özlüce&apos;de
+            bilimsel disiplin, etik ilkeler ve ölçülü bir dil ile çalışmaya
+            devam ediyorum.
           </p>
 
           <ul className="mt-10 space-y-8 sm:mt-12 sm:space-y-10">

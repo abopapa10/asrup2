@@ -222,7 +222,7 @@ export const depremArticleBlocks: readonly ArticleBlock[] = [
   },
   {
     type: "p",
-    text: "Deprem kaygısının klinik anksiyete bozukluğuna dönüştüğünün temel göstergesi işlevsellik kaybıdır. Kaygı; uyku bozukluğuna yol açıyorsa, konsantrasyonu ciddi biçimde düşürüyorsa, sosyal yaşamı ya da iş hayatını kısıtlıyorsa, panik atakları tetikliyorsa veya depresif belirtilerle iç içe geçiyorsa Bursa klinik psikolog değerlendirmesi için başvurmak anlamlı olacaktır. Tanısız başlanan müdahaleler zaman zaman semptom giderimi sağlasa da altta yatan yapıyı ele almadan sürdürülebilir bir iyileşme elde etmek güçtür.",
+    text: "Deprem kaygısının klinik anksiyete bozukluğuna dönüştüğünün temel göstergesi işlevsellik kaybıdır. Kaygı; uyku bozukluğuna yol açıyorsa, konsantrasyonu ciddi biçimde düşürüyorsa, sosyal yaşamı ya da iş hayatını kısıtlıyorsa, panik atakları tetikliyorsa veya depresif belirtilerle iç içe geçiyorsa Bursa psikolog değerlendirmesi için başvurmak anlamlı olacaktır. Tanısız başlanan müdahaleler zaman zaman semptom giderimi sağlasa da altta yatan yapıyı ele almadan sürdürülebilir bir iyileşme elde etmek güçtür.",
   },
 
   // ─── 11. Terapi Süreci Bursa'da ──────────────────────────────────────────────

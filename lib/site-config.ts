@@ -113,7 +113,7 @@ export const siteConfig = {
    * Mesleki bilgiler — `Psychologist` / `Person` schema için.
    */
   professional: {
-    jobTitle: "Uzman Klinik Psikolog",
+    jobTitle: "Psikolog",
     /** Eğitim aldığı kurum */
     alumniOf: {
       name: "Hacettepe Üniversitesi",
@@ -156,16 +156,19 @@ export const siteConfig = {
     portraitClinical: "/images/portre.webp",
     /** Hakkımda — tam profil */
     portraitFull: "/images/profil.webp",
+    /** Hero altı — ofiste yüz yüze portre */
+    portraitHeroBand: "/images/profil3.jpg",
+    /** Hakkımda — koltukta ofis çekimi */
+    portraitAbout: "/images/profil4.jpg",
   },
 
   seo: {
     siteName: "Bursa Psikolog A. Alparslan Sancar",
     shortName: "Bursa Psikolog",
     locale: "tr_TR",
-    defaultTitle:
-      "Bursa Psikolog A. Alparslan Sancar | Nilüfer",
+    defaultTitle: "Bursa Psikolog | Nilüfer Özlüce",
     defaultDescription:
-      "Bursa Psikolog A. Alparslan Sancar — Hacettepe Üniversitesi Psikoloji mezunu. Nilüfer Özlüce; psikoloji yazıları, yaklaşım ve WhatsApp ile kişisel iletişim.",
+      "Bursa psikolog A. Alparslan Sancar — Hacettepe Psikoloji mezunu. Nilüfer Özlüce ofis; kaygı, ilişki ve bireysel çalışma. WhatsApp ile ulaşın.",
     /** Ana sayfada ilk görünen klinik portre — OG ve zengin sonuçlar */
     defaultOgImage: "/images/portre.webp",
     defaultOgImageAlt:

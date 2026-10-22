@@ -6,7 +6,7 @@ export const panikAtakTerapisiBursa: SeoLandingPage = {
   parent: { label: "Konular", href: "/hizmetler" },
 
   meta: {
-    title: "Panik Atak Terapisi Bursa | Uzman Klinik Psikolog",
+    title: "Panik Atak Terapisi Bursa | Psikolog Nilüfer",
     description:
       "Bursa Nilüfer'de panik atak terapisi. Çarpıntı, nefes darlığı, kaçınma davranışları ve atak sonrası kaygıda klinik değerlendirme ve psikoterapi süreci.",
     canonicalPath: "/hizmetler/panik-atak-terapisi-bursa",
@@ -17,7 +17,7 @@ export const panikAtakTerapisiBursa: SeoLandingPage = {
       "kaçınma davranışı",
       "Bursa psikolog",
       "Nilüfer psikolog",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
       "anksiyete terapisi",
     ],
   },

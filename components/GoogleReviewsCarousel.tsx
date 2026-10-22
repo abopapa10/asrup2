@@ -194,11 +194,11 @@ export function GoogleReviewsCarousel() {
           </div>
           <p className="eyebrow eyebrow-cta mb-4">Yorumlar</p>
           <h2 id="reviews-heading" className="heading-section">
-            Danışan Deneyimleri
+            Bursa Psikolog A. Alparslan Sancar Yorumlar
           </h2>
           <p className="body-lead mt-4 sm:mt-5">
-            Bursa ve İstanbul&apos;daki klinik çalışmalarımızdan gelen güven
-            veren geri bildirimler.
+            Google İşletme Profili’ndeki geri bildirimler — her süreç kişiye
+            özgüdür.
           </p>
         </div>
 

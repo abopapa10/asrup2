@@ -18,7 +18,7 @@ export const regresyonTerapisiBursa: SeoLandingPage = {
       "travma bilinçli terapi",
       "Bursa psikolog",
       "Nilüfer psikolog",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
     ],
   },
 

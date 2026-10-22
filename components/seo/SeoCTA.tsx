@@ -7,12 +7,14 @@ type SeoCTAProps = {
   /** Premium ve sakin tek cümlelik başlık */
   heading?: string;
   caption?: string;
+  whatsappSource?: string;
 };
 
 export function SeoCTA({
   eyebrow = contactCopy.seoEyebrow,
   heading,
   caption = contactCopy.seoCaption,
+  whatsappSource = "seo-landing-cta",
 }: SeoCTAProps) {
   return (
     <FadeIn as="section" className="max-w-3xl">
@@ -27,7 +29,7 @@ export function SeoCTA({
           {caption}
         </p>
       ) : null}
-      <CtaBlock variant="banner" whatsappSource="seo-landing-cta" />
+      <CtaBlock variant="banner" whatsappSource={whatsappSource} />
     </FadeIn>
   );
 }

@@ -223,7 +223,7 @@ export function AdhdScreeningTestApp() {
             <aside className="rounded-lg border border-amber-200/70 bg-amber-50/40 px-4 py-3 text-xs leading-relaxed text-slate-charcoal">
               <strong className="font-semibold">Önemli:</strong> Bu test tanı aracı
               değildir; yalnızca farkındalık ve ön tarama amaçlıdır. Kesin tanı için
-              klinik psikolog veya psikiyatrist değerlendirmesi gerekir.
+              psikolog veya psikiyatrist değerlendirmesi gerekir.
             </aside>
 
             <div className="border-t border-ice-blue/60 pt-4">

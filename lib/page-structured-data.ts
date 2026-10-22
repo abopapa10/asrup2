@@ -16,6 +16,11 @@ import {
   niluferAuthorityHero,
   niluferFaqs,
 } from "@/lib/lokasyon/nilufer-psikolog-authority";
+import {
+  randevuFaqs,
+  randevuHero,
+  randevuPageMeta,
+} from "@/lib/seo-content/nilufer-bursa-psikolog-randevu";
 import type { SeoLandingPage } from "@/lib/seo-pages";
 import type { Service } from "@/lib/services";
 import { schemaImageObject } from "@/lib/schema-images";
@@ -581,6 +586,59 @@ export function buildQuestionAnswerJsonLd(item: QuestionAnswerItem) {
           item: pageUrl,
         },
       ],
+    },
+  ];
+}
+
+export function buildRandevuPageJsonLd() {
+  const pageUrl = absoluteUrl(randevuPageMeta.canonicalPath);
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: randevuPageMeta.title,
+      description: randevuPageMeta.description,
+      inLanguage: "tr-TR",
+      isPartOf: WEBSITE_REF,
+      about: [PSYCHOLOGIST_REF, MEDICAL_BUSINESS_REF],
+      mainEntity: PSYCHOLOGIST_REF,
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Ana Sayfa",
+          item: siteConfig.url,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: randevuHero.h1,
+          item: pageUrl,
+        },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      isPartOf: { "@id": `${pageUrl}#webpage` },
+      mainEntity: randevuFaqs.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
     },
   ];
 }

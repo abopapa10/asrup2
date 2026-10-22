@@ -17,7 +17,7 @@ export const osmangaziPsikolog: SeoLandingPage = {
       "Bursa psikolog",
       "Nilüfer psikolog",
       "online psikolog Bursa",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
     ],
   },
 

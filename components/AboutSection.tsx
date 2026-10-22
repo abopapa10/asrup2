@@ -52,16 +52,17 @@ export function AboutSection() {
             <div>
               <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Hakkımda</p>
               <h2 id="about-heading" className="heading-section">
-                Eğitim ve mesleki duruş
+                Psikolog A. Alparslan Sancar
               </h2>
             </div>
 
             <div className="mx-auto mt-8 w-full max-w-[20rem] sm:mt-10 sm:max-w-[22rem] lg:hidden">
               <PortraitFrame
-                src={siteConfig.images.portraitClinical}
-                alt="Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı"
+                src={siteConfig.images.portraitAbout}
+                alt="Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce ofisinde"
                 variant="clinical"
                 align="left"
+                imageClassName="object-cover object-[50%_18%]"
               />
             </div>
 
@@ -69,31 +70,25 @@ export function AboutSection() {
 
             <FadeIn delay={0.2} className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                BTSO Bursa Sosyal Bilimler Lisesi&apos;nde lise eğitimimi
-                tamamladıktan sonra Hacettepe Üniversitesi Psikoloji
-                Bölümü&apos;nü kazandım. Üniversite dönemim ağırlıklı olarak
-                Bilişsel Davranışçı ekol çerçevesinde şekillendi; mezuniyetimin
-                ardından İnsancıl ekol içindeki Birey Odaklı Psikoterapi
-                tekniğinde uzmanlaştım.
+                Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi
+                Psikoloji Bölümü mezunudur. Üniversite dönemi bilişsel-davranışçı
+                çerçevede şekillendi; ardından birey odaklı psikoterapi
+                alanında uzmanlaştı. Ofis Bursa Nilüfer, Time Özlüce&apos;dedir.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Meslek yaşamım Bursa ve İstanbul arasında geçti. Nilüfer ve
-                Beşiktaş deneyimlerim, hem akademik birikimi hem de insani
-                iletişimi bir arada tutan bir bakış geliştirmeme yardımcı oldu.
-                Bugün Bursa Nilüfer, Özlüce&apos;de bulunuyorum.
+                Bursa psikolog olarak kaygı, ilişki dinamikleri ve bireysel
+                süreçler üzerine çalışırım. Kuramsal birikim, analitik bakış ve
+                ölçülü dil temel duruşumdur; kesin vaat yoktur.
               </p>
               <p className="text-sm leading-[1.9] text-slate-body sm:text-base">
-                Bir psikolog olarak güçlü yanlarımın kuramsal birikim, analitik
-                bakış ve konuları yapılandırılmış biçimde ele alma olduğunu
-                düşünüyorum. Bu sitede psikolojiye dair yazılar, testler ve
-                açık kaynaklar paylaşırım. Bana ulaşmak isterseniz{" "}
+                Yazmak veya yüz yüze görüşmek için{" "}
                 <Link
                   href="/#iletisim"
                   className="font-medium text-cta underline decoration-cta/30 underline-offset-4 transition-colors hover:text-cta-hover hover:decoration-cta/60"
                 >
                   iletişim
                 </Link>{" "}
-                bölümünü kullanabilirsiniz.
+                yeterli. WhatsApp veya telefon — aynı gün içinde dönüş.
               </p>
             </FadeIn>
 
@@ -107,10 +102,11 @@ export function AboutSection() {
             className="mx-auto hidden w-full max-w-[20rem] sm:max-w-[22rem] lg:block lg:max-w-none lg:sticky lg:top-28"
           >
             <PortraitFrame
-              src={siteConfig.images.portraitClinical}
-              alt="Bursa Psikolog A. Alparslan Sancar — klinik portre fotoğrafı"
+              src={siteConfig.images.portraitAbout}
+              alt="Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce ofisinde"
               variant="clinical"
               align="right"
+              imageClassName="object-cover object-[50%_18%]"
             />
             <WorkPrinciplesCard />
           </FadeIn>

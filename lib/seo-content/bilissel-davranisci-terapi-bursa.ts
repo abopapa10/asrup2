@@ -19,7 +19,7 @@ export const bilisselDavranisciTerapiBursa: SeoLandingPage = {
       "depresyon BDT",
       "Bursa psikolog",
       "Nilüfer psikolog",
-      "klinik psikolog Bursa",
+      "psikolog bursa",
     ],
   },
 

@@ -5,8 +5,10 @@ type SeoHeroProps = {
   title: string;
   lead: string;
   intro?: string;
-  /** Hero altında sakin bir inline CTA çifti gösterilsin mi? */
+  /** Hero altında sakin bir CTA çifti gösterilsin mi? */
   showCta?: boolean;
+  proofPoints?: readonly string[];
+  whatsappSource?: string;
 };
 
 /** SEO landing hero — sunucu render, LCP için animasyon yok */
@@ -16,6 +18,8 @@ export function SeoHero({
   lead,
   intro,
   showCta = false,
+  proofPoints,
+  whatsappSource = "seo-landing-hero",
 }: SeoHeroProps) {
   return (
     <article>
@@ -30,9 +34,26 @@ export function SeoHero({
         </p>
       ) : null}
 
+      {proofPoints && proofPoints.length > 0 ? (
+        <ul className="mt-6 flex max-w-2xl flex-wrap gap-x-5 gap-y-2 sm:mt-7">
+          {proofPoints.map((point) => (
+            <li
+              key={point}
+              className="flex items-center gap-2 text-sm text-slate-charcoal"
+            >
+              <span
+                aria-hidden
+                className="h-1.5 w-1.5 shrink-0 rounded-full bg-neon-turquoise"
+              />
+              {point}
+            </li>
+          ))}
+        </ul>
+      ) : null}
+
       {showCta ? (
         <div className="mt-8 max-w-xl sm:mt-10">
-          <CtaBlock variant="inline" />
+          <CtaBlock variant="inline" whatsappSource={whatsappSource} />
         </div>
       ) : null}
     </article>

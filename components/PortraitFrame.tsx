@@ -7,6 +7,7 @@ type PortraitFrameProps = {
   variant?: "clinical" | "full" | "compact";
   align?: "left" | "right";
   className?: string;
+  imageClassName?: string;
 };
 
 export function PortraitFrame({
@@ -16,6 +17,7 @@ export function PortraitFrame({
   variant = "clinical",
   align = "right",
   className = "",
+  imageClassName = "object-cover object-center",
 }: PortraitFrameProps) {
   const aspect =
     variant === "full"
@@ -54,7 +56,7 @@ export function PortraitFrame({
                   : "(max-width: 1024px) 90vw, 40vw"
             }
             quality={priority ? 85 : 75}
-            className="object-cover object-center"
+            className={imageClassName}
           />
         </div>
       </div>

@@ -21,7 +21,7 @@ export default function CiftTerapisiPage() {
 
   return (
     <PageShell>
-      <ServicePageContent service={service} />
+      <ServicePageContent service={service} homeLikeLayout />
     </PageShell>
   );
 }

@@ -76,11 +76,24 @@ export type SeoReferencesSection = {
   items: readonly string[];
 };
 
+/**
+ * Danışan deneyimi — `lib/google-reviews.ts` içindeki id'lere referans verir.
+ * Tek büyük alıntı (featured) + isteğe bağlı 2-3 kısa destek alıntısı.
+ */
+export type SeoTestimonialSection = {
+  kind: "testimonial";
+  heading: string;
+  intro?: string;
+  featuredId: string;
+  supportingIds?: readonly string[];
+};
+
 export type SeoSection =
   | SeoNarrativeSection
   | SeoSymptomsSection
   | SeoTrustSection
-  | SeoReferencesSection;
+  | SeoReferencesSection
+  | SeoTestimonialSection;
 
 export type SeoLandingPage = {
   slug: string;
@@ -97,13 +110,26 @@ export type SeoLandingPage = {
     keywords?: readonly string[];
   };
 
+  /**
+   * Ana sayfa hero yerleşimi (sağda çerçeveli portre, mobilde alt başlığın
+   * altında) + profil4 klinik yaklaşım fotoğrafı.
+   */
+  homeLikeLayout?: boolean;
+
   hero: {
     eyebrow: string;
     h1: string;
+    /** Fotoğrafın üstündeki kimlik / alt başlık satırı */
+    subtitle?: string;
     lead: string;
     intro?: string;
     /** Hero altında sakin bir CTA çifti gösterilsin mi? */
     showCta?: boolean;
+    /**
+     * Hero altında kısa güven noktaları (ünvan, eğitim, konum, yorum sayısı).
+     * Ads açılış deneyimi + ikna için; 3–4 madde idealdir.
+     */
+    proofPoints?: readonly string[];
   };
 
   /**
@@ -117,7 +143,9 @@ export type SeoLandingPage = {
   /** Alt CTA bloğu için isteğe bağlı özel metinler. */
   cta?: {
     eyebrow?: string;
+    heading?: string;
     caption?: string;
+    whatsappSource?: string;
   };
 
   related: readonly SeoRelatedLink[];

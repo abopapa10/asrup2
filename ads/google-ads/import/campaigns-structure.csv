@@ -1,5 +1,9 @@
 Campaign,Campaign Type,Campaign Status,Budget,Budget type,Bid Strategy Type,Networks,Languages,Locations,Ad Group,Ad Group Status,Final URL
 BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Nilufer Psikolog,Enabled,https://bursapsikologsancar.com/lokasyon/nilufer-psikolog
+BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Nilufer Semt (Test),Paused,https://bursapsikologsancar.com/lokasyon/nilufer-psikolog
 BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Bursa Psikolog,Enabled,https://bursapsikologsancar.com/
+BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Bursa Randevu Iletisim,Enabled,https://bursapsikologsancar.com/nilufer-bursa-psikolog-randevu
+BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Fiyat,Enabled,https://bursapsikologsancar.com/makale/bursa-psikolog-fiyatlari
+BPS - A Lokal Bursa Nilufer,Search,Enabled,90,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Online,Paused,https://bursapsikologsancar.com/online-terapi
 BPS - B Kaygi,Search,Enabled,40,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Kaygi Panik,Enabled,https://bursapsikologsancar.com/hizmetler/anksiyete-terapisi-bursa
 BPS - C Iliski,Search,Enabled,35,Daily,Maximize Clicks,Google Search,tr,Bursa Turkey,AG Iliski Cift,Enabled,https://bursapsikologsancar.com/hizmetler/cift-terapisi-bursa

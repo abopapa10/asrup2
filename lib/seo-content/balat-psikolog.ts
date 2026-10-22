@@ -15,7 +15,7 @@ export const balatPsikolog: SeoLandingPage = {
       "Bursa Balat psikolog",
       "Balat terapi",
       "Nilüfer psikolog",
-      "Bursa klinik psikolog",
+      "psikolog bursa",
       "online terapi Bursa",
     ],
   },

@@ -1,78 +1,273 @@
-Campaign,Keyword,Criterion Type
+﻿Campaign,Keyword,Criterion Type
 BPS - A Lokal Bursa Nilufer,ücretsiz,Broad
+BPS - A Lokal Bursa Nilufer,bedava,Broad
+BPS - A Lokal Bursa Nilufer,ücretsiz seans,Broad
 BPS - A Lokal Bursa Nilufer,sgk,Broad
+BPS - A Lokal Bursa Nilufer,devlet,Broad
 BPS - A Lokal Bursa Nilufer,devlet hastanesi,Broad
-BPS - A Lokal Bursa Nilufer,iş ilanı,Broad
+BPS - A Lokal Bursa Nilufer,mhrs,Broad
+BPS - A Lokal Bursa Nilufer,hastane randevu,Broad
+BPS - A Lokal Bursa Nilufer,aile sağlığı merkezi,Broad
+BPS - A Lokal Bursa Nilufer,belediye,Broad
+BPS - A Lokal Bursa Nilufer,toplum ruh sağlığı,Broad
+BPS - A Lokal Bursa Nilufer,nasıl olunur,Broad
 BPS - A Lokal Bursa Nilufer,maaş,Broad
-BPS - A Lokal Bursa Nilufer,staj,Broad
+BPS - A Lokal Bursa Nilufer,maaşları,Broad
+BPS - A Lokal Bursa Nilufer,taban puanı,Broad
+BPS - A Lokal Bursa Nilufer,bölümü,Broad
+BPS - A Lokal Bursa Nilufer,bölüm,Broad
 BPS - A Lokal Bursa Nilufer,yüksek lisans,Broad
+BPS - A Lokal Bursa Nilufer,doktora,Broad
+BPS - A Lokal Bursa Nilufer,staj,Broad
+BPS - A Lokal Bursa Nilufer,iş ilanı,Broad
+BPS - A Lokal Bursa Nilufer,iş ilanları,Broad
+BPS - A Lokal Bursa Nilufer,kpss,Broad
+BPS - A Lokal Bursa Nilufer,atama,Broad
 BPS - A Lokal Bursa Nilufer,ders,Broad
+BPS - A Lokal Bursa Nilufer,ders notları,Broad
 BPS - A Lokal Bursa Nilufer,ödev,Broad
 BPS - A Lokal Bursa Nilufer,pdf,Broad
 BPS - A Lokal Bursa Nilufer,kitap,Broad
+BPS - A Lokal Bursa Nilufer,sınav soruları,Broad
+BPS - A Lokal Bursa Nilufer,psikiyatrist,Broad
+BPS - A Lokal Bursa Nilufer,psikiyatri,Broad
+BPS - A Lokal Bursa Nilufer,ilaç,Broad
+BPS - A Lokal Bursa Nilufer,antidepresan,Broad
+BPS - A Lokal Bursa Nilufer,rapor,Broad
+BPS - A Lokal Bursa Nilufer,heyet raporu,Broad
+BPS - A Lokal Bursa Nilufer,ehliyet raporu,Broad
+BPS - A Lokal Bursa Nilufer,reçete,Broad
+BPS - A Lokal Bursa Nilufer,çocuk,Broad
 BPS - A Lokal Bursa Nilufer,çocuk psikolog,Broad
 BPS - A Lokal Bursa Nilufer,ergen,Broad
 BPS - A Lokal Bursa Nilufer,bebek,Broad
 BPS - A Lokal Bursa Nilufer,otizm,Broad
+BPS - A Lokal Bursa Nilufer,özel eğitim,Broad
+BPS - A Lokal Bursa Nilufer,okul psikoloğu,Broad
+BPS - A Lokal Bursa Nilufer,rehberlik,Broad
 BPS - A Lokal Bursa Nilufer,istanbul,Broad
 BPS - A Lokal Bursa Nilufer,ankara,Broad
 BPS - A Lokal Bursa Nilufer,izmir,Broad
+BPS - A Lokal Bursa Nilufer,inegöl,Broad
+BPS - A Lokal Bursa Nilufer,gemlik,Broad
+BPS - A Lokal Bursa Nilufer,orhangazi,Broad
+BPS - A Lokal Bursa Nilufer,kestel,Broad
+BPS - A Lokal Bursa Nilufer,gürsu,Broad
+BPS - A Lokal Bursa Nilufer,karacabey,Broad
+BPS - A Lokal Bursa Nilufer,yenişehir,Broad
+BPS - A Lokal Bursa Nilufer,iznik,Broad
+BPS - A Lokal Bursa Nilufer,pedagog,Broad
+BPS - A Lokal Bursa Nilufer,aile danışmanı,Broad
+BPS - A Lokal Bursa Nilufer,yaşam koçu,Broad
+BPS - A Lokal Bursa Nilufer,koçluk,Broad
+BPS - A Lokal Bursa Nilufer,hipnoz,Broad
+BPS - A Lokal Bursa Nilufer,astrolog,Broad
+BPS - A Lokal Bursa Nilufer,medyum,Broad
+BPS - A Lokal Bursa Nilufer,fizik tedavi,Broad
+BPS - A Lokal Bursa Nilufer,masaj,Broad
+BPS - A Lokal Bursa Nilufer,diyetisyen,Broad
+BPS - A Lokal Bursa Nilufer,uygulama,Broad
+BPS - A Lokal Bursa Nilufer,app,Broad
+BPS - A Lokal Bursa Nilufer,hiwell,Broad
+BPS - A Lokal Bursa Nilufer,terappin,Broad
 BPS - A Lokal Bursa Nilufer,forum,Broad
+BPS - A Lokal Bursa Nilufer,ekşi,Broad
 BPS - A Lokal Bursa Nilufer,wikipedia,Broad
 BPS - A Lokal Bursa Nilufer,chat gpt,Broad
-BPS - A Lokal Bursa Nilufer,bedava,Broad
-BPS - A Lokal Bursa Nilufer,ücretsiz seans,Broad
-BPS - A Lokal Bursa Nilufer,psikiyatrist,Broad
-BPS - A Lokal Bursa Nilufer,hastane randevu,Broad
+BPS - A Lokal Bursa Nilufer,chatgpt,Broad
+BPS - A Lokal Bursa Nilufer,yapay zeka,Broad
+BPS - A Lokal Bursa Nilufer,film,Broad
+BPS - A Lokal Bursa Nilufer,dizi,Broad
+BPS - A Lokal Bursa Nilufer,kitap önerisi,Broad
+BPS - A Lokal Bursa Nilufer,test,Broad
+BPS - A Lokal Bursa Nilufer,testi,Broad
+BPS - A Lokal Bursa Nilufer,en iyi,Broad
+BPS - A Lokal Bursa Nilufer,en ucuz,Broad
+BPS - A Lokal Bursa Nilufer,garantili,Broad
+BPS - A Lokal Bursa Nilufer,kesin çözüm,Broad
 BPS - B Kaygi,ücretsiz,Broad
+BPS - B Kaygi,bedava,Broad
+BPS - B Kaygi,ücretsiz seans,Broad
 BPS - B Kaygi,sgk,Broad
+BPS - B Kaygi,devlet,Broad
 BPS - B Kaygi,devlet hastanesi,Broad
-BPS - B Kaygi,iş ilanı,Broad
+BPS - B Kaygi,mhrs,Broad
+BPS - B Kaygi,hastane randevu,Broad
+BPS - B Kaygi,aile sağlığı merkezi,Broad
+BPS - B Kaygi,belediye,Broad
+BPS - B Kaygi,toplum ruh sağlığı,Broad
+BPS - B Kaygi,nasıl olunur,Broad
 BPS - B Kaygi,maaş,Broad
-BPS - B Kaygi,staj,Broad
+BPS - B Kaygi,maaşları,Broad
+BPS - B Kaygi,taban puanı,Broad
+BPS - B Kaygi,bölümü,Broad
+BPS - B Kaygi,bölüm,Broad
 BPS - B Kaygi,yüksek lisans,Broad
+BPS - B Kaygi,doktora,Broad
+BPS - B Kaygi,staj,Broad
+BPS - B Kaygi,iş ilanı,Broad
+BPS - B Kaygi,iş ilanları,Broad
+BPS - B Kaygi,kpss,Broad
+BPS - B Kaygi,atama,Broad
 BPS - B Kaygi,ders,Broad
+BPS - B Kaygi,ders notları,Broad
 BPS - B Kaygi,ödev,Broad
 BPS - B Kaygi,pdf,Broad
 BPS - B Kaygi,kitap,Broad
+BPS - B Kaygi,sınav soruları,Broad
+BPS - B Kaygi,psikiyatrist,Broad
+BPS - B Kaygi,psikiyatri,Broad
+BPS - B Kaygi,ilaç,Broad
+BPS - B Kaygi,antidepresan,Broad
+BPS - B Kaygi,rapor,Broad
+BPS - B Kaygi,heyet raporu,Broad
+BPS - B Kaygi,ehliyet raporu,Broad
+BPS - B Kaygi,reçete,Broad
+BPS - B Kaygi,çocuk,Broad
 BPS - B Kaygi,çocuk psikolog,Broad
 BPS - B Kaygi,ergen,Broad
 BPS - B Kaygi,bebek,Broad
 BPS - B Kaygi,otizm,Broad
+BPS - B Kaygi,özel eğitim,Broad
+BPS - B Kaygi,okul psikoloğu,Broad
+BPS - B Kaygi,rehberlik,Broad
 BPS - B Kaygi,istanbul,Broad
 BPS - B Kaygi,ankara,Broad
 BPS - B Kaygi,izmir,Broad
+BPS - B Kaygi,inegöl,Broad
+BPS - B Kaygi,gemlik,Broad
+BPS - B Kaygi,orhangazi,Broad
+BPS - B Kaygi,kestel,Broad
+BPS - B Kaygi,gürsu,Broad
+BPS - B Kaygi,karacabey,Broad
+BPS - B Kaygi,yenişehir,Broad
+BPS - B Kaygi,iznik,Broad
+BPS - B Kaygi,pedagog,Broad
+BPS - B Kaygi,aile danışmanı,Broad
+BPS - B Kaygi,yaşam koçu,Broad
+BPS - B Kaygi,koçluk,Broad
+BPS - B Kaygi,hipnoz,Broad
+BPS - B Kaygi,astrolog,Broad
+BPS - B Kaygi,medyum,Broad
+BPS - B Kaygi,fizik tedavi,Broad
+BPS - B Kaygi,masaj,Broad
+BPS - B Kaygi,diyetisyen,Broad
+BPS - B Kaygi,uygulama,Broad
+BPS - B Kaygi,app,Broad
+BPS - B Kaygi,hiwell,Broad
+BPS - B Kaygi,terappin,Broad
 BPS - B Kaygi,forum,Broad
+BPS - B Kaygi,ekşi,Broad
 BPS - B Kaygi,wikipedia,Broad
 BPS - B Kaygi,chat gpt,Broad
-BPS - B Kaygi,bedava,Broad
-BPS - B Kaygi,ücretsiz seans,Broad
-BPS - B Kaygi,psikiyatrist,Broad
-BPS - B Kaygi,hastane randevu,Broad
-BPS - B Kaygi,çift terapisi,Broad
+BPS - B Kaygi,chatgpt,Broad
+BPS - B Kaygi,yapay zeka,Broad
+BPS - B Kaygi,film,Broad
+BPS - B Kaygi,dizi,Broad
+BPS - B Kaygi,kitap önerisi,Broad
+BPS - B Kaygi,test,Broad
+BPS - B Kaygi,testi,Broad
+BPS - B Kaygi,en iyi,Broad
+BPS - B Kaygi,en ucuz,Broad
+BPS - B Kaygi,garantili,Broad
+BPS - B Kaygi,kesin çözüm,Broad
 BPS - C Iliski,ücretsiz,Broad
+BPS - C Iliski,bedava,Broad
+BPS - C Iliski,ücretsiz seans,Broad
 BPS - C Iliski,sgk,Broad
+BPS - C Iliski,devlet,Broad
 BPS - C Iliski,devlet hastanesi,Broad
-BPS - C Iliski,iş ilanı,Broad
+BPS - C Iliski,mhrs,Broad
+BPS - C Iliski,hastane randevu,Broad
+BPS - C Iliski,aile sağlığı merkezi,Broad
+BPS - C Iliski,belediye,Broad
+BPS - C Iliski,toplum ruh sağlığı,Broad
+BPS - C Iliski,nasıl olunur,Broad
 BPS - C Iliski,maaş,Broad
-BPS - C Iliski,staj,Broad
+BPS - C Iliski,maaşları,Broad
+BPS - C Iliski,taban puanı,Broad
+BPS - C Iliski,bölümü,Broad
+BPS - C Iliski,bölüm,Broad
 BPS - C Iliski,yüksek lisans,Broad
+BPS - C Iliski,doktora,Broad
+BPS - C Iliski,staj,Broad
+BPS - C Iliski,iş ilanı,Broad
+BPS - C Iliski,iş ilanları,Broad
+BPS - C Iliski,kpss,Broad
+BPS - C Iliski,atama,Broad
 BPS - C Iliski,ders,Broad
+BPS - C Iliski,ders notları,Broad
 BPS - C Iliski,ödev,Broad
 BPS - C Iliski,pdf,Broad
 BPS - C Iliski,kitap,Broad
+BPS - C Iliski,sınav soruları,Broad
+BPS - C Iliski,psikiyatrist,Broad
+BPS - C Iliski,psikiyatri,Broad
+BPS - C Iliski,ilaç,Broad
+BPS - C Iliski,antidepresan,Broad
+BPS - C Iliski,rapor,Broad
+BPS - C Iliski,heyet raporu,Broad
+BPS - C Iliski,ehliyet raporu,Broad
+BPS - C Iliski,reçete,Broad
+BPS - C Iliski,çocuk,Broad
 BPS - C Iliski,çocuk psikolog,Broad
 BPS - C Iliski,ergen,Broad
 BPS - C Iliski,bebek,Broad
 BPS - C Iliski,otizm,Broad
+BPS - C Iliski,özel eğitim,Broad
+BPS - C Iliski,okul psikoloğu,Broad
+BPS - C Iliski,rehberlik,Broad
 BPS - C Iliski,istanbul,Broad
 BPS - C Iliski,ankara,Broad
 BPS - C Iliski,izmir,Broad
+BPS - C Iliski,inegöl,Broad
+BPS - C Iliski,gemlik,Broad
+BPS - C Iliski,orhangazi,Broad
+BPS - C Iliski,kestel,Broad
+BPS - C Iliski,gürsu,Broad
+BPS - C Iliski,karacabey,Broad
+BPS - C Iliski,yenişehir,Broad
+BPS - C Iliski,iznik,Broad
+BPS - C Iliski,pedagog,Broad
+BPS - C Iliski,aile danışmanı,Broad
+BPS - C Iliski,yaşam koçu,Broad
+BPS - C Iliski,koçluk,Broad
+BPS - C Iliski,hipnoz,Broad
+BPS - C Iliski,astrolog,Broad
+BPS - C Iliski,medyum,Broad
+BPS - C Iliski,fizik tedavi,Broad
+BPS - C Iliski,masaj,Broad
+BPS - C Iliski,diyetisyen,Broad
+BPS - C Iliski,uygulama,Broad
+BPS - C Iliski,app,Broad
+BPS - C Iliski,hiwell,Broad
+BPS - C Iliski,terappin,Broad
 BPS - C Iliski,forum,Broad
+BPS - C Iliski,ekşi,Broad
 BPS - C Iliski,wikipedia,Broad
 BPS - C Iliski,chat gpt,Broad
-BPS - C Iliski,bedava,Broad
-BPS - C Iliski,ücretsiz seans,Broad
-BPS - C Iliski,psikiyatrist,Broad
-BPS - C Iliski,hastane randevu,Broad
+BPS - C Iliski,chatgpt,Broad
+BPS - C Iliski,yapay zeka,Broad
+BPS - C Iliski,film,Broad
+BPS - C Iliski,dizi,Broad
+BPS - C Iliski,kitap önerisi,Broad
+BPS - C Iliski,test,Broad
+BPS - C Iliski,testi,Broad
+BPS - C Iliski,en iyi,Broad
+BPS - C Iliski,en ucuz,Broad
+BPS - C Iliski,garantili,Broad
+BPS - C Iliski,kesin çözüm,Broad
+BPS - B Kaygi,çift terapisi,Broad
+BPS - B Kaygi,evlilik,Broad
 BPS - C Iliski,panik atak,Broad
+BPS - C Iliski,anksiyete,Broad
+BPS - C Iliski,boşanma avukatı,Broad
+BPS - A Lokal Bursa Nilufer,klinik psikolog,Phrase
+BPS - A Lokal Bursa Nilufer,klinik psikoloğu,Phrase
+BPS - A Lokal Bursa Nilufer,uzman klinik,Phrase
+BPS - B Kaygi,klinik psikolog,Phrase
+BPS - B Kaygi,klinik psikoloğu,Phrase
+BPS - B Kaygi,uzman klinik,Phrase
+BPS - C Iliski,klinik psikolog,Phrase
+BPS - C Iliski,klinik psikoloğu,Phrase
+BPS - C Iliski,uzman klinik,Phrase

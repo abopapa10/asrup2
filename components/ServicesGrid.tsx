@@ -20,11 +20,11 @@ export function ServicesGrid() {
         <FadeIn>
           <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">Uzmanlık Alanları</p>
           <h2 id="services-heading" className="heading-section max-w-2xl">
-            Psikolojiye dair konular
+            Bursa Psikolog Hizmet Başlıkları
           </h2>
           <p className="body-lead mt-4 max-w-xl sm:mt-6">
-            Bireysel süreçler, ilişkiler ve çevrimiçi görüşme formatı üzerine
-            bilgilendirici yazılar.
+            Kaygı, ilişki ve bireysel süreçler; yüz yüze Nilüfer Özlüce veya
+            online. Ayrıntı için ilgili sayfaya geçebilirsiniz.
           </p>
         </FadeIn>
 
@@ -65,6 +65,43 @@ export function ServicesGrid() {
             );
           })}
         </div>
+
+        <FadeIn delay={0.12}>
+          <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 sm:mt-12">
+            <li>
+              <Link
+                href="/hizmetler/anksiyete-terapisi-bursa"
+                className="link-editorial text-sm font-medium"
+              >
+                Anksiyete terapisi Bursa
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/hizmetler/cift-terapisi-bursa"
+                className="link-editorial text-sm font-medium"
+              >
+                Çift terapisi Bursa
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/lokasyon/nilufer-psikolog"
+                className="link-editorial text-sm font-medium"
+              >
+                Nilüfer psikolog
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/makale/bursa-psikolog-fiyatlari"
+                className="link-editorial text-sm font-medium"
+              >
+                Bursa psikolog fiyatları
+              </Link>
+            </li>
+          </ul>
+        </FadeIn>
       </div>
     </section>
   );

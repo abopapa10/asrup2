@@ -1,123 +1,131 @@
 import type { SeoLandingPage } from "@/lib/seo-pages";
+import { GOOGLE_REVIEW_COUNT } from "@/lib/google-reviews";
 
 export const anksiyeteTerapisiBursa: SeoLandingPage = {
   slug: "anksiyete-terapisi-bursa",
   group: "hizmetler",
   parent: { label: "Konular", href: "/hizmetler" },
+  homeLikeLayout: true,
 
   meta: {
     title: "Anksiyete Terapisi Bursa | Kaygı Psikoloğu Nilüfer",
     description:
-      "Bursa ve Nilüfer'de kaygı / anksiyete üzerine bilgilendirme. Bursa Psikolog A. Alparslan Sancar — yazılar ve WhatsApp ile kişisel iletişim.",
+      "Bursa’da anksiyete terapisi ve kaygı psikoloğu. Panik atak, sosyal kaygı ve sürekli gerginlik üzerine Nilüfer Özlüce’de psikolog A. Alparslan Sancar — WhatsApp ile ulaşın.",
     canonicalPath: "/hizmetler/anksiyete-terapisi-bursa",
     keywords: [
-      "anksiyete terapisi Bursa",
+      "anksiyete terapisi bursa",
       "kaygı psikolog bursa",
       "anksiyete psikolog bursa",
       "panik atak psikolog bursa",
-      "Bursa psikolog",
-      "Nilüfer psikolog",
-      "bilişsel davranışçı terapi",
-      "klinik psikolog Bursa",
+      "kaygı bozukluğu psikolog bursa",
+      "nilüfer kaygı",
+      "sosyal kaygı terapisi",
+      "bursa psikolog",
     ],
   },
 
   hero: {
-    eyebrow: "Konu · Bursa Nilüfer",
-    h1: "Anksiyete Terapisi Bursa | Kaygı ve Panik Üzerine",
-    lead: "Sabahları zihninizde çoktan başlamış bir \u201cya olursa\u201d döngüsü, bedeninize yerleşmiş gerginlik ya da uykuya geçmenin uzayan dakikaları… Kaygı ve anksiyete üzerine bu sayfa bilgilendirme amaçlıdır.",
+    eyebrow: "Kaygı · Panik · Bursa Nilüfer",
+    h1: "Anksiyete Terapisi Bursa | Kaygı Psikoloğu Nilüfer",
+    subtitle: "Psikolog A. Alparslan Sancar · Hacettepe · Nilüfer Özlüce",
+    lead: "Sabahları zihinde çoktan başlamış bir “ya olursa” döngüsü, göğüste sıkışma ya da panik atak korkusu… Bursa’da kaygı psikoloğu arıyorsanız bu sayfa hem tabloyu netleştirir hem ilk adımı kolaylaştırır.",
     intro:
-      "Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce. Tanı veya satış vaadi yoktur; sorularınız için WhatsApp veya telefon ile bize ulaşabilirsiniz.",
+      "Psikolog A. Alparslan Sancar — Hacettepe mezunu, Nilüfer Özlüce. Anksiyete terapisi Bursa’da yüz yüze ya da online yürütülür. Tanı vaadi yoktur; soru sormak için WhatsApp yeterlidir.",
     showCta: true,
+    proofPoints: [
+      "Hacettepe Üniversitesi Psikoloji",
+      "Nilüfer Özlüce ofis",
+      `${GOOGLE_REVIEW_COUNT} Google yorumu`,
+      "Yüz yüze ve online",
+    ],
   },
 
   sections: [
     {
-      kind: "narrative",
-      heading: "Anksiyete günlük yaşama nasıl yerleşir?",
-      paragraphs: [
-        "Anksiyete çoğu zaman dramatik bir kriz olarak değil; sessizce büyüyen küçük örüntüler hâlinde gelir. Bir telefon görüşmesini ertelemek, sosyal bir buluşmadan önce midenin sıkışması, gece yatmadan önce zihne dolan sayısız olasılık.",
-        "Zamanla bu örüntüler enerji düzeyini, uyku kalitesini ve ilişkilerdeki sabrı etkilemeye başlar. Kliniğe gelen birçok danışan, \u201cneden uzun süredir kendim gibi hissetmiyorum\u201d sorusuyla başlar.",
-        "Klinik amaç, kaygıyı tamamen ortadan kaldırmaya çalışmak değildir. Danışanın kendi içsel sinyallerini yeniden anlamlandırabilmesi için bir alan açmak; tepki ile kişisel anlam arasındaki bağı netleştirmektir.",
-      ],
+      kind: "testimonial",
+      heading: "Kaygı ve panik üzerine Google yorumları",
+      intro:
+        "Aşağıdaki metinler Google İşletme Profili’nden alınmıştır. Her süreç kişiye özgüdür; “kalıcı çözüm” vaadi değildir.",
+      featuredId: "ekrem-celikiz",
+      supportingIds: ["evpanya-ticaret", "tulin-sanli", "azra"],
     },
     {
       kind: "narrative",
-      heading: "Terapi süreci nasıl ilerler?",
+      heading: "Kaygı ve anksiyete günlük yaşama nasıl yerleşir?",
       paragraphs: [
-        "İlk seans, tanışma ve klinik değerlendirme görüşmesidir. Belirtilerin yoğunluğu, ne zaman başladığı, hangi durumlarla ilişkili olduğu ve kişisel öyküdeki bağlantılar birlikte haritalandırılır.",
-        "Sonraki seanslarda Birey Odaklı Psikoterapi temel çerçeve olarak alınır; Bilişsel-Davranışçı ve Psikodinamik tekniklerden danışanın ihtiyacına göre yararlanılır. Hangi tekniğin neden seçildiği danışana açık biçimde paylaşılır.",
-        "Seanslar yaklaşık 50 dakika sürer ve genellikle haftalık planlanır. Belirli aralıklarla süreç birlikte gözden geçirilir; gerektiğinde plan birlikte yeniden ayarlanır.",
-        "Yoğun bedensel tetiklenme yaşayan ya da seansa fiziksel olarak gelmekte zorlanan danışanlar için sürecin bir bölümü [online seans](/online-terapi) formatında planlanabilir.",
+        "Anksiyete çoğu zaman dramatik bir kriz olarak değil; sessizce büyüyen küçük örüntüler hâlinde gelir. Bir telefonu ertelemek, toplantıdan önce midenin sıkışması, uykuya geçerken zihne dolan olasılıklar. Panik atak yaşayanlarda bu tabloya bir de “ya yine olursa” korkusu eklenir; yaşam alanı daralır.",
+        "Bursa’da kaygı psikoloğu arayan birçok kişi, iş temposu, trafik ve sürekli tetikte olma hissiyle gelir. Zihin durmaz, beden gergindir, odak dağılır. “Kendim gibi hissetmiyorum” cümlesi sık duyulur — bu, zayıflık değil, sistemin uzun süre alarmda kalmasının sonucudur.",
+        "Anksiyete terapisinin amacı kaygıyı sıfırlamak değildir. Sinyalleri yeniden anlamlandırmak, panik döngüsünü kırmak ve günlük hayatta hareket alanını genişletmektir. İlk adım klinik bir değerlendirmedir; etiket yapıştırmadan önce öykü dinlenir.",
       ],
     },
     {
       kind: "symptoms",
-      heading: "Anksiyete terapisinden kimler destek alabilir?",
+      heading: "Anksiyete ve panik atak belirtileri — kimler başvurur?",
       intro:
-        "Aşağıdaki belirtiler iki haftadan uzun süredir devam ediyor ve günlük yaşamınızı belirgin biçimde etkiliyorsa, klinik bir değerlendirme önerilir.",
+        "Aşağıdakiler iki haftadan uzun süredir devam ediyor ve iş, uyku veya ilişkileri etkiliyorsa, Bursa’da anksiyete psikoloğu ile bir görüşme düşünülebilir. Bu liste tanı değildir.",
       groups: [
         {
           title: "Zihinsel belirtiler",
           items: [
             "Sürekli tetikte olma hissi",
-            "Kontrol edilmesi güç yoğun düşünme",
-            "Olumsuz olasılıklara odaklanma",
+            "Kontrolü güç yoğun düşünme",
+            "Olumsuz olasılıklara kilitlenme",
             "Karar vermede belirgin güçlük",
-            "Konsantrasyon ve odaklanma azalması",
+            "Konsantrasyonun dağılması",
           ],
         },
         {
           title: "Bedensel belirtiler",
           items: [
-            "Göğüste sıkışma ya da çarpıntı hissi",
-            "Sürekli bedensel gerginlik",
+            "Göğüste sıkışma veya çarpıntı",
+            "Sürekli kas gerginliği",
             "Mide bulantısı, sindirim güçlüğü",
-            "Uykuya dalmada uzayan süre",
-            "Açıklanamayan halsizlik ve yorgunluk",
+            "Uykuya dalamama",
+            "Açıklanamayan halsizlik",
           ],
         },
         {
-          title: "Davranışsal belirtiler",
+          title: "Davranış ve panik",
           items: [
-            "Sosyal ortamlardan kaçınma eğilimi",
-            "Sürekli ileriye dönük plan yapma ihtiyacı",
-            "Küçük kararları büyütme, erteleme",
-            "Yakınlardan onay arayışı",
-            "Belirsizliğe tolerans azalması",
+            "Sosyal ortamlardan kaçınma",
+            "Panik atak korkusuyla plan erteleme",
+            "Kalabalık, asansör, araçtan uzak durma",
+            "Sürekli onay arayışı",
+            "Belirsizliğe tahammülsüzlük",
           ],
         },
       ],
     },
     {
       kind: "narrative",
-      heading: "Bursa Nilüfer'de anksiyete terapisi",
+      heading: "Bursa Nilüfer’de kaygı psikoloğu — süreç nasıl ilerler?",
       paragraphs: [
-        "Bursa'nın hızlanan iş hayatı, trafik temposu ve şehir içi geçişler; özellikle son yıllarda yetişkin danışanlarda bedensel kaygı belirtilerinin daha belirgin görünmesine eşlik ediyor.",
-        "[Nilüfer kliniğimizde](/lokasyon/nilufer-psikolog) seanslar sakin ve danışan trafiğinin yoğun olmadığı saat aralıklarında planlanır. Bu, seans öncesinde gereksiz bir bekleme stresi oluşmaması için tercih edilir.",
-        "Yoğun program nedeniyle yüz yüze gelmekte zorlanan ya da şehir dışından başvuran danışanlar için online seans seçeneği aynı klinik standart, gizlilik ve etik çerçeve içinde sürdürülür.",
+        "İlk seans tanışma ve klinik değerlendirmedir: belirtilerin yoğunluğu, ne zaman başladığı, panik atak olup olmadığı, uyku, iş ve ilişkilerdeki etki birlikte haritalandırılır. Yaklaşık 50 dakika sürer. Baskı yoktur; “hazır değilim” demek de bir bilgidir.",
+        "Sonraki seanslarda Birey Odaklı Psikoterapi temel çerçevedir; bilişsel-davranışçı tekniklerden ihtiyaca göre yararlanılır. Kaygı bozukluğu, sosyal kaygı ve panik döngüsünde düşünce–beden–kaçınma üçgeni somutlaştırılır. Hangi adımın neden seçildiği açık konuşulur.",
+        "[Nilüfer Özlüce](/lokasyon/nilufer-psikolog) ofisi Time Özlüce’dedir (Ahmet Taner Kışlalı Bulvarı). FSM, Beşevler, İhsaniye ve Görükle’den ulaşım kısadır. Yoğun program veya şehir dışı için [online terapi](/online-terapi) aynı gizlilik çerçevesinde planlanabilir.",
+        "İlaç kararı psikiyatri hekimine aittir. Gerektiğinde yönlendirme yapılır; psikoterapi ilaçla birlikte de yürütülebilir. WhatsApp veya telefon ile yazmanız yeterlidir — ilk mesajda “kaygı” veya “panik atak” demeniz süreci hızlandırır.",
       ],
     },
     {
       kind: "trust",
-      heading: "Klinik yaklaşımımız",
+      heading: "Klinik yaklaşım",
       intro:
-        "Anksiyete terapisinde tutarlı, ölçülü ve etik bir çerçeveye bağlıyız. Yöntem değil, danışanın kendisi süreçteki merkezdir.",
+        "Anksiyete terapisinde tutarlı, ölçülü bir çerçeve. Merkezde yöntem sloganı değil, sizin öykünüz vardır.",
       pillars: [
         {
           label: "01",
-          title: "Klinik değerlendirme önceliklidir",
-          body: "Her terapi süreci; semptomları erken etiketlemeden önce, danışanın yaşam akışı ve kişisel öyküsü içinde anlaşılan kapsamlı bir klinik değerlendirme ile başlar.",
+          title: "Önce değerlendirme, sonra plan",
+          body: "Semptomları erken etiketlemeden önce yaşam akışı ve kişisel öykü içinde anlaşılır. Panik atak ile yaygın kaygı aynı kapıdan girer; yol haritası farklı olabilir.",
         },
         {
           label: "02",
-          title: "Etik ve gizlilik değişmez temeldir",
-          body: "Tüm seanslar mesleki etik ilkeler ve danışan gizliliği çerçevesinde yürütülür. Süreç boyunca paylaşılan hiçbir bilgi danışanın açık onayı olmadan paylaşılmaz.",
+          title: "Gizlilik değişmez",
+          body: "Seanslar mesleki etik ve danışan gizliliği içindedir. Paylaşılan bilgi, açık onayınız olmadan üçüncü kişilerle konuşulmaz.",
         },
         {
           label: "03",
-          title: "Vaat değil, birlikte değerlendirme",
-          body: "Belirli bir süre içinde \u201ctam iyileşme\u201d türü vaatler verilmez. Bunun yerine danışanla birlikte düzenli aralıklarla ilerleme gözden geçirilir; süreç şeffaf biçimde paylaşılır.",
+          title: "Vaat değil, birlikte bakış",
+          body: "“Şu kadar seansta biter” cümlesi kurulmaz. Belirli aralıklarla ilerleme birlikte gözden geçirilir; hız sizin ritminize göre ayarlanır.",
         },
       ],
     },
@@ -125,63 +133,65 @@ export const anksiyeteTerapisiBursa: SeoLandingPage = {
 
   faqs: [
     {
-      question: "Anksiyete terapisi ne kadar sürer?",
+      question: "Anksiyete terapisi Bursa’da ne kadar sürer?",
       answer:
-        "Süre, semptomların yoğunluğuna ve kişisel tarihçeye göre değişir. Birçok danışan için belirgin değişim genellikle 8–12 seans aralığında gözlenir; ardından seans sıklığı yeniden değerlendirilir.",
+        "Süre, belirtilerin yoğunluğuna ve öyküye göre değişir. Birçok kişide 8–12 seans aralığında işlevsellikte belirgin fark konuşulabilir; ardından sıklık yeniden değerlendirilir. Bu bir garanti değil, sık görülen bir aralıktır.",
     },
     {
-      question: "Anksiyete ile panik atak farklı şeyler mi?",
+      question: "Anksiyete ile panik atak farklı mı? Panik atak psikoloğu aramalı mıyım?",
       answer:
-        "Anksiyete; süreklilik gösteren bir kaygı tablosudur. Panik atak ise dakikalar içinde tepe yapan, yoğun fiziksel ve duygusal bir tepki epizodudur. İki tablo birlikte de görülebilir; klinik değerlendirme sonrasında uygun yaklaşım planlanır.",
+        "Anksiyete süreklilik gösteren kaygı tablosudur. Panik atak dakikalar içinde tepe yapan yoğun bedensel ve duygusal bir epizoddur. İkisi birlikte de görülür. Bursa’da panik atak psikoloğu arayanlar da aynı klinik değerlendirme kapısından geçer; uygun çerçeve sonra netleşir.",
     },
     {
-      question: "İlaç tedavisi gerekli mi?",
+      question: "Kaygı bozukluğu için ilaç şart mı?",
       answer:
-        "Bu karar psikiyatri hekimine aittir. Gerektiğinde uygun yönlendirme yapılır; psikoterapi süreci ilaç tedavisiyle birlikte yürütülebilir.",
+        "Bu karar psikiyatri hekimine aittir. Psikoterapi ilaçsız da planlanabilir; gerektiğinde hekime yönlendirme yapılır. İki süreç yan yana yürütülebilir.",
     },
     {
-      question: "Online seans yüz yüze ile aynı sonucu verir mi?",
+      question: "Online anksiyete terapisi yüz yüze ile aynı mı?",
       answer:
-        "Anksiyete terapisinde online seanslar pek çok danışan için yüz yüze seanslarla benzer etkinliğe sahiptir. Tercih, yaşam koşulları ve danışanın konforuna göre birlikte belirlenir.",
+        "Kaygı ve panik çalışmasında online seanslar birçok kişi için yüz yüze ile benzer çerçevede yürür. Tercih, yaşam koşulları ve sizin konforunuza göre birlikte belirlenir.",
     },
     {
       question: "İlk seansta neler konuşulur?",
       answer:
-        "İlk seansta; belirtilerin seyri, başlama dönemi, günlük yaşama etkileri ve terapiden beklentiler ele alınır. Sonraki adımlar birlikte planlanır.",
+        "Belirtilerin seyri, başlama dönemi, panik olup olmadığı, günlük yaşama etkisi ve beklentileriniz. Sonraki adımlar birlikte planlanır. Test veya ödev dayatılmaz.",
     },
     {
-      question: "Kaygımı yakınlarımla paylaşmam gerekir mi?",
+      question: "Nilüfer’de kaygı için nasıl ulaşırım?",
       answer:
-        "Bu tamamen sizin tercihinize bağlıdır. Süreç, danışanın açık onayı olmadan üçüncü kişilerle paylaşılmaz; yakın çevreyle nasıl paylaşacağınız konusu da seans içinde birlikte değerlendirilebilir.",
+        "WhatsApp veya telefon yeterlidir. Ofis Nilüfer Özlüce, Time Özlüce’dedir. Aynı gün içinde dönüş yapılır; uygun gün-saat ve yüz yüze / online tercihi netleştirilir.",
     },
   ],
 
   cta: {
-    eyebrow: "İletişim",
+    eyebrow: "Kaygı için iletişim",
+    heading: "Bursa’da anksiyete terapisi için yazın",
     caption:
-      "Anksiyete terapisi için randevu ve süreç bilgilendirmesi; aynı gün içinde yanıtlanır.",
+      "Kaygı, panik atak veya sosyal kaygı için kısa bir mesaj yeterlidir. WhatsApp veya telefon — aynı gün içinde dönüş.",
+    whatsappSource: "anksiyete-landing-cta",
   },
 
   related: [
     {
-      label: "Panik Atak Terapisi",
+      label: "Panik Atak Terapisi Bursa",
       href: "/hizmetler/panik-atak-terapisi-bursa",
-      description: "Tekrarlayan, aniden gelen panik tepkilerinde klinik yaklaşım.",
-    },
-    {
-      label: "Depresyon Terapisi",
-      href: "/hizmetler/depresyon-terapisi-bursa",
-      description: "Eşlik eden duygudurum tablolarında destek seçenekleri.",
-    },
-    {
-      label: "OKB Terapisi",
-      href: "/hizmetler/okb-terapisi-bursa",
-      description: "Takıntı ve zihinsel kontrol döngülerinde bağlantılı çalışma alanı.",
+      description: "Tekrarlayan panik tepkilerinde klinik çerçeve.",
     },
     {
       label: "Nilüfer Psikolog",
       href: "/lokasyon/nilufer-psikolog",
-      description: "Yüz yüze seans lokasyonu ve başvuru süreci.",
+      description: "Özlüce adres, ulaşım ve yüz yüze seans.",
+    },
+    {
+      label: "Online Terapi",
+      href: "/online-terapi",
+      description: "Yüz yüze gelemeyenler için görüntülü görüşme.",
+    },
+    {
+      label: "Depresyon Terapisi",
+      href: "/hizmetler/depresyon-terapisi-bursa",
+      description: "Eşlik edebilen duygudurum tabloları.",
     },
   ],
 };

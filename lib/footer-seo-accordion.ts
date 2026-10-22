@@ -15,7 +15,7 @@ export const footerSeoAccordionItems: readonly FooterSeoAccordionItem[] = [
     heading: "Bursa Psikolog A. Alparslan Sancar Kimdir?",
     paragraphs: [
       `${siteConfig.name}, Hacettepe Üniversitesi Psikoloji Bölümü mezunudur. Üniversite eğitimi bilişsel-davranışçı çerçevede şekillenmiş; ardından insancıl ekol içindeki birey odaklı psikoterapi alanında uzmanlaşmıştır.`,
-      "Meslek yaşamı Bursa ve İstanbul arasında geçmiştir. Bu sitede psikolojiye dair yazılar, testler ve yaklaşım notları paylaşılır; amaç kamuya açık, ölçülü bir bilgilendirmedir.",
+      "Meslek yaşamı Bursa’da şekillenmiştir. Bu sitede psikolojiye dair yazılar, testler ve yaklaşım notları paylaşılır; amaç kamuya açık, ölçülü bir bilgilendirmedir.",
       "İletişim için WhatsApp veya telefon kullanılabilir. Nilüfer Özlüce adres bilgisi sitede yer alır.",
     ],
   },
