@@ -6,7 +6,7 @@ import { SeoBreadcrumb } from "@/components/seo/SeoBreadcrumb";
 import { SeoCTA } from "@/components/seo/SeoCTA";
 import { SeoFaq } from "@/components/seo/SeoFaq";
 import { SeoTestimonial } from "@/components/seo/SeoTestimonial";
-import { TherapyProcessSection } from "@/components/TherapyProcessSection";
+import { RandevuGorusmeSureci } from "@/components/randevu/RandevuGorusmeSureci";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { contactCopy } from "@/lib/contact-copy";
@@ -204,13 +204,7 @@ export function RandevuLandingPage() {
         </div>
       </section>
 
-      <TherapyProcessSection
-        id="seans-sureci"
-        headingId="seans-sureci-heading"
-        eyebrow="Seans"
-        heading="Seans Süreci"
-        headingAs="h3"
-      />
+      <RandevuGorusmeSureci />
 
       <article className="border-t border-ice-blue/40 bg-mesh-sky py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-editorial space-y-20 px-5 sm:space-y-28 sm:px-6 lg:px-12 lg:space-y-32">

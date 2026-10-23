@@ -17,7 +17,7 @@ export const randevuPageMeta = {
 export const randevuHero = {
   eyebrow: "Nilüfer · Bursa · Randevu",
   h1: "Nilüfer Bursa Psikolog Randevu",
-  lead: "Nilüfer / Bursa’da Psikolog A. Alparslan Sancar — randevu için iletişim ve konum bilgileri, randevu süreci, seans süreci ve sık sorulan sorular.",
+  lead: "Nilüfer / Bursa’da Psikolog A. Alparslan Sancar — randevu için iletişim ve konum bilgileri, randevu süreci, görüşme süreci ve sık sorulan sorular.",
   proofPoints: [
     "Hacettepe Üniversitesi Psikoloji",
     "Time Özlüce · Nilüfer",
@@ -57,6 +57,51 @@ export const randevuProcess = {
   infoHeading: "Randevu ve Bilgi Alma",
   infoBody:
     "Randevu ve anlık durumunuz için WhatsApp veya telefon yeterlidir. Ücret, konum ve uygulanan teknik (BDT, birey odaklı, psikodinamik — ihtiyaca göre) bu yazışmada netleşir. Uygun tarih-saat ve Nilüfer Özlüce ofisi de aynı kanalda konuşulur. Aynı gün içinde dönüş yapılır.",
+} as const;
+
+export const randevuGorusmeSureci = {
+  eyebrow: "Görüşme süreci",
+  heading: "Psikolojik görüşme süreci nasıl ilerler?",
+  intro:
+    "Görüşmelerin çerçevesi, kişinin ihtiyaçları ve ele alınan konular doğrultusunda belirlenir. Süreç hakkında önceden bilgi sahibi olmak, ilk görüşmeye hazırlanmayı kolaylaştırabilir.",
+  first: {
+    step: "Adım 01",
+    title: "İlk görüşme",
+    subtitle: "Tanışma görüşmesi",
+    body: "Başvuru nedeni, kişinin beklentileri ve görüşmelerde ele alınabilecek konular değerlendirilir. İlk görüşme bir tanışma görüşmesidir; sonraki adımlar burada konuşulur.",
+    points: [
+      "Başvuru nedeni netleşir",
+      "Beklentiler birlikte bakılır",
+      "Ele alınabilecek konular konuşulur",
+    ],
+  },
+  frame: {
+    step: "Adım 02",
+    title: "Çalışma çerçevesi",
+    body: "Görüşmelerin hedefleri ve çalışma yaklaşımı, kişinin ihtiyaçları doğrultusunda ele alınır. Bilişsel-davranışçı terapi (BDT), birey odaklı ve psikodinamik teknikler ihtiyaca göre kullanılır.",
+    caption: "Hedef ve yaklaşım, ilk görüşmenin ardından netleşir.",
+    pills: [
+      "İhtiyaca göre seçilir",
+      "İlk görüşmede netleşir",
+    ],
+  },
+  plan: {
+    step: "Adım 03",
+    title: "Görüşmelerin planlanması",
+    body: "Görüşme sıklığı, süresi ve diğer koşullar hakkında bilgi verilir; planlama ihtiyaçlara ve mevcut şartlara göre yapılır.",
+    splits: [
+      {
+        label: "Süre",
+        value: "60 dakika",
+        note: "Bu sayfadaki görüşmeler 60 dakikadır. Tempo, ilk görüşmede birlikte konuşulur.",
+      },
+      {
+        label: "Sıklık",
+        value: "Ortalama iki haftada bir",
+        note: "İhtiyaca göre ilk dönemde daha sık, ilerleyen dönemde daha seyrek planlanabilir.",
+      },
+    ],
+  },
 } as const;
 
 export const randevuFaqs = [
