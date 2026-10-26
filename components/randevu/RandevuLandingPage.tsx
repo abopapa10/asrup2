@@ -80,16 +80,6 @@ export function RandevuLandingPage() {
         </div>
       </section>
 
-      <ContactLocationSection
-        id="randevu-iletisim"
-        headingId="randevu-contact-heading"
-        eyebrow={randevuContact.eyebrow}
-        heading={randevuContact.heading}
-        intro={randevuContact.intro}
-        whatsappSource="randevu-contact-card"
-        tone="white"
-      />
-
       <section
         aria-labelledby="randevu-identity-heading"
         className="border-t border-ice-blue/40 bg-mesh-sky py-16 sm:py-24 lg:py-28"
@@ -145,7 +135,10 @@ export function RandevuLandingPage() {
           </div>
         </div>
 
-        <div className="mx-auto mt-12 max-w-editorial px-5 sm:mt-16 sm:px-6 lg:mt-20 lg:px-12">
+        <div
+          id="yorumlar"
+          className="mx-auto mt-12 max-w-editorial scroll-mt-28 px-5 sm:mt-16 sm:px-6 lg:mt-20 lg:px-12"
+        >
           <SeoTestimonial
             hideHeader
             supportingCarousel
@@ -154,6 +147,16 @@ export function RandevuLandingPage() {
           />
         </div>
       </section>
+
+      <ContactLocationSection
+        id="randevu-iletisim"
+        headingId="randevu-contact-heading"
+        eyebrow={randevuContact.eyebrow}
+        heading={randevuContact.heading}
+        intro={randevuContact.intro}
+        whatsappSource="randevu-contact-card"
+        tone="white"
+      />
 
       <section
         aria-labelledby="randevu-process-heading"
