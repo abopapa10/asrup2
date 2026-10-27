@@ -7,15 +7,48 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
-import { randevuGorusmeSureci as copy } from "@/lib/seo-content/nilufer-bursa-psikolog-randevu";
+import { randevuGorusmeSureci } from "@/lib/seo-content/nilufer-bursa-psikolog-randevu";
 
 const frameIcons = [Ear, ClipboardCheck] as const;
+
+type GorusmeSureciCopy = {
+  eyebrow: string;
+  heading: string;
+  intro: string;
+  first: {
+    step: string;
+    title: string;
+    subtitle: string;
+    body: string;
+    points: readonly string[];
+  };
+  frame: {
+    step: string;
+    title: string;
+    body: string;
+    caption: string;
+    pills: readonly string[];
+    imageSrc?: string;
+  };
+  plan: {
+    step: string;
+    title: string;
+    body: string;
+    splits: readonly { label: string; value: string; note: string }[];
+  };
+};
+
+type RandevuGorusmeSureciProps = {
+  copy?: GorusmeSureciCopy;
+};
 
 /**
  * Randevu sayfası görüşme süreci — TherapyProcessSection kart dokusu,
  * somut ilk görüşme / çerçeve / planlama içeriği.
  */
-export function RandevuGorusmeSureci() {
+export function RandevuGorusmeSureci({
+  copy = randevuGorusmeSureci,
+}: RandevuGorusmeSureciProps = {}) {
   return (
     <section
       id="gorusme-sureci"
@@ -78,7 +111,7 @@ export function RandevuGorusmeSureci() {
           >
             <div className="relative h-36 overflow-hidden rounded-lg sm:h-40">
               <Image
-                src="/images/stres.webp"
+                src={copy.frame.imageSrc ?? "/images/stres.webp"}
                 alt=""
                 fill
                 className="object-cover"

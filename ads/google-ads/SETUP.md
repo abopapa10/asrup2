@@ -45,10 +45,13 @@ Anahtar kelime araştırması (`bursa-psikolog-anahtar-kelimeler.canvas.tsx`) `k
 | Reklam grubu | Final URL |
 |--------------|-----------|
 | AG Iliski Cift | `/hizmetler/cift-terapisi-bursa` |
+| AG Cift Randevu | `/bursa-cift-terapisi-randevu` |
+
+Randevu niyeti (`çift terapisi randevu`, `evlilik terapisi randevu`, `ilişki terapisi randevu`) yalnızca AG Cift Randevu’dadır. Organik çift sayfasını yememesi için AG Iliski Cift grubuna reklam grubu negatif: `randevu` (Broad).
 
 ## İçe aktarma sırası
 
-1. Ads’te 3 kampanyayı ve 8 reklam grubunu yukarıdaki isimlerle oluşturun (veya Editor’da oluşturun). Semt ve Online gruplarını ilk 7 gün duraklatılmış tutun; A grupları veri üretince açın.
+1. Ads’te 3 kampanyayı ve 9 reklam grubunu yukarıdaki isimlerle oluşturun (veya Editor’da oluşturun). Semt ve Online gruplarını ilk 7 gün duraklatılmış tutun; A grupları veri üretince açın.
 2. `import/keywords.csv` → Keywords yükleyin (Campaign / Ad group adları birebir eşleşmeli).
 3. `import/negative-keywords.csv` → Negative keywords (Campaign seviyesi; Account satırlarını hesap negatiflerine de ekleyebilirsiniz).
 4. `rsa-copy.md` içindeki başlık/açıklamaları her reklam grubuna 1 RSA olarak yapıştırın.

@@ -40,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: absoluteUrl("/bursa-cift-terapisi-randevu"),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
       url: absoluteUrl(PSYCHOLOGICAL_TESTS_HUB.path),
       lastModified: now,
       changeFrequency: "weekly",

@@ -186,3 +186,32 @@ Pozisyon 1 pin: **Nilüfer Bursa Psikolog Randevu** (sayfa H1 ile birebir; 30 ka
 2. İlişkide iletişim döngüleri. WhatsApp veya telefon ile yazın.
 3. Nilüfer Özlüce adres bilgisi sitede. Satış vaadi yok; yazmanız yeter.
 4. Bursa'da çift terapisi bilgisini arayanlar için. Bize ulaşın.
+
+---
+
+## AG Cift Randevu
+
+**Final URL:** `https://bursapsikologsancar.com/bursa-cift-terapisi-randevu`  
+**Path:** `cift` / `randevu`
+
+Pozisyon 1 pin: **Bursa Çift Terapisi Randevu** (sayfa H1 ile birebir; 27 karakter).
+
+### Başlıklar
+1. Bursa Çift Terapisi Randevu
+2. WhatsApp ile Bize Ulaşın
+3. Evlilik Terapisi Bursa
+4. İlişki Terapisi Bursa
+5. Hacettepe Psikoloji Mezunu
+6. Nilüfer Özlüce — Bursa
+7. Yüz Yüze ve Online
+8. Psikolog Bursa — Yazın
+9. Aynı Gün İçinde Dönüş
+10. Bize Ulaşın — Çift
+11. Psikolog A. Alparslan Sancar
+12. Çift Terapisi Randevu
+
+### Açıklamalar
+1. Bursa çift terapisi randevu: WhatsApp veya telefon. Özlüce ofis, harita sayfada.
+2. Evlilik ve ilişki terapisi. Uygun tarih-saat için yazın; aynı gün dönüş.
+3. Hacettepe Psikoloji mezunu. Seans 60 dk; ortalama iki haftada bir.
+4. Adres ve harita randevu sayfasında. Yüz yüze veya online.

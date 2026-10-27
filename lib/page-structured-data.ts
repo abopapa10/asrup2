@@ -17,6 +17,11 @@ import {
   niluferFaqs,
 } from "@/lib/lokasyon/nilufer-psikolog-authority";
 import {
+  ciftRandevuFaqs,
+  ciftRandevuHero,
+  ciftRandevuPageMeta,
+} from "@/lib/seo-content/bursa-cift-terapisi-randevu";
+import {
   randevuFaqs,
   randevuHero,
   randevuPageMeta,
@@ -590,8 +595,14 @@ export function buildQuestionAnswerJsonLd(item: QuestionAnswerItem) {
   ];
 }
 
-export function buildRandevuPageJsonLd() {
-  const pageUrl = absoluteUrl(randevuPageMeta.canonicalPath);
+function buildAdsRandevuJsonLd(input: {
+  title: string;
+  description: string;
+  canonicalPath: string;
+  h1: string;
+  faqs: readonly { question: string; answer: string }[];
+}) {
+  const pageUrl = absoluteUrl(input.canonicalPath);
 
   return [
     {
@@ -599,8 +610,8 @@ export function buildRandevuPageJsonLd() {
       "@type": "WebPage",
       "@id": `${pageUrl}#webpage`,
       url: pageUrl,
-      name: randevuPageMeta.title,
-      description: randevuPageMeta.description,
+      name: input.title,
+      description: input.description,
       inLanguage: "tr-TR",
       isPartOf: WEBSITE_REF,
       about: [PSYCHOLOGIST_REF, MEDICAL_BUSINESS_REF],
@@ -621,7 +632,7 @@ export function buildRandevuPageJsonLd() {
         {
           "@type": "ListItem",
           position: 2,
-          name: randevuHero.h1,
+          name: input.h1,
           item: pageUrl,
         },
       ],
@@ -631,7 +642,7 @@ export function buildRandevuPageJsonLd() {
       "@type": "FAQPage",
       "@id": `${pageUrl}#faq`,
       isPartOf: { "@id": `${pageUrl}#webpage` },
-      mainEntity: randevuFaqs.map((item) => ({
+      mainEntity: input.faqs.map((item) => ({
         "@type": "Question",
         name: item.question,
         acceptedAnswer: {
@@ -641,4 +652,24 @@ export function buildRandevuPageJsonLd() {
       })),
     },
   ];
+}
+
+export function buildRandevuPageJsonLd() {
+  return buildAdsRandevuJsonLd({
+    title: randevuPageMeta.title,
+    description: randevuPageMeta.description,
+    canonicalPath: randevuPageMeta.canonicalPath,
+    h1: randevuHero.h1,
+    faqs: randevuFaqs,
+  });
+}
+
+export function buildCiftTerapisiRandevuJsonLd() {
+  return buildAdsRandevuJsonLd({
+    title: ciftRandevuPageMeta.title,
+    description: ciftRandevuPageMeta.description,
+    canonicalPath: ciftRandevuPageMeta.canonicalPath,
+    h1: ciftRandevuHero.h1,
+    faqs: ciftRandevuFaqs,
+  });
 }

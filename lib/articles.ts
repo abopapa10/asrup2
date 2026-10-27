@@ -135,6 +135,13 @@ import {
   kaygiIcinPsikologaMetaDescription,
   kaygiIcinPsikologaMetaTitle,
 } from "@/lib/article-content/kaygi-icin-psikologa-ne-zaman-gidilmeli";
+import {
+  duyguOdakliCiftTerapisiBlocks,
+  duyguOdakliCiftTerapisiExcerpt,
+  duyguOdakliCiftTerapisiFaq,
+  duyguOdakliCiftTerapisiMetaDescription,
+  duyguOdakliCiftTerapisiMetaTitle,
+} from "@/lib/article-content/duygu-odakli-cift-terapisi-eft";
 
 import type { Article } from "@/lib/article-types";
 import type { ArticleCategory } from "@/lib/article-categories";
@@ -152,6 +159,37 @@ export const articles: readonly Article[] = [
   // ────────────────────────────────────────────────────────────────
   // YENİ — 2026 SEO blog içerikleri
   // ────────────────────────────────────────────────────────────────
+  {
+    slug: "duygu-odakli-cift-terapisi-eft",
+    date: "27 Ekim 2026",
+    dateISO: "2026-10-27",
+    category: "Çift Terapisi",
+    title: "Duygu Odaklı Çift Terapisi (EFT) Nedir?",
+    metaTitle: duyguOdakliCiftTerapisiMetaTitle,
+    metaDescription: duyguOdakliCiftTerapisiMetaDescription,
+    excerpt: duyguOdakliCiftTerapisiExcerpt,
+    faq: duyguOdakliCiftTerapisiFaq,
+    content: duyguOdakliCiftTerapisiBlocks,
+    relatedServices: [
+      {
+        label: "Çift Terapisi (Bursa)",
+        href: "/hizmetler/cift-terapisi-bursa",
+        description:
+          "Çift ve evlilik terapisinin genel çerçevesi, kimler için uygun olduğu ve süreç.",
+      },
+      {
+        label: "Bireysel Terapi",
+        href: "/bireysel-terapi",
+        description:
+          "Bağlanma, kaygı ve ilişki örüntüleri üzerine bireysel psikoterapi.",
+      },
+    ],
+    relatedArticleSlugs: [
+      "iliskilerde-guven-problemleri",
+      "toksik-iliski-nedir",
+      "othello-sendromu-nedir",
+    ],
+  },
   {
     slug: "kaygi-icin-psikologa-ne-zaman-gidilmeli",
     date: "23 Eylül 2026",
