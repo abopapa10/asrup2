@@ -4,12 +4,13 @@ const credentials = [
   "Hacettepe Üniversitesi Psikoloji Bölümü",
   "Birey Odaklı Psikoterapi uzmanlık eğitimi",
   "Bilişsel-davranışçı kuramsal zemin",
+  "700+ danışan tecrübesi",
 ] as const;
 
 /** Sunucu render — opacity:0 animasyonu LCP ölçümünü geciktirmez */
-export function CredentialList() {
+export function CredentialList({ className = "" }: { className?: string }) {
   return (
-    <ul className="mt-8 space-y-4 sm:mt-10 sm:space-y-5" role="list">
+    <ul className={`space-y-3 sm:space-y-4 ${className}`} role="list">
       {credentials.map((item) => (
         <li key={item} className="flex items-start gap-3 sm:gap-4">
           <span

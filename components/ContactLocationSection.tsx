@@ -2,6 +2,7 @@ import { Clock, MapPin, Navigation, Phone } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { FadeIn } from "@/components/FadeIn";
+import { renderInlineMarkup } from "@/components/InlineMarkup";
 import { contactCopy } from "@/lib/contact-copy";
 import { formatAddressLines, siteConfig } from "@/lib/site-config";
 
@@ -44,7 +45,7 @@ export function ContactLocationSection({
           <h2 id={headingId} className="heading-section">
             {heading}
           </h2>
-          <p className="body-lead mt-4 sm:mt-6">{intro}</p>
+          <p className="body-lead mt-4 sm:mt-6">{renderInlineMarkup(intro)}</p>
         </FadeIn>
 
         <div className="mt-10 grid items-start gap-8 sm:mt-12 lg:grid-cols-12 lg:gap-12">

@@ -21,6 +21,8 @@ type LandingHeroProps = {
   /** Ana sayfa büyük display; diğer sayfalar uzun H1 için biraz daha sıkı. */
   size?: "home" | "page";
   topSlot?: ReactNode;
+  /** Lead/paragrafların altında, CTA öncesi (ör. konum bağlantısı). */
+  leadAfter?: ReactNode;
 };
 
 const titleClass = {
@@ -46,6 +48,7 @@ export function LandingHero({
   titleId = "hero-heading",
   size = "page",
   topSlot,
+  leadAfter,
 }: LandingHeroProps) {
   return (
     <section
@@ -94,6 +97,7 @@ export function LandingHero({
             alt={portraitAlt}
             variant="compact"
             align="right"
+            priority={size === "home"}
             imageClassName="object-cover object-[50%_18%]"
           />
         </div>
@@ -113,6 +117,8 @@ export function LandingHero({
               ))}
             </div>
           ) : null}
+
+          {leadAfter}
 
           {proofPoints && proofPoints.length > 0 ? (
             <ul

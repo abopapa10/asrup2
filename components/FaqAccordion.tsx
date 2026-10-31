@@ -18,7 +18,7 @@ export function FaqAccordion() {
       <div className="mx-auto max-w-editorial px-5 sm:px-6 lg:max-w-3xl lg:px-12">
         <p className="eyebrow eyebrow-cta mb-4 sm:mb-5">SSS</p>
         <h2 id="faq-heading" className="heading-section text-left">
-          Bursa Psikoloji Danışmanlığı — Sıkça Sorulan Sorular
+          Bursa Psikolog Hakkında Sık Sorulan Sorular
         </h2>
 
         <div className="mt-10 flex flex-col gap-3 sm:mt-16 sm:gap-4">

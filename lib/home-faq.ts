@@ -3,10 +3,6 @@
  *
  * Hem `components/FaqAccordion.tsx` (görsel) hem de
  * `lib/structured-data.ts` (FAQPage JSON-LD) bu dizinin aynısını okur.
- *
- * Google, FAQPage schema ile sayfada görünen sorular birebir
- * eşleşmediğinde rich result vermez. Bu nedenle iki tarafın
- * tek kaynaktan beslenmesi kritik.
  */
 
 export type HomeFaqItem = {
@@ -16,38 +12,43 @@ export type HomeFaqItem = {
 
 export const homeFaq: readonly HomeFaqItem[] = [
   {
-    question: "Bursa psikolog kimdir?",
+    question: "Bursa'da psikolog seçerken nelere dikkat edilmeli?",
     answer:
-      "Psikolog A. Alparslan Sancar, Hacettepe Üniversitesi Psikoloji mezunudur. Bursa Nilüfer Özlüce’de (Time Özlüce) yüz yüze çalışır; kaygı, ilişki ve bireysel süreçler üzerine yazar ve görüşür. WhatsApp veya telefon ile ulaşılır.",
+      "Eğitim, kullanılan yaklaşımlar, gizlilik ve ilk görüşmede kurulan güven birlikte okunmalıdır. Unvan ile lisansüstü klinik yeterlilik aynı şey değildir. Bu sitede çalışma, Hacettepe Psikoloji mezunu bir psikolog olarak yürür. Reklam dili veya yakınlık vaadi tek başına yeterli ölçüt değildir.",
   },
   {
-    question: "Bursa psikolog ile klinik psikolog aynı mı?",
+    question: "Bursa Nilüfer'de psikolog nerede bulunur?",
     answer:
-      "Hayır. Klinik psikolog unvanı lisans sonrası klinik psikoloji yüksek lisansı ve ilgili yeterliliklerle tanımlanır. Bu sitedeki çalışma, Hacettepe Psikoloji mezunu bir psikolog olarak Nilüfer Özlüce’de yürür; kaygı, ilişki ve bireysel süreçler üzerine görüşülür.",
+      "Yüz yüze ofis Time Özlüce’dedir: Ahmet Taner Kışlalı Bulvarı No:27, Ertuğrul, Nilüfer/Bursa. FSM ve Beşevler’den kısa mesafededir. Harita iletişim bölümündedir.",
   },
   {
-    question: "Yüz yüze ofis nerede?",
+    question: "Psikolog ile ilk görüşmede neler konuşulur?",
     answer:
-      "Ofis Nilüfer Özlüce, Time Özlüce binasındadır: Ahmet Taner Kışlalı Bulvarı No:27, Ertuğrul. FSM, Beşevler ve İhsaniye’den kısa mesafededir. Harita ve adres iletişim bölümündedir.",
+      "Ne olduğu, neyin zorladığı, tempo ve yüz yüze ya da online tercih konuşulur. İlk görüşme tanı töreni değildir; çerçeve birlikte netleşir.",
   },
   {
-    question: "Bursa psikolog randevu nasıl alınır?",
+    question: "Psikolojik destek süreci nasıl ilerler?",
     answer:
-      "WhatsApp veya telefon yeterlidir. Aynı gün içinde dönüş yapılır; yüz yüze veya online tercihi netleşir. Garantili kontenjan vaadi yoktur.",
+      "İhtiyaçların değerlendirilmesi, hedef konuşması ve düzenli seans ritmi genel omurgadır. Kesin seans sayısı veya iyileşme süresi yoktur.",
   },
   {
-    question: "Psikolog Bursa yüz yüze mi, online mı?",
+    question: "Bireysel terapi hangi durumlarda değerlendirilebilir?",
     answer:
-      "İkisi de mümkün. Yoğun program veya Bursa dışından yazanlar için görüntülü görüşme, yüz yüze ile aynı gizlilik çerçevesinde planlanabilir.",
+      "Kaygı, panik, çökkünlük, stres, öfke, özgüven ve tekrarlayan ilişki örüntüleri sık başvuru başlıklarıdır. Uygunluk kişiye göre değişir.",
   },
   {
-    question: "Eğitim geçmişiniz nedir?",
+    question: "Bursa'da çift terapisi nasıl ilerler?",
     answer:
-      "Hacettepe Üniversitesi Psikoloji Bölümü mezunuyum. Üniversite eğitimi ağırlıklı olarak bilişsel-davranışçı çerçevedeydi; ardından birey odaklı psikoterapi alanında uzmanlaştım.",
+      "Ortak bir ilk görüşme, döngünün adlandırılması ve her iki tarafın gönüllü katılımı temeldir. Aktif şiddet varken standart çift seansı uygun değildir. Genel süreç çift terapisi sayfasında; iletişim ayrı randevu sayfasındadır.",
   },
   {
-    question: "Yazılar tıbbi tavsiye midir?",
+    question: "Psikolog seans ücretleri nasıl belirlenir?",
     answer:
-      "Hayır. Makaleler ve testler genel bilgilendirme niteliğindedir; bireysel tanı veya tedavi planı yerine geçmez.",
+      "Tek bir sabit rakam kamuya vaat edilmez. Güncel çerçeve iletişimde netleşir; kamuoyuna açık okuma Bursa psikolog fiyatları yazısındadır.",
+  },
+  {
+    question: "Psikolog randevusu nasıl alınır?",
+    answer:
+      "WhatsApp veya telefon yeterlidir. Aynı gün içinde dönüş yapılır. Nilüfer randevu sayfası adres, süre ve süreç ayrıntısını taşır.",
   },
 ] as const;

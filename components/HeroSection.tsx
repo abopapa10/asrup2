@@ -1,13 +1,8 @@
+import Link from "next/link";
+import { CredentialList } from "@/components/CredentialList";
 import { LandingHero } from "@/components/LandingHero";
-import { GOOGLE_REVIEW_COUNT } from "@/lib/google-reviews";
+import { homeHero } from "@/lib/home-seo-content";
 import { siteConfig } from "@/lib/site-config";
-
-const proofPoints = [
-  "Hacettepe Üniversitesi Psikoloji",
-  "Time Özlüce · Nilüfer",
-  `${GOOGLE_REVIEW_COUNT} Google yorumu`,
-  "Yüz yüze ve online",
-] as const;
 
 /**
  * Sunucu bileşeni — hero metni ve CTA ilk HTML yanıtında görünür (LCP için).
@@ -17,14 +12,34 @@ export function HeroSection() {
   return (
     <LandingHero
       size="home"
-      eyebrow="Bursa · Nilüfer · Psikolog"
-      title="Bursa Psikolog"
-      subtitle="Psikolog A. Alparslan Sancar · Hacettepe · Nilüfer Özlüce"
-      lead="Bursa psikolog arayanlar için Nilüfer Özlüce’de yüz yüze seans; kaygı, ilişki ve bireysel çalışma. WhatsApp veya telefon ile yazmanız yeterlidir."
-      proofPoints={proofPoints}
+      eyebrow={homeHero.eyebrow}
+      title={homeHero.h1}
+      subtitle={homeHero.subtitle}
+      lead={homeHero.lead}
+      extraParagraphs={homeHero.extraParagraphs}
       whatsappSource="hero"
       portraitSrc={siteConfig.images.portraitHeroBand}
-      portraitAlt="Bursa Psikolog A. Alparslan Sancar — Nilüfer Özlüce ofisinde"
+      portraitAlt={homeHero.portraitAlt}
+      leadAfter={
+        <>
+          <CredentialList className="mt-6 sm:mt-7" />
+          <p className="mt-5 text-sm leading-relaxed text-slate-body sm:text-[0.9375rem]">
+            Ofis:{" "}
+            <Link href="/#iletisim" className="link-editorial">
+              Nilüfer Özlüce
+            </Link>
+            {" · "}
+            <a
+              href={siteConfig.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-editorial"
+            >
+              Google Haritalar
+            </a>
+          </p>
+        </>
+      }
     />
   );
 }

@@ -18,6 +18,7 @@
 import { articles } from "@/lib/articles";
 import { DEFAULT_REVIEW_RATING, googleReviews } from "@/lib/google-reviews";
 import { homeFaq } from "@/lib/home-faq";
+import { homePageMeta } from "@/lib/home-seo-content";
 import { schemaImageObject } from "@/lib/schema-images";
 import { absoluteUrl } from "@/lib/seo";
 import { getSocialProfileUrls, siteConfig } from "@/lib/site-config";
@@ -302,8 +303,8 @@ const homeWebPageSchema = {
   "@type": "WebPage",
   "@id": HOME_WEBPAGE_ID,
   url: homeUrl,
-  name: siteConfig.seo.defaultTitle,
-  description: siteConfig.seo.defaultDescription,
+  name: homePageMeta.title,
+  description: homePageMeta.description,
   inLanguage: "tr-TR",
   isPartOf: { "@id": WEBSITE_ID },
   about: { "@id": PSYCHOLOGIST_ID },
