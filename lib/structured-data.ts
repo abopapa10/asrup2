@@ -8,7 +8,7 @@
  *   Layout düzeyinde her sayfaya enjekte edilir; dolayısıyla `@id`
  *   referansları (örn. `#psychologist`) tüm sayfalarda çözümlenir.
  * - `buildHomeGraph()` — yalnızca ana sayfaya özel grafikler:
- *   WebPage, FAQPage, ItemList (blog) ve Review koleksiyonu.
+ *   WebPage, FAQPage ve ItemList (blog).
  * - Per-route graph builder'lar `lib/page-structured-data.ts` içinde.
  *
  * Bu sayede ana sayfa SSS/Reviews iç sayfalara sızmaz; iç sayfalar
@@ -16,7 +16,6 @@
  */
 
 import { articles } from "@/lib/articles";
-import { DEFAULT_REVIEW_RATING, googleReviews } from "@/lib/google-reviews";
 import { homeFaq } from "@/lib/home-faq";
 import { homePageMeta } from "@/lib/home-seo-content";
 import { schemaImageObject } from "@/lib/schema-images";
@@ -169,62 +168,6 @@ export const psychologistSchema = {
     : {}),
 };
 
-/**
- * Sayfada görünür şekilde sergilenen, tam isimli Google
- * yorumlarından `Review` schema üretir.
- *
- * Google'ın review snippet politikası gereği yalnızca:
- * - Sayfada gerçekten görünen
- * - Kimliği belirgin (tam isim)
- * yorumlar schema'ya alınır. Tek harfli rumuzlar dışarıda bırakılır.
- */
-function getSchemaReviews() {
-  const isFullName = (name: string) => {
-    const trimmed = name.trim();
-    if (trimmed.length < 4) return false;
-    // Tek harf + nokta kalıplarını ele ("E. K.", "M. A." vb.)
-    if (/^[A-ZÇĞİÖŞÜ]\.?\s+[A-ZÇĞİÖŞÜ]\.?$/.test(trimmed)) return false;
-    return true;
-  };
-
-  return googleReviews.filter((r) => isFullName(r.name));
-}
-
-const schemaReviews = getSchemaReviews();
-
-const reviewSchemas = schemaReviews.map((review) => ({
-  "@type": "Review" as const,
-  author: { "@type": "Person" as const, name: review.name },
-  reviewBody: review.text,
-  datePublished: undefined, // göreceli tarih ("3 ay önce") tutulduğundan boş bırakılır
-  reviewRating: {
-    "@type": "Rating" as const,
-    ratingValue: review.rating ?? DEFAULT_REVIEW_RATING,
-    bestRating: 5,
-    worstRating: 1,
-  },
-  itemReviewed: { "@id": MEDICAL_BUSINESS_ID },
-}));
-
-const aggregateRating =
-  schemaReviews.length > 0
-    ? (() => {
-        const total = schemaReviews.reduce(
-          (sum, r) => sum + (r.rating ?? DEFAULT_REVIEW_RATING),
-          0
-        );
-        const avg = total / schemaReviews.length;
-        return {
-          "@type": "AggregateRating" as const,
-          ratingValue: Number(avg.toFixed(1)),
-          bestRating: 5,
-          worstRating: 1,
-          reviewCount: schemaReviews.length,
-          ratingCount: schemaReviews.length,
-        };
-      })()
-    : undefined;
-
 export const medicalBusinessSchema = {
   "@context": "https://schema.org",
   /**
@@ -268,8 +211,6 @@ export const medicalBusinessSchema = {
     name: siteConfig.professional.alumniOf.name,
   },
   jobTitle: siteConfig.professional.jobTitle,
-  ...(aggregateRating ? { aggregateRating } : {}),
-  ...(reviewSchemas.length > 0 ? { review: reviewSchemas } : {}),
   ...(getSocialProfileUrls().length > 0
     ? { sameAs: getSocialProfileUrls() }
     : {}),
